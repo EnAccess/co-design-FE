@@ -44,28 +44,7 @@ function Data() {
 
   return (
     <section>
-      <div className="flex gap-5 justify-center">
-        <button
-          onClick={() => handleFilter(null)}
-          className="px-4 py-3 rounded-md text-white font-semibold bg-gray-500">
-          All
-        </button>
-        <button
-          onClick={() => handleFilter("1")}
-          className="rounded-md bg-red-500 text-white font-semibold px-4 py-3">
-          Co-Design Level 1
-        </button>
-        <button
-          onClick={() => handleFilter("2")}
-          className="rounded-md bg-blue-500 text-white font-semibold px-4 py-3">
-          Co-Design Level 2
-        </button>
-        <button
-          onClick={() => handleFilter("3")}
-          className="rounded-md bg-green-500 text-white font-semibold px-4 py-3">
-          Co-Design Level 3
-        </button>
-      </div>
+    
       <ArcherContainer className="flex flex-row gap-5 p-20 w-full">
         <div className="flex flex-wrap gap-[10px]">
           {data &&

@@ -3,7 +3,7 @@
     "Key": "XFPBGKHD",
     "Title": "Towards an holistic approach to energy access in humanitarian settings: the SET4food project from technology transfer to knowledge sharing",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Implementation; CO_DESIGN_LEVEL: 3; CASE STUDY THEME: Systems Approaches to Energy Access; CASE STUDY GROUP: Refugee; CASE STUDY LEVEL: Community; CASE STUDY LEVEL: Household; CASE STUDY TECH: Cooking; CASE STUDY THEME: Gender, Disability, & Inclusion; ACCESS: Open Access",
+    "Manual_Tags": "PROJECT STEP: Implementation; CO_DESIGN_LEVEL: 3; CASE STUDY THEME: Systems Approaches to Energy Access; CASE STUDY GROUP: Refugee; CASE STUDY LEVEL: Community; CASE STUDY LEVEL: Household; CASE STUDY TECH: Cooking; CASE STUDY THEME: Gender, Disability, & Inclusion; ACCESS: Open Access",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": "Implementation",
@@ -25,7 +25,7 @@
     "Key": "LZ4Z4CL9",
     "Title": "Building a participatory and inclusive marketplace for sustainable energy solutions",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; PROJECT STEP: Needs Assessment; CO_DESIGN_LEVEL: 2; CASE STUDY THEME: Systems Approaches to Energy Access; CASE STUDY GROUP: IDP; CASE STUDY LEVEL: Community; CASE STUDY LEVEL: Household; CASE STUDY LEVEL: Productive Use; CASE STUDY TECH: Cooking; CASE STUDY TECH: Lighting; CASE STUDY THEME: Capacity Building & Sharing; CASE STUDY THEME: Partnerships; CASE STUDY THEME: Gender, Disability, & Inclusion; ACCESS: Open Access; PROJECT STEP: Stakeholder Mapping",
+    "Manual_Tags": "PROJECT STEP: Design; PROJECT STEP: Needs Assessment; CO_DESIGN_LEVEL: 2; CASE STUDY THEME: Systems Approaches to Energy Access; CASE STUDY GROUP: IDP; CASE STUDY LEVEL: Community; CASE STUDY LEVEL: Household; CASE STUDY LEVEL: Productive Use; CASE STUDY TECH: Cooking; CASE STUDY TECH: Lighting; CASE STUDY THEME: Capacity Building & Sharing; CASE STUDY THEME: Partnerships; CASE STUDY THEME: Gender, Disability, & Inclusion; ACCESS: Open Access; PROJECT STEP: Stakeholder Mapping",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -57,7 +57,7 @@
     "Key": "TNUSGCEG",
     "Title": "Building Capacity: HEED Slills Audit and Recommendations",
     "Extra": null,
-    "Manual Tags": "USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; PROJECT STEP: M&E; THEME: Capacity Building & Sharing; CO_DESIGN_LEVEL: 3; USEFUL FOR: Community; ACCESS: Open Access; THEME: Gender, Disability, & Inclusion",
+    "Manual_Tags": "USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; PROJECT STEP: M&E; THEME: Capacity Building & Sharing; CO_DESIGN_LEVEL: 3; USEFUL FOR: Community; ACCESS: Open Access; THEME: Gender, Disability, & Inclusion",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "USEFUL FOR": [
@@ -79,7 +79,7 @@
     "Key": "2FLY6PK6",
     "Title": "Delivering Inclusive Renewable Energy Solutions in Refugee Camps: A Practitioner Perspective",
     "Extra": "RELATES_TO: 26TDWZQS",
-    "Manual Tags": "ACCESS: Institutional Access; BASIC RESOURCE; CO_DESIGN_LEVEL: 2; PROJECT STEP: Implementation; THEME: Gender, Disability, & Inclusion; USEFUL FOR: NGO/Other; USEFUL FOR: UN/INGO",
+    "Manual_Tags": "ACCESS: Institutional Access; BASIC RESOURCE; CO_DESIGN_LEVEL: 2; PROJECT STEP: Implementation; THEME: Gender, Disability, & Inclusion; USEFUL FOR: NGO/Other; USEFUL FOR: UN/INGO",
     "PARSED_RELATES_TO": [
       "26TDWZQS"
     ],
@@ -98,7 +98,7 @@
     "Key": "BFJV6HSP",
     "Title": "Participatory impact assessment of electricity access in Zaatari and azraq Camps December 2018",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; PROJECT STEP: Needs Assessment; PROJECT STEP: Implementation; PROJECT STEP: M&E; USEFUL FOR: Community; ACCESS: Open Access; TOOLS: Participatory Approaches; PROJECT STEP: Stakeholder Mapping",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; PROJECT STEP: Needs Assessment; PROJECT STEP: Implementation; PROJECT STEP: M&E; USEFUL FOR: Community; ACCESS: Open Access; TOOLS: Participatory Approaches; PROJECT STEP: Stakeholder Mapping",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -123,7 +123,7 @@
     "Key": "W4IEJV9D",
     "Title": "Supporting Local Ownership in Humanitarian Action",
     "Extra": "RELATES_TO: XEMS4G2M",
-    "Manual Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 3; PROJECT STEP: Implementation; THEME: Capacity Building & Sharing; USEFUL FOR: Community; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; USEFUL FOR: UN/INGO",
+    "Manual_Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 3; PROJECT STEP: Implementation; THEME: Capacity Building & Sharing; USEFUL FOR: Community; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; USEFUL FOR: UN/INGO",
     "PARSED_RELATES_TO": [
       "XEMS4G2M"
     ],
@@ -144,7 +144,7 @@
     "Key": "4WE9DH2K",
     "Title": "Sustainable Humanitarian Energy Services Inclusive  participation, lessons learnt, and paths forward",
     "Extra": "RELATES_TO: 2FLY6PK6",
-    "Manual Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 2; PROJECT STEP: M&E; THEME: Gender, Disability, & Inclusion; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; USEFUL FOR: UN/INGO",
+    "Manual_Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 2; PROJECT STEP: M&E; THEME: Gender, Disability, & Inclusion; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; USEFUL FOR: UN/INGO",
     "PARSED_RELATES_TO": [
       "2FLY6PK6"
     ],
@@ -165,7 +165,7 @@
     "Key": "PIPD4M7K",
     "Title": "The challenges of community-based solar energy interventions: Lessons from two Rwandan Refugee Camps",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Implementation; PROJECT STEP: M&E; CO_DESIGN_LEVEL: 1; CASE STUDY GROUP: IDP; CASE STUDY GROUP: Refugee; CASE STUDY LEVEL: Community; CASE STUDY TECH: Cooking; CASE STUDY TECH: Lighting; CASE STUDY THEME: Capacity Building & Sharing; ACCESS: Open Access",
+    "Manual_Tags": "PROJECT STEP: Implementation; PROJECT STEP: M&E; CO_DESIGN_LEVEL: 1; CASE STUDY GROUP: IDP; CASE STUDY GROUP: Refugee; CASE STUDY LEVEL: Community; CASE STUDY TECH: Cooking; CASE STUDY TECH: Lighting; CASE STUDY THEME: Capacity Building & Sharing; ACCESS: Open Access",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -190,7 +190,7 @@
     "Key": "TTKN4GWJ",
     "Title": "The methodologies, geographies, and technologies of energy justice: a systematic and comprehensive review",
     "Extra": "RELATES_TO: 8F8B6HH4 | C437I3I6",
-    "Manual Tags": "ACCESS: Open Access; BASIC RESOURCE; CO_DESIGN_LEVEL: 3; PROJECT STEP: Design; THEME: Humanitarian Principles?; USEFUL FOR: NGO/Other; USEFUL FOR: UN/INGO",
+    "Manual_Tags": "ACCESS: Open Access; BASIC RESOURCE; CO_DESIGN_LEVEL: 3; PROJECT STEP: Design; THEME: Humanitarian Principles?; USEFUL FOR: NGO/Other; USEFUL FOR: UN/INGO",
     "PARSED_RELATES_TO": [
       "8F8B6HH4",
       "C437I3I6"
@@ -210,7 +210,7 @@
     "Key": "8SEZ9F3K",
     "Title": "Behavioural science interventions within the development and environmental fields in developing countries: an evidence gap map",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Needs Assessment; ACCESS: Open Access; TOOLS: Behaviour Change Approaches",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Needs Assessment; ACCESS: Open Access; TOOLS: Behaviour Change Approaches",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -229,7 +229,7 @@
     "Key": "HIE8SK5H",
     "Title": "Inclusive Policymaking to Give Women Migrants Opportunities for Resilience and Financial Independence",
     "Extra": null,
-    "Manual Tags": "USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; THEME: Policy; PROJECT STEP: Implementation; CO_DESIGN_LEVEL: 3; ACCESS: Open Access; THEME: Gender, Disability, & Inclusion",
+    "Manual_Tags": "USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; THEME: Policy; PROJECT STEP: Implementation; CO_DESIGN_LEVEL: 3; ACCESS: Open Access; THEME: Gender, Disability, & Inclusion",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "USEFUL FOR": [
@@ -250,7 +250,7 @@
     "Key": "GS9XP48C",
     "Title": "How white saviourism harms international development",
     "Extra": "RELATES_TO: ITZYN6BD | EJ9M4T4T",
-    "Manual Tags": "ACCESS: Open Access; BASIC RESOURCE; CO_DESIGN_LEVEL: 3; PROJECT STEP: Design; PROJECT STEP: Implementation; PROJECT STEP: M&E; PROJECT STEP: Needs Assessment; PROJECT STEP: Stakeholder Mapping; THEME: Decolonisation; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: UN/INGO",
+    "Manual_Tags": "ACCESS: Open Access; BASIC RESOURCE; CO_DESIGN_LEVEL: 3; PROJECT STEP: Design; PROJECT STEP: Implementation; PROJECT STEP: M&E; PROJECT STEP: Needs Assessment; PROJECT STEP: Stakeholder Mapping; THEME: Decolonisation; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: UN/INGO",
     "PARSED_RELATES_TO": [
       "ITZYN6BD",
       "EJ9M4T4T"
@@ -277,7 +277,7 @@
     "Key": "HMJNR4ZU",
     "Title": "“What if?” Questions with answers for a paradigm shift in the Aid System",
     "Extra": "RELATES_TO: J4XJ9K9D",
-    "Manual Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 3; PROJECT STEP: Design; THEME: Systems Approaches to Energy Access; USEFUL FOR: Community; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; USEFUL FOR: UN/INGO",
+    "Manual_Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 3; PROJECT STEP: Design; THEME: Systems Approaches to Energy Access; USEFUL FOR: Community; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; USEFUL FOR: UN/INGO",
     "PARSED_RELATES_TO": [
       "J4XJ9K9D"
     ],
@@ -299,7 +299,7 @@
     "Key": "8F8B6HH4",
     "Title": "Camp Abolition: Ending Carceral Humanitarianism in Kenya (and Beyond)",
     "Extra": "RELATES_TO: TTKN4GWJ",
-    "Manual Tags": "ACCESS: Open Access; BASIC RESOURCE; CO_DESIGN_LEVEL: 3; PROJECT STEP: Design; THEME: Humanitarian Principles?; USEFUL FOR: Policy/Governments; USEFUL FOR: UN/INGO",
+    "Manual_Tags": "ACCESS: Open Access; BASIC RESOURCE; CO_DESIGN_LEVEL: 3; PROJECT STEP: Design; THEME: Humanitarian Principles?; USEFUL FOR: Policy/Governments; USEFUL FOR: UN/INGO",
     "PARSED_RELATES_TO": [
       "TTKN4GWJ"
     ],
@@ -318,7 +318,7 @@
     "Key": "JFFKUCIF",
     "Title": "CARE Online Emergency Toolkit",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; PROJECT STEP: Needs Assessment; PROJECT STEP: Implementation; PROJECT STEP: M&E; CO_DESIGN_LEVEL: 1; SUPPORTING TOOLKIT: Systems Approaches to Energy Access; SUPPRTING TOOLKIT: Humanitarian Principles?; SUPPORTING TOOLKIT: Capacity Building & Sharing; ACCESS: Open Access; PROJECT STEP: Stakeholder Mapping",
+    "Manual_Tags": "PROJECT STEP: Design; PROJECT STEP: Needs Assessment; PROJECT STEP: Implementation; PROJECT STEP: M&E; CO_DESIGN_LEVEL: 1; SUPPORTING TOOLKIT: Systems Approaches to Energy Access; SUPPRTING TOOLKIT: Humanitarian Principles?; SUPPORTING TOOLKIT: Capacity Building & Sharing; ACCESS: Open Access; PROJECT STEP: Stakeholder Mapping",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -341,7 +341,7 @@
     "Key": "PE7MD96J",
     "Title": "The Scaling Impact Toolkit",
     "Extra": null,
-    "Manual Tags": "USEFUL FOR: UN/INGO; USEFUL FOR: Private Sector; PROJECT STEP: M&E; CO_DESIGN_LEVEL: 3; SUPPORTING TOOLKIT: Scale & Replicability; ACCESS: Open Access",
+    "Manual_Tags": "USEFUL FOR: UN/INGO; USEFUL FOR: Private Sector; PROJECT STEP: M&E; CO_DESIGN_LEVEL: 3; SUPPORTING TOOLKIT: Scale & Replicability; ACCESS: Open Access",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "USEFUL FOR": [
@@ -358,7 +358,7 @@
     "Key": "4GZIJKW9",
     "Title": "The meanings of humanitarian innovation: Reflections from the Community-Led Innovation Partnership using a postcolonial lens",
     "Extra": "RELATES_TO: TNUSGCEG",
-    "Manual Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 3; PROJECT STEP: Implementation; THEME: Capacity Building & Sharing; THEME: Partnerships; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; USEFUL FOR: UN/INGO",
+    "Manual_Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 3; PROJECT STEP: Implementation; THEME: Capacity Building & Sharing; THEME: Partnerships; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; USEFUL FOR: UN/INGO",
     "PARSED_RELATES_TO": [
       "TNUSGCEG"
     ],
@@ -382,7 +382,7 @@
     "Key": "432IPVY8",
     "Title": "Flipping the narrative: The roots of the refugee protection system are colonial and racist",
     "Extra": "RELATES_TO: ITZYN6BD",
-    "Manual Tags": "ACCESS: Open Access; BASIC RESOURCE; CO_DESIGN_LEVEL: 3; PROJECT STEP: Design; PROJECT STEP: Implementation; PROJECT STEP: M&E; PROJECT STEP: Needs Assessment; PROJECT STEP: Stakeholder Mapping; THEME: Decolonisation; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; USEFUL FOR: UN/INGO",
+    "Manual_Tags": "ACCESS: Open Access; BASIC RESOURCE; CO_DESIGN_LEVEL: 3; PROJECT STEP: Design; PROJECT STEP: Implementation; PROJECT STEP: M&E; PROJECT STEP: Needs Assessment; PROJECT STEP: Stakeholder Mapping; THEME: Decolonisation; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; USEFUL FOR: UN/INGO",
     "PARSED_RELATES_TO": [
       "ITZYN6BD"
     ],
@@ -409,7 +409,7 @@
     "Key": "WNL6RBUG",
     "Title": "Tools for better thinking",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Private Sector; CO_DESIGN_LEVEL: 2; SUPPORTING TOOLKIT: Systems Approaches to Energy Access; ACCESS: Open Access",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Private Sector; CO_DESIGN_LEVEL: 2; SUPPORTING TOOLKIT: Systems Approaches to Energy Access; ACCESS: Open Access",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": "Design",
@@ -427,7 +427,7 @@
     "Key": "6VPWFBJZ",
     "Title": "Photovoice and empowerment: evaluating the transformative potential of a participatory action research project",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; PROJECT STEP: Needs Assessment; PROJECT STEP: Implementation; PROJECT STEP: M&E; USEFUL FOR: Community; ACCESS: Open Access; TOOLS: Participatory Approaches; PROJECT STEP: Stakeholder Mapping",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; PROJECT STEP: Needs Assessment; PROJECT STEP: Implementation; PROJECT STEP: M&E; USEFUL FOR: Community; ACCESS: Open Access; TOOLS: Participatory Approaches; PROJECT STEP: Stakeholder Mapping",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -452,7 +452,7 @@
     "Key": "95QRYCQ8",
     "Title": "Participatory Mapping",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; PROJECT STEP: Needs Assessment; PROJECT STEP: Implementation; PROJECT STEP: M&E; USEFUL FOR: Community; ACCESS: Open Access; TOOLS: Participatory Approaches; PROJECT STEP: Stakeholder Mapping",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; PROJECT STEP: Needs Assessment; PROJECT STEP: Implementation; PROJECT STEP: M&E; USEFUL FOR: Community; ACCESS: Open Access; TOOLS: Participatory Approaches; PROJECT STEP: Stakeholder Mapping",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -477,7 +477,7 @@
     "Key": "L2EQR3AZ",
     "Title": "P.ACT: Partnership Co-Design Toolkit",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Private Sector; CO_DESIGN_LEVEL: 2; USEFUL FOR: Community; CORE TOOLKIT: Partnerships; ACCESS: Open Access; PROJECT STEP: Stakeholder Mapping",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Private Sector; CO_DESIGN_LEVEL: 2; USEFUL FOR: Community; CORE TOOLKIT: Partnerships; ACCESS: Open Access; PROJECT STEP: Stakeholder Mapping",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -491,7 +491,7 @@
         "Community"
       ],
       "CO_DESIGN_LEVEL": "2",
-      "CORE TOOLKIT": "Partnerships",
+      "CORE_TOOLKIT": "Partnerships",
       "ACCESS": "Open Access"
     }
   },
@@ -499,7 +499,7 @@
     "Key": "NUFGBAQD",
     "Title": "Participation by Crisis-Affected Populations in Humanitarian Action: A Handbook for Practitioners (Better governance means greater participation coupled with accountability)",
     "Extra": null,
-    "Manual Tags": "USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: M&E; CO_DESIGN_LEVEL: 1; SUPPORTING TOOLKIT: Capacity Building & Sharing; SUPPORTING TOOLKIT: Gender, Disability, & Inclusion; ACCESS: Open Access",
+    "Manual_Tags": "USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: M&E; CO_DESIGN_LEVEL: 1; SUPPORTING TOOLKIT: Capacity Building & Sharing; SUPPORTING TOOLKIT: Gender, Disability, & Inclusion; ACCESS: Open Access",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "USEFUL FOR": [
@@ -519,7 +519,7 @@
     "Key": "RFY2NEE9",
     "Title": "From Black Hole to North Star: A Response to the Journal of Humanitarian Affairs Special Issue on Innovation in Humanitarian Action (JHA, 1:3)",
     "Extra": "RELATES_TO: 4XJ9K9D",
-    "Manual Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 2; PROJECT STEP: Design; THEME: Systems Approaches to Energy Access; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; USEFUL FOR: UN/INGO",
+    "Manual_Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 2; PROJECT STEP: Design; THEME: Systems Approaches to Energy Access; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; USEFUL FOR: UN/INGO",
     "PARSED_RELATES_TO": [
       "4XJ9K9D"
     ],
@@ -539,7 +539,7 @@
     "Key": "X7T6BHQL",
     "Title": "A PESTLE analysis of solar home systems in refugee camps in Rwanda",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; CO_DESIGN_LEVEL: 2; SUPPORTING TOOLKIT: Systems Approaches to Energy Access; ACCESS: Open Access; TOOLS: Technical Approaches",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; CO_DESIGN_LEVEL: 2; SUPPORTING TOOLKIT: Systems Approaches to Energy Access; ACCESS: Open Access; TOOLS: Technical Approaches",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": "Design",
@@ -558,7 +558,7 @@
     "Key": "J4XJ9K9D",
     "Title": "Accelerating Access to Clean Cooking Will Require a Heart-Head-and-Hands Approach",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Private Sector; THEME: Systems Approaches to Energy Access; CO_DESIGN_LEVEL: 2; ACCESS: Open Access",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Private Sector; THEME: Systems Approaches to Energy Access; CO_DESIGN_LEVEL: 2; ACCESS: Open Access",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": "Design",
@@ -576,7 +576,7 @@
     "Key": "HAEF6QE6",
     "Title": "Access to more: creating energy choices for refugees",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; PROJECT STEP: Needs Assessment; PROJECT STEP: Implementation; PROJECT STEP: M&E; CO_DESIGN_LEVEL: 2; CASE STUDY THEME: Systems Approaches to Energy Access; CASE STUDY GROUP: Refugee; CASE STUDY LEVEL: Household; CASE STUDY LEVEL: Productive Use; CASE STUDY LEVEL: Policy/Systemic; ACCESS: Open Access; PROJECT STEP: Stakeholder Mapping",
+    "Manual_Tags": "PROJECT STEP: Design; PROJECT STEP: Needs Assessment; PROJECT STEP: Implementation; PROJECT STEP: M&E; CO_DESIGN_LEVEL: 2; CASE STUDY THEME: Systems Approaches to Energy Access; CASE STUDY GROUP: Refugee; CASE STUDY LEVEL: Household; CASE STUDY LEVEL: Productive Use; CASE STUDY LEVEL: Policy/Systemic; ACCESS: Open Access; PROJECT STEP: Stakeholder Mapping",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -601,7 +601,7 @@
     "Key": "WTWPVIVJ",
     "Title": "Applying an ecosystems approach to humanitarian innovation",
     "Extra": "RELATES_TO: RFY2NEE9",
-    "Manual Tags": "ACCESS: Institutional Access; CO_DESIGN_LEVEL: 3; PROJECT STEP: Design; THEME: Systems Approaches to Energy Access; USEFUL FOR: Community; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; USEFUL FOR: UN/INGO",
+    "Manual_Tags": "ACCESS: Institutional Access; CO_DESIGN_LEVEL: 3; PROJECT STEP: Design; THEME: Systems Approaches to Energy Access; USEFUL FOR: Community; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; USEFUL FOR: UN/INGO",
     "PARSED_RELATES_TO": [
       "RFY2NEE9"
     ],
@@ -623,7 +623,7 @@
     "Key": "GGZI77BM",
     "Title": "Behaviour settings theory applied to domestic water use in Nigeria: A new conceptual tool for the study of routine behaviour",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Needs Assessment; ACCESS: Institutional Access; TOOLS: Behaviour Change Approaches",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Needs Assessment; ACCESS: Institutional Access; TOOLS: Behaviour Change Approaches",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -642,7 +642,7 @@
     "Key": "H5AB7IDH",
     "Title": "Beyond ‘Do No Harm’: The Challenge of Constructing Ethical Relationships in Refugee Research",
     "Extra": "RELATES_TO: SUEVT5TI | C437I3I6",
-    "Manual Tags": "ACCESS: Institutional Access; CO_DESIGN_LEVEL: 1; PROJECT STEP: Design; PROJECT STEP: Implementation; PROJECT STEP: M&E; THEME: Humanitarian Principles?; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments",
+    "Manual_Tags": "ACCESS: Institutional Access; CO_DESIGN_LEVEL: 1; PROJECT STEP: Design; PROJECT STEP: Implementation; PROJECT STEP: M&E; THEME: Humanitarian Principles?; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments",
     "PARSED_RELATES_TO": [
       "SUEVT5TI",
       "C437I3I6"
@@ -666,7 +666,7 @@
     "Key": "FSUMYZRF",
     "Title": "Beyond Connections: Energy Access Redefined",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: Policy/Governments; PROJECT STEP: M&E; CO_DESIGN_LEVEL: 1; CORE TOOLKIT: Policy; ACCESS: Open Access; TOOLS: Technical Approaches",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: Policy/Governments; PROJECT STEP: M&E; CO_DESIGN_LEVEL: 1; CORE TOOLKIT: Policy; ACCESS: Open Access; TOOLS: Technical Approaches",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -678,7 +678,7 @@
         "Policy/Governments"
       ],
       "CO_DESIGN_LEVEL": "1",
-      "CORE TOOLKIT": "Policy",
+      "CORE_TOOLKIT": "Policy",
       "ACCESS": "Open Access",
       "TOOLS": "Technical Approaches"
     }
@@ -687,7 +687,7 @@
     "Key": "UZ8TBN5W",
     "Title": "Bridging the Intention to Action Gap: The Future Role of Intermediaries in Supporting Locally Led Humanitarian Action",
     "Extra": "RELATES_TO: 4GZIJKW9",
-    "Manual Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 2; PROJECT STEP: Implementation; PROJECT STEP: Needs Assessment; PROJECT STEP: Stakeholder Mapping; THEME: Capacity Building & Sharing; USEFUL FOR: NGO/Other; USEFUL FOR: Private Sector; USEFUL FOR: UN/INGO",
+    "Manual_Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 2; PROJECT STEP: Implementation; PROJECT STEP: Needs Assessment; PROJECT STEP: Stakeholder Mapping; THEME: Capacity Building & Sharing; USEFUL FOR: NGO/Other; USEFUL FOR: Private Sector; USEFUL FOR: UN/INGO",
     "PARSED_RELATES_TO": [
       "4GZIJKW9"
     ],
@@ -711,7 +711,7 @@
     "Key": "HIAVKI7M",
     "Title": "Collective Approaches to Communication and Community Engagement",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; PROJECT STEP: Needs Assessment; PROJECT STEP: Implementation; THEME: Capacity Building & Sharing; CO_DESIGN_LEVEL: 3; BASIC RESOURCE; ACCESS: Open Access; PROJECT STEP: Stakeholder Mapping",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; PROJECT STEP: Needs Assessment; PROJECT STEP: Implementation; THEME: Capacity Building & Sharing; CO_DESIGN_LEVEL: 3; BASIC RESOURCE; ACCESS: Open Access; PROJECT STEP: Stakeholder Mapping",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -734,7 +734,7 @@
     "Key": "UVYS6F5G",
     "Title": "Community Energy Resilience & Electricity Systems: Workshops Report",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: Policy/Governments; PROJECT STEP: Needs Assessment; THEME: Capacity Building & Sharing; CO_DESIGN_LEVEL: 3; USEFUL FOR: Community; ACCESS: Open Access",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: Policy/Governments; PROJECT STEP: Needs Assessment; THEME: Capacity Building & Sharing; CO_DESIGN_LEVEL: 3; USEFUL FOR: Community; ACCESS: Open Access",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -755,7 +755,7 @@
     "Key": "J4GSSQWI",
     "Title": "Cooking in Displacement Settings: Engaging the Private Sector in Non-wood-based Fuel Supply",
     "Extra": "RELATES_TO: SFLF7U5U",
-    "Manual Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 2; PROJECT STEP: Design; PROJECT STEP: Implementation; PROJECT STEP: M&E; PROJECT STEP: Needs Assessment; PROJECT STEP: Stakeholder Mapping; THEME: Systems Approaches to Energy Access; USEFUL FOR: NGO/Other; USEFUL FOR: Private Sector; USEFUL FOR: UN/INGO",
+    "Manual_Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 2; PROJECT STEP: Design; PROJECT STEP: Implementation; PROJECT STEP: M&E; PROJECT STEP: Needs Assessment; PROJECT STEP: Stakeholder Mapping; THEME: Systems Approaches to Energy Access; USEFUL FOR: NGO/Other; USEFUL FOR: Private Sector; USEFUL FOR: UN/INGO",
     "PARSED_RELATES_TO": [
       "SFLF7U5U"
     ],
@@ -781,7 +781,7 @@
     "Key": "DGRQFXDL",
     "Title": "Do we need better behaved cooks? Reviewing behavioural change strategies for improving the sustainability and effectiveness of cookstove programs",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Needs Assessment; ACCESS: Institutional Access; TOOLS: Behaviour Change Approaches",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Needs Assessment; ACCESS: Institutional Access; TOOLS: Behaviour Change Approaches",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -800,7 +800,7 @@
     "Key": "T9XEKB8B",
     "Title": "Empowerment, destigmatization and sustainability: the co-construction of reusable menstrual technologies in the context of menstrual activism in Argentina",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Needs Assessment; ACCESS: Open Access; TOOLS: Behaviour Change Approaches",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Needs Assessment; ACCESS: Open Access; TOOLS: Behaviour Change Approaches",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -819,7 +819,7 @@
     "Key": "EZQDN7UB",
     "Title": "Energy and Displacement in Eight Objects: Insights from Sub-Saharan Africa",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Implementation; PROJECT STEP: M&E; ACCESS: Open Access; TOOLS: Multidisciplinary Approaches",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Implementation; PROJECT STEP: M&E; ACCESS: Open Access; TOOLS: Multidisciplinary Approaches",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -839,7 +839,7 @@
     "Key": "WEEGZP8X",
     "Title": "Ensuring refugee camps in Rwanda have access to sustainable energy",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Implementation; CO_DESIGN_LEVEL: 2; CASE STUDY THEME: Systems Approaches to Energy Access; CASE STUDY GROUP: Refugee; CASE STUDY LEVEL: Community; CASE STUDY LEVEL: Household; CASE STUDY LEVEL: Productive Use; CASE STUDY TECH: Cooking; CASE STUDY TECH: Lighting; CASE STUDY THEME: Capacity Building & Sharing; CASE STUDY THEME: Gender, Disability, & Inclusion; ACCESS: Open Access",
+    "Manual_Tags": "PROJECT STEP: Implementation; CO_DESIGN_LEVEL: 2; CASE STUDY THEME: Systems Approaches to Energy Access; CASE STUDY GROUP: Refugee; CASE STUDY LEVEL: Community; CASE STUDY LEVEL: Household; CASE STUDY LEVEL: Productive Use; CASE STUDY TECH: Cooking; CASE STUDY TECH: Lighting; CASE STUDY THEME: Capacity Building & Sharing; CASE STUDY THEME: Gender, Disability, & Inclusion; ACCESS: Open Access",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": "Implementation",
@@ -866,7 +866,7 @@
     "Key": "F6EED9S9",
     "Title": "From knowing to doing: evidence use in the humanitarian sector (Executive Summary)",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Implementation; PROJECT STEP: M&E; USEFUL FOR: Community; ACCESS: Open Access; BASIC TOOLS",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Implementation; PROJECT STEP: M&E; USEFUL FOR: Community; ACCESS: Open Access; BASIC TOOLS",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -886,7 +886,7 @@
     "Key": "U7X28J53",
     "Title": "Hanging out with forced migrants: methodological and ethical challenges",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; PROJECT STEP: Needs Assessment; PROJECT STEP: Implementation; PROJECT STEP: M&E; USEFUL FOR: Community; ACCESS: Open Access; TOOLS: Participatory Approaches; PROJECT STEP: Stakeholder Mapping",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; PROJECT STEP: Needs Assessment; PROJECT STEP: Implementation; PROJECT STEP: M&E; USEFUL FOR: Community; ACCESS: Open Access; TOOLS: Participatory Approaches; PROJECT STEP: Stakeholder Mapping",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -911,7 +911,7 @@
     "Key": "778MGVWG",
     "Title": "Humanitarian energy interventions: the need and opportunities for systematic decision-making",
     "Extra": null,
-    "Manual Tags": "USEFUL FOR: NGO/Other; USEFUL FOR: Private Sector; PROJECT STEP: Needs Assessment; CO_DESIGN_LEVEL: 1; CORE TOOLKIT: Policy; ACCESS: Open Source; TOOLS: Technical Approaches",
+    "Manual_Tags": "USEFUL FOR: NGO/Other; USEFUL FOR: Private Sector; PROJECT STEP: Needs Assessment; CO_DESIGN_LEVEL: 1; CORE TOOLKIT: Policy; ACCESS: Open Source; TOOLS: Technical Approaches",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "USEFUL FOR": [
@@ -920,7 +920,7 @@
       ],
       "PROJECT STEP": "Needs Assessment",
       "CO_DESIGN_LEVEL": "1",
-      "CORE TOOLKIT": "Policy",
+      "CORE_TOOLKIT": "Policy",
       "ACCESS": "Open Source",
       "TOOLS": "Technical Approaches"
     }
@@ -929,7 +929,7 @@
     "Key": "R3L7NHWQ",
     "Title": "Humanitarian Energy: Energy for micro-enterprises in displacement settings",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Implementation; PROJECT STEP: M&E; CO_DESIGN_LEVEL: 2; CASE STUDY THEME: Systems Approaches to Energy Access; CASE STUDY GROUP: Refugee; CASE STUDY LEVEL: Community; CASE STUDY LEVEL: Household; CASE STUDY LEVEL: Productive Use; CASE STUDY TECH: Cooking; CASE STUDY TECH: Lighting; ACCESS: Open Access",
+    "Manual_Tags": "PROJECT STEP: Implementation; PROJECT STEP: M&E; CO_DESIGN_LEVEL: 2; CASE STUDY THEME: Systems Approaches to Energy Access; CASE STUDY GROUP: Refugee; CASE STUDY LEVEL: Community; CASE STUDY LEVEL: Household; CASE STUDY LEVEL: Productive Use; CASE STUDY TECH: Cooking; CASE STUDY TECH: Lighting; ACCESS: Open Access",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -955,7 +955,7 @@
     "Key": "V49NA4T8",
     "Title": "In the name of Development: Power, profit and the datafication of the global South",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; THEME: Decolonisation; CO_DESIGN_LEVEL: 3; ACCESS: Institutional Access",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; THEME: Decolonisation; CO_DESIGN_LEVEL: 3; ACCESS: Institutional Access",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": "Design",
@@ -973,7 +973,7 @@
     "Key": "WQAU7VI5",
     "Title": "Interrogating the evidence base on humanitarian localisation: A literature study",
     "Extra": "RELATES_TO: YSIILPT8",
-    "Manual Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 3; PROJECT STEP: Implementation; THEME: Localisation; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: UN/INGO",
+    "Manual_Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 3; PROJECT STEP: Implementation; THEME: Localisation; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: UN/INGO",
     "PARSED_RELATES_TO": [
       "YSIILPT8"
     ],
@@ -993,7 +993,7 @@
     "Key": "K84BXV44",
     "Title": "Operationalizing Collective Outcomes: Lessons Learned and Best Practices from and for Country Implementation",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: Policy/Governments; PROJECT STEP: Needs Assessment; PROJECT STEP: Implementation; CO_DESIGN_LEVEL: 1; THEME: Partnerships; ACCESS: Open Access; PROJECT STEP: Stakeholder Mapping",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: Policy/Governments; PROJECT STEP: Needs Assessment; PROJECT STEP: Implementation; CO_DESIGN_LEVEL: 1; THEME: Partnerships; ACCESS: Open Access; PROJECT STEP: Stakeholder Mapping",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -1015,7 +1015,7 @@
     "Key": "J6UYTTIN",
     "Title": "Sanitation sustainability, seasonality and stacking: Improved facilities for how long, where and whom?",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; PROJECT STEP: Needs Assessment; ACCESS: Institutional Access; TOOLS: Behaviour Change Approaches",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; PROJECT STEP: Needs Assessment; ACCESS: Institutional Access; TOOLS: Behaviour Change Approaches",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -1035,7 +1035,7 @@
     "Key": "G6QP6MZU",
     "Title": "Social Research Methods",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Implementation; PROJECT STEP: M&E; USEFUL FOR: Community; ACCESS: Open Access; BASIC TOOLS",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Implementation; PROJECT STEP: M&E; USEFUL FOR: Community; ACCESS: Open Access; BASIC TOOLS",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -1055,7 +1055,7 @@
     "Key": "IMXPVWVK",
     "Title": "Sustainable and inclusive energy solutions in refugee camps: Developing a modelling approach for energy demand and alternative renewable power supply",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; ACCESS: Open Access; TOOLS: Technical Approaches",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; ACCESS: Open Access; TOOLS: Technical Approaches",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": "Design",
@@ -1072,7 +1072,7 @@
     "Key": "M2257F7M",
     "Title": "Technological innovation for humanitarian aid and assistance",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; ACCESS: Open Access; TOOLS: Technical Approaches",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; ACCESS: Open Access; TOOLS: Technical Approaches",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": "Design",
@@ -1089,7 +1089,7 @@
     "Key": "YSIILPT8",
     "Title": "The Grand Bargain at five years: An independent review (Execuative Summary)",
     "Extra": "RELATES_TO: WQAU7VI5",
-    "Manual Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 3; PROJECT STEP: Implementation; THEME: Localisation; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: UN/INGO",
+    "Manual_Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 3; PROJECT STEP: Implementation; THEME: Localisation; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: UN/INGO",
     "PARSED_RELATES_TO": [
       "WQAU7VI5"
     ],
@@ -1109,7 +1109,7 @@
     "Key": "5C78CEPX",
     "Title": "The Integrated Behavioural Model for Water, Sanitation, and Hygiene: a systematic review of behavioural models and a framework for designing and evaluating behaviour change interventions in infrastructure-restricted settings",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Needs Assessment; ACCESS: Open Access; TOOLS: Behaviour Change Approaches",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Needs Assessment; ACCESS: Open Access; TOOLS: Behaviour Change Approaches",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -1128,7 +1128,7 @@
     "Key": "HIMDY3WF",
     "Title": "The Lived Experience of Energy and Forced Displacement",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Implementation; PROJECT STEP: M&E; USEFUL FOR: Community; ACCESS: Open Access; BASIC TOOLS",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Implementation; PROJECT STEP: M&E; USEFUL FOR: Community; ACCESS: Open Access; BASIC TOOLS",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -1148,7 +1148,7 @@
     "Key": "ZQE42NX2",
     "Title": "The SAGE handbook of qualitative research / edited by Norman K. Denzin, Yvonna S. Lincoln",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Implementation; PROJECT STEP: M&E; USEFUL FOR: Community; ACCESS: Open Access; BASIC TOOLS",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Implementation; PROJECT STEP: M&E; USEFUL FOR: Community; ACCESS: Open Access; BASIC TOOLS",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -1168,7 +1168,7 @@
     "Key": "J82HZYF9",
     "Title": "Transdisciplinary research: Exploring impact, knowledge and quality in the early stages of a sustainable development project",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Implementation; PROJECT STEP: M&E; ACCESS: Institutional Access; TOOLS: Multidisciplinary Approaches",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Implementation; PROJECT STEP: M&E; ACCESS: Institutional Access; TOOLS: Multidisciplinary Approaches",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -1188,7 +1188,7 @@
     "Key": "L4Q5H89C",
     "Title": "Trees, tensions, and transactional communities: Problematizing frameworks for energy poverty alleviation in the Rhino Camp refugee settlement, Uganda",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Implementation; PROJECT STEP: M&E; TOOLS: Multidisciplinary Approaches",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Implementation; PROJECT STEP: M&E; TOOLS: Multidisciplinary Approaches",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -1207,7 +1207,7 @@
     "Key": "885Q4H5B",
     "Title": "From Theory to Practice: A review of co-design methods for humanitarian energy ecosystems",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; CO_DESIGN_LEVEL: 3; CASE STUDY GROUP: IDP; CASE STUDY GROUP: Refugee; CASE STUDY LEVEL: Community; CASE STUDY TECH: Lighting; ACCESS: Open Access; BASIC TOOLS; TOOLS: Multidisciplinary Approaches",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; CO_DESIGN_LEVEL: 3; CASE STUDY GROUP: IDP; CASE STUDY GROUP: Refugee; CASE STUDY LEVEL: Community; CASE STUDY TECH: Lighting; ACCESS: Open Access; BASIC TOOLS; TOOLS: Multidisciplinary Approaches",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": "Design",
@@ -1232,7 +1232,7 @@
     "Key": "WT3E37V9",
     "Title": "Co-Creation Toolkit for Humanitarian Innovation",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Private Sector; PROJECT STEP: Needs Assessment; CO_DESIGN_LEVEL: 2; SUPPORTING TOOLKIT: Systems Approaches to Energy Access; SUPPORTING TOOLKIT: Partnerships; SUPPORTING TOOLKIT: Scale & Replicability; PROJECT STEP: Stakeholder Mapping",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Private Sector; PROJECT STEP: Needs Assessment; CO_DESIGN_LEVEL: 2; SUPPORTING TOOLKIT: Systems Approaches to Energy Access; SUPPORTING TOOLKIT: Partnerships; SUPPORTING TOOLKIT: Scale & Replicability; PROJECT STEP: Stakeholder Mapping",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -1257,7 +1257,7 @@
     "Key": "7ACJCQMS",
     "Title": "Building A Better Response – Free humanitarian coordination, e-learning, workshops, and field focus videos",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Implementation; CO_DESIGN_LEVEL: 1; SUPPRTING TOOLKIT: Humanitarian Principles?; ACCESS: Open Access",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Implementation; CO_DESIGN_LEVEL: 1; SUPPRTING TOOLKIT: Humanitarian Principles?; ACCESS: Open Access",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -1277,7 +1277,7 @@
     "Key": "79Q4Z2UE",
     "Title": "Toolkit: Participation for Humanitarian Innovation",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Needs Assessment; PROJECT STEP: Implementation; PROJECT STEP: M&E; CO_DESIGN_LEVEL: 3; USEFUL FOR: Community; CORE TOOLKIT: Systems Approaches to Energy Access; CORE TOOLKIT: Capacity Building & Sharing; CORE TOOLKIT: Scale & Replicability; ACCESS: Open Access; PROJECT STEP: Stakeholder Mapping",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Needs Assessment; PROJECT STEP: Implementation; PROJECT STEP: M&E; CO_DESIGN_LEVEL: 3; USEFUL FOR: Community; CORE TOOLKIT: Systems Approaches to Energy Access; CORE TOOLKIT: Capacity Building & Sharing; CORE TOOLKIT: Scale & Replicability; ACCESS: Open Access; PROJECT STEP: Stakeholder Mapping",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -1293,7 +1293,7 @@
         "Community"
       ],
       "CO_DESIGN_LEVEL": "3",
-      "CORE TOOLKIT": [
+      "CORE_TOOLKIT": [
         "Systems Approaches to Energy Access",
         "Capacity Building & Sharing",
         "Scale & Replicability"
@@ -1305,7 +1305,7 @@
     "Key": "2LGBJEQP",
     "Title": "Four ways ChatGPT could help level the humanitarian playing field",
     "Extra": "RELATES_TO: EBTX3L28",
-    "Manual Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 0; PROJECT STEP: Design; PROJECT STEP: Needs Assessment; PROJECT STEP: Stakeholder Mapping; THEME: AI/ML; USEFUL FOR: Community; USEFUL FOR: NGO/Other; USEFUL FOR: UN/INGO",
+    "Manual_Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 0; PROJECT STEP: Design; PROJECT STEP: Needs Assessment; PROJECT STEP: Stakeholder Mapping; THEME: AI/ML; USEFUL FOR: Community; USEFUL FOR: NGO/Other; USEFUL FOR: UN/INGO",
     "PARSED_RELATES_TO": [
       "EBTX3L28"
     ],
@@ -1329,7 +1329,7 @@
     "Key": "ZS92SWD9",
     "Title": "Effective Inclusion of Refugees: participatory approaches for practitioners at the local level",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; CO_DESIGN_LEVEL: 1; SUPPORTING TOOLKIT: Gender, Disability, & Inclusion; ACCESS: Open Access; TOOLS: Participatory Approaches",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; CO_DESIGN_LEVEL: 1; SUPPORTING TOOLKIT: Gender, Disability, & Inclusion; ACCESS: Open Access; TOOLS: Participatory Approaches",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": "Design",
@@ -1347,7 +1347,7 @@
     "Key": "P7FY3Y5E",
     "Title": "Inclusive Participation Toolbox",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: NGO/Other; CO_DESIGN_LEVEL: 1; SUPPORTING TOOLKIT: Gender, Disability, & Inclusion; ACCESS: Open Access; TOOLS: Participatory Approaches",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: NGO/Other; CO_DESIGN_LEVEL: 1; SUPPORTING TOOLKIT: Gender, Disability, & Inclusion; ACCESS: Open Access; TOOLS: Participatory Approaches",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": "Design",
@@ -1362,7 +1362,7 @@
     "Key": "26TDWZQS",
     "Title": "Inclusion and exclusion in humanitarian action: findings from a three-year study",
     "Extra": "RELATES_TO: T2JDHYYP",
-    "Manual Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 2; PROJECT STEP: Design; PROJECT STEP: Implementation; PROJECT STEP: Needs Assessment; PROJECT STEP: Stakeholder Mapping; THEME: Gender, Disability, & Inclusion; USEFUL FOR: Community; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; USEFUL FOR: UN/INGO",
+    "Manual_Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 2; PROJECT STEP: Design; PROJECT STEP: Implementation; PROJECT STEP: Needs Assessment; PROJECT STEP: Stakeholder Mapping; THEME: Gender, Disability, & Inclusion; USEFUL FOR: Community; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; USEFUL FOR: UN/INGO",
     "PARSED_RELATES_TO": [
       "T2JDHYYP"
     ],
@@ -1389,7 +1389,7 @@
     "Key": "HCBHE6QJ",
     "Title": "An introduction to participatory monitoring and evaluation: the missing link between inquiry and impact",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; PROJECT STEP: Needs Assessment; PROJECT STEP: Implementation; PROJECT STEP: M&E; USEFUL FOR: Community; ACCESS: Open Access; TOOLS: Participatory Approaches; PROJECT STEP: Stakeholder Mapping",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; PROJECT STEP: Needs Assessment; PROJECT STEP: Implementation; PROJECT STEP: M&E; USEFUL FOR: Community; ACCESS: Open Access; TOOLS: Participatory Approaches; PROJECT STEP: Stakeholder Mapping",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -1414,7 +1414,7 @@
     "Key": "3DHATLDL",
     "Title": "Gender, power and principles in humanitarian action",
     "Extra": "RELATES_TO: 3YX8DAZU",
-    "Manual Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 3; PROJECT STEP: Design; PROJECT STEP: Needs Assessment; PROJECT STEP: Stakeholder Mapping; THEME: Gender, Disability, & Inclusion; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: UN/INGO",
+    "Manual_Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 3; PROJECT STEP: Design; PROJECT STEP: Needs Assessment; PROJECT STEP: Stakeholder Mapping; THEME: Gender, Disability, & Inclusion; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: UN/INGO",
     "PARSED_RELATES_TO": [
       "3YX8DAZU"
     ],
@@ -1438,7 +1438,7 @@
     "Key": "6M4GX28L",
     "Title": "‘A participation revolution’: creating genuine dialogue and partnerships between humanitarian actors and the disability movement",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; PROJECT STEP: Needs Assessment; PROJECT STEP: Implementation; PROJECT STEP: M&E; USEFUL FOR: Community; ACCESS: Open Access; TOOLS: Participatory Approaches; PROJECT STEP: Stakeholder Mapping",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; PROJECT STEP: Needs Assessment; PROJECT STEP: Implementation; PROJECT STEP: M&E; USEFUL FOR: Community; ACCESS: Open Access; TOOLS: Participatory Approaches; PROJECT STEP: Stakeholder Mapping",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -1463,7 +1463,7 @@
     "Key": "WYVR7ECJ",
     "Title": "Assessing Cooking Needs in Chad: Methodology and findings",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Needs Assessment; CO_DESIGN_LEVEL: 1; CASE STUDY THEME: Systems Approaches to Energy Access; CASE STUDY GROUP: IDP; CASE STUDY GROUP: Refugee; CASE STUDY LEVEL: Community; CASE STUDY LEVEL: Household; CASE STUDY LEVEL: Productive Use; CASE STUDY TECH: Cooking; CASE STUDY THEME: Capacity Building & Sharing; CASE STUDY GROUP: Host Community; ACCESS: Open Access; PROJECT STEP: Stakeholder Mapping",
+    "Manual_Tags": "PROJECT STEP: Needs Assessment; CO_DESIGN_LEVEL: 1; CASE STUDY THEME: Systems Approaches to Energy Access; CASE STUDY GROUP: IDP; CASE STUDY GROUP: Refugee; CASE STUDY LEVEL: Community; CASE STUDY LEVEL: Household; CASE STUDY LEVEL: Productive Use; CASE STUDY TECH: Cooking; CASE STUDY THEME: Capacity Building & Sharing; CASE STUDY GROUP: Host Community; ACCESS: Open Access; PROJECT STEP: Stakeholder Mapping",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -1493,7 +1493,7 @@
     "Key": "8RAQMQLC",
     "Title": "The two worlds of humanitarian innovation",
     "Extra": "RELATES_TO: D2XXRWN9",
-    "Manual Tags": "CO_DESIGN_LEVEL: 3; PROJECT STEP: Implementation; PROJECT STEP: M&E; THEME: Decolonisation; THEME: Systems Approaches to Energy Access; USEFUL FOR: Community; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: UN/INGO",
+    "Manual_Tags": "CO_DESIGN_LEVEL: 3; PROJECT STEP: Implementation; PROJECT STEP: M&E; THEME: Decolonisation; THEME: Systems Approaches to Energy Access; USEFUL FOR: Community; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: UN/INGO",
     "PARSED_RELATES_TO": [
       "D2XXRWN9"
     ],
@@ -1519,7 +1519,7 @@
     "Key": "XEMS4G2M",
     "Title": "Innovation in refugee economies: supporting intermediaries that embrace informality",
     "Extra": "RELATES_TO: UZ8TBN5W",
-    "Manual Tags": "ACCESS: Institutional Access; CO_DESIGN_LEVEL: 3; PROJECT STEP: Implementation; PROJECT STEP: M&E; PROJECT STEP: Needs Assessment; THEME: Capacity Building & Sharing; THEME: Localisation; USEFUL FOR: Community; USEFUL FOR: UN/INGO",
+    "Manual_Tags": "ACCESS: Institutional Access; CO_DESIGN_LEVEL: 3; PROJECT STEP: Implementation; PROJECT STEP: M&E; PROJECT STEP: Needs Assessment; THEME: Capacity Building & Sharing; THEME: Localisation; USEFUL FOR: Community; USEFUL FOR: UN/INGO",
     "PARSED_RELATES_TO": [
       "UZ8TBN5W"
     ],
@@ -1545,7 +1545,7 @@
     "Key": "PX7YSLS2",
     "Title": "Promoting Productive Use of Electricity in Displacement Settings",
     "Extra": null,
-    "Manual Tags": "USEFUL FOR: UN/INGO; USEFUL FOR: Private Sector; PROJECT STEP: M&E; THEME: Systems Approaches to Energy Access; CO_DESIGN_LEVEL: 1; ACCESS: Open Access",
+    "Manual_Tags": "USEFUL FOR: UN/INGO; USEFUL FOR: Private Sector; PROJECT STEP: M&E; THEME: Systems Approaches to Energy Access; CO_DESIGN_LEVEL: 1; ACCESS: Open Access",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "USEFUL FOR": [
@@ -1562,7 +1562,7 @@
     "Key": "MA99QXT5",
     "Title": "Talk To Loop | Community feedback made easy",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; PROJECT STEP: Needs Assessment; PROJECT STEP: Implementation; PROJECT STEP: M&E; USEFUL FOR: Community; ACCESS: Paid Service; TOOLS: Participatory Approaches; PROJECT STEP: Stakeholder Mapping",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; PROJECT STEP: Needs Assessment; PROJECT STEP: Implementation; PROJECT STEP: M&E; USEFUL FOR: Community; ACCESS: Paid Service; TOOLS: Participatory Approaches; PROJECT STEP: Stakeholder Mapping",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -1587,7 +1587,7 @@
     "Key": "W6VETAHH",
     "Title": "Social Science in Humanitarian Action Platform",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; PROJECT STEP: Implementation; PROJECT STEP: M&E; CO_DESIGN_LEVEL: 2; SUPPORTING TOOLKIT: Gender, Disability, & Inclusion; ACCESS: Open Access; TOOLS: Participatory Approaches",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; PROJECT STEP: Implementation; PROJECT STEP: M&E; CO_DESIGN_LEVEL: 2; SUPPORTING TOOLKIT: Gender, Disability, & Inclusion; ACCESS: Open Access; TOOLS: Participatory Approaches",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -1611,7 +1611,7 @@
     "Key": "NDZI8CHM",
     "Title": "Social science for community engagement in humanitarian action capacity mapping (SS4CE-HA)",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; CO_DESIGN_LEVEL: 2; CASE STUDY LEVEL: Community; CASE STUDY THEME: Gender, Disability, & Inclusion; CASE STUDY GROUP: Other; ACCESS: Open Access",
+    "Manual_Tags": "PROJECT STEP: Design; CO_DESIGN_LEVEL: 2; CASE STUDY LEVEL: Community; CASE STUDY THEME: Gender, Disability, & Inclusion; CASE STUDY GROUP: Other; ACCESS: Open Access",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": "Design",
@@ -1626,7 +1626,7 @@
     "Key": "YIBH4AJB",
     "Title": "Minimum Quality Standards and Indicators for Community Engagement",
     "Extra": null,
-    "Manual Tags": "USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Implementation; CO_DESIGN_LEVEL: 1; QUALITY GUIDELINES: Partnerships; QUALITY GUIDELINES: Gender, Disability, & Inclusion; ACCESS: Open Access",
+    "Manual_Tags": "USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Implementation; CO_DESIGN_LEVEL: 1; QUALITY GUIDELINES: Partnerships; QUALITY GUIDELINES: Gender, Disability, & Inclusion; ACCESS: Open Access",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "USEFUL FOR": [
@@ -1646,7 +1646,7 @@
     "Key": "5MHZS9BP",
     "Title": "A systematic approach to behavior change interventions for the water and sanitation sector in developing countries: a conceptual model, a review, and a guideline",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Needs Assessment; ACCESS: Institutional Access; TOOLS: Behaviour Change Approaches",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Needs Assessment; ACCESS: Institutional Access; TOOLS: Behaviour Change Approaches",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -1665,7 +1665,7 @@
     "Key": "D2ENK5UR",
     "Title": "Behavioral indicators of household decision-making and demand for sanitation and potential gains from social marketing in Ghana",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Needs Assessment; ACCESS: Institutional Access; TOOLS: Behaviour Change Approaches",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Needs Assessment; ACCESS: Institutional Access; TOOLS: Behaviour Change Approaches",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -1684,7 +1684,7 @@
     "Key": "5FGXXZ27",
     "Title": "The potential for solar-diesel hybrid mini-grids in refugee camps: A case study of Nyabiheke camp, Rwanda",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; PROJECT STEP: Needs Assessment; PROJECT STEP: Implementation; CO_DESIGN_LEVEL: 1; CASE STUDY THEME: Systems Approaches to Energy Access; CASE STUDY GROUP: Refugee; CASE STUDY LEVEL: Household; CASE STUDY TECH: Cooking; CASE STUDY TECH: Lighting; ACCESS: Open Access",
+    "Manual_Tags": "PROJECT STEP: Design; PROJECT STEP: Needs Assessment; PROJECT STEP: Implementation; CO_DESIGN_LEVEL: 1; CASE STUDY THEME: Systems Approaches to Energy Access; CASE STUDY GROUP: Refugee; CASE STUDY LEVEL: Household; CASE STUDY TECH: Cooking; CASE STUDY TECH: Lighting; ACCESS: Open Access",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -1707,7 +1707,7 @@
     "Key": "WCH6QKPB",
     "Title": "“Changing the Game—Neighbourhood”: An Energy Transition Board Game, Developed in a Co-Design Process: A Case Study",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Private Sector; PROJECT STEP: Implementation; PROJECT STEP: M&E; ACCESS: Open Access; TOOLS: Multidisciplinary Approaches",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Private Sector; PROJECT STEP: Implementation; PROJECT STEP: M&E; ACCESS: Open Access; TOOLS: Multidisciplinary Approaches",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -1728,7 +1728,7 @@
     "Key": "F5K687KB",
     "Title": "The diffusion of solar home systems in Rwandan refugee camps",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; ACCESS: Open Access; TOOLS: Technical Approaches",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; ACCESS: Open Access; TOOLS: Technical Approaches",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": "Design",
@@ -1745,7 +1745,7 @@
     "Key": "G8A6UWFC",
     "Title": "The influence of Subsidy Initiatives on the adoption rates of sustainable energy technologies in Kakuma refugee camps",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Implementation; CO_DESIGN_LEVEL: 1; CASE STUDY THEME: Systems Approaches to Energy Access; CASE STUDY GROUP: Refugee; CASE STUDY LEVEL: Household; CASE STUDY TECH: Cooking; CASE STUDY TECH: Lighting; CASE STUDY THEME: Gender, Disability, & Inclusion; ACCESS: Open Access",
+    "Manual_Tags": "PROJECT STEP: Implementation; CO_DESIGN_LEVEL: 1; CASE STUDY THEME: Systems Approaches to Energy Access; CASE STUDY GROUP: Refugee; CASE STUDY LEVEL: Household; CASE STUDY TECH: Cooking; CASE STUDY TECH: Lighting; CASE STUDY THEME: Gender, Disability, & Inclusion; ACCESS: Open Access",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": "Implementation",
@@ -1767,7 +1767,7 @@
     "Key": "NIBQJRW4",
     "Title": "Thinking differently about energy access in displacement situations",
     "Extra": "RELATES_TO: PJUG6HJH",
-    "Manual Tags": "ACCESS: Open Access; BASIC RESOURCE; CO_DESIGN_LEVEL: 2; PROJECT STEP: Design; THEME: Policy; USEFUL FOR: Policy/Governments; USEFUL FOR: UN/INGO",
+    "Manual_Tags": "ACCESS: Open Access; BASIC RESOURCE; CO_DESIGN_LEVEL: 2; PROJECT STEP: Design; THEME: Policy; USEFUL FOR: Policy/Governments; USEFUL FOR: UN/INGO",
     "PARSED_RELATES_TO": [
       "PJUG6HJH"
     ],
@@ -1786,7 +1786,7 @@
     "Key": "SJCPY9X3",
     "Title": "Funding and Delivery Models for Modern Energy Cooking Services in Displacement Settings: A Review",
     "Extra": "RELATES_TO: 3EPLF2JZ",
-    "Manual Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 2; PROJECT STEP: Implementation; THEME: Systems Approaches to Energy Access; USEFUL FOR: NGO/Other; USEFUL FOR: Private Sector",
+    "Manual_Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 2; PROJECT STEP: Implementation; THEME: Systems Approaches to Energy Access; USEFUL FOR: NGO/Other; USEFUL FOR: Private Sector",
     "PARSED_RELATES_TO": [
       "3EPLF2JZ"
     ],
@@ -1805,7 +1805,7 @@
     "Key": "44353P8Q",
     "Title": "Reaching Scale in Access to Energy: Lessons from Practitioners",
     "Extra": "RELATES_TO: 4DZXLISG",
-    "Manual Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 1; PROJECT STEP: Design; THEME: Scale & Replicability; USEFUL FOR: NGO/Other; USEFUL FOR: UN/INGO",
+    "Manual_Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 1; PROJECT STEP: Design; THEME: Scale & Replicability; USEFUL FOR: NGO/Other; USEFUL FOR: UN/INGO",
     "PARSED_RELATES_TO": [
       "4DZXLISG"
     ],
@@ -1824,7 +1824,7 @@
     "Key": "4DZXLISG",
     "Title": "Scaling sustainable energy services for displaced people and their hosts: How policy and governance make a difference",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: Policy/Governments; THEME: Policy; CO_DESIGN_LEVEL: 3; THEME: Scale & Replicability; BASIC RESOURCE; ACCESS: Open Access",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: Policy/Governments; THEME: Policy; CO_DESIGN_LEVEL: 3; THEME: Scale & Replicability; BASIC RESOURCE; ACCESS: Open Access",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": "Design",
@@ -1841,7 +1841,7 @@
     "Key": "TGA29Z4U",
     "Title": "Strategies for energy access in refugee camps",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; THEME: Policy; PROJECT STEP: Needs Assessment; CO_DESIGN_LEVEL: 3; PROJECT STEP: Stakeholder Mapping",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; THEME: Policy; PROJECT STEP: Needs Assessment; CO_DESIGN_LEVEL: 3; PROJECT STEP: Stakeholder Mapping",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -1863,7 +1863,7 @@
     "Key": "9GMG4DCG",
     "Title": "Assessment of Market-Driven Solutions for Energy Access in Refugee Settlements in Sub-Saharan Africa",
     "Extra": "RELATES_TO: SFLF7U5U | 278LQD6Y | PX7YSLS2",
-    "Manual Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 2; PROJECT STEP: M&E; THEME: Systems Approaches to Energy Access; USEFUL FOR: NGO/Other; USEFUL FOR: UN/INGO",
+    "Manual_Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 2; PROJECT STEP: M&E; THEME: Systems Approaches to Energy Access; USEFUL FOR: NGO/Other; USEFUL FOR: UN/INGO",
     "PARSED_RELATES_TO": [
       "SFLF7U5U",
       "278LQD6Y",
@@ -1884,7 +1884,7 @@
     "Key": "7WWGCGGK",
     "Title": "Challenging traditional energy settings in the humanitarian aid: experiences from Doctors Without Borders",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Implementation; CO_DESIGN_LEVEL: 1; CASE STUDY THEME: Systems Approaches to Energy Access; CASE STUDY GROUP: Other; CASE STUDY THEME: Policy; CASE STUDY LEVEL: Insitutional; CASE STUDY TECH: Humanitarian Infrastructure; ACCESS: Open Access",
+    "Manual_Tags": "PROJECT STEP: Implementation; CO_DESIGN_LEVEL: 1; CASE STUDY THEME: Systems Approaches to Energy Access; CASE STUDY GROUP: Other; CASE STUDY THEME: Policy; CASE STUDY LEVEL: Insitutional; CASE STUDY TECH: Humanitarian Infrastructure; ACCESS: Open Access",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": "Implementation",
@@ -1903,7 +1903,7 @@
     "Key": "T2JDHYYP",
     "Title": "Inclusive energy solutions in refugee camps",
     "Extra": "RELATES_TO: 4WE9DH2K",
-    "Manual Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 2; PROJECT STEP: Design; THEME: Gender, Disability, & Inclusion; USEFUL FOR: Community; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: UN/INGO",
+    "Manual_Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 2; PROJECT STEP: Design; THEME: Gender, Disability, & Inclusion; USEFUL FOR: Community; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: UN/INGO",
     "PARSED_RELATES_TO": [
       "4WE9DH2K"
     ],
@@ -1924,7 +1924,7 @@
     "Key": "3NKDQXL6",
     "Title": "Planning sustainable electricity solutions for refugee settlements in sub-Saharan Africa",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; ACCESS: Open Access; TOOLS: Technical Approaches",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; ACCESS: Open Access; TOOLS: Technical Approaches",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": "Design",
@@ -1941,7 +1941,7 @@
     "Key": "XKW69YFV",
     "Title": "Policies for increased sustainable energy access in displacement settings",
     "Extra": "RELATES_TO: NIBQJRW4",
-    "Manual Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 3; PROJECT STEP: Implementation; PROJECT STEP: Needs Assessment; THEME: Policy; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: UN/INGO",
+    "Manual_Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 3; PROJECT STEP: Implementation; PROJECT STEP: Needs Assessment; THEME: Policy; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: UN/INGO",
     "PARSED_RELATES_TO": [
       "NIBQJRW4"
     ],
@@ -1964,7 +1964,7 @@
     "Key": "7YNN2QPF",
     "Title": "Local integration, local settlement and local solutions: disentangling the conceptual confusion",
     "Extra": null,
-    "Manual Tags": "USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; PROJECT STEP: Implementation; THEME: Localisation; CO_DESIGN_LEVEL: 3; USEFUL FOR: Community; ACCESS: Open Access",
+    "Manual_Tags": "USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; PROJECT STEP: Implementation; THEME: Localisation; CO_DESIGN_LEVEL: 3; USEFUL FOR: Community; ACCESS: Open Access",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "USEFUL FOR": [
@@ -1983,7 +1983,7 @@
     "Key": "278LQD6Y",
     "Title": "Unlocking Clean Cooking Pathways",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: Policy/Governments; THEME: Systems Approaches to Energy Access; CO_DESIGN_LEVEL: 1; ACCESS: Open Access",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: Policy/Governments; THEME: Systems Approaches to Energy Access; CO_DESIGN_LEVEL: 1; ACCESS: Open Access",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": "Design",
@@ -1997,7 +1997,7 @@
     "Key": "EW7VAC6I",
     "Title": "Partnerships Review: Humanitarian Innovation Fund",
     "Extra": null,
-    "Manual Tags": "USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Private Sector; PROJECT STEP: M&E; CO_DESIGN_LEVEL: 2; THEME: Partnerships; ACCESS: Open Access",
+    "Manual_Tags": "USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Private Sector; PROJECT STEP: M&E; CO_DESIGN_LEVEL: 2; THEME: Partnerships; ACCESS: Open Access",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "USEFUL FOR": [
@@ -2015,7 +2015,7 @@
     "Key": "7HQB6YX9",
     "Title": "Perspectives on “Giving Back”: A Conversation Between Researcher and Refugee",
     "Extra": "RELATES_TO: YYFX5Q7L",
-    "Manual Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 2; PROJECT STEP: Design; PROJECT STEP: Needs Assessment; PROJECT STEP: Stakeholder Mapping; THEME: Humanitarian Principles?; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: UN/INGO",
+    "Manual_Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 2; PROJECT STEP: Design; PROJECT STEP: Needs Assessment; PROJECT STEP: Stakeholder Mapping; THEME: Humanitarian Principles?; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: UN/INGO",
     "PARSED_RELATES_TO": [
       "YYFX5Q7L"
     ],
@@ -2039,7 +2039,7 @@
     "Key": "YYFX5Q7L",
     "Title": "Ethical Considerations: Research with People in Situations of Forced Migration",
     "Extra": "RELATES_TO: TTKN4GWJ",
-    "Manual Tags": "ACCESS: Open Access; BASIC RESOURCE; CO_DESIGN_LEVEL: 2; PROJECT STEP: Implementation; THEME: Humanitarian Principles?; USEFUL FOR: NGO/Other; USEFUL FOR: UN/INGO",
+    "Manual_Tags": "ACCESS: Open Access; BASIC RESOURCE; CO_DESIGN_LEVEL: 2; PROJECT STEP: Implementation; THEME: Humanitarian Principles?; USEFUL FOR: NGO/Other; USEFUL FOR: UN/INGO",
     "PARSED_RELATES_TO": [
       "TTKN4GWJ"
     ],
@@ -2058,7 +2058,7 @@
     "Key": "T6B56YQW",
     "Title": "Inclusive Energy Access 101 (Self-Paced Edition)",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; PROJECT STEP: Needs Assessment; PROJECT STEP: Implementation; PROJECT STEP: M&E; CO_DESIGN_LEVEL: 2; CORE TOOLKIT: Systems Approaches to Energy Access; CORE TOOLKIT: Capacity Building & Sharing; CORE TOOLKIT: Gender, Disability, & Inclusion; ACCESS: Open Access; PROJECT STEP: Stakeholder Mapping",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; PROJECT STEP: Needs Assessment; PROJECT STEP: Implementation; PROJECT STEP: M&E; CO_DESIGN_LEVEL: 2; CORE TOOLKIT: Systems Approaches to Energy Access; CORE TOOLKIT: Capacity Building & Sharing; CORE TOOLKIT: Gender, Disability, & Inclusion; ACCESS: Open Access; PROJECT STEP: Stakeholder Mapping",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -2074,7 +2074,7 @@
         "Policy/Governments"
       ],
       "CO_DESIGN_LEVEL": "2",
-      "CORE TOOLKIT": [
+      "CORE_TOOLKIT": [
         "Systems Approaches to Energy Access",
         "Capacity Building & Sharing",
         "Gender, Disability, & Inclusion"
@@ -2086,7 +2086,7 @@
     "Key": "H2J2KTG6",
     "Title": "From humanitarian relief-to-climate resilience: realizing a critical shift in humanitarian energy",
     "Extra": "RELATES_TO: HIAVKI7M",
-    "Manual Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 3; PROJECT STEP: Design; PROJECT STEP: Needs Assessment; USEFUL FOR: Community; USEFUL FOR: Policy/Governments; USEFUL FOR: UN/INGO",
+    "Manual_Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 3; PROJECT STEP: Design; PROJECT STEP: Needs Assessment; USEFUL FOR: Community; USEFUL FOR: Policy/Governments; USEFUL FOR: UN/INGO",
     "PARSED_RELATES_TO": [
       "HIAVKI7M"
     ],
@@ -2108,7 +2108,7 @@
     "Key": "MBV9S3XM",
     "Title": "“We are well able to stand on our own if we are given the opportunities”: perspectives from affected populations in Uganda",
     "Extra": "RELATES_TO: HIAVKI7M | W4IEJV9D",
-    "Manual Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 3; PROJECT STEP: M&E; THEME: Capacity Building & Sharing; USEFUL FOR: Community; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: UN/INGO",
+    "Manual_Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 3; PROJECT STEP: M&E; THEME: Capacity Building & Sharing; USEFUL FOR: Community; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: UN/INGO",
     "PARSED_RELATES_TO": [
       "HIAVKI7M",
       "W4IEJV9D"
@@ -2130,7 +2130,7 @@
     "Key": "E86TD5M4",
     "Title": "The Community-Led Total Sanitation Approach",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Needs Assessment; USEFUL FOR: Community; ACCESS: Open Access; TOOLS: Behaviour Change Approaches",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Needs Assessment; USEFUL FOR: Community; ACCESS: Open Access; TOOLS: Behaviour Change Approaches",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -2150,7 +2150,7 @@
     "Key": "ZX4TFEYP",
     "Title": "A Pathway to Localisation Imapct: Laying the foundations",
     "Extra": null,
-    "Manual Tags": "USEFUL FOR: UN/INGO; USEFUL FOR: Policy/Governments; PROJECT STEP: Implementation; THEME: Localisation; CO_DESIGN_LEVEL: 3; BASIC RESOURCE; ACCESS: Open Access",
+    "Manual_Tags": "USEFUL FOR: UN/INGO; USEFUL FOR: Policy/Governments; PROJECT STEP: Implementation; THEME: Localisation; CO_DESIGN_LEVEL: 3; BASIC RESOURCE; ACCESS: Open Access",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "USEFUL FOR": [
@@ -2167,7 +2167,7 @@
     "Key": "GQCNRWYU",
     "Title": "The role of community-led innovation in decolonising aid",
     "Extra": "RELATES_TO: W4IEJV9D",
-    "Manual Tags": "ACCESS: Open Access; BASIC RESOURCE; CO_DESIGN_LEVEL: 3; PROJECT STEP: Design; PROJECT STEP: Implementation; PROJECT STEP: M&E; PROJECT STEP: Needs Assessment; PROJECT STEP: Stakeholder Mapping; THEME: Decolonisation; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: UN/INGO",
+    "Manual_Tags": "ACCESS: Open Access; BASIC RESOURCE; CO_DESIGN_LEVEL: 3; PROJECT STEP: Design; PROJECT STEP: Implementation; PROJECT STEP: M&E; PROJECT STEP: Needs Assessment; PROJECT STEP: Stakeholder Mapping; THEME: Decolonisation; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: UN/INGO",
     "PARSED_RELATES_TO": [
       "W4IEJV9D"
     ],
@@ -2193,7 +2193,7 @@
     "Key": "FTNB5BX7",
     "Title": "What is the community and what are community-led approaches?",
     "Extra": "RELATES_TO: HIAVKI7M",
-    "Manual Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 2; PROJECT STEP: Design; PROJECT STEP: Needs Assessment; THEME: Capacity Building & Sharing; THEME: Decolonisation; USEFUL FOR: Community; USEFUL FOR: NGO/Other; USEFUL FOR: UN/INGO",
+    "Manual_Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 2; PROJECT STEP: Design; PROJECT STEP: Needs Assessment; THEME: Capacity Building & Sharing; THEME: Decolonisation; USEFUL FOR: Community; USEFUL FOR: NGO/Other; USEFUL FOR: UN/INGO",
     "PARSED_RELATES_TO": [
       "HIAVKI7M"
     ],
@@ -2219,7 +2219,7 @@
     "Key": "TNMIEKBJ",
     "Title": "Human-centred design in humanitarian settings: Methodologies for inclusivity",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Needs Assessment; ACCESS: Open Access; TOOLS: HCD & Design Thinking; PROJECT STEP: Stakeholder Mapping",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Needs Assessment; ACCESS: Open Access; TOOLS: HCD & Design Thinking; PROJECT STEP: Stakeholder Mapping",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -2239,7 +2239,7 @@
     "Key": "VYTTKBZC",
     "Title": "Human-Centred Design and Humanitarian Innovation: Designing Solutions with People Affected by Disaster",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Needs Assessment; ACCESS: Open Access; TOOLS: HCD & Design Thinking; PROJECT STEP: Stakeholder Mapping",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Needs Assessment; ACCESS: Open Access; TOOLS: HCD & Design Thinking; PROJECT STEP: Stakeholder Mapping",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -2259,7 +2259,7 @@
     "Key": "LPICUS8Y",
     "Title": "Development of a scenario-based instrument to assess co-design expertise in humanitarian engineering",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Implementation; PROJECT STEP: M&E; ACCESS: Institutional Access; TOOLS: Multidisciplinary Approaches",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Implementation; PROJECT STEP: M&E; ACCESS: Institutional Access; TOOLS: Multidisciplinary Approaches",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -2279,7 +2279,7 @@
     "Key": "WPXITMQQ",
     "Title": "Assessing co-creation in strategic planning for urban energy transitions",
     "Extra": null,
-    "Manual Tags": "USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; THEME: Policy; PROJECT STEP: M&E; CO_DESIGN_LEVEL: 3; THEME: Partnerships; ACCESS: Open Access",
+    "Manual_Tags": "USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; THEME: Policy; PROJECT STEP: M&E; CO_DESIGN_LEVEL: 3; THEME: Partnerships; ACCESS: Open Access",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "USEFUL FOR": [
@@ -2301,7 +2301,7 @@
     "Key": "DMRQ33ZH",
     "Title": "The Assessment of Meaningful Outcomes from Co-design: A Case Study from the Energy Sector",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: M&E; CO_DESIGN_LEVEL: 1; CASE STUDY GROUP: Other; CASE STUDY THEME: Policy; ACCESS: Open Access",
+    "Manual_Tags": "PROJECT STEP: M&E; CO_DESIGN_LEVEL: 1; CASE STUDY GROUP: Other; CASE STUDY THEME: Policy; ACCESS: Open Access",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": "M&E",
@@ -2315,7 +2315,7 @@
     "Key": "QRM8EPAW",
     "Title": "Working towards modern, affordable & sustainable energy systems in the context of displacement. Recommendations for researchers and practitioners",
     "Extra": null,
-    "Manual Tags": "USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Implementation; PROJECT STEP: M&E; CO_DESIGN_LEVEL: 2; ACCESS: Open Access; BASIC TOOLS",
+    "Manual_Tags": "USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Implementation; PROJECT STEP: M&E; CO_DESIGN_LEVEL: 2; ACCESS: Open Access; BASIC TOOLS",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "USEFUL FOR": [
@@ -2334,7 +2334,7 @@
     "Key": "JBG8RFBC",
     "Title": "PMSD Toolkit",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Private Sector; PROJECT STEP: Needs Assessment; CO_DESIGN_LEVEL: 2; USEFUL FOR: Community; CORE TOOLKIT: Systems Approaches to Energy Access; CORE TOOLKIT: Gender, Disability, & Inclusion; ACCESS: Open Access; PROJECT STEP: Stakeholder Mapping",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Private Sector; PROJECT STEP: Needs Assessment; CO_DESIGN_LEVEL: 2; USEFUL FOR: Community; CORE TOOLKIT: Systems Approaches to Energy Access; CORE TOOLKIT: Gender, Disability, & Inclusion; ACCESS: Open Access; PROJECT STEP: Stakeholder Mapping",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -2349,7 +2349,7 @@
         "Community"
       ],
       "CO_DESIGN_LEVEL": "2",
-      "CORE TOOLKIT": [
+      "CORE_TOOLKIT": [
         "Systems Approaches to Energy Access",
         "Gender, Disability, & Inclusion"
       ],
@@ -2360,7 +2360,7 @@
     "Key": "HFJZA6F7",
     "Title": "Co-Design for Humanitarian Innovators",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; THEME: Policy; CO_DESIGN_LEVEL: 3; BASIC RESOURCE; ACCESS: Open Access",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; THEME: Policy; CO_DESIGN_LEVEL: 3; BASIC RESOURCE; ACCESS: Open Access",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": "Design",
@@ -2379,7 +2379,7 @@
     "Key": "LZY5KUXS",
     "Title": "Co-Creation Toolkit: From design to implementation",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Implementation; CO_DESIGN_LEVEL: 1; SUPPORTING TOOLKIT: Systems Approaches to Energy Access; SUPPORTING TOOLKIT: Capacity Building & Sharing; ACCESS: Open Access",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Implementation; CO_DESIGN_LEVEL: 1; SUPPORTING TOOLKIT: Systems Approaches to Energy Access; SUPPORTING TOOLKIT: Capacity Building & Sharing; ACCESS: Open Access",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -2402,7 +2402,7 @@
     "Key": "4WE7TBMQ",
     "Title": "Refugee settlements in transition: Energy access and development challenges in Northern Uganda",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; ACCESS: Open Access; TOOLS: Technical Approaches",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; ACCESS: Open Access; TOOLS: Technical Approaches",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": "Design",
@@ -2419,7 +2419,7 @@
     "Key": "MFJR2U3P",
     "Title": "Solar cooperatives give refugees and locals in Ethiopia clean energy and livelihoods",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Implementation; CO_DESIGN_LEVEL: 2; CASE STUDY GROUP: Refugee; CASE STUDY LEVEL: Community; CASE STUDY TECH: Lighting; CASE STUDY LEVEL: Policy/Systemic; CASE STUDY GROUP: Host Community; CASE STUDY THEME: Partnerships; CASE STUDY THEME: Scale & Replicability; CASE STUDY THEME: Localisation; ACCESS: Open Access",
+    "Manual_Tags": "PROJECT STEP: Implementation; CO_DESIGN_LEVEL: 2; CASE STUDY GROUP: Refugee; CASE STUDY LEVEL: Community; CASE STUDY TECH: Lighting; CASE STUDY LEVEL: Policy/Systemic; CASE STUDY GROUP: Host Community; CASE STUDY THEME: Partnerships; CASE STUDY THEME: Scale & Replicability; CASE STUDY THEME: Localisation; ACCESS: Open Access",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": "Implementation",
@@ -2445,7 +2445,7 @@
     "Key": "VCIKRPQ4",
     "Title": "Transforming North-South research partnerships: Lessons learned from energy, technology & enterprise global challenge research fund projects",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: NGO/Other; USEFUL FOR: Private Sector; PROJECT STEP: Implementation; CO_DESIGN_LEVEL: 2; THEME: Partnerships; ACCESS: Open Access; PROJECT STEP: Stakeholder Mapping",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: NGO/Other; USEFUL FOR: Private Sector; PROJECT STEP: Implementation; CO_DESIGN_LEVEL: 2; THEME: Partnerships; ACCESS: Open Access; PROJECT STEP: Stakeholder Mapping",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -2466,7 +2466,7 @@
     "Key": "3QDW599Y",
     "Title": "Design with and by Marginalized People in Humanitarian Makerspaces",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; PROJECT STEP: Needs Assessment; PROJECT STEP: Implementation; PROJECT STEP: M&E; USEFUL FOR: Community; ACCESS: Open Access; TOOLS: Participatory Approaches; PROJECT STEP: Stakeholder Mapping",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; PROJECT STEP: Needs Assessment; PROJECT STEP: Implementation; PROJECT STEP: M&E; USEFUL FOR: Community; ACCESS: Open Access; TOOLS: Participatory Approaches; PROJECT STEP: Stakeholder Mapping",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -2491,7 +2491,7 @@
     "Key": "F5JKXSAQ",
     "Title": "Case Study on Co-Design Methodology for Improved Cook Stove Solutions for Rural Community in India",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; CO_DESIGN_LEVEL: 1; CASE STUDY LEVEL: Community; CASE STUDY LEVEL: Household; CASE STUDY TECH: Cooking; CASE STUDY THEME: Gender, Disability, & Inclusion; CASE STUDY GROUP: Other; ACCESS: Open Access",
+    "Manual_Tags": "PROJECT STEP: Design; CO_DESIGN_LEVEL: 1; CASE STUDY LEVEL: Community; CASE STUDY LEVEL: Household; CASE STUDY TECH: Cooking; CASE STUDY THEME: Gender, Disability, & Inclusion; CASE STUDY GROUP: Other; ACCESS: Open Access",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": "Design",
@@ -2510,7 +2510,7 @@
     "Key": "8ZVWYIIJ",
     "Title": "Photovoltaic Microgrid Business Models for Energy Delivery Services in Camps for Displaced People",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; ACCESS: Open Access; TOOLS: Technical Approaches",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; ACCESS: Open Access; TOOLS: Technical Approaches",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": "Design",
@@ -2527,7 +2527,7 @@
     "Key": "HB25WRT9",
     "Title": "Human-Centered Design as an Approach for Place-Based Innovation in Public Health: A Case Study from Oakland, California",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Needs Assessment; ACCESS: Institutional Access; TOOLS: HCD & Design Thinking; PROJECT STEP: Stakeholder Mapping",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Needs Assessment; ACCESS: Institutional Access; TOOLS: HCD & Design Thinking; PROJECT STEP: Stakeholder Mapping",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -2547,7 +2547,7 @@
     "Key": "VNBWU8F9",
     "Title": "Time to let go: remaking humanitarian action for the modern era",
     "Extra": null,
-    "Manual Tags": "USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; PROJECT STEP: Implementation; THEME: Localisation; CO_DESIGN_LEVEL: 3; BASIC RESOURCE; ACCESS: Open Access",
+    "Manual_Tags": "USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; PROJECT STEP: Implementation; THEME: Localisation; CO_DESIGN_LEVEL: 3; BASIC RESOURCE; ACCESS: Open Access",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "USEFUL FOR": [
@@ -2565,7 +2565,7 @@
     "Key": "R8ZYZEHD",
     "Title": "Effects of trust and public participation on acceptability of renewable energy projects in the Netherlands and China",
     "Extra": "RELATES_TO: VCIKRPQ4",
-    "Manual Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 1; PROJECT STEP: Implementation; PROJECT STEP: Needs Assessment; THEME: Partnerships; USEFUL FOR: Community; USEFUL FOR: NGO/Other; USEFUL FOR: UN/INGO",
+    "Manual_Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 1; PROJECT STEP: Implementation; PROJECT STEP: Needs Assessment; THEME: Partnerships; USEFUL FOR: Community; USEFUL FOR: NGO/Other; USEFUL FOR: UN/INGO",
     "PARSED_RELATES_TO": [
       "VCIKRPQ4"
     ],
@@ -2588,7 +2588,7 @@
     "Key": "AKATF2B5",
     "Title": "Mobile-enabled energy for humanitarian contexts: The case for pay-as-you-go solar home systems in Kakuma Refugee Camp",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Implementation; CO_DESIGN_LEVEL: 1; CASE STUDY THEME: Systems Approaches to Energy Access; CASE STUDY GROUP: Refugee; CASE STUDY LEVEL: Household; CASE STUDY TECH: Lighting; CASE STUDY THEME: Scale & Replicability; ACCESS: Open Access",
+    "Manual_Tags": "PROJECT STEP: Implementation; CO_DESIGN_LEVEL: 1; CASE STUDY THEME: Systems Approaches to Energy Access; CASE STUDY GROUP: Refugee; CASE STUDY LEVEL: Household; CASE STUDY TECH: Lighting; CASE STUDY THEME: Scale & Replicability; ACCESS: Open Access",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": "Implementation",
@@ -2607,7 +2607,7 @@
     "Key": "3EPLF2JZ",
     "Title": "Innovative Financing  for Humanitarian Energy  Interventions",
     "Extra": "RELATES_TO: SJCPY9X3",
-    "Manual Tags": "ACCESS: Open Access; BASIC RESOURCE; CO_DESIGN_LEVEL: 2; PROJECT STEP: Implementation; THEME: Systems Approaches to Energy Access; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; USEFUL FOR: UN/INGO",
+    "Manual_Tags": "ACCESS: Open Access; BASIC RESOURCE; CO_DESIGN_LEVEL: 2; PROJECT STEP: Implementation; THEME: Systems Approaches to Energy Access; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; USEFUL FOR: UN/INGO",
     "PARSED_RELATES_TO": [
       "SJCPY9X3"
     ],
@@ -2628,7 +2628,7 @@
     "Key": "VGHPLERH",
     "Title": "Solar kitchens: A safe, sustainable solution for refugee women",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; PROJECT STEP: Needs Assessment; PROJECT STEP: Implementation; CO_DESIGN_LEVEL: 3; CASE STUDY THEME: Systems Approaches to Energy Access; CASE STUDY GROUP: Refugee; CASE STUDY LEVEL: Community; CASE STUDY TECH: Cooking; CASE STUDY THEME: Capacity Building & Sharing; CASE STUDY THEME: Gender, Disability, & Inclusion; CASE STUDY LEVEL: Insitutional; ACCESS: Open Access; PROJECT STEP: Stakeholder Mapping",
+    "Manual_Tags": "PROJECT STEP: Design; PROJECT STEP: Needs Assessment; PROJECT STEP: Implementation; CO_DESIGN_LEVEL: 3; CASE STUDY THEME: Systems Approaches to Energy Access; CASE STUDY GROUP: Refugee; CASE STUDY LEVEL: Community; CASE STUDY TECH: Cooking; CASE STUDY THEME: Capacity Building & Sharing; CASE STUDY THEME: Gender, Disability, & Inclusion; CASE STUDY LEVEL: Insitutional; ACCESS: Open Access; PROJECT STEP: Stakeholder Mapping",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -2656,7 +2656,7 @@
     "Key": "ZK5LPRYL",
     "Title": "TIME to Change: Rethinking Humanitarian Energy Access",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Implementation; PROJECT STEP: M&E; ACCESS: Open Access; TOOLS: Multidisciplinary Approaches",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Implementation; PROJECT STEP: M&E; ACCESS: Open Access; TOOLS: Multidisciplinary Approaches",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -2676,7 +2676,7 @@
     "Key": "2GZ5865Z",
     "Title": "Access to Clean Energy for Refugees: Rwanda Case Studies",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Implementation; CO_DESIGN_LEVEL: 2; CASE STUDY THEME: Systems Approaches to Energy Access; CASE STUDY GROUP: Refugee; CASE STUDY LEVEL: Community; CASE STUDY LEVEL: Household; CASE STUDY LEVEL: Productive Use; CASE STUDY TECH: Cooking; CASE STUDY TECH: Lighting; ACCESS: Open Access",
+    "Manual_Tags": "PROJECT STEP: Implementation; CO_DESIGN_LEVEL: 2; CASE STUDY THEME: Systems Approaches to Energy Access; CASE STUDY GROUP: Refugee; CASE STUDY LEVEL: Community; CASE STUDY LEVEL: Household; CASE STUDY LEVEL: Productive Use; CASE STUDY TECH: Cooking; CASE STUDY TECH: Lighting; ACCESS: Open Access",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": "Implementation",
@@ -2699,7 +2699,7 @@
     "Key": "L93EY22D",
     "Title": "Multi-actor cooking Energy Strategy for Refugees and Host Communities in Ethiopia (2022-2030)",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; PROJECT STEP: Needs Assessment; PROJECT STEP: M&E; CO_DESIGN_LEVEL: 1; CASE STUDY GROUP: Refugee; CASE STUDY LEVEL: Community; CASE STUDY LEVEL: Household; CASE STUDY TECH: Cooking; CASE STUDY GROUP: Host Community; CASE STUDY THEME: Policy; ACCESS: Open Access; PROJECT STEP: Stakeholder Mapping",
+    "Manual_Tags": "PROJECT STEP: Design; PROJECT STEP: Needs Assessment; PROJECT STEP: M&E; CO_DESIGN_LEVEL: 1; CASE STUDY GROUP: Refugee; CASE STUDY LEVEL: Community; CASE STUDY LEVEL: Household; CASE STUDY TECH: Cooking; CASE STUDY GROUP: Host Community; CASE STUDY THEME: Policy; ACCESS: Open Access; PROJECT STEP: Stakeholder Mapping",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -2726,7 +2726,7 @@
     "Key": "3VAZU3WY",
     "Title": "Promoting Market Based Energy Access for Cooking and Lighting in Kakuma Refugee: Camp Experiences and lessons learned",
     "Extra": "RELATES_TO: SFLF7U5U",
-    "Manual Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 2; PROJECT STEP: Implementation; THEME: Systems Approaches to Energy Access; USEFUL FOR: NGO/Other; USEFUL FOR: Private Sector; USEFUL FOR: UN/INGO",
+    "Manual_Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 2; PROJECT STEP: Implementation; THEME: Systems Approaches to Energy Access; USEFUL FOR: NGO/Other; USEFUL FOR: Private Sector; USEFUL FOR: UN/INGO",
     "PARSED_RELATES_TO": [
       "SFLF7U5U"
     ],
@@ -2746,7 +2746,7 @@
     "Key": "2KY82RF2",
     "Title": "Solar Kitchens Sustainable energy Solution - Care International in Uganda",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; PROJECT STEP: Needs Assessment; PROJECT STEP: Implementation; CO_DESIGN_LEVEL: 3; CASE STUDY THEME: Systems Approaches to Energy Access; CASE STUDY GROUP: Refugee; CASE STUDY LEVEL: Community; CASE STUDY TECH: Cooking; CASE STUDY THEME: Capacity Building & Sharing; CASE STUDY THEME: Gender, Disability, & Inclusion; CASE STUDY LEVEL: Insitutional; ACCESS: Open Access; PROJECT STEP: Stakeholder Mapping",
+    "Manual_Tags": "PROJECT STEP: Design; PROJECT STEP: Needs Assessment; PROJECT STEP: Implementation; CO_DESIGN_LEVEL: 3; CASE STUDY THEME: Systems Approaches to Energy Access; CASE STUDY GROUP: Refugee; CASE STUDY LEVEL: Community; CASE STUDY TECH: Cooking; CASE STUDY THEME: Capacity Building & Sharing; CASE STUDY THEME: Gender, Disability, & Inclusion; CASE STUDY LEVEL: Insitutional; ACCESS: Open Access; PROJECT STEP: Stakeholder Mapping",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -2774,7 +2774,7 @@
     "Key": "WXUYAZY7",
     "Title": "Behavioural change campaign: promoting improved cooking solutions in Kakuma refugee camp (Key research and implementation findings)",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; PROJECT STEP: Needs Assessment; ACCESS: Open Access; TOOLS: Behaviour Change Approaches",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; PROJECT STEP: Needs Assessment; ACCESS: Open Access; TOOLS: Behaviour Change Approaches",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -2794,7 +2794,7 @@
     "Key": "3W6FQABV",
     "Title": "The State of Sustainable Household Energy Access in Refugee Settings in Uganda",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; PROJECT STEP: Needs Assessment; CO_DESIGN_LEVEL: 2; CASE STUDY THEME: Systems Approaches to Energy Access; CASE STUDY GROUP: Refugee; CASE STUDY LEVEL: Household; CASE STUDY TECH: Cooking; CASE STUDY TECH: Lighting; CASE STUDY THEME: Policy; ACCESS: Open Access; PROJECT STEP: Stakeholder Mapping",
+    "Manual_Tags": "PROJECT STEP: Design; PROJECT STEP: Needs Assessment; CO_DESIGN_LEVEL: 2; CASE STUDY THEME: Systems Approaches to Energy Access; CASE STUDY GROUP: Refugee; CASE STUDY LEVEL: Household; CASE STUDY TECH: Cooking; CASE STUDY TECH: Lighting; CASE STUDY THEME: Policy; ACCESS: Open Access; PROJECT STEP: Stakeholder Mapping",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -2820,7 +2820,7 @@
     "Key": "E4PQXA54",
     "Title": "Access to Energy for (Micro) Businesses in Kakuma Refugee Camp and Kalobeyei Integrated Settlement: Business Survey Report",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Needs Assessment; CO_DESIGN_LEVEL: 1; CASE STUDY THEME: Systems Approaches to Energy Access; CASE STUDY GROUP: Refugee; CASE STUDY LEVEL: Community; CASE STUDY LEVEL: Household; CASE STUDY LEVEL: Productive Use; CASE STUDY TECH: Cooking; CASE STUDY TECH: Lighting; ACCESS: Open Access",
+    "Manual_Tags": "PROJECT STEP: Needs Assessment; CO_DESIGN_LEVEL: 1; CASE STUDY THEME: Systems Approaches to Energy Access; CASE STUDY GROUP: Refugee; CASE STUDY LEVEL: Community; CASE STUDY LEVEL: Household; CASE STUDY LEVEL: Productive Use; CASE STUDY TECH: Cooking; CASE STUDY TECH: Lighting; ACCESS: Open Access",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": "Needs Assessment",
@@ -2843,7 +2843,7 @@
     "Key": "LFACAPMV",
     "Title": "Mediating household energy transitions through co-design in urban Kenya, Uganda and South Africa",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Implementation; PROJECT STEP: M&E; ACCESS: Institutional Access; TOOLS: Multidisciplinary Approaches",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Implementation; PROJECT STEP: M&E; ACCESS: Institutional Access; TOOLS: Multidisciplinary Approaches",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -2863,7 +2863,7 @@
     "Key": "PJUG6HJH",
     "Title": "The State of the Humanitarian Energy Sector: Challenges, Progress and Issues in 2022",
     "Extra": "RELATES_TO: J77RTYWY",
-    "Manual Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 2; PROJECT STEP: M&E; THEME: Partnerships; THEME: Policy; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: UN/INGO",
+    "Manual_Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 2; PROJECT STEP: M&E; THEME: Partnerships; THEME: Policy; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: UN/INGO",
     "PARSED_RELATES_TO": [
       "J77RTYWY"
     ],
@@ -2886,7 +2886,7 @@
     "Key": "AF2KKNH9",
     "Title": "Promoting inclusive Natural Resource Management among refugees and host community",
     "Extra": null,
-    "Manual Tags": "USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; PROJECT STEP: Implementation; THEME: Capacity Building & Sharing; CO_DESIGN_LEVEL: 3; USEFUL FOR: Community; ACCESS: Open Access; THEME: Gender, Disability, & Inclusion",
+    "Manual_Tags": "USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; PROJECT STEP: Implementation; THEME: Capacity Building & Sharing; CO_DESIGN_LEVEL: 3; USEFUL FOR: Community; ACCESS: Open Access; THEME: Gender, Disability, & Inclusion",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "USEFUL FOR": [
@@ -2908,7 +2908,7 @@
     "Key": "FT459IJN",
     "Title": "Finding the Uncomfortable Solution: Responsible Innovation in Humanitarian Energy",
     "Extra": "RELATES_TO: TNUSGCEG",
-    "Manual Tags": "ACCESS: Open Access; BASIC RESOURCE; CO_DESIGN_LEVEL: 2; PROJECT STEP: Design; PROJECT STEP: Implementation; PROJECT STEP: M&E; THEME: Capacity Building & Sharing; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: UN/INGO",
+    "Manual_Tags": "ACCESS: Open Access; BASIC RESOURCE; CO_DESIGN_LEVEL: 2; PROJECT STEP: Design; PROJECT STEP: Implementation; PROJECT STEP: M&E; THEME: Capacity Building & Sharing; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: UN/INGO",
     "PARSED_RELATES_TO": [
       "TNUSGCEG"
     ],
@@ -2932,7 +2932,7 @@
     "Key": "J77RTYWY",
     "Title": "Leaving no aspect of sustainability behind: A framework for designing sustainable energy interventions applied to refugee camps",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; THEME: Policy; PROJECT STEP: Needs Assessment; THEME: Localisation; CO_DESIGN_LEVEL: 3; ACCESS: Open Access; PROJECT STEP: Stakeholder Mapping",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; THEME: Policy; PROJECT STEP: Needs Assessment; THEME: Localisation; CO_DESIGN_LEVEL: 3; ACCESS: Open Access; PROJECT STEP: Stakeholder Mapping",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -2957,7 +2957,7 @@
     "Key": "EL3L8KZ6",
     "Title": "EnDev Market-based Energy Access Project in Kakuma refugee camp & Kalobeyei integrated settlement, Kenya",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Needs Assessment; PROJECT STEP: Implementation; PROJECT STEP: M&E; CO_DESIGN_LEVEL: 1; CASE STUDY THEME: Systems Approaches to Energy Access; CASE STUDY GROUP: Refugee; CASE STUDY LEVEL: Community; CASE STUDY LEVEL: Productive Use; CASE STUDY TECH: Cooking; CASE STUDY TECH: Lighting; ACCESS: Open Access; PROJECT STEP: Stakeholder Mapping",
+    "Manual_Tags": "PROJECT STEP: Needs Assessment; PROJECT STEP: Implementation; PROJECT STEP: M&E; CO_DESIGN_LEVEL: 1; CASE STUDY THEME: Systems Approaches to Energy Access; CASE STUDY GROUP: Refugee; CASE STUDY LEVEL: Community; CASE STUDY LEVEL: Productive Use; CASE STUDY TECH: Cooking; CASE STUDY TECH: Lighting; ACCESS: Open Access; PROJECT STEP: Stakeholder Mapping",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -2984,7 +2984,7 @@
     "Key": "C437I3I6",
     "Title": "Do No Harm in refugee humanitarian aid: the case of the Rohingya humanitarian response",
     "Extra": null,
-    "Manual Tags": "USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Implementation; PROJECT STEP: M&E; CO_DESIGN_LEVEL: 2; ACCESS: Open Access; THEME: Humanitarian Principles?",
+    "Manual_Tags": "USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Implementation; PROJECT STEP: M&E; CO_DESIGN_LEVEL: 2; ACCESS: Open Access; THEME: Humanitarian Principles?",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "USEFUL FOR": [
@@ -3004,7 +3004,7 @@
     "Key": "DVK9TED6",
     "Title": "Do No Harm Workshop: Participants Manual",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; CO_DESIGN_LEVEL: 1; SUPPORTING TOOLKIT: Humanitarin Principles; ACCESS: Open Access",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; CO_DESIGN_LEVEL: 1; SUPPORTING TOOLKIT: Humanitarin Principles; ACCESS: Open Access",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": "Design",
@@ -3022,7 +3022,7 @@
     "Key": "SUEVT5TI",
     "Title": "Applying Better Programming Initiative: Do No Harm in a Changing Context",
     "Extra": "RELATES_TO: C437I3I6 | H5AB7IDH",
-    "Manual Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 0; CO_DESIGN_LEVEL: 1; PROJECT STEP: Implementation; THEME: Humanitarian Principles?; USEFUL FOR: NGO/Other; USEFUL FOR: UN/INGO",
+    "Manual_Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 0; CO_DESIGN_LEVEL: 1; PROJECT STEP: Implementation; THEME: Humanitarian Principles?; USEFUL FOR: NGO/Other; USEFUL FOR: UN/INGO",
     "PARSED_RELATES_TO": [
       "C437I3I6",
       "H5AB7IDH"
@@ -3045,7 +3045,7 @@
     "Key": "NL7ZMUCC",
     "Title": "Challenges to ethical obligations and humanitarian principles in conflict settings: a systematic review",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Needs Assessment; PROJECT STEP: Implementation; PROJECT STEP: M&E; CO_DESIGN_LEVEL: 2; CO_DESIGN_LEVEL: 3; CO_DESIGN_LEVEL: 1; CO_DESIGN_LEVEL: 0; ACCESS: Open Access; THEME: Humanitarian Principles?",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Needs Assessment; PROJECT STEP: Implementation; PROJECT STEP: M&E; CO_DESIGN_LEVEL: 2; CO_DESIGN_LEVEL: 3; CO_DESIGN_LEVEL: 1; CO_DESIGN_LEVEL: 0; ACCESS: Open Access; THEME: Humanitarian Principles?",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -3072,7 +3072,7 @@
     "Key": "75UL9APZ",
     "Title": "Why aid workers don’t have to be neutral",
     "Extra": "RELATES_TO: NL7ZMUCC | 7HQB6YX9",
-    "Manual Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 2; PROJECT STEP: Implementation; THEME: Humanitarian Principles?; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: UN/INGO",
+    "Manual_Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 2; PROJECT STEP: Implementation; THEME: Humanitarian Principles?; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: UN/INGO",
     "PARSED_RELATES_TO": [
       "NL7ZMUCC",
       "7HQB6YX9"
@@ -3093,7 +3093,7 @@
     "Key": "X52D5MM3",
     "Title": "Humanitarian Innovation Guide",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Private Sector; PROJECT STEP: Needs Assessment; PROJECT STEP: Implementation; PROJECT STEP: M&E; CO_DESIGN_LEVEL: 3; CORE TOOLKIT: Systems Approaches to Energy Access; CORE TOOLKIT: Scale & Replicability; ACCESS: Open Source; PROJECT STEP: Stakeholder Mapping",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Private Sector; PROJECT STEP: Needs Assessment; PROJECT STEP: Implementation; PROJECT STEP: M&E; CO_DESIGN_LEVEL: 3; CORE TOOLKIT: Systems Approaches to Energy Access; CORE TOOLKIT: Scale & Replicability; ACCESS: Open Source; PROJECT STEP: Stakeholder Mapping",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -3109,7 +3109,7 @@
         "Private Sector"
       ],
       "CO_DESIGN_LEVEL": "3",
-      "CORE TOOLKIT": [
+      "CORE_TOOLKIT": [
         "Systems Approaches to Energy Access",
         "Scale & Replicability"
       ],
@@ -3120,7 +3120,7 @@
     "Key": "L7797LTZ",
     "Title": "Too tough to scale? Challenges to scaling innovation in the humanitarian sector",
     "Extra": "RELATES_TO: 4DZXLISG",
-    "Manual Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 2; PROJECT STEP: Design; PROJECT STEP: Implementation; PROJECT STEP: M&E; THEME: Scale & Replicability; USEFUL FOR: NGO/Other; USEFUL FOR: Private Sector; USEFUL FOR: UN/INGO",
+    "Manual_Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 2; PROJECT STEP: Design; PROJECT STEP: Implementation; PROJECT STEP: M&E; THEME: Scale & Replicability; USEFUL FOR: NGO/Other; USEFUL FOR: Private Sector; USEFUL FOR: UN/INGO",
     "PARSED_RELATES_TO": [
       "4DZXLISG"
     ],
@@ -3144,7 +3144,7 @@
     "Key": "SFLF7U5U",
     "Title": "Market-Based Approaches for Humanitarain Innovators",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Needs Assessment; PROJECT STEP: Implementation; PROJECT STEP: M&E; THEME: Systems Approaches to Energy Access; CO_DESIGN_LEVEL: 2; ACCESS: Open Access; PROJECT STEP: Stakeholder Mapping",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Needs Assessment; PROJECT STEP: Implementation; PROJECT STEP: M&E; THEME: Systems Approaches to Energy Access; CO_DESIGN_LEVEL: 2; ACCESS: Open Access; PROJECT STEP: Stakeholder Mapping",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -3167,7 +3167,7 @@
     "Key": "D2XXRWN9",
     "Title": "Informal Approaches for Humanitarian Innovators",
     "Extra": "REALTES_TO: 8RAQMQLC | SFLF7U5U",
-    "Manual Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 3; PROJECT STEP: Implementation; PROJECT STEP: M&E; THEME: Systems Approaches to Energy Access; USEFUL FOR: NGO/Other; USEFUL FOR: Private Sector; USEFUL FOR: UN/INGO",
+    "Manual_Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 3; PROJECT STEP: Implementation; PROJECT STEP: M&E; THEME: Systems Approaches to Energy Access; USEFUL FOR: NGO/Other; USEFUL FOR: Private Sector; USEFUL FOR: UN/INGO",
     "PARSED_RELATES_TO": [
       "REALTES_TO: 8RAQMQLC",
       "SFLF7U5U"
@@ -3191,7 +3191,7 @@
     "Key": "XJSBM9FX",
     "Title": "Equitable Partnerships for Humanitarian Innovators",
     "Extra": "RELATES_TO: VCIKRPQ4",
-    "Manual Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 2; PROJECT STEP: Design; PROJECT STEP: Implementation; THEME: Partnerships; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; USEFUL FOR: UN/INGO",
+    "Manual_Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 2; PROJECT STEP: Design; PROJECT STEP: Implementation; THEME: Partnerships; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; USEFUL FOR: UN/INGO",
     "PARSED_RELATES_TO": [
       "VCIKRPQ4"
     ],
@@ -3215,7 +3215,7 @@
     "Key": "ZCBHS5WC",
     "Title": "The Humanitarian Innovation Programme: Tools and resources",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; PROJECT STEP: Needs Assessment; CO_DESIGN_LEVEL: 2; CORE TOOLKIT: Systems Approaches to Energy Access; CORE TOOLKIT: Scale & Replicability; CORE TOOLKIT: Partnerships; ACCESS: Open Access; PROJECT STEP: Stakeholder Mapping",
+    "Manual_Tags": "PROJECT STEP: Design; PROJECT STEP: Needs Assessment; CO_DESIGN_LEVEL: 2; CORE TOOLKIT: Systems Approaches to Energy Access; CORE TOOLKIT: Scale & Replicability; CORE TOOLKIT: Partnerships; ACCESS: Open Access; PROJECT STEP: Stakeholder Mapping",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -3224,7 +3224,7 @@
         "Stakeholder Mapping"
       ],
       "CO_DESIGN_LEVEL": "2",
-      "CORE TOOLKIT": [
+      "CORE_TOOLKIT": [
         "Systems Approaches to Energy Access",
         "Scale & Replicability",
         "Partnerships"
@@ -3236,7 +3236,7 @@
     "Key": "EBTX3L28",
     "Title": "The Complete Picture Project: Uncovering hidden AI bias",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; CO_DESIGN_LEVEL: 0; ACCESS: Open Access; THEME: AI/ML; PROJECT STEP: Stakeholder Mapping",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; CO_DESIGN_LEVEL: 0; ACCESS: Open Access; THEME: AI/ML; PROJECT STEP: Stakeholder Mapping",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -3253,7 +3253,7 @@
     "Key": "K4E5IYSE",
     "Title": "Interdisciplinary Approaches to Multidimensional Problem Solving for Humanitarian Innovators - Humanitarian Innovation Support Library",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; PROJECT STEP: Implementation; PROJECT STEP: M&E; ACCESS: Open Access; TOOLS: Multidisciplinary Approaches",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: Private Sector; PROJECT STEP: Implementation; PROJECT STEP: M&E; ACCESS: Open Access; TOOLS: Multidisciplinary Approaches",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -3275,7 +3275,7 @@
     "Key": "49HCI4YJ",
     "Title": "Design Thinking",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Private Sector; PROJECT STEP: Needs Assessment; ACCESS: Open Access; TOOLS: HCD & Design Thinking; PROJECT STEP: Stakeholder Mapping",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Private Sector; PROJECT STEP: Needs Assessment; ACCESS: Open Access; TOOLS: HCD & Design Thinking; PROJECT STEP: Stakeholder Mapping",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -3296,7 +3296,7 @@
     "Key": "6V64FZPV",
     "Title": "HCD Research Methods",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Needs Assessment; ACCESS: Open Access; TOOLS: HCD & Design Thinking; PROJECT STEP: Stakeholder Mapping",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; PROJECT STEP: Needs Assessment; ACCESS: Open Access; TOOLS: HCD & Design Thinking; PROJECT STEP: Stakeholder Mapping",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -3316,7 +3316,7 @@
     "Key": "NJ2CFH4U",
     "Title": "One Year On: Paying for Darkness - Strengthening Solar Markets for Refugees in Uganda",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; PROJECT STEP: Needs Assessment; PROJECT STEP: Implementation; PROJECT STEP: M&E; CO_DESIGN_LEVEL: 2; CASE STUDY THEME: Systems Approaches to Energy Access; CASE STUDY GROUP: Refugee; CASE STUDY LEVEL: Household; CASE STUDY LEVEL: Productive Use; CASE STUDY TECH: Lighting; CASE STUDY THEME: Capacity Building & Sharing; CASE STUDY THEME: Gender, Disability, & Inclusion; CASE STUDY LEVEL: Insitutional; ACCESS: Open Access; PROJECT STEP: Stakeholder Mapping",
+    "Manual_Tags": "PROJECT STEP: Design; PROJECT STEP: Needs Assessment; PROJECT STEP: Implementation; PROJECT STEP: M&E; CO_DESIGN_LEVEL: 2; CASE STUDY THEME: Systems Approaches to Energy Access; CASE STUDY GROUP: Refugee; CASE STUDY LEVEL: Household; CASE STUDY LEVEL: Productive Use; CASE STUDY TECH: Lighting; CASE STUDY THEME: Capacity Building & Sharing; CASE STUDY THEME: Gender, Disability, & Inclusion; CASE STUDY LEVEL: Insitutional; ACCESS: Open Access; PROJECT STEP: Stakeholder Mapping",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": [
@@ -3346,7 +3346,7 @@
     "Key": "5EF5BAGD",
     "Title": "Data Colonialism: Rethinking Big Data’s Relation to the Contemporary Subject",
     "Extra": null,
-    "Manual Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: Policy/Governments; THEME: Decolonisation; CO_DESIGN_LEVEL: 3; ACCESS: Open Access",
+    "Manual_Tags": "PROJECT STEP: Design; USEFUL FOR: UN/INGO; USEFUL FOR: Policy/Governments; THEME: Decolonisation; CO_DESIGN_LEVEL: 3; ACCESS: Open Access",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "PROJECT STEP": "Design",
@@ -3363,7 +3363,7 @@
     "Key": "ITZYN6BD",
     "Title": "Decolonising humanitarianism or humanitarian aid?",
     "Extra": null,
-    "Manual Tags": "USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; THEME: Decolonisation; PROJECT STEP: Needs Assessment; CO_DESIGN_LEVEL: 3; ACCESS: Open Access; THEME: Humanitarian Principles?; PROJECT STEP: Stakeholder Mapping",
+    "Manual_Tags": "USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; THEME: Decolonisation; PROJECT STEP: Needs Assessment; CO_DESIGN_LEVEL: 3; ACCESS: Open Access; THEME: Humanitarian Principles?; PROJECT STEP: Stakeholder Mapping",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "USEFUL FOR": [
@@ -3387,7 +3387,7 @@
     "Key": "3YX8DAZU",
     "Title": "Gender-responsiveness and disability-inclusion in disaster risk reduction in asia",
     "Extra": null,
-    "Manual Tags": "USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; PROJECT STEP: Needs Assessment; CO_DESIGN_LEVEL: 2; ACCESS: Open Access; THEME: Gender, Disability, & Inclusion",
+    "Manual_Tags": "USEFUL FOR: UN/INGO; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; PROJECT STEP: Needs Assessment; CO_DESIGN_LEVEL: 2; ACCESS: Open Access; THEME: Gender, Disability, & Inclusion",
     "PARSED_RELATES_TO": [],
     "PARSED_MANUAL_TAGS": {
       "USEFUL FOR": [
@@ -3405,7 +3405,7 @@
     "Key": "EJ9M4T4T",
     "Title": "Ten efforts to decolonise aid",
     "Extra": "RELATES_TO: 432IPVY8",
-    "Manual Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 3; PROJECT STEP: Design; PROJECT STEP: Implementation; THEME: Decolonisation; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: UN/INGO",
+    "Manual_Tags": "ACCESS: Open Access; CO_DESIGN_LEVEL: 3; PROJECT STEP: Design; PROJECT STEP: Implementation; THEME: Decolonisation; USEFUL FOR: NGO/Other; USEFUL FOR: Policy/Governments; USEFUL FOR: UN/INGO",
     "PARSED_RELATES_TO": [
       "432IPVY8"
     ],

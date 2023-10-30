@@ -9,7 +9,7 @@ const rowStyle = {
 };
 const boxStyle = { padding: "10px", border: "1px solid black" };
 
-function GroupedData() {
+function CoreToolkit() {
   const [data, setData] = useState([]);
   const [filterLevel, setFilterLevel] = useState(null);
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -37,7 +37,7 @@ function GroupedData() {
   }, []);
 
   const getAllThemes = data
-    .map((item, index) => item.PARSED_MANUAL_TAGS.THEME)
+    .map((item, index) => item.PARSED_MANUAL_TAGS.CORE_TOOLKIT)
     .flat();
   const uniqueThemes = Array.from(new Set(getAllThemes.filter((v) => v)));
   console.log("uniqueThemes", uniqueThemes);
@@ -53,8 +53,8 @@ function GroupedData() {
   };
 
   return (
-    <section className="mt-10">
-    <h3 className="text-gray-600 font-semibold text-center text-2xl">Core concept of collaborative Design Process</h3>
+    <section>
+   
       <div className="grid grid-cols-2 gap-5 p-20 w-full">
         {uniqueThemes.map((item, index) => {
           return (
@@ -72,7 +72,7 @@ function GroupedData() {
                 {item}
 
 {data.map((itemdata, dataIndex) => {
-                if (itemdata.PARSED_MANUAL_TAGS.THEME === item) {
+                if (itemdata.PARSED_MANUAL_TAGS.CORE_TOOLKIT === item) {
                   return (
                     <div
                       key={dataIndex}
@@ -99,4 +99,4 @@ function GroupedData() {
   );
 }
 
-export default GroupedData;
+export default CoreToolkit;

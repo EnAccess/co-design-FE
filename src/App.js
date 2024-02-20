@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import GroupedTools from "./components/GroupedTools";
-import Data from "./components/Data";
 import GroupedData from "./components/GroupedData";
 import CoreToolkit from "./components/CoreToolkit";
 import Icon from "./components/icons/icon";
@@ -134,70 +133,6 @@ function App() {
         </div>
 
        </div>
-
-        {/* <div className="grid grid-cols-4 bg-pink-500 gap-10 w-3/5">
-      
-          <div>
-            <div className="bg-blue-200 rounded border boder-blue-400 p-2.5 flex flex-col items-center justify-center">
-              <h3>Level 0</h3>
-              <p className="text-center">Contextually Disconnected Design</p>
-            </div>
-
-            <div>
-              <p className="text-center">
-                These methods result in desgin without a current contextual
-                understanding of the comminutity, designing systems that
-                reinforce cultural tropes and knowledge hierarchies, or in short
-                desgin, for a theoretically imagined community.
-              </p>
-            </div>
-          </div>
-          <div className="flex flex-col-reverse">
-            <div className="bg-blue-200 rounded border boder-blue-400 p-2.5 flex flex-col items-center justify-center">
-              <h3>Level 0</h3>
-              <p className="text-center">Contextually Disconnected Design</p>
-            </div>
-
-            <div>
-              <p className="text-center">
-                These methods result in desgin without a current contextual
-                understanding of the comminutity, designing systems that
-                reinforce cultural tropes and knowledge hierarchies, or in short
-                desgin, for a theoretically imagined community.
-              </p>
-            </div>
-          </div>
-          <div>
-            <div className="bg-blue-200 rounded border boder-blue-400 p-2.5 flex flex-col items-center justify-center">
-              <h3>Level 0</h3>
-              <p className="text-center">Contextually Disconnected Design</p>
-            </div>
-
-            <div>
-              <p className="text-center">
-                These methods result in desgin without a current contextual
-                understanding of the comminutity, designing systems that
-                reinforce cultural tropes and knowledge hierarchies, or in short
-                desgin, for a theoretically imagined community.
-              </p>
-            </div>
-          </div>
-          <div className="flex flex-col-re">
-            <div className="bg-blue-200 rounded border boder-blue-400 p-2.5 flex flex-col items-center justify-center">
-              <h3>Level 0</h3>
-              <p className="text-center">Contextually Disconnected Design</p>
-            </div>
-
-            <div>
-              <p className="text-center">
-                These methods result in desgin without a current contextual
-                understanding of the comminutity, designing systems that
-                reinforce cultural tropes and knowledge hierarchies, or in short
-                desgin, for a theoretically imagined community.
-              </p>
-            </div>
-          </div>
-        </div> */}
       </div>
 
       <div className="flex flex-col w-3/5 gap-2.5 ml-[-20rem] mt-10">
@@ -235,11 +170,9 @@ function App() {
         <div className="bg-gray-400 text-white font-bold py-2.5 rounded  justify-between grid grid-cols-5 ">
           <div className=" flex items-center pl-4">
           <p>Early Concept</p>
-          {/* <Icon /> */}
           </div>
           <div className="col-span-2  flex items-center justify-center">
           <p>Software Development</p>
-          {/* <Icon /> */}
           </div>
           <div className="flex justify-center col-span-2 items-center">
           <p>Action and testing</p>

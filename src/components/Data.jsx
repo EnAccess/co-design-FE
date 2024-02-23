@@ -1,4 +1,6 @@
-import React, { useEffect, useState } from "react";
+"use client";
+
+import { useEffect, useState } from "react";
 import { ArcherContainer, ArcherElement } from "react-archer";
 const rootStyle = { display: "flex", justifyContent: "center" };
 const rowStyle = {

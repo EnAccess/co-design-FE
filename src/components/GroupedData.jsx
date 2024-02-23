@@ -121,7 +121,7 @@ function GroupedData() {
           );
         })}
       </div>
-      <Xwrapper>
+      {/* <Xwrapper>
         {
           relationship.current.map( relation => {
             return (
@@ -135,7 +135,7 @@ function GroupedData() {
             )
           })
         }
-      </Xwrapper>
+      </Xwrapper> */}
     </section>
   );
 }

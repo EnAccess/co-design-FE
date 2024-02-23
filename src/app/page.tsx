@@ -1,17 +1,19 @@
-import React, { useState } from "react";
-import GroupedTools from "./components/GroupedTools";
-import GroupedData from "./components/GroupedData";
-import CoreToolkit from "./components/CoreToolkit";
-import Icon from "./components/icons/icon";
-import Line from "./components/icons/Line";
+"use client"
 
-function App() {
+import React, { useState } from "react";
+import GroupedTools from "../components/GroupedTools";
+import GroupedData from "../components/GroupedData";
+import CoreToolkit from "../components/CoreToolkit";
+import Icon from "../components/icons/icon";
+import Line from "../components/icons/Line";
+
+
+export default function Home() {
   const [selectedSection, setSelectedSection] = useState(null);
 
   const handleSectionClick = (section) => {
     setSelectedSection(section);
   };
-
   return (
     <div className="flex flex-col gap-20 items-center pt-20">
       <div className="items-center flex justify-between mx-auto max-w-[95rem]">
@@ -192,4 +194,3 @@ function App() {
   );
 }
 
-export default App;

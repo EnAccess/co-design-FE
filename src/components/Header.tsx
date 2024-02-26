@@ -1,20 +1,19 @@
 import React, { useState } from 'react'
-import Line from "../components/icons/Line";
-import Icon from "../components/icons/icon";
+import Line from "./icons/Line";
+import Icon from "./icons/icon";
 import Card from './Card';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export const Footer = () => {
+export const Header= () => {
     const [selectedSection, setSelectedSection] = useState(null);
 
   const handleSectionClick = (section: any) => {
     setSelectedSection(section);
   };
   return (
-    
-    <div className="flex justify-between items-center border-b-8 border-dashed pt-6 px-8">
-    <div className="min-h-80">
+    <div className="flex justify-between items-center border-b-8 border-dashed p-8" style={{width: 1900}}>
+    <div className="">
     <p className="text-center text-gray-500 text-sm mb-3">Select Type of Resources in The Co-Design Journey</p>
     <div className="bg-gray-100 border border-gray-500 rounded-2xl bg-gray-300 shadow-2xl p-4">
 
@@ -58,18 +57,18 @@ export const Footer = () => {
   </div>
  </div>
 
- <Image
+ {/* <Image
     src="/images/smallArrow.png" 
     alt="arrow"
     width={100} 
     height={100} 
-    />
+    /> */}
 
-<div className="min-h-80">
+{/* <div className="min-h-80">
 <p className="text-center text-gray-500 text-sm mb-3">Select Level of Co-design Practice</p>
-  <div className="bg-red-400 ">
-        <div className="bg-indigo-400">
-        <div className="bg-green-400 flex justify-center items-end w-fit">
+  <div className="">
+        <div className="">
+        <div className="flex justify-center items-end w-fit">
         <div className="bg-[#bae5fd75] rounded border boder-blue-400 flex flex-col items-center justify-center h-16">
               <p className="text-center text-xs">Level 0</p>
               <p className="text-center text-xs">Contextually Disconnected Design</p>
@@ -112,13 +111,13 @@ export const Footer = () => {
 
           <div className="h-[10px] w-full bg-[#dc2626] absolute top-1/2"></div>
         </div>  */}
-        <Image
+        {/* <Image
         src="/images/bigArrow.png" 
         alt="arrow"
         width={900} 
         height={100} 
-      />
-        <div className="bg-green-400 flex justify-center items-start w-fit">
+      />  */}
+        {/* <div className="flex justify-center items-start w-fit">
           <p className="text-center text-xs max-w-48">
                 These methods result in desgin without a current contextual
                 understanding of the comminutity, designing systems that
@@ -174,8 +173,8 @@ export const Footer = () => {
           <p className="text-sm">to</p>
           <p className="text-sm">Action and testing</p>
           
-        </div>
-      </div>
+        </div> 
+      </div>*/}
  
   </div>
   )

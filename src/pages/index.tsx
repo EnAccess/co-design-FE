@@ -1,17 +1,17 @@
-"use client"
-
 import React, { useState } from "react";
 import GroupedTools from "../components/GroupedTools";
 import GroupedData from "../components/GroupedData";
 import CoreToolkit from "../components/CoreToolkit";
 import Icon from "../components/icons/icon";
 import Line from "../components/icons/Line";
+import { Inter } from "next/font/google";
 
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const [selectedSection, setSelectedSection] = useState(null);
 
-  const handleSectionClick = (section) => {
+  const handleSectionClick = (section: any) => {
     setSelectedSection(section);
   };
   return (
@@ -143,25 +143,25 @@ export default function Home() {
             <div className="bg-pink-200 rounded-lg w-28 h-28 grid place-content-center">
               <p>Design</p>
             </div>
-            <Icon />
+            <Icon name={undefined} className={undefined} />
           </div>
 
           <div className="flex items-center w-fit ">
             <div className="bg-pink-200 rounded-lg w-28 h-28 grid place-content-center">
               <p>test1</p>
             </div>
-            <Icon />
+            <Icon name={undefined} className={undefined} />
             <div className="bg-pink-200 rounded-lg w-28 h-28 grid place-content-center">
               <p>test2</p>
             </div>
-            <Icon />
+            <Icon name={undefined} className={undefined} />
           </div>
 
           <div className="flex items-center w-fit ">
             <div className="bg-pink-200 rounded-lg w-28 h-28 grid place-content-center">
               <p>Design</p>
             </div>
-            <Icon />
+            <Icon name={undefined} className={undefined} />
             <div className="bg-pink-200 rounded-lg w-28 h-28 grid place-content-center">
             <p>Design</p>
           </div>
@@ -193,4 +193,3 @@ export default function Home() {
     </div>
   );
 }
-

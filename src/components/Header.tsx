@@ -57,14 +57,14 @@ export const Header= () => {
   </div>
  </div>
 
- {/* <Image
+ <Image
     src="/images/smallArrow.png" 
     alt="arrow"
     width={100} 
     height={100} 
-    /> */}
+    /> 
 
-{/* <div className="min-h-80">
+<div className="min-h-80">
 <p className="text-center text-gray-500 text-sm mb-3">Select Level of Co-design Practice</p>
   <div className="">
         <div className="">
@@ -95,7 +95,7 @@ export const Header= () => {
     
         </div>
 
-         {/* <div className="grid grid-cols-4 relative">
+        <div className="grid grid-cols-4 relative">
           <div className="flex justify-center ">
             <Line />
           </div>
@@ -110,14 +110,14 @@ export const Header= () => {
           </div>
 
           <div className="h-[10px] w-full bg-[#dc2626] absolute top-1/2"></div>
-        </div>  */}
-        {/* <Image
+        </div>
+      <Image
         src="/images/bigArrow.png" 
         alt="arrow"
         width={900} 
         height={100} 
-      />  */}
-        {/* <div className="flex justify-center items-start w-fit">
+      />  
+        <div className="flex justify-center items-start w-fit">
           <p className="text-center text-xs max-w-48">
                 These methods result in desgin without a current contextual
                 understanding of the comminutity, designing systems that
@@ -174,7 +174,7 @@ export const Header= () => {
           <p className="text-sm">Action and testing</p>
           
         </div> 
-      </div>*/}
+      </div>
  
   </div>
   )

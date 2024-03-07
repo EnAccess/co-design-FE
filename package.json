@@ -1,52 +1,29 @@
 {
-  "name": "citation-app",
+  "name": "new",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://EnAccess.github.io/co-design-FE",
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "citation-js": "^0.7.1",
-    "classnames": "^2.3.2",
-    "csvtojson": "^2.0.10",
-    "d3": "^7.8.5",
-    "react": "^18.2.0",
-    "react-archer": "^4.3.0",
-    "react-dom": "^18.2.0",
-    "react-flow-renderer": "^10.3.17",
-    "react-scripts": "5.0.1",
-    "react-xarrows": "2.0.2",
-    "web-vitals": "^2.1.4"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "classnames": "^2.5.1",
+    "next": "14.1.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-xarrows": "^2.0.2"
   },
   "devDependencies": {
-    "gh-pages": "^6.1.0",
-    "tailwindcss": "^3.3.3"
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
   }
 }

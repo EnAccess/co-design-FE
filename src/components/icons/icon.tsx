@@ -1,16 +1,16 @@
-export default function Icon({ name, className }) {
+export default function Icon() {
   return (
     <svg
       fill="#000000"
-      width="50px"
-      height="50px"
+      width="30px"
+      height="30px"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg">
       <g data-name="Layer 2">
         <g data-name="arrow-forward">
           <rect
-            width="24"
-            height="24"
+            width= "24"
+            height= "24"
             transform="rotate(-90 12 12)"
             opacity="0"
           />

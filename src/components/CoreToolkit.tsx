@@ -1,17 +1,10 @@
+"use client";
+
 import classNames from "classnames";
 import React, { useEffect, useState } from "react";
 
-const rootStyle = { display: "flex", justifyContent: "center" };
-const rowStyle = {
-  margin: "200px 0",
-  display: "flex",
-  justifyContent: "space-between",
-};
-const boxStyle = { padding: "10px", border: "1px solid black" };
-
 function CoreToolkit() {
   const [data, setData] = useState([]);
-  const [filterLevel, setFilterLevel] = useState(null);
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const getData = () => {

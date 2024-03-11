@@ -14,7 +14,7 @@ export default function Line() {
           stroke="#dc2626"
           strokeWidth="2"
           strokeLinecap="round"
-          stroke-linejoin="round"
+          strokeLinejoin="round"
         />
       </g>
     </svg>

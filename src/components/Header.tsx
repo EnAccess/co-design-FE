@@ -20,26 +20,24 @@ export const Header = () => {
         <p className="text-center text-gray-500 text-sm mb-3">
           Select Type of Resources in The Co-Design Journey
         </p>
-        <div className="bg-gray-100 border border-gray-500 rounded-2xl bg-gray-300 shadow-2xl p-4">
+        <div className="border border-gray-500 rounded-2xl bg-gray-300 shadow-2xl p-4">
           <div className="flex justify-between mb-3">
             <Link
               href="/basic-resources"
-              className={`flex items-center justify-center rounded-lg border border-gray-500 bg-gray-400 font-semibold text-xs min-h-10 w-40 place-contetext-center cursor-pointer ${
-                selectedSection === "Basic Resources"
-                  ? "bg-black text-white"
-                  : ""
-              }`}
+              className={`flex items-center justify-center rounded-lg border border-gray-500 bg-gray-400 font-semibold text-xs min-h-10 w-40 place-contetext-center cursor-pointer ${selectedSection === "Basic Resources"
+                ? "bg-black text-white"
+                : ""
+                }`}
               onClick={() => handleSectionClick("Basic Resources")}
             >
               Basic Resources
             </Link>
             <Link
               href=""
-              className={`flex items-center justify-center ml-3 rounded-lg border border-gray-500 bg-gray-400 font-semibold text-xs min-h-10 w-40 text-center cursor-pointer ${
-                selectedSection === "Advanced Resources"
-                  ? "bg-black text-white"
-                  : ""
-              }`}
+              className={`flex items-center justify-center ml-3 rounded-lg border border-gray-500 bg-gray-400 font-semibold text-xs min-h-10 w-40 text-center cursor-pointer ${selectedSection === "Advanced Resources"
+                ? "bg-black text-white"
+                : ""
+                }`}
               onClick={() => handleSectionClick("Advanced Resources")}
             >
               Advanced Resources
@@ -49,22 +47,20 @@ export const Header = () => {
           <div className="flex justify-between">
             <Link
               href="/tools-resources"
-              className={`flex items-center justify-center rounded-lg border border-gray-500 bg-gray-400 font-semibold text-xs min-h-10 w-40 text-center cursor-pointer ${
-                selectedSection === "Tools Resources"
-                  ? "bg-black text-white"
-                  : ""
-              }`}
+              className={`flex items-center justify-center rounded-lg border border-gray-500 bg-gray-400 font-semibold text-xs min-h-10 w-40 text-center cursor-pointer ${selectedSection === "Tools Resources"
+                ? "bg-black text-white"
+                : ""
+                }`}
               onClick={() => handleSectionClick("Tools Resources")}
             >
               Tools Resources
             </Link>
             <Link
               href="/case-studies-and-core-tools"
-              className={`flex items-center justify-center rounded-lg border border-gray-500 bg-gray-400 font-semibold text-xs min-h-10 w-40 text-center cursor-pointer ${
-                selectedSection === "Case Studies & CORE Toolkits"
-                  ? "bg-black text-white"
-                  : ""
-              }`}
+              className={`flex items-center justify-center rounded-lg border border-gray-500 bg-gray-400 font-semibold text-xs min-h-10 w-40 text-center cursor-pointer ${selectedSection === "Case Studies & CORE Toolkits"
+                ? "bg-black text-white"
+                : ""
+                }`}
               onClick={() => handleSectionClick("Case Studies & CORE Toolkits")}
             >
               Case Studies & CORE Toolkits

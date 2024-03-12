@@ -1,14 +1,14 @@
 import { Entries, Entry } from "@/types/interfaces";
 
-interface Acc {
+interface Accumulator {
   level1: Entries;
   level2: Entries;
   level3: Entries;
 }
 
-export const categorizeByCoDesignLevel = (entries: Entries): Acc => {
+export const categorizeByCoDesignLevel = (entries: Entries) => {
   return entries.reduce(
-    (acc: Acc, entry: Entry) => {
+    (acc: Accumulator, entry: Entry) => {
       const coDesignLevel = entry.PARSED_MANUAL_TAGS.CO_DESIGN_LEVEL;
       switch (coDesignLevel) {
         case "1":

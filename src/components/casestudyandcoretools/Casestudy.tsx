@@ -11,19 +11,25 @@ const Casestudy = ({ categorizedEntries }: Props) => {
   return (
     <div>
       <ArcherContainer>
-        <div className="flex p-4 gap-2">
+        <div className="flex p-4 gap-6 flex-wrap">
           {categorizedEntries.level3.map((data: Entry) => (
-            <InformationCard key={data.Key} data={data} />
+            <div key={data.Key} className="w-72">
+              <InformationCard key={data.Key} data={data} />{" "}
+            </div>
           ))}
         </div>
-        <div className="flex p-4 gap-2">
+        <div className="flex p-4 gap-6 flex-wrap">
           {categorizedEntries.level2.map((data: Entry) => (
-            <InformationCard key={data.Key} data={data} />
+            <div key={data.Key} className="w-72">
+              <InformationCard data={data} />
+            </div>
           ))}
         </div>
-        <div className="flex p-4 gap-2">
+        <div className="flex p-4 gap-6 flex-wrap">
           {categorizedEntries.level1.map((data: Entry) => (
-            <InformationCard key={data.Key} data={data} />
+            <div key={data.Key} className="w-72">
+              <InformationCard key={data.Key} data={data} />{" "}
+            </div>
           ))}
         </div>
       </ArcherContainer>

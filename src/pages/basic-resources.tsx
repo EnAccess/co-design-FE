@@ -1,7 +1,18 @@
+import CoreConcept from "@/components/basicResources/CoreConcept";
+import ElementConcept from "@/components/basicResources/ElementConcept";
 import React from "react";
 
 const BasicResources = () => {
-  return <div>BasicResources</div>;
+  return (
+    <div className="gap-20 px-40">
+      <div>
+        <CoreConcept />
+      </div>
+      <div>
+        <ElementConcept />
+      </div>
+    </div>
+  );
 };
 
 export default BasicResources;

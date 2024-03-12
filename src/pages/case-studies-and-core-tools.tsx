@@ -1,13 +1,11 @@
 import React from "react";
 import data from "../../public/output.json";
+import Coretools from "@/components/casestudyandcoretools/Coretools";
 const CaseStudiesAndCoreTools = () => {
-  console.log(data);
-  // Step 1: Filter entries with Core Toolkit
   const entriesWithCoreToolkit = data.filter(
     (entry) => entry.PARSED_MANUAL_TAGS.CORE_TOOLKIT
   );
 
-  // Step 2: Categorize by CO_DESIGN_LEVEL using reduce
   const categorizeByCoDesignLevel = (entries: any[]) => {
     return entries.reduce(
       (acc, entry) => {
@@ -32,31 +30,13 @@ const CaseStudiesAndCoreTools = () => {
   };
 
   const categorizedEntries = categorizeByCoDesignLevel(entriesWithCoreToolkit);
-
   console.log(categorizedEntries);
   return (
     <div className="p-4 flex flex-col gap-4 text-sm">
       <div className="flex justify-between items-center gap-2">
         <div className="border-gray-300 border-2 border-dashed bg-gray-100">
           <h1 className="m-2">core tools</h1>
-          <div>
-            <div className="flex p-4 gap-4 flex-wrap">
-              <div className="p-4 bg-[#e1d5e7]">karera olivier</div>
-              <div className="p-4 bg-[#e1d5e7]">karera olivier</div>
-              <div className="p-4 bg-[#e1d5e7]">karera olivier</div>
-            </div>
-            <div className="flex p-4 gap-4 flex-wrap">
-              <div className="p-4 bg-[#ffe6cc]">karera olivier</div>
-              <div className="p-4 bg-[#ffe6cc]">karera olivier</div>
-              <div className="p-4 bg-[#ffe6cc]">karera olivier</div>
-              <div className="p-4 bg-[#ffe6cc]">karera olivier</div>
-            </div>
-            <div className="flex p-4 gap-4 flex-wrap">
-              <div className="p-4 bg-[#d5e8d4]">karera olivier</div>
-              <div className="p-4 bg-[#d5e8d4]">karera olivier</div>
-              <div className="p-4 bg-[#d5e8d4]">karera olivier</div>
-            </div>
-          </div>
+          <Coretools categorizedEntries={categorizedEntries} />
         </div>{" "}
         <div>core tools</div>
       </div>

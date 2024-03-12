@@ -1,12 +1,12 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Xarrow, {Xwrapper } from "react-xarrows";
+import Xarrow, { Xwrapper } from "react-xarrows";
 import { useRef } from "react";
 
 function GroupedData() {
-  const [ data, setData ] = useState([]);
-  const [ hoveredIndex, setHoveredIndex ] = useState(null);
+  const [data, setData] = useState([]);
+  const [hoveredIndex, setHoveredIndex] = useState(null);
   const relationship = useRef([]);
 
   const getData = () => {
@@ -56,23 +56,26 @@ function GroupedData() {
               </div>
               <div className=" p-5 grid grid-cols-3 gap-20">
                 {data.map((itemdata, dataIndex) => {
-                  const relation =  { id:  itemdata.Key, relatedTo: itemdata.PARSED_RELATES_TO  };
+                  const relation = {
+                    id: itemdata.Key,
+                    relatedTo: itemdata.PARSED_RELATES_TO,
+                  };
                   relationship.current.push(relation);
                   if (itemdata.PARSED_MANUAL_TAGS.THEME === item) {
                     const level = itemdata.PARSED_MANUAL_TAGS.CO_DESIGN_LEVEL;
-                    const backgroundColorClass = `bg-${level == 0
+                    const backgroundColorClass = `bg-${
+                      level == 0
                         ? "[#bae5fd75]"
                         : level == 1
-                          ? "[#bbf7d09c]"
-                          : level == 2
-                            ? "[#fdbb7493]"
-                            : level == 3
-                              ? "[#c3b5fd54]"
-                              : "gray-500"
-                      }`;
+                        ? "[#bbf7d09c]"
+                        : level == 2
+                        ? "[#fdbb7493]"
+                        : level == 3
+                        ? "[#c3b5fd54]"
+                        : "gray-500"
+                    }`;
 
                     return (
-
                       <div
                         key={dataIndex}
                         className={`border border-dashed py-4 px-2 text-sm relative rounded-md  ${backgroundColorClass}`}
@@ -82,7 +85,7 @@ function GroupedData() {
                       >
                         {itemdata.Title}
                         {itemdata.PARSED_MANUAL_TAGS.ACCESS ===
-                          "Institutional Access" ? (
+                        "Institutional Access" ? (
                           <div className="absolute -bottom-5 -right-5">
                             {" "}
                             <svg
@@ -97,14 +100,14 @@ function GroupedData() {
                                 stroke="#000000"
                                 strokeWidth="1"
                                 stroke-linecap="round"
-                                stroke-linejoin="round"
+                                strokeLinejoin="round"
                               />
                             </svg>{" "}
                           </div>
                         ) : (
                           ""
                         )}
-                      
+
                         <p>CO_DESIGN_LEVEL: {level} </p>
                         {hoveredIndex === dataIndex && (
                           <div className="absolute bg-white border p-4 mt-2 z-10">
@@ -122,19 +125,11 @@ function GroupedData() {
         })}
       </div>
       <Xwrapper>
-        {
-          relationship.current.map( relation => {
-            return (
-              relation.relatedTo.map((to, index) => {
-                return(
-                  <Xarrow
-                  start={`${relation.id}`}
-                  end={`${to}`}
-                />
-              )})
-            )
-          })
-        }
+        {relationship.current.map((relation) => {
+          return relation.relatedTo.map((to, index) => {
+            return <Xarrow start={`${relation.id}`} end={`${to}`} />;
+          });
+        })}
       </Xwrapper>
     </section>
   );

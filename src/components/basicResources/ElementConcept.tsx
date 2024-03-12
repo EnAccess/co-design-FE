@@ -7,7 +7,7 @@ import { ArcherContainer } from "react-archer";
 const ElementConcept = () => {
   return (
     <div className="mt-44">
-      <div className="flex text-gray-400 justify-center items-center py-4 text-xl font-semibold">
+      <div className="flex text-gray-400 justify-center items-center py-4 text-2xl font-semibold">
         <h1>Element Used to Create Effective Solutions</h1>
       </div>
 
@@ -20,9 +20,9 @@ const ElementConcept = () => {
               "Engaging with entire systems approaches requires humanitarian practitioners to challenge and rethink how to interact with humanitarian systems that surround them. This outlines what needs to change and how."
             }
           />
-          <div className="float-end mr-10 w-46">
+          <div className="float-end mr-10 mt-20 w-46">
             <ArcherContainer>
-              <InformationCard data={Data[122]} />
+              <InformationCard data={Data[101]} />
             </ArcherContainer>
           </div>
         </div>

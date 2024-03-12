@@ -1,4 +1,5 @@
 import CoreConcept from "@/components/basicResources/CoreConcept";
+import CriteriaConcept from "@/components/basicResources/CriteriaConcept";
 import ElementConcept from "@/components/basicResources/ElementConcept";
 import React from "react";
 
@@ -10,6 +11,9 @@ const BasicResources = () => {
       </div>
       <div>
         <ElementConcept />
+      </div>
+      <div>
+        <CriteriaConcept/>
       </div>
     </div>
   );

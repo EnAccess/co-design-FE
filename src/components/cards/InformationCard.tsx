@@ -3,9 +3,9 @@ import React from "react";
 import { ArcherElement } from "react-archer";
 
 const InformationCard = ({ data }: any) => {
-  const level = Array.isArray(data.PARSED_MANUAL_TAGS.CO_DESIGN_LEVEL)
-    ? data.PARSED_MANUAL_TAGS.CO_DESIGN_LEVEL[0]
-    : data.PARSED_MANUAL_TAGS.CO_DESIGN_LEVEL;
+  const level = Array.isArray(data.PARSED_MANUAL_TAGS?.CO_DESIGN_LEVEL)
+    ? data.PARSED_MANUAL_TAGS?.CO_DESIGN_LEVEL[0]
+    : data.PARSED_MANUAL_TAGS?.CO_DESIGN_LEVEL;
   const bgColor = classNames({
     "bg-[#dae8fc] border-[#6c8ebf]": level == 0,
     "bg-[#d5e8d4] border-[#82b366]": level == 1,
@@ -40,7 +40,7 @@ const InformationCard = ({ data }: any) => {
         >
           <div className="relative">
             {data.Title}
-            {data.PARSED_MANUAL_TAGS.ACCESS === "Institutional Access" ? (
+            {data.PARSED_MANUAL_TAGS?.ACCESS === "Institutional Access" ? (
               <div className="absolute -bottom-5 -right-5">
                 {" "}
                 <svg

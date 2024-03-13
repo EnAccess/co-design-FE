@@ -62,7 +62,7 @@ const InformationCard = ({ data }: any) => {
             ) : (
               ""
             )}
-            <p>CO_DESIGN_LEVEL: {level} </p>
+            {/* <p>CO_DESIGN_LEVEL: {level} </p> */}
 
             <div className="absolute hidden group-hover:block bg-white border p-4 mt-2- z-10">
               <p>Extra: {data.Extra}</p>

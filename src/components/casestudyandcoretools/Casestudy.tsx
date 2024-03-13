@@ -7,7 +7,7 @@ interface Props {
   categorizedEntries: { level1: Entries; level2: Entries; level3: Entries };
 }
 
-const Casestudy = ({ categorizedEntries }: Props) => {
+const CaseStudy = ({ categorizedEntries }: Props) => {
   return (
     <div>
       <ArcherContainer>
@@ -37,4 +37,4 @@ const Casestudy = ({ categorizedEntries }: Props) => {
   );
 };
 
-export default Casestudy;
+export default CaseStudy;

@@ -6,7 +6,7 @@ import { ArcherContainer } from "react-archer";
 interface Props {
   categorizedEntries: { level1: Entries; level2: Entries; level3: Entries };
 }
-const Coretools = ({ categorizedEntries }: Props) => {
+const CoreTools = ({ categorizedEntries }: Props) => {
   return (
     <div>
       <ArcherContainer>
@@ -36,4 +36,4 @@ const Coretools = ({ categorizedEntries }: Props) => {
   );
 };
 
-export default Coretools;
+export default CoreTools;

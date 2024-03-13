@@ -23,16 +23,16 @@ const HightlightCaseStudyDetails = () => {
       <div className="bg-gray-200 rounded-2xl flex gap-2 py-4 px-8 border border-gray-500">
         <div className="p-4">
           <h1 className="text-center text-gray-500 text-xl font-bold mb-3 ">
-            Case study imprementation level
+            Case study Implementation level
           </h1>
           <div>
             <div className="flex flex-col gap-2 p-4">
-              {caseStudyLevel.map((el, index) => (
+              {caseStudyLevel.map((element, index) => (
                 <button
                   key={index}
                   className="border border-gray-500 p-4 bg-black text-white rounded-lg"
                 >
-                  {el}
+                  {element}
                 </button>
               ))}
             </div>
@@ -43,12 +43,12 @@ const HightlightCaseStudyDetails = () => {
             Case study technology
           </h1>
           <div className="flex flex-col gap-2 p-4">
-            {caseStudyTechnology.map((el, index) => (
+            {caseStudyTechnology.map((element, index) => (
               <button
                 key={index}
                 className="border border-gray-500 p-4 bg-gray-50 text-black rounded-lg"
               >
-                {el}
+                {element}
               </button>
             ))}
           </div>

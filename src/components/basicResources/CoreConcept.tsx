@@ -63,7 +63,7 @@ const CoreConcept = () => {
               </div>
             </div>
           </div>
-          <div className="border-4 border-dashed mt-6 flex flex-col md:flex-row">
+          <div className="border-4 border-dashed mt-6 flex w-full">
             <div className="py-2">
               <YellowCard
                 title={`Decolonisation`}
@@ -73,18 +73,18 @@ const CoreConcept = () => {
                 className="flex flex-col gap-4 w-96 ml-3"
               />
             </div>
-            <div className="flex flex-wrap md:flex-row gap-10 mt-2 ml-4">
-              <div className="mt-32 w-22 md:w-44">
+            <div className="flex gap-10 mt-2 ml-4">
+              <div className="mt-32 lg:w-44">
                 <ArcherContainer>
                   <InformationCard data={Data[101]} />
                 </ArcherContainer>
               </div>
-              <div className="mt-2 w-52">
+              <div className="mt-2 lg:w-52">
                 <ArcherContainer>
                   <InformationCard data={Data[17]} />
                 </ArcherContainer>
               </div>
-              <div className="mt-32 w-52 mr-6 mb-4">
+              <div className="mt-32 lg:w-52 mr-6 mb-4">
                 <ArcherContainer>
                   <InformationCard data={Data[11]} />
                 </ArcherContainer>

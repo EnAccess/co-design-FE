@@ -1,5 +1,4 @@
 import classNames from "classnames";
-import { ST } from "next/dist/shared/lib/utils";
 import React from "react";
 import { ArcherElement } from "react-archer";
 import Star from "../icons/Star";
@@ -9,10 +8,10 @@ const InformationCard = ({ data }: any) => {
     ? data.PARSED_MANUAL_TAGS.CO_DESIGN_LEVEL[0]
     : data.PARSED_MANUAL_TAGS.CO_DESIGN_LEVEL;
   const bgColor = classNames({
-    "bg-[#dae8fc] border-[#6c8ebf]": level == 0,
-    "bg-[#d5e8d4] border-[#82b366]": level == 1,
-    "bg-[#ffe6cc] border-[#d79b00]": level == 2,
-    "bg-[#e1d5e7] border-[#9673a6]": level == 3,
+    "bg-level-primary-0 border-level-secondary-0": level == 0,
+    "bg-level-primary-1 border-level-secondary-1": level == 1,
+    "bg-level-primary-2 border-level-secondary-2": level == 2,
+    "bg-level-primary-3 border-level-secondary-3": level == 3,
   });
   return (
     <div key={data.Key} id={data.Key} className="group cursor-pointer">
@@ -22,7 +21,6 @@ const InformationCard = ({ data }: any) => {
           data.Extra
             ? [
                 ...data.PARSED_RELATES_TO.map((item: any) => {
-                  console.log({ item });
                   return {
                     targetId: item,
                     sourceAnchor: "top",
@@ -49,8 +47,6 @@ const InformationCard = ({ data }: any) => {
             ) : (
               ""
             )}
-            <p>CO_DESIGN_LEVEL: {level} </p>
-
             <div className="absolute hidden group-hover:block bg-white border p-4 mt-2- z-10">
               <p>Extra: {data.Extra}</p>
               <p>{data.Manual_Tags}</p>

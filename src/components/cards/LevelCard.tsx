@@ -11,10 +11,10 @@ const LevelCard = ({
   description: string;
 }) => {
   const bgColor = classNames({
-    "bg-[#dae8fc] border-[#6c8ebf]": level == 0,
-    "bg-[#d5e8d4] border-[#82b366]": level == 1,
-    "bg-[#ffe6cc] border-[#d79b00]": level == 2,
-    "bg-[#e1d5e7] border-[#9673a6]": level == 3,
+    "bg-level-primary-0 border-level-secondary-0": level == 0,
+    "bg-level-primary-1 border-level-secondary-1": level == 1,
+    "bg-level-primary-2 border-level-secondary-2": level == 2,
+    "bg-level-primary-3 border-level-secondary-3": level == 3,
   });
   return (
     <button

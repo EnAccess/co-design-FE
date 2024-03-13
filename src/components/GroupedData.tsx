@@ -1,12 +1,11 @@
-import classNames from "classnames";
 import React, { useEffect, useState, useRef } from "react";
 import { ArcherContainer } from "react-archer";
 import InformationCard from "./cards/InformationCard";
+import { Entry } from "@/types/interfaces";
 
 function GroupedData() {
   const [data, setData] = useState([]);
   const [positions, setPositions] = useState<any>({});
-  const elementRefs = useRef<any>({});
   const gridContainerRef = useRef<any>(null);
 
   const getData = () => {
@@ -140,7 +139,7 @@ function GroupedData() {
                     </p>
                   </div>
                   <div className=" m-5 grid grid-cols-2 gap-x-64 gap-y-20 py-10">
-                    {data.map((data: any) => {
+                    {data.map((data: Entry) => {
                       if (
                         data.PARSED_MANUAL_TAGS.THEME === themItem ||
                         data.PARSED_MANUAL_TAGS.THEME?.includes(themItem)

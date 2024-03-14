@@ -18,12 +18,12 @@ const HightlightCaseStudyDetails = () => {
     <div className="flex items-center flex-col">
       <ArrowDown />
       <h1 className="text-center text-gray-500 text-xl font-bold mb-3 ">
-        Hightlight case study details
+        Hightlight Case Study Details
       </h1>
       <div className="bg-gray-200 rounded-2xl flex gap-2 py-4 px-8 border border-gray-500">
         <div className="p-4">
           <h1 className="text-center text-gray-500 text-xl font-bold mb-3 ">
-            Case study Implementation level
+            Case Study Implementation Level
           </h1>
           <div>
             <div className="flex flex-col gap-2 p-4">
@@ -40,7 +40,7 @@ const HightlightCaseStudyDetails = () => {
         </div>
         <div className="p-4">
           <h1 className="text-center text-gray-500 text-xl font-bold mb-3 ">
-            Case study technology
+            Case Study Technology
           </h1>
           <div className="flex flex-col gap-2 p-4">
             {caseStudyTechnology.map((element, index) => (

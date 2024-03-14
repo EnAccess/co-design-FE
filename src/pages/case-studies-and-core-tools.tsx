@@ -12,7 +12,7 @@ const CaseStudiesAndCoreTools = () => {
   ) as Entries;
 
   const entriesWithCaseStudy = Data.filter(
-    (entry) => entry.PARSED_MANUAL_TAGS["CASE STUDY THEME"]
+    (entry) => entry.PARSED_MANUAL_TAGS["CASE STUDY GROUP"]
   ) as Entries;
 
   const categorizedCoreToolkitEntries = categorizeByCoDesignLevel(

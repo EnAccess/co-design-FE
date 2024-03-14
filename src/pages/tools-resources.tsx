@@ -4,13 +4,19 @@ import React from "react";
 import VerticalArrows from "@/components/toolscomponents/VerticalArrows";
 import RightApproches from "@/components/toolscomponents/RightApproches";
 import DownApproches from "@/components/toolscomponents/DownApproches";
+import Data from "../../public/output.json";
+import { Entry } from "@/type/interface";
 
 const ToolsResources = () => {
+  const entriesWithBasicTools = Data.filter((entry) =>
+  entry.Manual_Tags.includes("BASIC TOOLS")
+) as Entry[];
+
   return (
     <div>
       <div className="flex justify-between items-center gap-4 py-8">
         <div className="w-full flex flex-col justify-center align-center">
-          <BasicTools />
+          <BasicTools basicToolsEntries={entriesWithBasicTools} />
           <div>
             <VerticalArrows />
           </div>

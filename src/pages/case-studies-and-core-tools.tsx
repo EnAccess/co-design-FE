@@ -1,10 +1,10 @@
 import React from "react";
 import Data from "../../public/output.json";
-import CoreTools from "@/components/casestudyandcoretools/CoreTools";
-import CaseStudy from "@/components/casestudyandcoretools/CaseStudy";
+import CoreTools from "../components/casestudyandcoretools/CoreTools";
+import CaseStudy from "../components/casestudyandcoretools/CaseStudy";
 import { categorizeByCoDesignLevel } from "../components/casestudyandcoretools/CategorisedByLevel";
-import { Entries } from "@/types/interfaces";
-import HightlightCaseStudyDetails from "@/components/casestudyandcoretools/HightlightCaseStudyDetails";
+import { Entries } from "../types/interfaces";
+import HightlightCaseStudyDetails from "../components/casestudyandcoretools/HightlightCaseStudyDetails";
 
 const CaseStudiesAndCoreTools = () => {
   const entriesWithCoreToolkit = Data.filter(

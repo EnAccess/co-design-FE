@@ -8,15 +8,37 @@ import Data from "../../public/output.json";
 import { Entry } from "@/type/interface";
 
 const ToolsResources = () => {
-  const entriesWithBasicTools = Data.filter((entry) =>
-  entry.Manual_Tags.includes("BASIC TOOLS")
-) as Entry[];
+  const basicToolsEntries = Data.filter((entry) =>
+    entry.Manual_Tags.includes("BASIC TOOLS")
+  ) as Entry[];
+
+  const technicalAproachEntries = Data.filter((entry) => {
+    return (
+      entry.Manual_Tags &&
+      entry.Manual_Tags.includes("TOOLS: Technical Approaches")
+    );
+  }).filter((entry) => {
+    return !entry.PARSED_MANUAL_TAGS.hasOwnProperty("CO_DESIGN_LEVEL");
+  }) as Entry[];
+
+  const multidisciplinaryEntries = Data.filter((entry) => {
+    return (
+      entry.Manual_Tags &&
+      entry.Manual_Tags.includes("TOOLS: Multidisciplinary Approaches")
+    );
+  }) as Entry[];
+
+  const participatoryApproachEntries = Data.filter((entry) => {
+    return (
+      entry.Manual_Tags && entry.Manual_Tags.includes(" TOOLS: Participatory Approaches")
+    )
+  }) as Entry[];
 
   return (
     <div>
       <div className="flex justify-between items-center gap-4 py-8">
-        <div className="w-full flex flex-col justify-center align-center">
-          <BasicTools basicToolsEntries={entriesWithBasicTools} />
+        <div className="flex flex-col justify-center align-center">
+          <BasicTools basicToolsEntries={basicToolsEntries} />
           <div>
             <VerticalArrows />
           </div>
@@ -25,8 +47,20 @@ const ToolsResources = () => {
           <div className="flex justify-around items-center flex-col ">
             <HorizontalArrows />
           </div>
-          <div className="flex justify-around items-center flex-col ">
-            <RightApproches />
+          <div className="">
+            <div className="flex flex-wrap w-2/3">
+              <RightApproches
+               aproachEntries ={technicalAproachEntries}
+              />
+            </div>
+            <div className="flex">
+              <RightApproches
+               aproachEntries ={multidisciplinaryEntries}
+              />
+            </div>
+            <div>
+              <RightApproches aproachEntries={participatoryApproachEntries}/>
+            </div>
           </div>
         </div>
       </div>

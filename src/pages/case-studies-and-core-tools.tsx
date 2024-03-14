@@ -25,7 +25,7 @@ const CaseStudiesAndCoreTools = () => {
     <div className="p-4 flex flex-col gap-4 text-sm">
       <div className="flex justify-between items-center gap-2 flex-wrap">
         <div className="border-gray-300 border-2 border-dashed bg-gray-100">
-          <h1 className="m-2">core tools</h1>
+          <h1 className="m-2">Core Tools</h1>
           <CoreTools categorizedEntries={categorizedCoreToolkitEntries} />
         </div>
 
@@ -35,7 +35,7 @@ const CaseStudiesAndCoreTools = () => {
       </div>
       <div>
         <div className="border-gray-300 border-2 border-dashed bg-gray-100">
-          <h1 className="m-2">case studies</h1>
+          <h1 className="m-2">Case Studies</h1>
           <CaseStudy categorizedEntries={categorizedCaseStudyEntries} />
         </div>
       </div>

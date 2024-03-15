@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[281],{6104:function(n,u,s){(window.__NEXT_P=window.__NEXT_P||[]).push(["/tools-resources",function(){return s(3933)}])},3933:function(n,u,s){"use strict";s.r(u);var e=s(5893);s(7294),u.default=()=>(0,e.jsx)("div",{children:"ToolsResources"})}},function(n){n.O(0,[888,774,179],function(){return n(n.s=6104)}),_N_E=n.O()}]);

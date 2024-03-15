@@ -3,6 +3,7 @@ import Data from "../../../public/output.json";
 import InformationCard from "../cards/InformationCard";
 import YellowCard from "../cards/YellowCard";
 import { ArcherContainer } from "react-archer";
+import ResourcesLevel from "./ResourcesLevel";
 
 const CoreConcept = () => {
   const dataItem = [
@@ -45,6 +46,7 @@ const CoreConcept = () => {
             <ArcherContainer>
               <InformationCard data={Data[122]} />
             </ArcherContainer>
+            {/* < ResourcesLevel basicResourcesLevel={}/> */}
           </div>
         </div>
 

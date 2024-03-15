@@ -2,10 +2,15 @@ import HorizontalArrows from "@/components/toolscomponents/HorizontalArrows";
 import BasicTools from "@/components/toolscomponents/BasicTools";
 import React from "react";
 import VerticalArrows from "@/components/toolscomponents/VerticalArrows";
-import RightApproches from "@/components/toolscomponents/RightApproches";
-import DownApproches from "@/components/toolscomponents/DownApproches";
 import Data from "../../public/output.json";
 import { Entry } from "@/type/interface";
+import TechnicalApproches from "@/components/toolscomponents/TehnicalApproach";
+import MultidisciplinaryApproches from "@/components/toolscomponents/MultidisciplinaryApproach";
+import ParticipatoryApproches from "@/components/toolscomponents/ParticipatoryApproach";
+import HumanDesignApproches from "@/components/toolscomponents/HumanDesignApproach";
+import BehaviorByPractice from "@/components/toolscomponents/BehaviorByPractice";
+import BehaviorByTheory from "@/components/toolscomponents/BehaviorByTheory";
+import YellowCard from "@/components/cards/YellowCard";
 
 const ToolsResources = () => {
   const basicToolsEntries = Data.filter((entry) =>
@@ -30,12 +35,34 @@ const ToolsResources = () => {
 
   const participatoryApproachEntries = Data.filter((entry) => {
     return (
-      entry.Manual_Tags && entry.Manual_Tags.includes(" TOOLS: Participatory Approaches")
-    )
+      entry.Manual_Tags &&
+      entry.Manual_Tags.includes(" TOOLS: Participatory Approaches")
+    );
   }) as Entry[];
 
+  const behaviorByPracticeApproach = Data.filter((entry) => {
+    return (
+      entry.Manual_Tags &&
+      entry.Manual_Tags.includes("TOOLS: Behaviour Change Approaches")
+    );
+  }).splice(0, 5) as Entry[];
+
+  const behaviorByTheoryApproach = Data.filter((entry) => {
+    return (
+      entry.Manual_Tags &&
+      entry.Manual_Tags.includes("TOOLS: Behaviour Change Approaches")
+    );
+  }).splice(5) as Entry[];
+
+  const HumanDesignApproach = Data.filter((entry) => {
+    return (
+      entry.Manual_Tags &&
+      entry.Manual_Tags.includes("TOOLS: HCD & Design Thinking")
+    );
+  }).splice(0,3) as Entry[];
+
   return (
-    <div>
+    <>
       <div className="flex justify-between items-center gap-4 py-8">
         <div className="flex flex-col justify-center align-center">
           <BasicTools basicToolsEntries={basicToolsEntries} />
@@ -49,25 +76,43 @@ const ToolsResources = () => {
           </div>
           <div className="">
             <div className="flex flex-wrap w-2/3">
-              <RightApproches
-               aproachEntries ={technicalAproachEntries}
-              />
+              <TechnicalApproches approachEntries={technicalAproachEntries} />
             </div>
             <div className="flex">
-              <RightApproches
-               aproachEntries ={multidisciplinaryEntries}
+              <MultidisciplinaryApproches
+                approachEntries={multidisciplinaryEntries}
               />
             </div>
             <div>
-              <RightApproches aproachEntries={participatoryApproachEntries}/>
+              <ParticipatoryApproches
+                approachEntries={participatoryApproachEntries}
+              />
             </div>
           </div>
         </div>
       </div>
-      <div>
-        <DownApproches />
+      <div className="flex gap-6">
+        <div className="border-4 border-dashed border-gray-200">
+          <YellowCard
+            title="Behaviour Change Approaches"
+            description="BCA’s look to understand and unlock the how, why, and when of energy system and service adoption from an end-user or individual perspective."
+          />
+          <div className="flex gap-4 px-3">
+            <div>
+              <BehaviorByPractice
+                approachEntries={behaviorByPracticeApproach}
+              />
+            </div>
+            <div>
+              <BehaviorByTheory approachEntries={behaviorByTheoryApproach} />
+            </div>
+          </div>
+        </div>
+        <div>
+          <HumanDesignApproches approachEntries={HumanDesignApproach} />
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

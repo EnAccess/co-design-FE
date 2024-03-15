@@ -11,7 +11,10 @@ const BasicTools = ({ basicToolsEntries }: Props) => {
   return (
     <div className="border-4 border-dashed border-gray-200">
       <div>
-        <YellowCard title="" description="" />
+        <YellowCard
+          title="BASIC TOOLS"
+          description="This box contains an overview of the basic tools needed to conduct effective co-design processes"
+        />
         <div className="flex gap-10 pt-6">
           <ArcherContainer>
             <div className="flex flex-wrap gap-8 px-3 pb-3">

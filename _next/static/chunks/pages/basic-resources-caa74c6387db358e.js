@@ -1,1 +1,0 @@
-(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[671],{5971:function(n,u,s){(window.__NEXT_P=window.__NEXT_P||[]).push(["/basic-resources",function(){return s(8421)}])},8421:function(n,u,s){"use strict";s.r(u);var c=s(5893);s(7294),u.default=()=>(0,c.jsx)("div",{children:"BasicResources"})}},function(n){n.O(0,[888,774,179],function(){return n(n.s=5971)}),_N_E=n.O()}]);

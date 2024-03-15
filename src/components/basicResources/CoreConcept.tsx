@@ -3,7 +3,10 @@ import Data from "../../../public/output.json";
 import InformationCard from "../cards/InformationCard";
 import YellowCard from "../cards/YellowCard";
 import { ArcherContainer } from "react-archer";
-import ResourcesLevel from "./ResourcesLevel";
+import ResourcesLevel from "./ResourcesLevelEntries";
+import { Entries } from "@/types/interfaces";
+import { CategorizedByLevel } from "./CategorizedByLevel";
+import ResourcesLevelEntries from "./ResourcesLevelEntries";
 
 const CoreConcept = () => {
   const dataItem = [
@@ -28,7 +31,19 @@ const CoreConcept = () => {
         "Decolonisation reflects a just transition to rebalance power among the various stakeholders in the humanitarian sector. The theme looks at the stages of transformation in power imbalances, decolonising aid and highlights the need for systematic changes in how the humanitarian sector operates",
     },
   ];
+  const entriesWithCoreToolkit = Data.filter(
+    (entry) => entry.PARSED_MANUAL_TAGS.THEME
+  ) as Entries;
 
+  const entriesWithCaseStudy = Data.filter(
+    (entry) => entry.PARSED_MANUAL_TAGS["CASE STUDY THEME"]
+  ) as Entries;
+
+  const categorizedCoreToolkitEntries = CategorizedByLevel(
+    entriesWithCoreToolkit
+  );
+  const categorizedCaseStudyEntries =
+    CategorizedByLevel(entriesWithCaseStudy);
   return (
     <>
       <div className="flex text-gray-500 justify-center items-center py-6 text-3xl font-semibold">
@@ -46,7 +61,8 @@ const CoreConcept = () => {
             <ArcherContainer>
               <InformationCard data={Data[122]} />
             </ArcherContainer>
-            {/* < ResourcesLevel basicResourcesLevel={}/> */}
+            {/* < ResourcesLevelEntries basicResourcesLevel={categorizedCoreToolkitEntries}/> */}
+            {/* <ResourcesLevelEntries basicResourcesLevel={categorizedCaseStudyEntries}/> */}
           </div>
         </div>
 

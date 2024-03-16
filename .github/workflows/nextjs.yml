@@ -77,8 +77,8 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.runner }} npx --no-install next build
       # - name: Static HTML export with Next.js
       #   run: ${{ steps.detect-package-manager.outputs.runner }} next export
-      - name: Make out folder
-        run: mkdir out
+      - name: List directories
+        run: ls -la
       # - name: List directories
       #   run: ls -l -a
       - name: Upload artifact

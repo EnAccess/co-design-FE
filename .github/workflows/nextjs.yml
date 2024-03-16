@@ -77,8 +77,16 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.runner }} npx --no-install next build
       # - name: Static HTML export with Next.js
       #   run: ${{ steps.detect-package-manager.outputs.runner }} next export
-      - name: List directories
-        run: ls -l -a
+      - name: Check Node.js version
+        run: node -v
+      - name: List build directories
+        run: |
+          echo "Listing .next directory:"
+          ls -la .next
+          echo "Listing out directory:"
+          ls -la out
+      # - name: List directories
+      #   run: ls -l -a
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

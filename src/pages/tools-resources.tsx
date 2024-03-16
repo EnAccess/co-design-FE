@@ -4,12 +4,12 @@ import React from "react";
 import VerticalArrows from "@/components/toolscomponents/VerticalArrows";
 import Data from "../../public/output.json";
 import { Entry } from "@/type/interface";
-import TechnicalApproches from "@/components/toolscomponents/TehnicalApproach";
-import MultidisciplinaryApproches from "@/components/toolscomponents/MultidisciplinaryApproach";
-import ParticipatoryApproches from "@/components/toolscomponents/ParticipatoryApproach";
-import HumanDesignApproches from "@/components/toolscomponents/HumanDesignApproach";
-import BehaviorByPractice from "@/components/toolscomponents/BehaviorByPractice";
-import BehaviorByTheory from "@/components/toolscomponents/BehaviorByTheory";
+import TechnicalApproches from "@/components/toolscomponents/TechnicalApproach";
+import MultidisciplinaryApproches from "@/components/toolscomponents/multidiscpliary/MultidisciplinaryByTheoryApproach";
+import ParticipatoryApproches from "@/components/toolscomponents/participatory/ParticipatoryByPracticeApproach";
+import HumanDesignApproches from "@/components/toolscomponents/humanDesign/HumanDesignApproach";
+import BehaviorByPractice from "@/components/toolscomponents/behavior/BehaviorByPractice";
+import BehaviorByTheory from "@/components/toolscomponents/behavior/BehaviorByTheory";
 import YellowCard from "@/components/cards/YellowCard";
 
 const ToolsResources = () => {
@@ -26,12 +26,22 @@ const ToolsResources = () => {
     return !entry.PARSED_MANUAL_TAGS.hasOwnProperty("CO_DESIGN_LEVEL");
   }) as Entry[];
 
-  const multidisciplinaryEntries = Data.filter((entry) => {
+  const multidisciplinaryByPracticeEntries = Data.filter((entry) => {
     return (
       entry.Manual_Tags &&
       entry.Manual_Tags.includes("TOOLS: Multidisciplinary Approaches")
     );
-  }) as Entry[];
+  })
+    .filter((entry) => {
+      return !entry.PARSED_MANUAL_TAGS.hasOwnProperty("CO_DESIGN_LEVEL");
+    })
+    .splice(0, 5) as Entry[];
+  const multidisciplinaryByTheoryEntries = Data.filter((entry) => {
+    return (
+      entry.Manual_Tags &&
+      entry.Manual_Tags.includes("TOOLS: Multidisciplinary Approaches")
+    );
+  }).splice(6) as Entry[];
 
   const participatoryApproachEntries = Data.filter((entry) => {
     return (
@@ -59,7 +69,7 @@ const ToolsResources = () => {
       entry.Manual_Tags &&
       entry.Manual_Tags.includes("TOOLS: HCD & Design Thinking")
     );
-  }).splice(0,3) as Entry[];
+  }).splice(0, 3) as Entry[];
 
   return (
     <>
@@ -79,9 +89,24 @@ const ToolsResources = () => {
               <TechnicalApproches approachEntries={technicalAproachEntries} />
             </div>
             <div className="flex">
-              <MultidisciplinaryApproches
-                approachEntries={multidisciplinaryEntries}
-              />
+              <div className="border-4 border-dashed border-gray-200">
+                <YellowCard
+                  title="Multidisciplinary Approaches"
+                  description="Multidisciplinary approaches blend different disciplines to approach problems from multiple perspectives"
+                />
+                <div className="flex gap-4 px-3">
+                  <div>
+                    <MultidisciplinaryApproches
+                      approachEntries={multidisciplinaryByPracticeEntries}
+                    />
+                  </div>
+                  <div>
+                    <MultidisciplinaryApproches
+                      approachEntries={multidisciplinaryByTheoryEntries}
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
             <div>
               <ParticipatoryApproches

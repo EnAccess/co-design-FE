@@ -1,7 +1,7 @@
 import { Entry } from "@/type/interface";
 import React from "react";
-import InformationCard from "../cards/InformationCard";
-import YellowCard from "../cards/YellowCard";
+import InformationCard from "../../cards/InformationCard";
+import YellowCard from "../../cards/YellowCard";
 import { ArcherContainer } from "react-archer";
 
 interface Props {

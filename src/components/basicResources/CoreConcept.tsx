@@ -8,20 +8,20 @@ import ResourcesLevelEntries from "./ResourcesLevelEntries";
 import { dataItem } from "./dataItem";
 
 const CoreConcept = () => {
-  // const entriesWithTheme = Data.filter(
-  //   (entry) =>
-  //     entry.PARSED_MANUAL_TAGS.THEME === "Systems Approaches to Energy Access"
-  // ).filter((entry) => {
-  //   return entry.PARSED_MANUAL_TAGS.CO_DESIGN_LEVEL === "2";
-  // }) as Entries;
-
-  const entryWithThemeAndTitle = Data.filter(
+  const entriesWithTheme = Data.filter(
     (entry) =>
-      entry.PARSED_MANUAL_TAGS.THEME ===
-      "Innovative Financing for Humanitarian Energy Interventions"
-  ) as Entries;
+      entry.PARSED_MANUAL_TAGS.THEME === "Systems Approaches to Energy Access"
+  ).filter((entry) => {
+    return entry.PARSED_MANUAL_TAGS.CO_DESIGN_LEVEL === "2";
+  }) as Entries;
 
-  console.log("Filtered data:", entryWithThemeAndTitle);
+  // const entryWithThemeAndTitle = Data.filter(
+  //   (entry) =>
+  //     entry.PARSED_MANUAL_TAGS.THEME ===
+  //     "Innovative Financing for Humanitarian Energy Interventions"
+  // ) as Entries;
+
+  // console.log("Filtered data:", entryWithThemeAndTitle);
 
   return (
     <>
@@ -37,13 +37,13 @@ const CoreConcept = () => {
             className="w-3/4 mt-2 ml-2"
           />
           <div className="float-end mr-44 mb-4 mt-10 w-48">
-            <ArcherContainer>
+            {/* <ArcherContainer>
               <InformationCard data={Data[122]} />
-            </ArcherContainer>
+            </ArcherContainer> */}
 
-            {/* <ResourcesLevelEntries
-              basicResourcesLevel={entryWithThemeAndTitle}
-            /> */}
+            <ResourcesLevelEntries
+              basicResourcesLevel={entriesWithTheme}
+            />
           </div>
         </div>
 

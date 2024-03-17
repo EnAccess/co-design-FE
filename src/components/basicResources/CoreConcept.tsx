@@ -3,47 +3,26 @@ import Data from "../../../public/output.json";
 import InformationCard from "../cards/InformationCard";
 import YellowCard from "../cards/YellowCard";
 import { ArcherContainer } from "react-archer";
-import ResourcesLevel from "./ResourcesLevelEntries";
 import { Entries } from "@/types/interfaces";
-import { CategorizedByLevel } from "./CategorizedByLevel";
 import ResourcesLevelEntries from "./ResourcesLevelEntries";
+import { dataItem } from "./dataItem";
 
 const CoreConcept = () => {
-  const dataItem = [
-    {
-      title: "Systems Approaches to Energy Access",
-      description:
-        "Engaging with entire systems approaches requires humanitarian practitioners to challenge and rethink how to interact with humanitarian systems that surround them. This outlines what needs to change and how.",
-    },
-    {
-      title: "Scale & Replicability",
-      description:
-        "Whilst the idea of replicability (the ability to copy and paste using the same resources) is embedded in many humanitarian organisations, true scalability is often reserved for the private sector - how can the two learn from each other to create more effective and efficient humanitarian programs?",
-    },
-    {
-      title: "Localisation",
-      description:
-        "Formally recognised by the Grand Bargain, localisation engages local and national actors in all phases of humanitarian action. This theme supports localisation processes which include the voices of the forcibly displaced in leading in the sector.",
-    },
-    {
-      title: "Decolonisation",
-      description:
-        "Decolonisation reflects a just transition to rebalance power among the various stakeholders in the humanitarian sector. The theme looks at the stages of transformation in power imbalances, decolonising aid and highlights the need for systematic changes in how the humanitarian sector operates",
-    },
-  ];
-  const entriesWithCoreToolkit = Data.filter(
-    (entry) => entry.PARSED_MANUAL_TAGS.THEME
+  // const entriesWithTheme = Data.filter(
+  //   (entry) =>
+  //     entry.PARSED_MANUAL_TAGS.THEME === "Systems Approaches to Energy Access"
+  // ).filter((entry) => {
+  //   return entry.PARSED_MANUAL_TAGS.CO_DESIGN_LEVEL === "2";
+  // }) as Entries;
+
+  const entryWithThemeAndTitle = Data.filter(
+    (entry) =>
+      entry.PARSED_MANUAL_TAGS.THEME ===
+      "Innovative Financing for Humanitarian Energy Interventions"
   ) as Entries;
 
-  const entriesWithCaseStudy = Data.filter(
-    (entry) => entry.PARSED_MANUAL_TAGS["CASE STUDY THEME"]
-  ) as Entries;
+  console.log("Filtered data:", entryWithThemeAndTitle);
 
-  const categorizedCoreToolkitEntries = CategorizedByLevel(
-    entriesWithCoreToolkit
-  );
-  const categorizedCaseStudyEntries =
-    CategorizedByLevel(entriesWithCaseStudy);
   return (
     <>
       <div className="flex text-gray-500 justify-center items-center py-6 text-3xl font-semibold">
@@ -61,8 +40,10 @@ const CoreConcept = () => {
             <ArcherContainer>
               <InformationCard data={Data[122]} />
             </ArcherContainer>
-            {/* < ResourcesLevelEntries basicResourcesLevel={categorizedCoreToolkitEntries}/> */}
-            {/* <ResourcesLevelEntries basicResourcesLevel={categorizedCaseStudyEntries}/> */}
+
+            {/* <ResourcesLevelEntries
+              basicResourcesLevel={entryWithThemeAndTitle}
+            /> */}
           </div>
         </div>
 

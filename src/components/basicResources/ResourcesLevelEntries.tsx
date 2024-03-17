@@ -4,17 +4,19 @@ import InformationCard from "../cards/InformationCard";
 import { ArcherContainer } from "react-archer";
 
 interface Props {
-  basicResourcesLevel: { level2: Entries; level3: Entries };
+  basicResourcesLevel: Entries;
 }
 const ResourcesLevelEntries = ({ basicResourcesLevel }: Props) => {
   return (
     <div>
       <ArcherContainer>
-        {basicResourcesLevel.level3.map((data) => (
-          <div key={data.Key} className="w-72">
-            <InformationCard key={data.Key} data={data} />
-          </div>
-        ))}
+        <div className="flex flex-wrap gap-4 pb-3 px-2 ">
+          {basicResourcesLevel.map((data: Entry) => (
+            <div key={data.Key} className="w-60">
+              <InformationCard key={data.Key} data={data} />
+            </div>
+          ))}
+        </div>
       </ArcherContainer>
     </div>
   );

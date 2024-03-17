@@ -3,9 +3,9 @@ import Data from "../../../public/output.json";
 import InformationCard from "../cards/InformationCard";
 import YellowCard from "../cards/YellowCard";
 import { ArcherContainer } from "react-archer";
-import { Entries } from "@/types/interfaces";
-import ResourcesLevelEntries from "./ResourcesLevelEntries";
 import { dataItem } from "./dataItem";
+import { Entries } from "@/types/interfaces";
+import SystemApproachEntries from "./approachEntries/SystemApproachEntries";
 
 const CoreConcept = () => {
   const entriesWithTheme = Data.filter(
@@ -15,13 +15,10 @@ const CoreConcept = () => {
     return entry.PARSED_MANUAL_TAGS.CO_DESIGN_LEVEL === "2";
   }) as Entries;
 
-  // const entryWithThemeAndTitle = Data.filter(
+  // const entriesWithTitle = Data.filter(
   //   (entry) =>
-  //     entry.PARSED_MANUAL_TAGS.THEME ===
-  //     "Innovative Financing for Humanitarian Energy Interventions"
-  // ) as Entries;
-
-  // console.log("Filtered data:", entryWithThemeAndTitle);
+  //     entry.PARSED_MANUAL_TAGS["SUPPRTING TOOLKIT"] === "Scale & Replicability"
+  // )as Entries;
 
   return (
     <>
@@ -37,16 +34,9 @@ const CoreConcept = () => {
             className="w-3/4 mt-2 ml-2"
           />
           <div className="float-end mr-44 mb-4 mt-10 w-48">
-            {/* <ArcherContainer>
-              <InformationCard data={Data[122]} />
-            </ArcherContainer> */}
-
-            <ResourcesLevelEntries
-              basicResourcesLevel={entriesWithTheme}
-            />
+            <SystemApproachEntries systemApproach={entriesWithTheme} />
           </div>
         </div>
-
         <div className="lg:w-1/2">
           <div className="flex flex-col md:flex-row gap-4">
             <div className="border-4 border-dashed">
@@ -58,6 +48,7 @@ const CoreConcept = () => {
                 <ArcherContainer>
                   <InformationCard data={Data[84]} />
                 </ArcherContainer>
+                {/* <ScaleApproachEntries scaleApproach={entriesWithTitle} /> */}
               </div>
             </div>
             <div className="border-4 border-dashed">

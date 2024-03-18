@@ -6,7 +6,7 @@ import Data from "../../public/output.json";
 import { Entry } from "../type/interface";
 import TechnicalApproches from "../components/toolscomponents/TechnicalApproach";
 import BehaviorByPractice from "../components/toolscomponents/behavior/BehaviorByPractice";
-import BehaviorByTheory from  "../components/toolscomponents/behavior/BehaviorByTheory";
+import BehaviorByTheory from "../components/toolscomponents/behavior/BehaviorByTheory";
 import TitleCard from "../components/cards/TitleCard";
 import HumanDesignByPracticeApproach from "../components/toolscomponents/humanDesign/HumanDesignByPracticeApproach";
 import HumanDesignByTheoryApproach from "../components/toolscomponents/humanDesign/HumanDesignByTheoryApproach";
@@ -177,13 +177,13 @@ const ToolsResources = () => {
               title="Human-Centered Design & Design Thinking"
               description="Human-Centered Design & Design Thinking combine to produce a problem solving methodology which captures the wishes of a centralised user group and encourages significant ideation. "
             />
-            <div className="flex">
-              <div>
+            <div className="flex gap-2">
+              <div className="ml-4 mb-4">
                 <HumanDesignByPracticeApproach
                   approachEntries={humanDesignByPracticeApproach}
                 />
               </div>
-              <div>
+              <div className="mr-4">
                 <HumanDesignByTheoryApproach
                   approachEntries={humanDesignByTheoryApproach}
                 />

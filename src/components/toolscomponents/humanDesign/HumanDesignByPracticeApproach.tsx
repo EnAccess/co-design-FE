@@ -8,9 +8,9 @@ interface Props {
 }
 const HumanDesignApproches = ({ approachEntries }: Props) => {
   return (
-    <div className="flex gap-10 pt-6">
+    <div className="flex gap-4 pt-6">
       <ArcherContainer>
-        <div className="border-4 border-dashed w-1/2">
+        <div className="border-4 border-dashed px-2">
           <div className="mt-3 pb-6">
             <h1 className="text-center font-bold text-lg">PRACTICE</h1>
           </div>

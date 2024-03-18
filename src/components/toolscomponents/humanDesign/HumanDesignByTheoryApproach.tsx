@@ -8,7 +8,7 @@ interface Props {
 }
 const HumanDesignByTheoryApproches = ({ approachEntries }: Props) => {
   return (
-    <div className="pt-6">
+    <div className="flex gap-4 pt-6">
       <ArcherContainer>
         <div className="border-4 border-dashed">
           <div className="mt-3 pb-6">
@@ -16,7 +16,7 @@ const HumanDesignByTheoryApproches = ({ approachEntries }: Props) => {
           </div>
           <div>
             {approachEntries.map((data: Entry) => (
-              <div key={data.Key} className="w-60">
+              <div key={data.Key} className="w-60 flex flex-wrap justify-center items-center gap-4 mb-2">
                 <InformationCard key={data.Key} data={data} />
               </div>
             ))}

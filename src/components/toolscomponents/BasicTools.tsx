@@ -1,8 +1,8 @@
 import React from "react";
-import YellowCard from "../cards/YellowCard";
+import TitleCard from "../cards/TitleCard";
 import { ArcherContainer } from "react-archer";
 import InformationCard from "../cards/InformationCard";
-import { Entry } from "@/type/interface";
+import { Entry } from "../../type/interface";
 
 interface Props {
   basicToolsEntries: Entry[];
@@ -11,7 +11,7 @@ const BasicTools = ({ basicToolsEntries }: Props) => {
   return (
     <div className="border-4 border-dashed border-gray-200 bg-gray-50">
       <div>
-        <YellowCard
+        <TitleCard
           title="BASIC TOOLS"
           description="This box contains an overview of the basic tools needed to conduct effective co-design processes"
         />

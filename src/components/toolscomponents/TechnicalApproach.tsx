@@ -1,7 +1,7 @@
-import { Entry } from "@/type/interface";
+import { Entry } from "../../type/interface";
 import React from "react";
 import InformationCard from "../cards/InformationCard";
-import YellowCard from "../cards/YellowCard";
+import TitleCard from "../cards/TitleCard";
 import { ArcherContainer } from "react-archer";
 
 interface Props {
@@ -11,7 +11,7 @@ const TechnicalApproches = ({ approachEntries }: Props) => {
   return (
     <div className="border-4 border-dashed border-gray-200 my-8 p-8 w-1/2 h-fit">
       <div>
-        <YellowCard
+        <TitleCard
           title="Technical Approaches"
           description="Technical Approaches engage with energy systems and services through a technical lens. We have chosen to only include technical approaches which also integrate the wider socio-cultural, environmental, and financial context."
           className=""

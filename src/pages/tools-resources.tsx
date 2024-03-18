@@ -1,19 +1,19 @@
-import HorizontalArrows from "@/components/toolscomponents/HorizontalArrows";
-import BasicTools from "@/components/toolscomponents/BasicTools";
+import HorizontalArrows from "../components/toolscomponents/HorizontalArrows";
+import BasicTools from "../components/toolscomponents/BasicTools";
 import React from "react";
-import VerticalArrows from "@/components/toolscomponents/VerticalArrows";
+import VerticalArrows from "../components/toolscomponents/VerticalArrows";
 import Data from "../../public/output.json";
-import { Entry } from "@/type/interface";
-import TechnicalApproches from "@/components/toolscomponents/TechnicalApproach";
-import BehaviorByPractice from "@/components/toolscomponents/behavior/BehaviorByPractice";
-import BehaviorByTheory from "@/components/toolscomponents/behavior/BehaviorByTheory";
-import YellowCard from "@/components/cards/YellowCard";
-import HumanDesignByPracticeApproach from "@/components/toolscomponents/humanDesign/HumanDesignByPracticeApproach";
-import HumanDesignByTheoryApproach from "@/components/toolscomponents/humanDesign/HumanDesignByTheoryApproach";
-import MultidiscilnaryByPracticeApproach from "@/components/toolscomponents/multidiscpliary/MultidiscilnaryByPracticeApproach";
-import MultidiscilnaryByTheoryApproach from "@/components/toolscomponents/multidiscpliary/MultidisciplinaryByTheoryApproach";
-import ParticipatoryByPracticeApproch from "@/components/toolscomponents/participatory/ParticipatoryByPracticeApproach";
-import ParticipatoryByTheoryApproch from "@/components/toolscomponents/participatory/ParticipatoryByTheoryApproach";
+import { Entry } from "../type/interface";
+import TechnicalApproches from "../components/toolscomponents/TechnicalApproach";
+import BehaviorByPractice from "../components/toolscomponents/behavior/BehaviorByPractice";
+import BehaviorByTheory from  "../components/toolscomponents/behavior/BehaviorByTheory";
+import TitleCard from "../components/cards/TitleCard";
+import HumanDesignByPracticeApproach from "../components/toolscomponents/humanDesign/HumanDesignByPracticeApproach";
+import HumanDesignByTheoryApproach from "../components/toolscomponents/humanDesign/HumanDesignByTheoryApproach";
+import MultidiscilnaryByTheoryApproach from "../components/toolscomponents/multidiscpliary/MultidisciplinaryByTheoryApproach";
+import ParticipatoryByPracticeApproch from "../components/toolscomponents/participatory/ParticipatoryByPracticeApproach";
+import ParticipatoryByTheoryApproch from "../components/toolscomponents/participatory/ParticipatoryByTheoryApproach";
+import MultidiscilnaryByPracticeApproach from "../components/toolscomponents/multidiscpliary/MultidiscilnaryByPracticeApproach";
 
 const ToolsResources = () => {
   const basicToolsEntries = Data.filter((entry) =>
@@ -112,7 +112,7 @@ const ToolsResources = () => {
             </div>
             <div className="flex w-2/3">
               <div className="border-4 border-dotted border-gray-200 bg-gray-50">
-                <YellowCard
+                <TitleCard
                   title="Multidisciplinary Approaches"
                   description="Multidisciplinary approaches blend different disciplines to approach problems from multiple perspectives"
                 />
@@ -132,7 +132,7 @@ const ToolsResources = () => {
             </div>
             <div className="w-2/3 py-6">
               <div className="border-4 border-dashed border-gray-200 bg-gray-50">
-                <YellowCard
+                <TitleCard
                   title="Participatory Approaches"
                   description="Participatory Approaches cover a wide range of qualitative research methods which look to include participants throughout project processes. These include phenomenological, photovoice, participatory workshops, mapping, and hanging out methods to name a few."
                   className="w-fit"
@@ -156,7 +156,7 @@ const ToolsResources = () => {
       </div>
       <div className="flex gap-6 -mt-[28rem] w-2/3 ">
         <div className="border-4 border-dashed border-gray-200 bg-gray-50 w-1/3 h-fit -mt-[28rem]">
-          <YellowCard
+          <TitleCard
             title="Behaviour Change Approaches"
             description="BCA’s look to understand and unlock the how, why, and when of energy system and service adoption from an end-user or individual perspective."
           />
@@ -173,7 +173,7 @@ const ToolsResources = () => {
         </div>
         <div className="flex w-1/4 h-fit -mt-[20rem]">
           <div className="border-4 border-dashed border-gray-200 bg-gray-50">
-            <YellowCard
+            <TitleCard
               title="Human-Centered Design & Design Thinking"
               description="Human-Centered Design & Design Thinking combine to produce a problem solving methodology which captures the wishes of a centralised user group and encourages significant ideation. "
             />

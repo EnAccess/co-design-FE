@@ -1,4 +1,4 @@
-import { Entries, Entry } from '@/types/interfaces';
+import { Entries, Entry } from '../../../types/interfaces';
 
 interface Accumulator {
 level2: Entries

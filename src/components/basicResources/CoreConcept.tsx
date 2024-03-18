@@ -4,8 +4,11 @@ import InformationCard from "../cards/InformationCard";
 import YellowCard from "../cards/YellowCard";
 import { ArcherContainer } from "react-archer";
 import { dataItem } from "./dataItem";
-import { Entries } from "@/types/interfaces";
+import { Entries } from "../../types/interfaces";
 import SystemApproachEntries from "./approachEntries/SystemApproachEntries";
+import LocalizationApproach from "./approachEntries/LocalizationApproach";
+import ScaleApproach from "./approachEntries/ScaleApproach";
+import DocolonizationApproach from "./approachEntries/DecolonizationApproach";
 
 const CoreConcept = () => {
   const entriesWithTheme = Data.filter(
@@ -15,10 +18,20 @@ const CoreConcept = () => {
     return entry.PARSED_MANUAL_TAGS.CO_DESIGN_LEVEL === "2";
   }) as Entries;
 
-  // const entriesWithTitle = Data.filter(
-  //   (entry) =>
-  //     entry.PARSED_MANUAL_TAGS["SUPPRTING TOOLKIT"] === "Scale & Replicability"
-  // )as Entries;
+  const scale = Data.filter(
+    (entry) =>
+      entry.PARSED_MANUAL_TAGS["SUPPORTING TOOLKIT"] === "Scale & Replicability"
+  ) as Entries;
+
+  const localization = Data.filter(
+    (entry) => entry.PARSED_MANUAL_TAGS.THEME === "Localisation"
+  ).filter(
+    (entry) => entry.PARSED_MANUAL_TAGS.CO_DESIGN_LEVEL === "3"
+  ) as Entries;
+
+  const decolonisation = Data.filter(
+    (entry) => entry.PARSED_MANUAL_TAGS.THEME === "Decolonisation"
+  ) as Entries;
 
   return (
     <>
@@ -45,10 +58,7 @@ const CoreConcept = () => {
                 description={dataItem[1].description}
               />
               <div className="w-96 mt-10 float-end mr-12 mb-4">
-                <ArcherContainer>
-                  <InformationCard data={Data[84]} />
-                </ArcherContainer>
-                {/* <ScaleApproachEntries scaleApproach={entriesWithTitle} /> */}
+                <ScaleApproach scaleEntries={scale} />
               </div>
             </div>
             <div className="border-4 border-dashed">
@@ -56,16 +66,9 @@ const CoreConcept = () => {
                 title={dataItem[2].title}
                 description={dataItem[2].description}
               />
-              <div className="flex ml-3 mt-28 mr-24 gap-3 mb-12 w-96">
+              <div className="ml-3 mt-28 mr-24 gap-3 mb-12 w-96">
                 <div>
-                  <ArcherContainer>
-                    <InformationCard data={Data[100]} />
-                  </ArcherContainer>
-                </div>
-                <div>
-                  <ArcherContainer>
-                    <InformationCard data={Data[119]} />
-                  </ArcherContainer>
+                  <LocalizationApproach localizationEntries={localization} />
                 </div>
               </div>
             </div>
@@ -79,12 +82,13 @@ const CoreConcept = () => {
               />
             </div>
             <div className="flex gap-4 mt-2 ml-4">
-              <div className="mt-32 lg:w-44">
-                <ArcherContainer>
+              <div className="mt-32">
+                {/* <ArcherContainer>
                   <InformationCard data={Data[101]} />
-                </ArcherContainer>
+                </ArcherContainer> */}
+                <DocolonizationApproach decolonizationEntries={decolonisation} />
               </div>
-              <div className="mt-2 lg:w-52">
+              {/* <div className="mt-2 lg:w-52">
                 <ArcherContainer>
                   <InformationCard data={Data[17]} />
                 </ArcherContainer>
@@ -93,7 +97,7 @@ const CoreConcept = () => {
                 <ArcherContainer>
                   <InformationCard data={Data[11]} />
                 </ArcherContainer>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

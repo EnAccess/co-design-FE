@@ -18,7 +18,7 @@ const TechnicalApproches = ({ approachEntries }: Props) => {
         />
         <div className="pt-6">
           <ArcherContainer>
-            <div className="grid grid-cols-3 gap-2">
+            <div className="grid grid-cols-2 gap-8">
               {approachEntries.map((data: Entry) => (
                 <div key={data.Key} className="w-56">
                   <InformationCard key={data.Key} data={data} />

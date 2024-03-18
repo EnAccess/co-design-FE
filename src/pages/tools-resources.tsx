@@ -5,7 +5,6 @@ import VerticalArrows from "@/components/toolscomponents/VerticalArrows";
 import Data from "../../public/output.json";
 import { Entry } from "@/type/interface";
 import TechnicalApproches from "@/components/toolscomponents/TechnicalApproach";
-import ParticipatoryApproches from "@/components/toolscomponents/participatory/ParticipatoryByPracticeApproach";
 import BehaviorByPractice from "@/components/toolscomponents/behavior/BehaviorByPractice";
 import BehaviorByTheory from "@/components/toolscomponents/behavior/BehaviorByTheory";
 import YellowCard from "@/components/cards/YellowCard";
@@ -96,7 +95,9 @@ const ToolsResources = () => {
     <>
       <div className="flex justify-between items-center gap-4 py-8">
         <div className="flex flex-col justify-center align-center">
-          <BasicTools basicToolsEntries={basicToolsEntries} />
+          <div className="w-2/3 h-full ml-28">
+            <BasicTools basicToolsEntries={basicToolsEntries} />
+          </div>
           <div>
             <VerticalArrows />
           </div>
@@ -129,13 +130,14 @@ const ToolsResources = () => {
                 </div>
               </div>
             </div>
-            <div className="flex w-2/3">
+            <div className="w-2/3 py-6">
               <div className="border-4 border-dashed border-gray-200 bg-gray-50">
                 <YellowCard
                   title="Participatory Approaches"
                   description="Participatory Approaches cover a wide range of qualitative research methods which look to include participants throughout project processes. These include phenomenological, photovoice, participatory workshops, mapping, and hanging out methods to name a few."
+                  className="w-fit"
                 />
-                <div className="flex">
+                <div className="flex gap-4">
                   <div>
                     <ParticipatoryByPracticeApproch
                       approachEntries={participatoryApproachEntries}
@@ -152,13 +154,13 @@ const ToolsResources = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-between">
-        <div className="border-4 border-dashed border-gray-200 bg-gray-50 w-1/2">
+      <div className="flex gap-6 -mt-[28rem] w-2/3 ">
+        <div className="border-4 border-dashed border-gray-200 bg-gray-50 w-1/3 h-fit -mt-[28rem]">
           <YellowCard
             title="Behaviour Change Approaches"
             description="BCA’s look to understand and unlock the how, why, and when of energy system and service adoption from an end-user or individual perspective."
           />
-          <div className="flex gap-4 px-3">
+          <div className="flex gap-3 px-3">
             <div>
               <BehaviorByPractice
                 approachEntries={behaviorByPracticeApproach}
@@ -169,7 +171,7 @@ const ToolsResources = () => {
             </div>
           </div>
         </div>
-        <div className="flex w-1/3">
+        <div className="flex w-1/4 h-fit -mt-[20rem]">
           <div className="border-4 border-dashed border-gray-200 bg-gray-50">
             <YellowCard
               title="Human-Centered Design & Design Thinking"

@@ -6,7 +6,7 @@ const VerticalArrows = () => {
     <div>
       <div className="flex justify-around">
         <ArrowDown />
-        <div className="-rotate-45">
+        <div className="-rotate-45 mt-44">
           <ArrowDown />
         </div>
       </div>

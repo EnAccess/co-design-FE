@@ -4,7 +4,7 @@ import ArrowDown from "../icons/ArrowDown";
 const HorzontalArrows = () => {
   return (
     <div>
-      <div className="flex flex-col justify-around">
+      <div className="flex flex-col w-80">
         <div className="-rotate-[135deg]">
           <ArrowDown />
         </div>

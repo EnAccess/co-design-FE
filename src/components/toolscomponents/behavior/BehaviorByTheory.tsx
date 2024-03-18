@@ -17,7 +17,7 @@ const BehaviorByTheory = ({ approachEntries }: Props) => {
             </div>
             <div className="flex flex-wrap gap-4 pb-3 px-2 ">
               {approachEntries.map((data: Entry) => (
-                <div key={data.Key} className="w-72">
+                <div key={data.Key} className="w-44">
                   <InformationCard key={data.Key} data={data} />
                 </div>
               ))}

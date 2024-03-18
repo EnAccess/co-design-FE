@@ -9,13 +9,13 @@ interface Props {
 }
 const BasicTools = ({ basicToolsEntries }: Props) => {
   return (
-    <div className="border-4 border-dashed border-gray-200">
+    <div className="border-4 border-dashed border-gray-200 bg-gray-50">
       <div>
         <YellowCard
           title="BASIC TOOLS"
           description="This box contains an overview of the basic tools needed to conduct effective co-design processes"
         />
-        <div className="flex gap-10 pt-6">
+        <div className="flex gap-10 pt-6 px-10">
           <ArcherContainer>
             <div className="flex flex-wrap gap-8 px-3 pb-3">
               {basicToolsEntries.map((data: Entry) => (

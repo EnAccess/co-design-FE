@@ -6,7 +6,7 @@ interface Props {
 }
 const ResourceSection = ({ navData }: Props) => {
   return (
-    <div>
+    <div className="py-8 md:py-32">
       <p className="text-center text-gray-500 text-xl font-bold mb-3">
         Select Type of Resources in The Co-Design Journey
       </p>

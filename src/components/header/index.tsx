@@ -8,38 +8,59 @@ import { usePathname } from "next/navigation";
 
 export const Header = () => {
   const pathname = usePathname();
+
+  let title = "";
+
+  switch (pathname) {
+    case "/":
+      title = "Select Level of Co-design Practice";
+      break;
+    case "/case-studies-and-core-tools":
+      title = "Explore Case Studies and Core Tools";
+      break;
+    default:
+      title = "";
+      break;
+  }
+
+  if (pathname === "/tools-resources")
+    return (
+      <div className="flex flex-wrap justify-between items-center gap-y-24 border-b-8 border-dashed px-8 mx-auto">
+        <ResourceSection navData={navData} />
+        <Image
+          src="./images/smallArrow.png"
+          alt="arrow"
+          width={100}
+          height={100}
+        />
+        <JourneySection />
+      </div>
+    );
+
+  if (pathname === "/case-studies-and-core-tools" || pathname === "/")
+    return (
+      <div className="flex flex-wrap justify-between items-center gap-y-24 border-b-8 border-dashed px-8 mx-auto">
+        <ResourceSection navData={navData} />
+        <Image
+          src="./images/smallArrow.png"
+          alt="arrow"
+          width={100}
+          height={100}
+        />
+        <PracticeSection title={title} />
+        <Image
+          src="./images/smallArrow.png"
+          alt="arrow"
+          width={100}
+          height={100}
+        />
+        <JourneySection />
+      </div>
+    );
+
   return (
     <div className="flex flex-wrap justify-between items-center gap-y-24 border-b-8 border-dashed px-8 mx-auto">
       <ResourceSection navData={navData} />
-      {pathname === "/tools-resources" && (
-        <>
-          <Image
-            src="./images/smallArrow.png"
-            alt="arrow"
-            width={100}
-            height={100}
-          />
-          <JourneySection />
-        </>
-      )}
-      {(pathname === "/case-studies-and-core-tools" || pathname === "/") && (
-        <>
-          <Image
-            src="./images/smallArrow.png"
-            alt="arrow"
-            width={100}
-            height={100}
-          />
-          <PracticeSection title={"Select Level of Co-design Practice"} />
-          <Image
-            src="./images/smallArrow.png"
-            alt="arrow"
-            width={100}
-            height={100}
-          />
-          <JourneySection />
-        </>
-      )}
     </div>
   );
 };

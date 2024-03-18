@@ -93,7 +93,6 @@ function GroupedData() {
     };
   }, []);
 
-  console.log({ positions });
   return (
     <section className="mt-10">
       <h3 className="text-gray-600 font-semibold text-center text-2xl">
@@ -106,7 +105,7 @@ function GroupedData() {
       >
         <ArcherContainer
           strokeDasharray="."
-          noCurves-
+          noCurves
           strokeColor={getRandomColor()}
         >
           <div className="grid grid-cols-2 gap-10">
@@ -115,7 +114,7 @@ function GroupedData() {
                 <div
                   key={themItem}
                   id={themItem}
-                  className="bg-gray-100 border border-dashed"
+                  className="bg-gray-100 border border-dashed p-5"
                 >
                   <div className="bg-yellow-200 flex justify-between px-5 py-5 w-4/5">
                     <h3 className="text-2xl font-semibold w-1/3-">

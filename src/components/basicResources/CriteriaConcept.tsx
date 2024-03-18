@@ -7,11 +7,19 @@ import { dataItem } from "./dataItem";
 import { Entries, Entry } from "@/types/interfaces";
 import HumanitarianApproach from "./approachEntries/HumanitarianApproach";
 import PolicyApproach from "./approachEntries/PolicyApproach";
+import HumanitarianPolicy from "./approachEntries/HumanitarianPolicy";
 
 const CriteriaConcept = () => {
   const humanitarianEntries = Data.filter(
     (entry) => entry.PARSED_MANUAL_TAGS.THEME === "Humanitarian Principles?"
   ) as Entries;
+
+  const humanitarianPolicy = Data.filter(
+    (entry) => entry.PARSED_MANUAL_TAGS.THEME === "Humanitarian Principles?"
+  ).filter(
+    (entry) => entry.PARSED_MANUAL_TAGS.CO_DESIGN_LEVEL === "2"
+  ) as Entries;
+console.log(humanitarianPolicy)
 
   const policyEntries = Data.filter(
     (entry) => entry.PARSED_MANUAL_TAGS.THEME === "Policy"
@@ -38,10 +46,8 @@ const CriteriaConcept = () => {
           <div className="flex justify-end py-4 mr-3">
             <HumanitarianApproach humanitarianEntries={humanitarianEntries} />
           </div>
-          <div className="w-60 ml-6">
-            <ArcherContainer>
-              <InformationCard data={Data[138]} />
-            </ArcherContainer>
+          <div className="px-3 mb-3">
+            <HumanitarianPolicy humanitarianEntries={humanitarianPolicy} />
           </div>
         </div>
         <div className="border-4 border-dashed">

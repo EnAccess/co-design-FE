@@ -92,7 +92,7 @@ const ToolsResources = () => {
   }).splice(3) as Entry[];
 
   return (
-    <>
+    <div className="border-2 border-red-500">
       <div className="flex justify-between items-center gap-4 py-8">
         <div className="flex flex-col justify-center align-center">
           <div className="w-2/3 h-full ml-28">
@@ -130,20 +130,20 @@ const ToolsResources = () => {
                 </div>
               </div>
             </div>
-            <div className="w-2/3 py-6">
+            <div className="w-1/2 ml-72 py-6">
               <div className="border-4 border-dashed border-gray-200 bg-gray-50">
                 <TitleCard
                   title="Participatory Approaches"
                   description="Participatory Approaches cover a wide range of qualitative research methods which look to include participants throughout project processes. These include phenomenological, photovoice, participatory workshops, mapping, and hanging out methods to name a few."
                   className="w-fit"
                 />
-                <div className="flex gap-4">
-                  <div>
+                <div className="flex gap-3 px-3">
+                  <div className="w-fit">
                     <ParticipatoryByPracticeApproch
                       approachEntries={participatoryApproachEntries}
                     />
                   </div>
-                  <div>
+                  <div className="1/2">
                     <ParticipatoryByTheoryApproch
                       approachEntries={participatoryApproachEntries1}
                     />
@@ -154,7 +154,7 @@ const ToolsResources = () => {
           </div>
         </div>
       </div>
-      <div className="flex gap-6 -mt-[28rem] w-2/3 ">
+      <div className="flex gap-6">
         <div className="border-4 border-dashed border-gray-200 bg-gray-50 w-1/3 h-fit -mt-[28rem]">
           <TitleCard
             title="Behaviour Change Approaches"
@@ -192,7 +192,7 @@ const ToolsResources = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

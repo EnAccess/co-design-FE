@@ -14,9 +14,9 @@ const ParticipatoryByTheoryApproch = ({ approachEntries }: Props) => {
           <div className="mt-3 pb-6">
             <h1 className="text-center font-bold text-lg">THEORY</h1>
           </div>
-          <div className="flex flex-wrap gap-2">
+          <div className="">
             {approachEntries.map((data: Entry) => (
-              <div key={data.Key} className="w-52">
+              <div key={data.Key} className="w-44">
                 <InformationCard key={data.Key} data={data} />
               </div>
             ))}

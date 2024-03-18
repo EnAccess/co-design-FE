@@ -1,18 +1,19 @@
 import React from "react";
-import ArrowDown from "../icons/ArrowDown";
+import LongArrow from "../icons/LongArrow";
+import SmallArrow from "../icons/SmallArrow";
 
 const HorzontalArrows = () => {
   return (
     <div>
-      <div className="flex flex-col w-80">
-        <div className="-rotate-[135deg]">
-          <ArrowDown />
+      <div className="flex flex-col gap-32 mr-24">
+        <div className="-rotate-[132deg]">
+          <LongArrow />
         </div>
         <div className="-rotate-90">
-          <ArrowDown />
+          <SmallArrow />
         </div>
         <div className="-rotate-45">
-          <ArrowDown />
+          <LongArrow />
         </div>
       </div>
     </div>

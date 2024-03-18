@@ -1,13 +1,14 @@
 import React from "react";
-import ArrowDown from "../icons/ArrowDown";
+import SmallArrow from "../icons/SmallArrow";
+import LongArrow from "../icons/LongArrow";
 
 const VerticalArrows = () => {
   return (
     <div>
-      <div className="flex justify-around">
-        <ArrowDown />
-        <div className="-rotate-45 mt-44">
-          <ArrowDown />
+      <div className="flex justify-around mt-20">
+        <SmallArrow />
+        <div className="-rotate-45">
+          <LongArrow />
         </div>
       </div>
     </div>

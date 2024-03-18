@@ -1,5 +1,6 @@
 "use client";
 
+import { Entries } from "@/types/interfaces";
 import classNames from "classnames";
 import React, { useEffect, useState } from "react";
 
@@ -12,9 +13,9 @@ const rowStyle = {
 const boxStyle = { padding: "10px", border: "1px solid black" };
 
 function GroupedTools() {
-  const [data, setData] = useState([]);
-  const [filterLevel, setFilterLevel] = useState(null);
-  const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [data, setData] = useState<Entries>([]);
+  const [filterLevel, setFilterLevel] = useState<string | null>(null);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   const getData = () => {
     fetch("./output.json", {
@@ -50,37 +51,37 @@ function GroupedTools() {
     3: "bg-green-500",
   };
 
-  const handleFilter = (level) => {
+  const handleFilter = (level: string) => {
     setFilterLevel(level);
   };
 
   return (
     <section>
-   
       <div className="grid grid-cols-2 gap-5 p-20 w-full">
         {uniqueThemes.map((item, index) => {
           return (
-              <div
+            <div
               key={index}
-                className={classNames({
-                  "bg-gray-100- border border-dashed p-5 flex flex-col gap-3 bg-gray-100 ": true,
-    "col-span-3 bg-red-500" : index === 5,
+              className={classNames({
+                "bg-gray-100- border border-dashed p-5 flex flex-col gap-3 bg-gray-100 ":
+                  true,
+                "col-span-3 bg-red-500": index === 5,
+              })}
+              // className={`bg-gray-100- border border-dashed ${
+              //   index === 0 ? "bg-red-500" : index===1 ? "bg-blue-500" : index===2 ? "bg-green-500" : ""
+              // }`}
+            >
+              {item}
 
-                })}
-                // className={`bg-gray-100- border border-dashed ${
-                //   index === 0 ? "bg-red-500" : index===1 ? "bg-blue-500" : index===2 ? "bg-green-500" : ""
-                // }`}
-              >
-                {item}
-
-{data.map((itemdata, dataIndex) => {
+              {data.map((itemdata, dataIndex) => {
                 if (itemdata.PARSED_MANUAL_TAGS.TOOLS === item) {
                   return (
                     <div
                       key={dataIndex}
                       className="border border-dashed py-4 px-2 relative"
                       onMouseEnter={() => setHoveredIndex(dataIndex)}
-                      onMouseLeave={() => setHoveredIndex(null)}>
+                      onMouseLeave={() => setHoveredIndex(null)}
+                    >
                       {itemdata.Title}
                       {hoveredIndex === dataIndex && (
                         <div className="absolute bg-white border p-4 mt-2 z-10">
@@ -92,7 +93,6 @@ function GroupedTools() {
                   );
                 }
               })}
-              
             </div>
           );
         })}

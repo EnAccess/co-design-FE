@@ -8,12 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
-<<<<<<< HEAD
       maxWidth: {
         custom: "2500px",
       },
 
-=======
       colors: {
         level: {
           primary: {
@@ -30,7 +28,6 @@ const config: Config = {
           },
         },
       },
->>>>>>> dev
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

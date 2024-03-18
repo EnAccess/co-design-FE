@@ -1,11 +1,22 @@
 import React from "react";
 import Data from "../../../public/output.json";
-import InformationCard from "../cards/InformationCard";
 import YellowCard from "../cards/YellowCard";
-import { ArcherContainer } from "react-archer";
 import { dataItem } from "./dataItem";
+import CaseStudyApproach from "./approachEntries/CaseStudyApproach";
+import { Entries } from "@/types/interfaces";
+import GenderApproach from "./approachEntries/GenderAppraoch";
 
 const ElementConcept = () => {
+  const caseStudy = Data.filter(
+    (entry) => entry.PARSED_MANUAL_TAGS.THEME == "Capacity Building & Sharing"
+  ) as Entries;
+
+  const gender = Data.filter(
+    (entry) =>
+      entry.PARSED_MANUAL_TAGS.THEME ===
+      "Gender, Disability, & Inclusion"
+  ) as Entries;
+
   return (
     <div className="mt-20">
       <div className="flex text-gray-500 justify-center items-center py-4 text-3xl font-semibold">
@@ -19,15 +30,8 @@ const ElementConcept = () => {
             description={dataItem[4].description}
             className="w-3/4 mt-2 ml-2"
           />
-          <div className="w-44 mt-4 ml-12">
-            <ArcherContainer>
-              <InformationCard data={Data[32]} />
-            </ArcherContainer>
-          </div>
-          <div className="float-end w-52 mt-10 mr-4 mb-2">
-            <ArcherContainer>
-              <InformationCard data={Data[135]} />
-            </ArcherContainer>
+          <div className="mt-4 px-2">
+            <CaseStudyApproach caseStudyEntries={caseStudy} />
           </div>
         </div>
 
@@ -45,9 +49,10 @@ const ElementConcept = () => {
                 description={dataItem[6].description}
               />
               <div className="w-64 ml-6 py-28">
-                <ArcherContainer>
+                {/* <ArcherContainer>
                   <InformationCard data={Data[3]} />
-                </ArcherContainer>
+                </ArcherContainer> */}
+                <GenderApproach genderEntries={gender} />
               </div>
             </div>
           </div>

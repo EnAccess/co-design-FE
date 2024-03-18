@@ -1,14 +1,12 @@
 import React from "react";
 import Data from "../../../public/output.json";
-import InformationCard from "../cards/InformationCard";
-import YellowCard from "../cards/YellowCard";
-import { ArcherContainer } from "react-archer";
 import { dataItem } from "./dataItem";
 import { Entries } from "../../types/interfaces";
 import SystemApproachEntries from "./approachEntries/SystemApproachEntries";
 import LocalizationApproach from "./approachEntries/LocalizationApproach";
 import ScaleApproach from "./approachEntries/ScaleApproach";
 import DocolonizationApproach from "./approachEntries/DecolonizationApproach";
+import TitleCard from "../cards/TitleCard";
 
 const CoreConcept = () => {
   const entriesWithTheme = Data.filter(
@@ -41,7 +39,7 @@ const CoreConcept = () => {
 
       <div className="flex gap-4 flex-col lg:flex-row md:max-w-full h-full">
         <div className="border-4 border-dashed md:w-1/2">
-          <YellowCard
+          <TitleCard
             title={dataItem[0].title}
             description={dataItem[0].description}
             className="w-3/4 mt-2 ml-2"
@@ -53,7 +51,7 @@ const CoreConcept = () => {
         <div className="lg:w-1/2">
           <div className="flex flex-col md:flex-row gap-4">
             <div className="border-4 border-dashed">
-              <YellowCard
+              <TitleCard
                 title={dataItem[1].title}
                 description={dataItem[1].description}
               />
@@ -62,7 +60,7 @@ const CoreConcept = () => {
               </div>
             </div>
             <div className="border-4 border-dashed">
-              <YellowCard
+              <TitleCard
                 title={dataItem[2].title}
                 description={dataItem[2].description}
               />
@@ -75,7 +73,7 @@ const CoreConcept = () => {
           </div>
           <div className="border-4 border-dashed mt-6 flex flex-wrap lg:flex-row">
             <div className="py-2">
-              <YellowCard
+              <TitleCard
                 title={dataItem[3].title}
                 description={dataItem[3].description}
                 className="flex flex-col gap-4 w-96 ml-3"
@@ -83,21 +81,10 @@ const CoreConcept = () => {
             </div>
             <div className="flex gap-4 mt-2 ml-4">
               <div className="mt-32">
-                {/* <ArcherContainer>
-                  <InformationCard data={Data[101]} />
-                </ArcherContainer> */}
-                <DocolonizationApproach decolonizationEntries={decolonisation} />
+                <DocolonizationApproach
+                  decolonizationEntries={decolonisation}
+                />
               </div>
-              {/* <div className="mt-2 lg:w-52">
-                <ArcherContainer>
-                  <InformationCard data={Data[17]} />
-                </ArcherContainer>
-              </div>
-              <div className="mt-32 lg:w-52 mr-6 mb-4">
-                <ArcherContainer>
-                  <InformationCard data={Data[11]} />
-                </ArcherContainer>
-              </div> */}
             </div>
           </div>
         </div>

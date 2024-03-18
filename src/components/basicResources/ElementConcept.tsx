@@ -1,10 +1,10 @@
 import React from "react";
 import Data from "../../../public/output.json";
-import YellowCard from "../cards/YellowCard";
 import { dataItem } from "./dataItem";
 import CaseStudyApproach from "./approachEntries/CaseStudyApproach";
 import { Entries } from "@/types/interfaces";
 import GenderApproach from "./approachEntries/GenderAppraoch";
+import TitleCard from "../cards/TitleCard";
 
 const ElementConcept = () => {
   const caseStudy = Data.filter(
@@ -13,8 +13,7 @@ const ElementConcept = () => {
 
   const gender = Data.filter(
     (entry) =>
-      entry.PARSED_MANUAL_TAGS.THEME ===
-      "Gender, Disability, & Inclusion"
+      entry.PARSED_MANUAL_TAGS.THEME === "Gender, Disability, & Inclusion"
   ) as Entries;
 
   return (
@@ -25,7 +24,7 @@ const ElementConcept = () => {
 
       <div className="flex flex-col md:flex-row gap-3 max-w-full h-full">
         <div className="border-4 border-dashed max-w-[60%]">
-          <YellowCard
+          <TitleCard
             title={dataItem[4].title}
             description={dataItem[4].description}
             className="w-3/4 mt-2 ml-2"
@@ -38,20 +37,17 @@ const ElementConcept = () => {
         <div className="gap-4">
           <div className="flex gap-4">
             <div className="border-4 border-dashed">
-              <YellowCard
+              <TitleCard
                 title={dataItem[5].title}
                 description={dataItem[5].description}
               />
             </div>
             <div className="border-4 border-dashed">
-              <YellowCard
+              <TitleCard
                 title={dataItem[6].title}
                 description={dataItem[6].description}
               />
               <div className="w-64 ml-6 py-28">
-                {/* <ArcherContainer>
-                  <InformationCard data={Data[3]} />
-                </ArcherContainer> */}
                 <GenderApproach genderEntries={gender} />
               </div>
             </div>

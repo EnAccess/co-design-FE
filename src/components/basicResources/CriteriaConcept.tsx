@@ -1,13 +1,11 @@
 import React from "react";
 import Data from "../../../public/output.json";
-import InformationCard from "../cards/InformationCard";
-import YellowCard from "../cards/YellowCard";
-import { ArcherContainer } from "react-archer";
 import { dataItem } from "./dataItem";
-import { Entries, Entry } from "@/types/interfaces";
+import { Entries } from "@/types/interfaces";
 import HumanitarianApproach from "./approachEntries/HumanitarianApproach";
 import PolicyApproach from "./approachEntries/PolicyApproach";
 import HumanitarianPolicy from "./approachEntries/HumanitarianPolicy";
+import TitleCard from "../cards/TitleCard";
 
 const CriteriaConcept = () => {
   const humanitarianEntries = Data.filter(
@@ -19,7 +17,7 @@ const CriteriaConcept = () => {
   ).filter(
     (entry) => entry.PARSED_MANUAL_TAGS.CO_DESIGN_LEVEL === "2"
   ) as Entries;
-console.log(humanitarianPolicy)
+  console.log(humanitarianPolicy);
 
   const policyEntries = Data.filter(
     (entry) => entry.PARSED_MANUAL_TAGS.THEME === "Policy"
@@ -32,14 +30,14 @@ console.log(humanitarianPolicy)
       </div>
       <div className="flex flex-col md:flex-row gap-4 ">
         <div className="border-4 border-dashed">
-          <YellowCard
+          <TitleCard
             title={dataItem[7].title}
             description={dataItem[7].description}
             className="flex flex-col gap-3"
           />
         </div>
         <div className="border-4 border-dashed">
-          <YellowCard
+          <TitleCard
             title={dataItem[8].title}
             description={dataItem[8].description}
           />
@@ -51,7 +49,7 @@ console.log(humanitarianPolicy)
           </div>
         </div>
         <div className="border-4 border-dashed">
-          <YellowCard
+          <TitleCard
             title={dataItem[9].title}
             description={dataItem[9].description}
           />

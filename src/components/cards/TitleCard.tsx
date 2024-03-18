@@ -1,14 +1,14 @@
-interface YellowCardProps {
+interface Props {
   title: string;
   description: string;
   className?: string;
 }
 
-const YellowCard = ({
+const TitleCard = ({
   title,
   description,
   className = "",
-}: YellowCardProps) => {
+}: Props) => {
   return (
     <>
       <div
@@ -21,4 +21,4 @@ const YellowCard = ({
   );
 };
 
-export default YellowCard;
+export default TitleCard;

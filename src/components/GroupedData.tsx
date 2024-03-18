@@ -2,6 +2,8 @@ import React, { useEffect, useState, useRef } from "react";
 import { ArcherContainer } from "react-archer";
 import InformationCard from "./cards/InformationCard";
 import { Entry } from "@/types/interfaces";
+import { getRandomColor } from "@/utils/helpers";
+import Data from "./../../public/output.json";
 
 function GroupedData() {
   const [data, setData] = useState([]);
@@ -9,30 +11,19 @@ function GroupedData() {
   const gridContainerRef = useRef<any>(null);
 
   const getData = () => {
-    fetch("./output.json", {
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-    })
-      .then(function (response) {
-        return response.json();
-      })
-      .then(function (data) {
-        const sortedData = data
-          .filter((i: any) => i.PARSED_MANUAL_TAGS.CO_DESIGN_LEVEL)
-          .toSorted((a: any, b: any) => {
-            const levelA = Array.isArray(a.PARSED_MANUAL_TAGS.CO_DESIGN_LEVEL)
-              ? a.PARSED_MANUAL_TAGS.CO_DESIGN_LEVEL[0]
-              : a.PARSED_MANUAL_TAGS.CO_DESIGN_LEVEL;
-            const levelB = Array.isArray(b.PARSED_MANUAL_TAGS.CO_DESIGN_LEVEL)
-              ? b.PARSED_MANUAL_TAGS.CO_DESIGN_LEVEL[0]
-              : b.PARSED_MANUAL_TAGS.CO_DESIGN_LEVEL;
-            return Number(levelB) - Number(levelA);
-          });
+    const sortedData: any = Data.filter(
+      (i: any) => i.PARSED_MANUAL_TAGS.CO_DESIGN_LEVEL
+    ).toSorted((a: any, b: any) => {
+      const levelA = Array.isArray(a.PARSED_MANUAL_TAGS.CO_DESIGN_LEVEL)
+        ? a.PARSED_MANUAL_TAGS.CO_DESIGN_LEVEL[0]
+        : a.PARSED_MANUAL_TAGS.CO_DESIGN_LEVEL;
+      const levelB = Array.isArray(b.PARSED_MANUAL_TAGS.CO_DESIGN_LEVEL)
+        ? b.PARSED_MANUAL_TAGS.CO_DESIGN_LEVEL[0]
+        : b.PARSED_MANUAL_TAGS.CO_DESIGN_LEVEL;
+      return Number(levelB) - Number(levelA);
+    });
 
-        setData(sortedData);
-      });
+    setData(sortedData);
   };
 
   useEffect(() => {
@@ -114,10 +105,9 @@ function GroupedData() {
         className="grid grid-cols-1 gap-5  p-20 w-full"
       >
         <ArcherContainer
-          offset={20}
           strokeDasharray="."
-          noCurves
-          strokeColor-="black"
+          noCurves-
+          strokeColor={getRandomColor()}
         >
           <div className="grid grid-cols-2 gap-10">
             {uniqueThemes.map((themItem, index) => {

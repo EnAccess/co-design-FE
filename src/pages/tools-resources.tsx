@@ -110,7 +110,7 @@ const ToolsResources = () => {
             <div className="flex flex-wrap">
               <TechnicalApproches approachEntries={technicalAproachEntries} />
             </div>
-            <div className="flex w-2/3">
+            <div className="flex w-[70%]">
               <div className="border-4 border-dotted border-gray-200 bg-gray-50">
                 <TitleCard
                   title="Multidisciplinary Approaches"
@@ -130,7 +130,7 @@ const ToolsResources = () => {
                 </div>
               </div>
             </div>
-            <div className="w-1/2 ml-72 py-6">
+            <div className="w-[55%] py-6">
               <div className="border-4 border-dashed border-gray-200 bg-gray-50">
                 <TitleCard
                   title="Participatory Approaches"
@@ -143,7 +143,7 @@ const ToolsResources = () => {
                       approachEntries={participatoryApproachEntries}
                     />
                   </div>
-                  <div className="1/2">
+                  <div className="">
                     <ParticipatoryByTheoryApproch
                       approachEntries={participatoryApproachEntries1}
                     />
@@ -155,7 +155,7 @@ const ToolsResources = () => {
         </div>
       </div>
       <div className="flex gap-6">
-        <div className="border-4 border-dashed border-gray-200 bg-gray-50 w-1/3 h-fit -mt-[28rem]">
+        <div className="border-4 border-dashed border-gray-200 bg-gray-50 w-1/4 h-fit -mt-[28rem]">
           <TitleCard
             title="Behaviour Change Approaches"
             description="BCA’s look to understand and unlock the how, why, and when of energy system and service adoption from an end-user or individual perspective."
@@ -171,7 +171,7 @@ const ToolsResources = () => {
             </div>
           </div>
         </div>
-        <div className="flex w-1/4 h-fit -mt-[20rem]">
+        <div className="flex w-1/4 h-fit">
           <div className="border-4 border-dashed border-gray-200 bg-gray-50">
             <TitleCard
               title="Human-Centered Design & Design Thinking"

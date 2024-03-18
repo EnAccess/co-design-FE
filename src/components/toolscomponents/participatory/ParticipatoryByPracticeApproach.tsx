@@ -8,15 +8,15 @@ interface Props {
 }
 const ParticipatoryByPracticeApproch = ({ approachEntries }: Props) => {
   return (
-    <div className="pt-6">
+    <div className="py-3">
       <ArcherContainer>
-        <div className="border-4 border-dashed">
+        <div className="border-2 border-dashed">
           <div className="mt-3 pb-6">
             <h1 className="text-center font-bold text-lg">PRACTICE</h1>
           </div>
-          <div className="flex flex-wrap gap-2">
+          <div className="px-2 pb-3">
             {approachEntries.map((data: Entry) => (
-              <div key={data.Key} className="w-44">
+              <div key={data.Key} className="w-80">
                 <InformationCard key={data.Key} data={data} />
               </div>
             ))}

@@ -2,11 +2,11 @@ import React from "react";
 import Line from "../icons/Line";
 import LevelCard from "../cards/LevelCard";
 
-const PracticeSection = () => {
+const PracticeSection = ({ title }: { title: string }) => {
   return (
     <div className="">
       <p className="text-center text-gray-500 text-xl font-bold mb-3">
-        Select Level of Co-design Practice
+        {title}
       </p>
       <div>
         <div className="flex justify-center items-end w-fit gap-x-4">

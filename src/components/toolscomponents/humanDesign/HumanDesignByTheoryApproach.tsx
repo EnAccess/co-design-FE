@@ -12,7 +12,7 @@ const HumanDesignByTheoryApproches = ({ approachEntries }: Props) => {
       <ArcherContainer>
         <div className="border-4 border-dashed border-gray-500">
           <div className="mt-3 pb-6">
-            <h1 className="text-center font-bold text-lg">PRACTICE</h1>
+            <h1 className="text-center font-bold text-lg">THEORY</h1>
           </div>
           <div>
             {approachEntries.map((data: Entry) => (

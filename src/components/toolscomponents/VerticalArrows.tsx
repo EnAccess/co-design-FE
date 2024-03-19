@@ -4,12 +4,10 @@ import LongArrow from "../icons/LongArrow";
 
 const VerticalArrows = () => {
   return (
-    <div>
-      <div className="flex justify-around mt-20">
-        <SmallArrow />
-        <div className="-rotate-5">
-          <LongArrow />
-        </div>
+    <div className="flex justify-around mt-20">
+      <SmallArrow />
+      <div className="-rotate-5">
+        <LongArrow />
       </div>
     </div>
   );

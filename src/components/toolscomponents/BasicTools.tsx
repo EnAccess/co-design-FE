@@ -15,7 +15,7 @@ const BasicTools = ({ basicToolsEntries }: Props) => {
           title="BASIC TOOLS"
           description="This box contains an overview of the basic tools needed to conduct effective co-design processes"
         />
-        <div className="flex gap-10 pt-6 px-10">
+        <div>
           <ArcherContainer>
             <div className="flex flex-wrap justify-center gap-8 p-6">
               {basicToolsEntries.map((data: Entry) => (

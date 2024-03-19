@@ -11,7 +11,7 @@ const MultidiscilnaryByPracticeApproach = ({approachEntries} :Props) => {
     <>
       <div className="px-2">
         <ArcherContainer>
-          <div className="border-4 border-dashed py-2">
+          <div className="border-4 border-dashed border-gray-600">
             <div className="mt-3 pb-6">
               <h1 className="text-center font-bold text-lg">PRACTICE</h1>
             </div>

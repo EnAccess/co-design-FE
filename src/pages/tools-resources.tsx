@@ -92,7 +92,7 @@ const ToolsResources = () => {
   }).splice(3) as Entry[];
 
   return (
-    <div className="">
+    <div className="py-6">
       <div className="flex justify-between items-center gap-10 p-8">
         <div className="flex flex-col px-8">
           <div className="h-fit m-10 ">
@@ -111,12 +111,12 @@ const ToolsResources = () => {
               <TechnicalApproches approachEntries={technicalAproachEntries} />
             </div>
             <div className="flex">
-              <div className="border-4 border-dotted border-gray-400 bg-gray-50">
+              <div className="border-4 border-dashed border-gray-400 bg-gray-50 py-4 px-2">
                 <TitleCard
                   title="Multidisciplinary Approaches"
                   description="Multidisciplinary approaches blend different disciplines to approach problems from multiple perspectives"
                 />
-                <div className="flex gap-2 px-2">
+                <div className="flex gap-2 py-4 px-2">
                   <div>
                     <MultidiscilnaryByPracticeApproach
                       approachEntries={multidisciplinaryByPracticeEntries}
@@ -131,7 +131,7 @@ const ToolsResources = () => {
               </div>
             </div>
             <div className="p-10">
-              <div className="border-4 border-dashed border-gray-400 bg-gray-50 p-6 ">
+              <div className="border-4 border-dashed border-gray-400 bg-gray-50 p-6 py-4 px-2 ">
                 <TitleCard
                   title="Participatory Approaches"
                   description="Participatory Approaches cover a wide range of qualitative research methods which look to include participants throughout project processes. These include phenomenological, photovoice, participatory workshops, mapping, and hanging out methods to name a few."
@@ -155,7 +155,7 @@ const ToolsResources = () => {
         </div>
       </div>
       <div className="flex gap-6">
-        <div className="border-4 border-dashed border-gray-400 bg-gray-50 w-1/4 h-fit -mt-[28rem]">
+        <div className="border-4 border-dashed border-gray-400 bg-gray-50 w-1/4 h-fit -mt-[28rem] py-4 px-2">
           <TitleCard
             title="Behaviour Change Approaches"
             description="BCA’s look to understand and unlock the how, why, and when of energy system and service adoption from an end-user or individual perspective."
@@ -172,7 +172,7 @@ const ToolsResources = () => {
           </div>
         </div>
         <div className="flex w-1/3 h-fit -mt-[28rem]">
-          <div className="border-4 border-dashed border-gray-400 bg-gray-50">
+          <div className="border-4 border-dashed border-gray-400 bg-gray-50 py-4 px-2">
             <TitleCard
               title="Human-Centered Design & Design Thinking"
               description="Human-Centered Design & Design Thinking combine to produce a problem solving methodology which captures the wishes of a centralised user group and encourages significant ideation. "

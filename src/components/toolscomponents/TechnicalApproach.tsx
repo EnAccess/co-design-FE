@@ -16,11 +16,11 @@ const TechnicalApproches = ({ approachEntries }: Props) => {
           description="Technical Approaches engage with energy systems and services through a technical lens. We have chosen to only include technical approaches which also integrate the wider socio-cultural, environmental, and financial context."
           className=""
         />
-        <div className="pt-6">
+        <div className="py-6">
           <ArcherContainer>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap justify-center gap-6">
               {approachEntries.map((data: Entry) => (
-                <div key={data.Key} className="w-48 h-fit">
+                <div key={data.Key} className="w-72">
                   <InformationCard key={data.Key} data={data} />
                 </div>
               ))}

@@ -25,18 +25,18 @@ const CriteriaConcept = () => {
 
   return (
     <div className="py-20">
-      <div className="flex text-gray-500 justify-center items-center py-4 text-3xl font-semibold">
+      <div className="flex text-gray-600 justify-center items-center py-4 text-3xl font-bold">
         <h1>Criteria for Good Design</h1>
       </div>
       <div className="flex flex-col md:flex-row gap-4 ">
-        <div className="border-4 border-dashed">
+        <div className="border-4 border-dashed border-gray-300 py-2 px-2">
           <TitleCard
             title={dataItem[7].title}
             description={dataItem[7].description}
             className="flex flex-col gap-3"
           />
         </div>
-        <div className="border-4 border-dashed">
+        <div className="border-4 border-dashed border-gray-300 py-2 px-2">
           <TitleCard
             title={dataItem[8].title}
             description={dataItem[8].description}
@@ -48,12 +48,12 @@ const CriteriaConcept = () => {
             <HumanitarianPolicy humanitarianEntries={humanitarianPolicy} />
           </div>
         </div>
-        <div className="border-4 border-dashed">
+        <div className="border-4 border-dashed border-gray-300 py-2 px-2">
           <TitleCard
             title={dataItem[9].title}
             description={dataItem[9].description}
           />
-          <div className="py-4 px-3">
+          <div className="px-4 pt-16">
             <PolicyApproach policyEntries={policyEntries} />
           </div>
         </div>

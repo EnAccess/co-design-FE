@@ -10,9 +10,9 @@ const GenderApproach = ({ genderEntries }: Props) => {
   return (
     <>
       <ArcherContainer>
-          <div className="flex justify-between pb-3">
+          <div>
             {genderEntries.slice(0,1).map((data: Entry) => (
-              <div key={data.Key} className="w-60">
+              <div key={data.Key} className="w-80">
                 <InformationCard key={data.Key} data={data} />
               </div>
             ))}

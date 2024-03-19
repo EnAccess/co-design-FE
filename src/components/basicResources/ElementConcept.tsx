@@ -18,39 +18,34 @@ const ElementConcept = () => {
 
   return (
     <div className="mt-20">
-      <div className="flex text-gray-500 justify-center items-center py-4 text-3xl font-semibold">
+      <div className="flex text-gray-600 justify-center items-center py-4 text-3xl font-bold">
         <h1>Element Used to Create Effective Solutions</h1>
       </div>
 
-      <div className="flex flex-col md:flex-row gap-3 max-w-full h-full">
-        <div className="border-4 border-dashed max-w-[60%]">
+      <div className="flex gap-3">
+        <div className="border-4 border-dashed border-gray-300">
           <TitleCard
             title={dataItem[4].title}
             description={dataItem[4].description}
-            className="w-3/4 mt-2 ml-2"
+            className="mr-16 mt-2 ml-2"
           />
-          <div className="mt-4 px-2">
+          <div className="mt-20 px-6">
             <CaseStudyApproach caseStudyEntries={caseStudy} />
           </div>
         </div>
-
-        <div className="gap-4">
-          <div className="flex gap-4">
-            <div className="border-4 border-dashed">
-              <TitleCard
-                title={dataItem[5].title}
-                description={dataItem[5].description}
-              />
-            </div>
-            <div className="border-4 border-dashed">
-              <TitleCard
-                title={dataItem[6].title}
-                description={dataItem[6].description}
-              />
-              <div className="w-64 ml-6 py-28">
-                <GenderApproach genderEntries={gender} />
-              </div>
-            </div>
+        <div className="border-4 border-dashed border-gray-300 py-2 px-2">
+          <TitleCard
+            title={dataItem[5].title}
+            description={dataItem[5].description}
+          />
+        </div>
+        <div className="border-4 border-dashed border-gray-300 py-2 px-2">
+          <TitleCard
+            title={dataItem[6].title}
+            description={dataItem[6].description}
+          />
+          <div className="ml-10 mt-16 mb-24">
+            <GenderApproach genderEntries={gender} />
           </div>
         </div>
       </div>

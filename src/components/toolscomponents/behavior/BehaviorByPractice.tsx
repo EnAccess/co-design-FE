@@ -15,7 +15,7 @@ const BehaviorByPractice = ({ approachEntries }: Props) => {
             <div className="mt-3 pb-6">
               <h1 className="text-center font-bold text-lg">PRACTICE</h1>
             </div>
-            <div className="flex flex-wrap gap-2 pb-3">
+            <div className="flex flex-wrap gap-2 m-6">
               {approachEntries.map((data: Entry) => (
                 <div key={data.Key} className="w-60">
                   <InformationCard key={data.Key} data={data} />

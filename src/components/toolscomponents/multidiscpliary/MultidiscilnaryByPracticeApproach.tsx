@@ -15,9 +15,9 @@ const MultidiscilnaryByPracticeApproach = ({approachEntries} :Props) => {
             <div className="mt-3 pb-6">
               <h1 className="text-center font-bold text-lg">PRACTICE</h1>
             </div>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap justify-center gap-2">
               {approachEntries.map((data: Entry) => (
-                <div key={data.Key} className="w-44 px-3 pb-4">
+                <div key={data.Key} className="w-52">
                   <InformationCard key={data.Key} data={data} />
                 </div>
               ))}

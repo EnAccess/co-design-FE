@@ -14,9 +14,9 @@ const ParticipatoryByPracticeApproch = ({ approachEntries }: Props) => {
           <div className="mt-3 pb-6">
             <h1 className="text-center font-bold text-lg">PRACTICE</h1>
           </div>
-          <div className="px-2 pb-3">
+          <div className="px-6">
             {approachEntries.map((data: Entry) => (
-              <div key={data.Key} className="w-80">
+              <div key={data.Key} className="m-4">
                 <InformationCard key={data.Key} data={data} />
               </div>
             ))}

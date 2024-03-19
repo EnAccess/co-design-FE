@@ -4,19 +4,17 @@ import SmallArrow from "../icons/SmallArrow";
 
 const HorzontalArrows = () => {
   return (
-    <div>
-      <div className="flex flex-col gap-32 mr-24">
-        <div className="-rotate-[132deg]">
+      <div className="flex px-10 flex-col items-start">
+        <div className="-rotate-[125deg] pt-20">
           <LongArrow />
         </div>
-        <div className="-rotate-90">
+        <div className="-rotate-90 my-60">
           <SmallArrow />
         </div>
         <div className="-rotate-45">
           <LongArrow />
         </div>
       </div>
-    </div>
   );
 };
 

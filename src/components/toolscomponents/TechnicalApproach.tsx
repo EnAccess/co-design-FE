@@ -9,7 +9,7 @@ interface Props {
 }
 const TechnicalApproches = ({ approachEntries }: Props) => {
   return (
-    <div className="border-4 border-dashed border-gray-200 my-8 p-8 w-1/2 h-fit">
+    <div className="border-4 border-dashed border-gray-400 bg-gray-50 my-8 p-8 h-fit">
       <div>
         <TitleCard
           title="Technical Approaches"
@@ -18,9 +18,9 @@ const TechnicalApproches = ({ approachEntries }: Props) => {
         />
         <div className="pt-6">
           <ArcherContainer>
-            <div className="grid grid-cols-2 gap-8">
+            <div className="flex flex-wrap gap-4">
               {approachEntries.map((data: Entry) => (
-                <div key={data.Key} className="w-56">
+                <div key={data.Key} className="w-48 h-fit">
                   <InformationCard key={data.Key} data={data} />
                 </div>
               ))}

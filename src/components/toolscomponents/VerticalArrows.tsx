@@ -7,7 +7,7 @@ const VerticalArrows = () => {
     <div>
       <div className="flex justify-around mt-20">
         <SmallArrow />
-        <div className="-rotate-45">
+        <div className="-rotate-5">
           <LongArrow />
         </div>
       </div>

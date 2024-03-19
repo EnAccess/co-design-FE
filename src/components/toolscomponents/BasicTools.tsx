@@ -17,9 +17,9 @@ const BasicTools = ({ basicToolsEntries }: Props) => {
         />
         <div className="flex gap-10 pt-6 px-10">
           <ArcherContainer>
-            <div className="flex flex-wrap gap-8 px-3 pb-3">
+            <div className="flex flex-wrap gap-4 px-3 pb-3">
               {basicToolsEntries.map((data: Entry) => (
-                <div key={data.Key} className=" bg-rose-200 w-72">
+                <div key={data.Key} className="w-72">
                   <InformationCard key={data.Key} data={data} />
                 </div>
               ))}

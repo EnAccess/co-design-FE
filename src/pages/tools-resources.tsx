@@ -92,10 +92,10 @@ const ToolsResources = () => {
   }).splice(3) as Entry[];
 
   return (
-    <div className="border-2 border-red-500">
+    <div className="">
       <div className="flex justify-between items-center gap-4 py-8">
-        <div className="flex flex-col justify-center align-center">
-          <div className="w-2/3 h-full ml-28">
+        <div className="flex flex-col border-2 border-red-500">
+          <div className="w-[60%] h-full ml-36 -mt-96">
             <BasicTools basicToolsEntries={basicToolsEntries} />
           </div>
           <div>
@@ -103,7 +103,7 @@ const ToolsResources = () => {
           </div>
         </div>
         <div className="flex justify-between items-center">
-          <div className="flex justify-around items-center flex-col ">
+          <div className="flex justify-between items-center flex-col -mt-24 ">
             <HorizontalArrows />
           </div>
           <div className="">

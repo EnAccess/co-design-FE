@@ -6,6 +6,7 @@ import JourneySection from "./JourneySection";
 import { navData } from "./NavLink";
 import { usePathname } from "next/navigation";
 import HorzontalArrow from "../icons/HorzontalArrow";
+import SmallArrow from "../icons/SmallArrow";
 
 export const Header = () => {
   const pathname = usePathname();
@@ -37,19 +38,10 @@ export const Header = () => {
     return (
       <div className="flex flex-wrap justify-between items-center gap-y-24 border-b-8 border-dashed px-8 mx-auto">
         <ResourceSection navData={navData} />
-        <Image
-          src="./images/smallArrow.png"
-          alt="arrow"
-          width={100}
-          height={100}
-        />
+
+        <SmallArrow />
         <PracticeSection title={title} />
-        <Image
-          src="./images/smallArrow.png"
-          alt="arrow"
-          width={100}
-          height={100}
-        />
+        <SmallArrow />
         <JourneySection />
       </div>
     );

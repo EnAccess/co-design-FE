@@ -1,6 +1,6 @@
 import React from "react";
 import Data from "../../../public/output.json";
-import { dataItem } from "./dataItem";
+import { dataItem } from "../../utils/dataItem";
 import CaseStudyApproach from "./approachEntries/CaseStudyApproach";
 import { Entries } from "@/types/interfaces";
 import GenderApproach from "./approachEntries/GenderAppraoch";
@@ -17,7 +17,7 @@ const ElementConcept = () => {
   ) as Entries;
 
   return (
-    <div className="mt-20">
+    <div className="p-6">
       <div className="flex text-gray-600 justify-center items-center py-4 text-3xl font-bold">
         <h1>Element Used to Create Effective Solutions</h1>
       </div>

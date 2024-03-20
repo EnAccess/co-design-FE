@@ -1,6 +1,6 @@
 import React from "react";
 import Data from "../../../public/output.json";
-import { dataItem } from "./dataItem";
+import { dataItem } from "../../utils/dataItem";
 import { Entries } from "@/types/interfaces";
 import HumanitarianApproach from "./approachEntries/HumanitarianApproach";
 import PolicyApproach from "./approachEntries/PolicyApproach";
@@ -24,7 +24,7 @@ const CriteriaConcept = () => {
   ) as Entries;
 
   return (
-    <div className="py-20">
+    <div className="p-6">
       <div className="flex text-gray-600 justify-center items-center py-4 text-3xl font-bold">
         <h1>Criteria for Good Design</h1>
       </div>

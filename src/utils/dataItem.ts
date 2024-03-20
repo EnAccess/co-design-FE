@@ -19,7 +19,7 @@ export const dataItem = [
     description:
       "Decolonisation reflects a just transition to rebalance power among the various stakeholders in the humanitarian sector. The theme looks at the stages of transformation in power imbalances, decolonising aid and highlights the need for systematic changes in how the humanitarian sector operates",
   },
-  //element concept
+
   {
     title: "Capacity Bulding, Development & Sharing",
     description:
@@ -36,7 +36,7 @@ export const dataItem = [
     description:
       "Inclusion calls for equal participation and representation of vulnerable and marginalised groups despite the differences in ethnicity, gender, disability and identity among others. This theme reflects the importance of inclusive design approaches and the active engagement in creating inclusive policies.",
   },
-  //criteria concept
+
   {
     title: "Artificial Intelligence & Machine Learning",
     description:

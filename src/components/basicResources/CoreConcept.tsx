@@ -1,6 +1,6 @@
 import React from "react";
 import Data from "../../../public/output.json";
-import { dataItem } from "./dataItem";
+import { dataItem } from "../../utils/dataItem";
 import { Entries } from "../../types/interfaces";
 import SystemApproachEntries from "./approachEntries/SystemApproachEntries";
 import LocalizationApproach from "./approachEntries/LocalizationApproach";
@@ -32,7 +32,7 @@ const CoreConcept = () => {
   ) as Entries;
 
   return (
-    <div>
+    <div className="p-6 w-4/5">
       <div className="flex text-gray-600 justify-center items-center py-6 text-3xl font-bold">
         <h1>Core Concepts of Collaborative Design Process</h1>
       </div>
@@ -48,7 +48,7 @@ const CoreConcept = () => {
             <SystemApproachEntries systemApproach={entriesWithTheme} />
           </div>
         </div>
-        <div className="w-2/3">
+        <div className="">
           <div className="flex gap-4">
             <div className="border-4 border-dashed border-gray-300 py-2 px-2">
               <TitleCard

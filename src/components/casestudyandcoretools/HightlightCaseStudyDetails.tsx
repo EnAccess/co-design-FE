@@ -20,7 +20,7 @@ const HightlightCaseStudyDetails = () => {
       <h1 className="text-center text-gray-500 text-xl font-bold mb-3 ">
         Hightlight Case Study Details
       </h1>
-      <div className="bg-gray-200 rounded-2xl flex gap-2 py-4 px-8 border border-gray-500">
+      <div className="bg-gray-200 rounded-3xl flex gap-2 py-4 px-8 border border-gray-500">
         <div className="p-4">
           <h1 className="text-center text-gray-500 text-xl font-bold mb-3 ">
             Case Study Implementation Level
@@ -30,7 +30,7 @@ const HightlightCaseStudyDetails = () => {
               {caseStudyLevel.map((element, index) => (
                 <button
                   key={index}
-                  className="border border-gray-500 p-4 bg-black text-white rounded-lg"
+                  className="border border-gray-500 p-4 bg-black-900 text-white rounded-lg"
                 >
                   {element}
                 </button>

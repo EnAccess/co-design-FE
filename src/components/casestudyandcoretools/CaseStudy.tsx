@@ -9,7 +9,7 @@ interface Props {
 
 const CaseStudy = ({ categorizedEntries }: Props) => {
   return (
-    <div>
+    <div className="md:p-10">
       <ArcherContainer>
         <div className="flex p-4 gap-6 flex-wrap">
           {categorizedEntries.level3.map((data: Entry) => (

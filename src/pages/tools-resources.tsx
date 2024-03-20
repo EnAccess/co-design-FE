@@ -1,7 +1,7 @@
-import HorizontalArrows from "../components/toolscomponents/HorizontalArrows";
+import HorizontalArrows from "../components/toolscomponents/arrows/HorizontalArrows";
 import BasicTools from "../components/toolscomponents/BasicTools";
 import React from "react";
-import VerticalArrows from "../components/toolscomponents/VerticalArrows";
+import VerticalArrows from "../components/toolscomponents/arrows/VerticalArrows";
 import TechnicalApproches from "../components/toolscomponents/TechnicalApproach";
 import BehaviorByPractice from "../components/toolscomponents/behavior/BehaviorByPractice";
 import BehaviorByTheory from "../components/toolscomponents/behavior/BehaviorByTheory";
@@ -23,7 +23,7 @@ import {
   behaviorByTheoryApproach,
   humanDesignByPracticeApproach,
   humanDesignByTheoryApproach,
-} from "@/components/toolscomponents/toolsEntries";
+} from "../utils/toolsEntries";
 
 const ToolsResources = () => {
   return (
@@ -90,7 +90,7 @@ const ToolsResources = () => {
         </div>
       </div>
       <div className="flex gap-6">
-        <div className="border-4 border-dashed border-gray-400 bg-gray-50 w-1/4 h-fit -mt-[28rem] py-4 px-2">
+        <div className="border-4 border-dashed border-gray-400 bg-gray-50 w-1/4 h-fit -mt-[36rem] py-4 px-2">
           <TitleCard
             title="Behaviour Change Approaches"
             description="BCA’s look to understand and unlock the how, why, and when of energy system and service adoption from an end-user or individual perspective."

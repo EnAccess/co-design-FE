@@ -10,7 +10,7 @@ const JourneySection = () => {
       </p>
       <div className="h-full flex items-center -my-8">
         <div className="">
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center my-2">
             <Card text="Design" />
             <ForwardArrow />
             <Card text="Stakeholder Mapping" />
@@ -22,7 +22,7 @@ const JourneySection = () => {
             <Card text="M&E" />
           </div>
 
-          <div className="mt-6 bg-gray-400 text-white flex rounded-lg justify-around  items-center min-h-10">
+          <div className="m-2 p-3 bg-gray-400 text-white flex rounded-lg justify-around text-xl  items-center">
             <p className="text-md font-semibold">Early Concept</p>
             <p className="text-md font-semibold">{"->"}</p>
             <p className="text-md font-semibold">Software Development</p>

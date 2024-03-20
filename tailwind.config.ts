@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      maxWidth: {
+        custom: "2500px",
+      },
       colors: {
         level: {
           primary: {

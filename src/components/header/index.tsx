@@ -1,9 +1,8 @@
 import React from "react";
-import Image from "next/image";
 import ResourceSection from "./ResourceSection";
 import PracticeSection from "./PracticeSection";
 import JourneySection from "./JourneySection";
-import { navData } from "./NavLink";
+import { navData } from "../utils/NavLink";
 import { usePathname } from "next/navigation";
 import HorzontalArrow from "../icons/HorzontalArrow";
 import SmallArrow from "../icons/SmallArrow";
@@ -27,7 +26,7 @@ export const Header = () => {
 
   if (pathname === "/basic-resources")
     return (
-      <div className="flex h-[32rem] flex-wrap items-stretch justify-between gap-y-24 border-b-8 border-dashed px-8 py-10 mx-auto">
+      <div className="flex h-[32rem] items-stretch justify-between gap-y-24 border-b-8 border-dashed px-8 py-10 mx-auto">
         <ResourceSection navData={navData} />
         <HorzontalArrow />
         <JourneySection />
@@ -36,7 +35,7 @@ export const Header = () => {
 
   if (pathname === "/case-studies-and-core-tools" || pathname === "/")
     return (
-      <div className="flex  h-[32rem] flex-wrap items-stretch justify-between gap-y-24 border-b-8 border-dashed px-8 py-10 mx-auto">
+      <div className="flex  h-[32rem] items-stretch justify-between gap-y-24 border-b-8 border-dashed px-8 py-10 mx-auto">
         <ResourceSection navData={navData} />
 
         <SmallArrow />
@@ -47,7 +46,7 @@ export const Header = () => {
     );
 
   return (
-    <div className="flex  h-[32rem] flex-wrap items-stretch justify-between gap-y-24 border-b-8 border-dashed px-8 py-10 mx-auto">
+    <div className="flex  h-[32rem] items-stretch justify-between gap-y-24 border-b-8 border-dashed px-8 py-10 mx-auto">
       <ResourceSection navData={navData} />
     </div>
   );

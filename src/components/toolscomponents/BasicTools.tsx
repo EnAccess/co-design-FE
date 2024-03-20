@@ -2,7 +2,7 @@ import React from "react";
 import TitleCard from "../cards/TitleCard";
 import { ArcherContainer } from "react-archer";
 import InformationCard from "../cards/InformationCard";
-import { Entry } from "../../type/interface";
+import { Entry } from "../../types/interfaces";
 
 interface Props {
   basicToolsEntries: Entry[];

@@ -38,7 +38,7 @@ const ToolsResources = () => {
           </div>
         </div>
         <div className="flex justify-around gap-4 items-stretch">
-          <div className="flex justify-around w-1/5 flex-col h-auto">
+          <div className="flex justify-around w-1/5 flex-col h-auto -mt-24">
             <HorizontalArrows />
           </div>
           <div className="w-4/5 h-2/3 mx-auto">
@@ -88,7 +88,7 @@ const ToolsResources = () => {
           </div>
         </div>
       </div>
-      <div className="flex gap-8 w-1/2 -mt-[28rem]">
+      <div className="flex gap-10 w-1/2 -mt-[28rem]">
         <div className="border-4 border-dashed border-gray-400 bg-gray-50 py-4 px-2 rounded">
           <TitleCard
             title="Behaviour Change Approaches"

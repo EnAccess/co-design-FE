@@ -11,13 +11,13 @@ const HumanDesignByTheoryApproches = ({ approachEntries }: Props) => {
     <>
       <ArcherContainer>
         <div className="border-4 border-dashed border-gray-500 rounded h-full">
-          <h1 className="text-center text-gray-700 font-semibold text-lg">THEORY</h1>
+          <h1 className="text-center text-gray-700 font-semibold text-lg mb-3">THEORY</h1>
 
           <div className="flex flex-wrap justify-center gap-2">
             {approachEntries.map((data: Entry) => (
               <div
                 key={data.Key}
-                className="w-52"
+                className="w-52 px-2"
               >
                 <InformationCard key={data.Key} data={data} />
               </div>

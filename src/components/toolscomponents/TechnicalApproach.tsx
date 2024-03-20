@@ -20,7 +20,7 @@ const TechnicalApproches = ({ approachEntries }: Props) => {
           <ArcherContainer>
             <div className="grid grid-cols-3 gap-4">
               {approachEntries.map((data: Entry) => (
-                <div key={data.Key} className="w-72">
+                <div key={data.Key} className="w-60">
                   <InformationCard key={data.Key} data={data} />
                 </div>
               ))}

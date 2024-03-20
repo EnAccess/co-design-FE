@@ -6,25 +6,24 @@ import { Entry } from "../../../types/interfaces";
 interface Props {
   approachEntries: Entry[];
 }
-const MultidiscilnaryByPracticeApproach = ({approachEntries} :Props) => {
+const MultidiscilnaryByPracticeApproach = ({ approachEntries }: Props) => {
   return (
     <>
-      <div className="px-2">
-        <ArcherContainer>
-          <div className="border-4 border-dashed border-gray-600">
-            <div className="mt-3 pb-6">
-              <h1 className="text-center font-bold text-lg">PRACTICE</h1>
-            </div>
-            <div className="flex flex-wrap justify-center gap-2">
-              {approachEntries.map((data: Entry) => (
-                <div key={data.Key} className="w-52 mb-2">
-                  <InformationCard key={data.Key} data={data} />
-                </div>
-              ))}
-            </div>
+      <ArcherContainer>
+        <div className="border-4 border-dashed border-gray-500 rounded-none h-full">
+          <h1 className="text-center text-gray-700 font-semibold text-lg">
+            PRACTICE
+          </h1>
+
+          <div className="flex flex-wrap justify-center gap-2 mb-2">
+            {approachEntries.map((data: Entry) => (
+              <div key={data.Key} className="w-56">
+                <InformationCard key={data.Key} data={data} />
+              </div>
+            ))}
           </div>
-        </ArcherContainer>
-      </div>
+        </div>
+      </ArcherContainer>
     </>
   );
 };

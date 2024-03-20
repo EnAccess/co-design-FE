@@ -8,22 +8,24 @@ interface Props {
 }
 const HumanDesignByTheoryApproches = ({ approachEntries }: Props) => {
   return (
-    <div className="flex gap-4 pt-6">
+    <>
       <ArcherContainer>
-        <div className="border-4 border-dashed border-gray-500">
-          <div className="mt-3 pb-6">
-            <h1 className="text-center font-bold text-lg">THEORY</h1>
-          </div>
-          <div>
+        <div className="border-4 border-dashed border-gray-500 rounded h-full">
+          <h1 className="text-center text-gray-700 font-semibold text-lg">THEORY</h1>
+
+          <div className="flex flex-wrap justify-center gap-2">
             {approachEntries.map((data: Entry) => (
-              <div key={data.Key} className="w-60 flex flex-wrap justify-center items-center gap-4 mb-2">
+              <div
+                key={data.Key}
+                className="w-52"
+              >
                 <InformationCard key={data.Key} data={data} />
               </div>
             ))}
           </div>
         </div>
       </ArcherContainer>
-    </div>
+    </>
   );
 };
 

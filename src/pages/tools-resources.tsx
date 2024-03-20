@@ -41,44 +41,43 @@ const ToolsResources = () => {
           <div className="flex justify-around w-1/5 flex-col h-auto">
             <HorizontalArrows />
           </div>
-          <div className="w-4/5 h-full">
-            <div className="">
+          <div className="w-4/5 h-2/3 mx-auto">
+            <div>
               <TechnicalApproches approachEntries={technicalAproachEntries} />
             </div>
-            <div className="flex">
-              <div className="border-4 border-dashed border-gray-400 bg-gray-50 py-4 px-2">
-                <TitleCard
-                  title="Multidisciplinary Approaches"
-                  description="Multidisciplinary approaches blend different disciplines to approach problems from multiple perspectives"
-                />
-                <div className="flex gap-2 py-4 px-2">
-                  <div>
-                    <MultidiscilnaryByPracticeApproach
-                      approachEntries={multidisciplinaryByPracticeEntries}
-                    />
-                  </div>
-                  <div>
-                    <MultidiscilnaryByTheoryApproach
-                      approachEntries={multidisciplinaryByTheoryEntries}
-                    />
-                  </div>
+
+            <div className="border-4 border-dashed border-gray-400 bg-gray-50 py-4 px-2 rounded">
+              <TitleCard
+                title="Multidisciplinary Approaches"
+                description="Multidisciplinary approaches blend different disciplines to approach problems from multiple perspectives"
+              />
+              <div className="grid grid-cols-3 h-2/3 p-4 gap-4">
+                <div className="col-span-2">
+                  <MultidiscilnaryByPracticeApproach
+                    approachEntries={multidisciplinaryByPracticeEntries}
+                  />
+                </div>
+                <div className="grid">
+                  <MultidiscilnaryByTheoryApproach
+                    approachEntries={multidisciplinaryByTheoryEntries}
+                  />
                 </div>
               </div>
             </div>
+
             <div className="p-10">
-              <div className="border-4 border-dashed border-gray-400 bg-gray-50 p-6 py-4 px-2 ">
+              <div className="border-4 border-dashed border-gray-400 bg-gray-50 py-4 px-2 rounded ">
                 <TitleCard
                   title="Participatory Approaches"
                   description="Participatory Approaches cover a wide range of qualitative research methods which look to include participants throughout project processes. These include phenomenological, photovoice, participatory workshops, mapping, and hanging out methods to name a few."
-                  className="w-fit"
                 />
-                <div className="flex gap-6 justify-center px-3">
-                  <div className="w-fit">
+                <div className="grid grid-cols-2 p-4 gap-4 h-1/3">
+                  <div>
                     <ParticipatoryByPracticeApproch
                       approachEntries={participatoryApproachEntries}
                     />
                   </div>
-                  <div className="">
+                  <div>
                     <ParticipatoryByTheoryApproch
                       approachEntries={participatoryApproachEntries1}
                     />
@@ -89,40 +88,39 @@ const ToolsResources = () => {
           </div>
         </div>
       </div>
-      <div className="flex gap-6">
-        <div className="border-4 border-dashed border-gray-400 bg-gray-50 w-1/4 -mt-[36rem] py-4 px-2">
+      <div className="flex gap-8 w-1/2 -mt-[28rem]">
+        <div className="border-4 border-dashed border-gray-400 bg-gray-50 py-4 px-2 rounded">
           <TitleCard
             title="Behaviour Change Approaches"
             description="BCA’s look to understand and unlock the how, why, and when of energy system and service adoption from an end-user or individual perspective."
           />
           <div className="flex gap-3 p-4 h-fit">
-            <div>
+            <div className="p-3">
               <BehaviorByPractice
                 approachEntries={behaviorByPracticeApproach}
               />
             </div>
-            <div>
+            <div className="p-3">
               <BehaviorByTheory approachEntries={behaviorByTheoryApproach} />
             </div>
           </div>
         </div>
-        <div className="flex w-1/3 h-fit -mt-[28rem]">
-          <div className="border-4 border-dashed border-gray-400 bg-gray-50 py-4 px-2">
-            <TitleCard
-              title="Human-Centered Design & Design Thinking"
-              description="Human-Centered Design & Design Thinking combine to produce a problem solving methodology which captures the wishes of a centralised user group and encourages significant ideation. "
-            />
-            <div className="flex gap-2">
-              <div className="ml-4 mb-4">
-                <HumanDesignByPracticeApproach
-                  approachEntries={humanDesignByPracticeApproach}
-                />
-              </div>
-              <div className="mr-4">
-                <HumanDesignByTheoryApproach
-                  approachEntries={humanDesignByTheoryApproach}
-                />
-              </div>
+
+        <div className="border-4 border-dashed border-gray-400 bg-gray-50 h-fit mt-20 py-4 px-2 rounded">
+          <TitleCard
+            title="Human-Centered Design & Design Thinking"
+            description="Human-Centered Design & Design Thinking combine to produce a problem solving methodology which captures the wishes of a centralised user group and encourages significant ideation. "
+          />
+          <div className="grid grid-cols-2 gap-3 p-3 h-2/3">
+            <div>
+              <HumanDesignByPracticeApproach
+                approachEntries={humanDesignByPracticeApproach}
+              />
+            </div>
+            <div className="grid">
+              <HumanDesignByTheoryApproach
+                approachEntries={humanDesignByTheoryApproach}
+              />
             </div>
           </div>
         </div>

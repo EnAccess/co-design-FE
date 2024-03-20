@@ -2,7 +2,7 @@ import React from "react";
 
 const HorzontalArrow = () => {
   return (
-    <div>
+    <div className="flex m-auto">
       <svg
         width="574"
         height="110"

@@ -27,7 +27,7 @@ export const Header = () => {
 
   if (pathname === "/basic-resources")
     return (
-      <div className="flex flex-wrap justify-between items-center gap-y-24 border-b-8 border-dashed px-8 mx-auto">
+      <div className="flex h-[32rem] flex-wrap items-stretch justify-between gap-y-24 border-b-8 border-dashed px-8 py-10 mx-auto">
         <ResourceSection navData={navData} />
         <HorzontalArrow />
         <JourneySection />
@@ -36,7 +36,7 @@ export const Header = () => {
 
   if (pathname === "/case-studies-and-core-tools" || pathname === "/")
     return (
-      <div className="flex flex-wrap justify-between items-center gap-y-24 border-b-8 border-dashed px-8 mx-auto">
+      <div className="flex  h-[32rem] flex-wrap items-stretch justify-between gap-y-24 border-b-8 border-dashed px-8 py-10 mx-auto">
         <ResourceSection navData={navData} />
 
         <SmallArrow />
@@ -47,7 +47,7 @@ export const Header = () => {
     );
 
   return (
-    <div className="flex flex-wrap justify-between items-center gap-y-24 border-b-8 border-dashed px-8 mx-auto">
+    <div className="flex  h-[32rem] flex-wrap items-stretch justify-between gap-y-24 border-b-8 border-dashed px-8 py-10 mx-auto">
       <ResourceSection navData={navData} />
     </div>
   );

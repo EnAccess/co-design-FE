@@ -90,12 +90,12 @@ const ToolsResources = () => {
         </div>
       </div>
       <div className="flex gap-6">
-        <div className="border-4 border-dashed border-gray-400 bg-gray-50 w-1/4 h-fit -mt-[36rem] py-4 px-2">
+        <div className="border-4 border-dashed border-gray-400 bg-gray-50 w-1/4 -mt-[36rem] py-4 px-2">
           <TitleCard
             title="Behaviour Change Approaches"
             description="BCA’s look to understand and unlock the how, why, and when of energy system and service adoption from an end-user or individual perspective."
           />
-          <div className="flex gap-3 px-3">
+          <div className="flex gap-3 p-4 h-fit">
             <div>
               <BehaviorByPractice
                 approachEntries={behaviorByPracticeApproach}

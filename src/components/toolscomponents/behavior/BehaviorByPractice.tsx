@@ -9,22 +9,21 @@ interface Props {
 const BehaviorByPractice = ({ approachEntries }: Props) => {
   return (
     <>
-      <div className="pt-6">
-        <ArcherContainer>
-          <div className="border-4 border-dashed border-gray-500">
-            <div className="mt-3 pb-6">
-              <h1 className="text-center font-bold text-lg">PRACTICE</h1>
-            </div>
-            <div className="flex flex-wrap justify-center gap-2 m-6 mr-4">
-              {approachEntries.map((data: Entry) => (
-                <div key={data.Key} className="w-60">
-                  <InformationCard key={data.Key} data={data} />
-                </div>
-              ))}
-            </div>
+      <ArcherContainer>
+        <div className="border-4 border-dashed border-gray-500 rounded">
+          <h1 className="text-center text-gray-700 font-semibold text-lg">
+            PRACTICE
+          </h1>
+
+          <div className="flex flex-wrap justify-center gap-2 pt-4">
+            {approachEntries.map((data: Entry) => (
+              <div key={data.Key} className="w-56">
+                <InformationCard key={data.Key} data={data} />
+              </div>
+            ))}
           </div>
-        </ArcherContainer>
-      </div>
+        </div>
+      </ArcherContainer>
     </>
   );
 };

@@ -1,10 +1,10 @@
 import React from "react";
 import InformationCard from "../../cards/InformationCard";
 import { ArcherContainer } from "react-archer";
-import { Entry } from "../../../types/interfaces";
+import { Entries} from "../../../types/interfaces";
 
 interface Props {
-  approachEntries: Entry[];
+  approachEntries: Entries;
 }
 const MultidiscilnaryByPracticeApproach = ({ approachEntries }: Props) => {
   return (
@@ -16,7 +16,7 @@ const MultidiscilnaryByPracticeApproach = ({ approachEntries }: Props) => {
           </h1>
 
           <div className="flex flex-wrap justify-center gap-2 mb-2">
-            {approachEntries.map((data: Entry) => (
+            {approachEntries.map((data) => (
               <div key={data.Key} className="w-56">
                 <InformationCard key={data.Key} data={data} />
               </div>

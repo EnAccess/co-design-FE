@@ -11,7 +11,7 @@ const HumanDesignApproches = ({ approachEntries }: Props) => {
     <>
       <ArcherContainer>
         <div className="border-4 border-dashed border-gray-500 rounded">
-          <h1 className="text-center text-gray-700 font-semibold text-lg mb-3">PRACTICE</h1>
+          <h1 className="text-center text-gray-700 font-semibold text-lg my-3">PRACTICE</h1>
 
           <div className="flex flex-col items-center gap-2 mb-3">
             {approachEntries.map((data: Entry) => (

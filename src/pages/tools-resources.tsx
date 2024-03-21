@@ -24,6 +24,7 @@ import {
   humanDesignByPracticeApproach,
   humanDesignByTheoryApproach,
 } from "../utils/toolsEntries";
+import { titleEntries } from "@/utils/titleEntries";
 
 const ToolsResources = () => {
   return (
@@ -48,8 +49,8 @@ const ToolsResources = () => {
 
             <div className="border-4 border-dashed border-gray-400 bg-gray-50 py-4 px-2 rounded mt-24">
               <TitleCard
-                title="Multidisciplinary Approaches"
-                description="Multidisciplinary approaches blend different disciplines to approach problems from multiple perspectives"
+                title={titleEntries[0].title}
+                description={titleEntries[0].description}
               />
               <div className="grid grid-cols-3 h-2/3 p-4 gap-4">
                 <div className="col-span-2">
@@ -68,8 +69,8 @@ const ToolsResources = () => {
             <div className="pt-10">
               <div className="border-4 border-dashed border-gray-400 bg-gray-50 py-4 px-2 rounded w-2/3">
                 <TitleCard
-                  title="Participatory Approaches"
-                  description="Participatory Approaches cover a wide range of qualitative research methods which look to include participants throughout project processes. These include phenomenological, photovoice, participatory workshops, mapping, and hanging out methods to name a few."
+                  title={titleEntries[1].title}
+                  description={titleEntries[1].description}
                 />
                 <div className="grid grid-cols-2 p-3 gap-4 h-1/3">
                   <div className="">
@@ -84,15 +85,15 @@ const ToolsResources = () => {
                   </div>
                 </div>
               </div>
-            </div>  
+            </div>
           </div>
         </div>
       </div>
       <div className="flex gap-10 w-1/2 -mt-[28rem]">
         <div className="border-4 border-dashed border-gray-400 bg-gray-50 py-4 px-2 rounded">
           <TitleCard
-            title="Behaviour Change Approaches"
-            description="BCA’s look to understand and unlock the how, why, and when of energy system and service adoption from an end-user or individual perspective."
+            title={titleEntries[2].title}
+            description={titleEntries[2].description}
           />
           <div className="flex gap-3 p-4 h-fit">
             <div className="p-3">
@@ -108,10 +109,10 @@ const ToolsResources = () => {
 
         <div className="border-4 border-dashed border-gray-400 bg-gray-50 h-fit mt-20 py-4 px-2 rounded">
           <TitleCard
-            title="Human-Centered Design & Design Thinking"
-            description="Human-Centered Design & Design Thinking combine to produce a problem solving methodology which captures the wishes of a centralised user group and encourages significant ideation. "
+            title={titleEntries[3].title}
+            description={titleEntries[3].description}
           />
-          <div className="grid grid-cols-2 gap-3 p-3 h-2/3">
+          <div className="grid grid-cols-2 gap-3 p-4 h-2/3">
             <div className="p-1">
               <HumanDesignByPracticeApproach
                 approachEntries={humanDesignByPracticeApproach}

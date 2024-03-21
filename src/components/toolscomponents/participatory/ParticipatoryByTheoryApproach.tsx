@@ -11,7 +11,7 @@ const ParticipatoryByTheoryApproch = ({ approachEntries }: Props) => {
     <div>
       <ArcherContainer>
         <div className="border-4 border-dashed border-gray-500 rounded pb-2 p-4">
-          <h1 className="text-center font-semibold text-gray-600 text-lg mb-3">
+          <h1 className="text-center font-semibold text-gray-600 text-lg my-3">
             THEORY
           </h1>
 

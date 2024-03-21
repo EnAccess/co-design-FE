@@ -11,7 +11,7 @@ const MultidiscilnaryByTheoryApproach = ({ approachEntries }: Props) => {
     <>
       <ArcherContainer>
         <div className="border-4 border-dashed border-gray-500 rounded h-full">
-          <h1 className="text-center text-gray-700 font-semibold text-lg mb-4">
+          <h1 className="text-center text-gray-700 font-semibold text-lg my-4">
             THEORY
           </h1>
 

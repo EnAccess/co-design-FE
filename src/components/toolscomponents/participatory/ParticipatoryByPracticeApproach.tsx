@@ -10,8 +10,8 @@ const ParticipatoryByPracticeApproch = ({ approachEntries }: Props) => {
   return (
     <div>
       <ArcherContainer>
-        <div className="border-4 border-dashed border-gray-500 rounded pb-2 p-5">
-          <h1 className="text-center font-semibold text-gray-600 text-lg mb-3">PRACTICE</h1>
+        <div className="border-4 border-dashed border-gray-500 rounded pb-2 p-3 mt-2">
+          <h1 className="text-center font-semibold text-gray-600 text-lg my-3">PRACTICE</h1>
 
           <div className="flex flex-col  items-center gap-2">
             {approachEntries.map((data: Entry) => (

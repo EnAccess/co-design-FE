@@ -32,13 +32,13 @@ const CoreConcept = () => {
   ) as Entries;
 
   return (
-    <div className="p-6 w-4/5">
+    <div className="p-6">
       <div className="flex text-gray-600 justify-center items-center py-6 text-3xl font-bold">
         <h1>Core Concepts of Collaborative Design Process</h1>
       </div>
 
-      <div className="flex gap-4">
-        <div className="border-4 border-dotted border-gray-300 flex flex-col">
+      <div className="flex gap-4 p-8 w-full">
+        <div className="border-4 border-dotted border-gray-300 flex flex-col w-full p-8">
           <TitleCard
             title={dataItem[0].title}
             description={dataItem[0].description}
@@ -48,8 +48,8 @@ const CoreConcept = () => {
             <SystemApproachEntries systemApproach={entriesWithTheme} />
           </div>
         </div>
-        <div className="">
-          <div className="flex gap-4">
+        <div className="w-full">
+          <div className="flex gap-4 p-8">
             <div className="border-4 border-dashed border-gray-300 py-2 px-2">
               <TitleCard
                 title={dataItem[1].title}
@@ -69,7 +69,7 @@ const CoreConcept = () => {
               </div>
             </div>
           </div>
-          <div className="border-4 border-dashed border-gray-300 mt-6 flex">
+          <div className="border-4 border-dashed border-gray-300 mt-6 flex p-8">
             <div className="py-2">
               <TitleCard
                 title={dataItem[3].title}

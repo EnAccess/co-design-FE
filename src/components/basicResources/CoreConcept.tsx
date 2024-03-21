@@ -37,12 +37,12 @@ const CoreConcept = () => {
         <h1>Core Concepts of Collaborative Design Process</h1>
       </div>
 
-      <div className="flex gap-4 p-6 w-full">
-        <div className="border-4 border-dotted border-gray-300 flex flex-col w-full p-8">
+      <div className="flex gap-8 p-6 w-full">
+        <div className="border-4 border-dotted border-gray-300 flex flex-col w-full p-4">
           <TitleCard
             title={dataItem[0].title}
             description={dataItem[0].description}
-            className="w-3/4"
+            className="w-4/5"
           />
           <div className="flex justify-center mt-6">
             <SystemApproachEntries systemApproach={entriesWithTheme} />
@@ -69,15 +69,14 @@ const CoreConcept = () => {
               </div>
             </div>
           </div>
-          <div className="border-4 border-dashed border-gray-300 mt-6 flex p-8">
-            <div className="py-2">
-              <TitleCard
-                title={dataItem[3].title}
-                description={dataItem[3].description}
-                className="flex flex-col gap-4 w-96 ml-3"
-              />
-            </div>
-            <div className="p-6 ml-16">
+          <div className="border-4 border-dashed border-gray-300 mt-6 flex p-2">
+            <TitleCard
+              title={dataItem[3].title}
+              description={dataItem[3].description}
+              className="flex flex-col gap-4 w-96 ml-3"
+            />
+
+            <div className="p-8 ml-16">
               <DocolonizationApproach decolonizationEntries={decolonisation} />
             </div>
           </div>

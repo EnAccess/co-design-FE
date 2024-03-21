@@ -1,7 +1,7 @@
 import React from "react";
 import Data from "../../../public/output.json";
 import { dataItem } from "../../utils/dataItem";
-import { Entries } from "@/types/interfaces";
+import { Entries } from "../../types/interfaces";
 import HumanitarianApproach from "./approachEntries/HumanitarianApproach";
 import PolicyApproach from "./approachEntries/PolicyApproach";
 import HumanitarianPolicy from "./approachEntries/HumanitarianPolicy";
@@ -28,7 +28,7 @@ const CriteriaConcept = () => {
       <div className="flex text-gray-500 justify-center items-center  pt-4 mb-10 text-4xl font-bold">
         <h1>Criteria for Good Design</h1>
       </div>
-      <div className="flex flex-col md:flex-row gap-4 ">
+      <div className="flex gap-8 ">
         <div className="border-4 border-dashed border-gray-300 p-2 w-1/3">
           <TitleCard
             title={dataItem[7].title}

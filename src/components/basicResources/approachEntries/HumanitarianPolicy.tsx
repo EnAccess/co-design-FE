@@ -7,7 +7,6 @@ interface Props {
   humanitarianEntries: Entries;
 }
 const HumanitarianPolicy = ({ humanitarianEntries }: Props) => {
-    console.log("my data is:", humanitarianEntries)
   return (
     <>
       <ArcherContainer>

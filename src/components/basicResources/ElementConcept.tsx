@@ -2,7 +2,7 @@ import React from "react";
 import Data from "../../../public/output.json";
 import { dataItem } from "../../utils/dataItem";
 import CaseStudyApproach from "./approachEntries/CaseStudyApproach";
-import { Entries } from "@/types/interfaces";
+import { Entries } from "../../types/interfaces";
 import GenderApproach from "./approachEntries/GenderAppraoch";
 import TitleCard from "../cards/TitleCard";
 
@@ -22,7 +22,7 @@ const ElementConcept = () => {
         <h1>Elements Used to Create Effective Solutions</h1>
       </div>
 
-      <div className="flex gap-6 p-4 ">
+      <div className="flex gap-8 p-4 ">
         <div className="border-4 border-dashed border-gray-300">
           <TitleCard
             title={dataItem[4].title}

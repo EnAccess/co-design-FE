@@ -38,20 +38,22 @@ const PracticeSection = ({ title }: { title: string }) => {
           </div>
 
           <div className="grid grid-cols-4 relative">
-            <div className="flex justify-center ">
+            <div className="flex justify-center rotate-180">
               <Line />
             </div>
             <div className="flex justify-center ">
               <Line />
             </div>
-            <div className="flex justify-center ">
+            <div className="flex justify-center  rotate-180">
               <Line />
             </div>
             <div className="flex justify-center ">
               <Line />
             </div>
-
-            <div className="h-[10px] w-full bg-[#dc2626] absolute top-1/2"></div>
+            <div className="flex items-center border-4 absolute w-full top-[45%]">
+              <div className="h-[10px] w-full bg-[#dc2626] absolute"></div>
+              <div className="-right-4 absolute w-0 h-0 border-y-[15px] border-l-[30px] border-y-transparent border-l-[#dc2626] "></div>
+            </div>
           </div>
           <div className="flex justify-between items-start w-fit- gap-x-4-">
             <p className="text-center text-xs max-w-52 leading-tight">

@@ -25,7 +25,7 @@ const CriteriaConcept = () => {
 
   return (
     <div className="p-6 w-full h-full">
-      <div className="flex text-gray-500 justify-center items-center  pt-4 mb-10 text-4xl font-bold">
+      <div className="flex text-gray-500 justify-center items-center pt-4 mb-10 text-4xl font-bold">
         <h1>Criteria for Good Design</h1>
       </div>
       <div className="flex gap-8 ">

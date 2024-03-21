@@ -10,7 +10,7 @@ const SystemApproachEntries = ({ systemApproach }: Props) => {
   return (
     <>
       <ArcherContainer>
-        <div className="flex flex-wrap gap-4 pb-3 px-2 ">
+        <div className="p-4">
           {[systemApproach[5]].map((data: Entry) => (
             <div key={data.Key} className="w-60">
               <InformationCard key={data.Key} data={data} />

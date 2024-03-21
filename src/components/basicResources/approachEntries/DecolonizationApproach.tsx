@@ -10,9 +10,9 @@ const DecolonizationApproach = ({ decolonizationEntries }: Props) => {
   return (
     <>
       <ArcherContainer>
-          <div className="flex flex-wrap gap-4 mt-6 ml-3">
+          <div className="flex flex-wrap gap-6 p-6 mt-10 ">
             {decolonizationEntries.slice(0,2).concat(decolonizationEntries.slice(3,4)).map((data: Entry) => (
-              <div key={data.Key} className="w-52">
+              <div key={data.Key} className="w-56">
                 <InformationCard key={data.Key} data={data} />
               </div>
             ))}

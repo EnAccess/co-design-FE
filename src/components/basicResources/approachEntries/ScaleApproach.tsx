@@ -10,7 +10,7 @@ const ScaleApproach = ({ scaleEntries }: Props) => {
   return (
     <>
       <ArcherContainer>
-          <div className="flex gap-4 pb-3 px-2">
+          <div className="p-6">
             {scaleEntries.map((data: Entry) => (
               <div key={data.Key} className="w-52">
                 <InformationCard key={data.Key} data={data} />

@@ -5,7 +5,7 @@ import React from "react";
 
 const BasicResources = () => {
   return (
-    <div className="gap-20 px-10 lg:px-40">
+    <div className="px-28 mb-4">
       <CoreConcept />
       <ElementConcept />
       <CriteriaConcept />

@@ -10,7 +10,7 @@ const PolicyApproach = ({ policyEntries }: Props) => {
   return (
     <>
       <ArcherContainer>
-        <div className="flex justify-between gap-4">
+        <div className="flex justify-between p-4">
           {policyEntries.slice(0,1).concat(policyEntries.slice(-1)).map((data: Entry) => (
             <div key={data.Key} className="w-72">
               <InformationCard key={data.Key} data={data} />

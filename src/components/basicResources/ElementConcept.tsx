@@ -18,33 +18,33 @@ const ElementConcept = () => {
 
   return (
     <div className="p-6">
-      <div className="flex text-gray-600 justify-center items-center py-4 text-3xl font-bold">
-        <h1>Element Used to Create Effective Solutions</h1>
+      <div className="flex text-gray-500 justify-center items-center mb-8 text-4xl font-bold">
+        <h1>Elements Used to Create Effective Solutions</h1>
       </div>
 
-      <div className="flex gap-3">
+      <div className="flex gap-6 p-4 ">
         <div className="border-4 border-dashed border-gray-300">
           <TitleCard
             title={dataItem[4].title}
             description={dataItem[4].description}
             className="mr-16 mt-2 ml-2"
           />
-          <div className="mt-20 px-6">
+          <div className="mt-20 p-6">
             <CaseStudyApproach caseStudyEntries={caseStudy} />
           </div>
         </div>
-        <div className="border-4 border-dashed border-gray-300 py-2 px-2">
+        <div className="border-4 border-dashed border-gray-300 py-2 p-2 w-1/3">
           <TitleCard
             title={dataItem[5].title}
             description={dataItem[5].description}
           />
         </div>
-        <div className="border-4 border-dashed border-gray-300 py-2 px-2">
+        <div className="border-4 border-dashed border-gray-300 py-2 p-2 w-1/2">
           <TitleCard
             title={dataItem[6].title}
             description={dataItem[6].description}
           />
-          <div className="ml-10 mt-16 mb-24">
+          <div className="p-20 mb-20">
             <GenderApproach genderEntries={gender} />
           </div>
         </div>

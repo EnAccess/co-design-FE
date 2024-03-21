@@ -10,7 +10,7 @@ const HumanitarianApproach = ({ humanitarianEntries }: Props) => {
   return (
     <>
       <ArcherContainer>
-          <div className="flex gap-4">
+          <div className="flex gap-4 p-6">
             {humanitarianEntries.slice(0,2).map((data: Entry) => (
               <div key={data.Key} className="w-60">
                 <InformationCard key={data.Key} data={data} />

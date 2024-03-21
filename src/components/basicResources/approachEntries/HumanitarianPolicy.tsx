@@ -11,7 +11,7 @@ const HumanitarianPolicy = ({ humanitarianEntries }: Props) => {
   return (
     <>
       <ArcherContainer>
-          <div className="flex gap-4">
+          <div className="p-4">
             {[humanitarianEntries[2]].map((data: Entry) => (
               <div key={data.Key} className="w-60">
                 <InformationCard key={data.Key} data={data} />

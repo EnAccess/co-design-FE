@@ -10,9 +10,9 @@ const LocalizationApproach = ({ localizationEntries }: Props) => {
   return (
     <>
       <ArcherContainer>
-          <div className="flex gap-4 pb-3 px-2">
+          <div className="flex gap-6 p-4">
             {localizationEntries.slice(-2).map((data: Entry) => (
-              <div key={data.Key} className="w-44">
+              <div key={data.Key} className="w-52">
                 <InformationCard key={data.Key} data={data} />
               </div>
             ))}

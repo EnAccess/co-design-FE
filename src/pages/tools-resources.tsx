@@ -46,7 +46,7 @@ const ToolsResources = () => {
               <TechnicalApproches approachEntries={technicalAproachEntries} />
             </div>
 
-            <div className="border-4 border-dashed border-gray-400 bg-gray-50 py-4 px-2 rounded">
+            <div className="border-4 border-dashed border-gray-400 bg-gray-50 py-4 px-2 rounded mt-24">
               <TitleCard
                 title="Multidisciplinary Approaches"
                 description="Multidisciplinary approaches blend different disciplines to approach problems from multiple perspectives"

@@ -9,7 +9,7 @@ interface Props {
 }
 const TechnicalApproches = ({ approachEntries }: Props) => {
   return (
-    <div className="border-4 border-dashed border-gray-400 bg-gray-50 my-8 p-8 h-fit">
+    <div className="border-4 border-dashed border-gray-400 bg-gray-50 p-3">
       <div>
         <TitleCard
           title="Technical Approaches"

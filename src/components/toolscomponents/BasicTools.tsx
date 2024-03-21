@@ -9,7 +9,7 @@ interface Props {
 }
 const BasicTools = ({ basicToolsEntries }: Props) => {
   return (
-    <div className="border-4 border-dashed border-gray-400 bg-gray-50 p-6">
+    <div className="border-4 border-dashed border-gray-400 bg-gray-50 p-4">
       <div>
         <TitleCard
           title="BASIC TOOLS"

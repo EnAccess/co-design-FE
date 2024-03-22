@@ -8,7 +8,7 @@ const PracticeSection = ({ title }: { title: string }) => {
       <p className="text-center text-gray-500 text-xl font-bold mb-3">
         {title}
       </p>
-      <div className="h-full flex items-center">
+      <div className="h-full flex items-center justify-center">
         <div className="h-[20rem] -mt-4">
           <div className="flex justify-center items-end w-fit gap-x-4">
             <LevelCard

@@ -41,3 +41,8 @@ export function getColorByAccess(accessType: string) {
       return "transparent";
   }
 }
+
+export const caseStudy = {
+  Level: ["Household", "Community", "Policy/Systemic", "Productivity Use"],
+  Technology: ["Coding", "Lighting", "Hummanitarian Inflastructure"],
+};

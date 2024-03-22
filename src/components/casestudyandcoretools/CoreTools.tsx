@@ -13,7 +13,7 @@ const CoreTools = ({ categorizedEntries }: Props) => {
         <div className="flex p-4 gap-6 flex-wrap">
           {categorizedEntries.level3.map((data: Entry) => (
             <div key={data.Key} className="w-72">
-              <InformationCard key={data.Key} data={data} />{" "}
+              <InformationCard data={data} />{" "}
             </div>
           ))}
         </div>
@@ -27,7 +27,7 @@ const CoreTools = ({ categorizedEntries }: Props) => {
         <div className="flex p-4 gap-6 flex-wrap">
           {categorizedEntries.level1.map((data: Entry) => (
             <div key={data.Key} className="w-72">
-              <InformationCard key={data.Key} data={data} />{" "}
+              <InformationCard data={data} />{" "}
             </div>
           ))}
         </div>

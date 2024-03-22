@@ -1,17 +1,6 @@
 import React from "react";
 import ArrowDown from "../../components/icons/ArrowDown";
-
-const caseStudyLevel = [
-  "Household",
-  "Community",
-  "Policy/Systemic",
-  "Productivity Use",
-];
-const caseStudyTechnology = [
-  "Coding",
-  "Lighting",
-  "Hummanitarian Inflastructure",
-];
+import { caseStudy } from "@/utils/Helper";
 
 const HightlightCaseStudyDetails = () => {
   return (
@@ -27,7 +16,7 @@ const HightlightCaseStudyDetails = () => {
           </h1>
           <div>
             <div className="flex flex-col gap-2 p-4">
-              {caseStudyLevel.map((element, index) => (
+              {caseStudy.Level.map((element, index) => (
                 <button
                   key={index}
                   className="border border-gray-500 p-4 bg-black-900 text-white rounded-lg"
@@ -43,7 +32,7 @@ const HightlightCaseStudyDetails = () => {
             Case Study Technology
           </h1>
           <div className="flex flex-col gap-2 p-4">
-            {caseStudyTechnology.map((element, index) => (
+            {caseStudy.Technology.map((element, index) => (
               <button
                 key={index}
                 className="border border-gray-500 p-4 bg-gray-50 text-black rounded-lg"

@@ -23,8 +23,9 @@ const InformationCard = ({ data }: any) => {
                 ...data.PARSED_RELATES_TO.map((item: any) => {
                   return {
                     targetId: item,
-                    sourceAnchor: "top",
-                    targetAnchor: "bottom",
+                    targetAnchor: "right",
+                    sourceAnchor: "left",
+                    label: "Arrow 1",
                     style: {
                       strokeDasharray: "5,5",
                       strokeColor: "black",

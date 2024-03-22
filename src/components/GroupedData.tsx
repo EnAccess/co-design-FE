@@ -127,13 +127,17 @@ function GroupedData() {
                       This outlines what needs to change and how.
                     </p>
                   </div>
-                  <div className=" m-5 grid grid-cols-2 gap-x-64 gap-y-20 py-10">
+                  <div className="flex justify-around flex-wrap py-10">
                     {data.map((data: Entry) => {
                       if (
                         data.PARSED_MANUAL_TAGS.THEME === themItem ||
                         data.PARSED_MANUAL_TAGS.THEME?.includes(themItem)
                       ) {
-                        return <InformationCard key={data.Key} data={data} />;
+                        return (
+                          <div key={data.Key} className="w-52 m-2 z-10">
+                            <InformationCard data={data} />
+                          </div>
+                        );
                       }
                     })}
                   </div>

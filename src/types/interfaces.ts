@@ -18,3 +18,9 @@ export interface Entry {
 }
 
 export type Entries = Entry[];
+
+export interface NavLink {
+  text: string;
+  link: string;
+  title: string;
+}

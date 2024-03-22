@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       maxWidth: {
-        custom: "2500px",
+        custom: "3500px",
       },
       colors: {
         black: {

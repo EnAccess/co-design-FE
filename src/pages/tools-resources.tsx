@@ -1,30 +1,34 @@
-import HorizontalArrows from "../components/toolscomponents/arrows/HorizontalArrows";
-import BasicTools from "../components/toolscomponents/BasicTools";
 import React from "react";
-import VerticalArrows from "../components/toolscomponents/arrows/VerticalArrows";
-import TechnicalApproches from "../components/toolscomponents/TechnicalApproach";
-import BehaviorByPractice from "../components/toolscomponents/behavior/BehaviorByPractice";
-import BehaviorByTheory from "../components/toolscomponents/behavior/BehaviorByTheory";
 import TitleCard from "../components/cards/TitleCard";
-import HumanDesignByPracticeApproach from "../components/toolscomponents/humanDesign/HumanDesignByPracticeApproach";
-import HumanDesignByTheoryApproach from "../components/toolscomponents/humanDesign/HumanDesignByTheoryApproach";
-import MultidiscilnaryByTheoryApproach from "../components/toolscomponents/multidiscpliary/MultidisciplinaryByTheoryApproach";
-import ParticipatoryByPracticeApproch from "../components/toolscomponents/participatory/ParticipatoryByPracticeApproach";
-import ParticipatoryByTheoryApproch from "../components/toolscomponents/participatory/ParticipatoryByTheoryApproach";
-import MultidiscilnaryByPracticeApproach from "../components/toolscomponents/multidiscpliary/MultidiscilnaryByPracticeApproach";
+import { titleEntries } from "../utils/titleEntries";
+import {
+  ParticipatoryByPracticeApproch,
+  ParticipatoryByTheoryApproch,
+  HumanDesignByPracticeApproach,
+  HumanDesignByTheoryApproach,
+  MultidiscilnaryByPracticeApproach,
+  MultidiscilnaryByTheoryApproach,
+  BehaviorByPractice,
+  BehaviorByTheory,
+  BasicTools,
+  VerticalArrows,
+  HorizontalArrows,
+} from "../components/toolscomponents";
+
 import {
   basicToolsEntries,
   technicalAproachEntries,
   multidisciplinaryByPracticeEntries,
   multidisciplinaryByTheoryEntries,
-  participatoryApproachEntries,
-  participatoryApproachEntries1,
   behaviorByPracticeApproach,
   behaviorByTheoryApproach,
   humanDesignByPracticeApproach,
   humanDesignByTheoryApproach,
-} from "../utils/toolsEntries";
-import { titleEntries } from "@/utils/titleEntries";
+  participatoryByPracticeEntries,
+  participatoryByTheoryEntries,
+} from "../utils";
+
+import TechnicalApproches from "@/components/toolscomponents/TechnicalApproach";
 
 const ToolsResources = () => {
   return (
@@ -75,12 +79,12 @@ const ToolsResources = () => {
                 <div className="grid grid-cols-2 p-3 gap-4 h-1/3">
                   <div className="">
                     <ParticipatoryByPracticeApproch
-                      approachEntries={participatoryApproachEntries}
+                      approachEntries={participatoryByPracticeEntries}
                     />
                   </div>
                   <div className="p-2">
                     <ParticipatoryByTheoryApproch
-                      approachEntries={participatoryApproachEntries1}
+                      approachEntries={participatoryByTheoryEntries}
                     />
                   </div>
                 </div>

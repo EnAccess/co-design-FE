@@ -31,14 +31,14 @@ export const multidisciplinaryByTheoryEntries = Data.filter((entry) => {
   );
 }).splice(6) as Entry[];
 
-export const participatoryApproachEntries = Data.filter((entry) => {
+export const participatoryByPracticeEntries = Data.filter((entry) => {
   return (
     entry.Manual_Tags &&
     entry.Manual_Tags.includes(" TOOLS: Participatory Approaches")
   );
 }).splice(0, 4) as Entry[];
 
-export const participatoryApproachEntries1 = Data.filter((entry) => {
+export const participatoryByTheoryEntries = Data.filter((entry) => {
   return (
     entry.Manual_Tags &&
     entry.Manual_Tags.includes(" TOOLS: Participatory Approaches")

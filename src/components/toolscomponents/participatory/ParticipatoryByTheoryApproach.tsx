@@ -8,23 +8,21 @@ interface Props {
 }
 const ParticipatoryByTheoryApproch = ({ approachEntries }: Props) => {
   return (
-    <div>
-      <ArcherContainer>
-        <div className="border-4 border-dashed border-gray-500 rounded pb-2 p-4">
-          <h1 className="text-center font-semibold text-gray-600 text-lg my-3">
-            THEORY
-          </h1>
+    <ArcherContainer>
+      <div className="border-4 border-dashed border-gray-500 rounded pb-2 p-4">
+        <h1 className="text-center font-semibold text-gray-600 text-lg my-3">
+          THEORY
+        </h1>
 
-          <div className="flex flex-col items-center gap-2">
-            {approachEntries.map((data: Entry) => (
-              <div key={data.Key} className="w-56 px-2 p-4">
-                <InformationCard key={data.Key} data={data} />
-              </div>
-            ))}
-          </div>
+        <div className="flex flex-col items-center gap-2">
+          {approachEntries.map((data: Entry) => (
+            <div key={data.Key} className="w-56 px-2 p-4">
+              <InformationCard key={data.Key} data={data} />
+            </div>
+          ))}
         </div>
-      </ArcherContainer>
-    </div>
+      </div>
+    </ArcherContainer>
   );
 };
 

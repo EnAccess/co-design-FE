@@ -21,7 +21,7 @@ export {
   MultidiscilnaryByTheoryApproach,
   MultidiscilnaryByPracticeApproach,
   BasicTools,
-  TechnicalApproach,
   HorizontalArrows,
-  VerticalArrows
+  VerticalArrows,
+  TechnicalApproach
 };

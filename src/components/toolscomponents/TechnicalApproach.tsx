@@ -8,7 +8,7 @@ import { titleEntries } from "@/utils/titleEntries";
 interface Props {
   approachEntries: Entries;
 }
-const TechnicalApproches = ({ approachEntries }: Props) => {
+const TechnicalApproch = ({ approachEntries }: Props) => {
   return (
     <div className="border-4 border-dashed border-gray-400 bg-gray-50 p-3">
       <div>
@@ -32,4 +32,4 @@ const TechnicalApproches = ({ approachEntries }: Props) => {
   );
 };
 
-export default TechnicalApproches;
+export default TechnicalApproch;

@@ -13,6 +13,7 @@ import {
   BasicTools,
   VerticalArrows,
   HorizontalArrows,
+  TechnicalApproach,
 } from "../components/toolscomponents";
 
 import {
@@ -28,7 +29,6 @@ import {
   participatoryByTheoryEntries,
 } from "../utils";
 
-import TechnicalApproches from "@/components/toolscomponents/TechnicalApproach";
 
 const ToolsResources = () => {
   return (
@@ -48,7 +48,7 @@ const ToolsResources = () => {
           </div>
           <div className="w-4/5 h-2/3 mx-auto">
             <div>
-              <TechnicalApproches approachEntries={technicalAproachEntries} />
+              <TechnicalApproach approachEntries={technicalAproachEntries} />
             </div>
 
             <div className="border-4 border-dashed border-gray-400 bg-gray-50 py-4 px-2 rounded mt-24">

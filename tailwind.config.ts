@@ -8,6 +8,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      maxWidth: {
+        custom: "2500px",
+      },
+      rotate: {
+        132: "132deg",
+      },
+
       colors: {
         level: {
           primary: {

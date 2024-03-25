@@ -36,8 +36,8 @@ const InformationCard = ({ data }: any) => {
         }
       >
         <div
-          className={`py-4 px-2 text-sm  rounded-md border-solid border-2 hover:border-4 box-content hover:relative hover:border-purple-500 ${bgColor}`}
-        >
+        className={`py-4 px-2 text-sm rounded-md border-solid border-2 hover:border-4 box-content hover:relative hover:border-purple-500 ${data.Manual_Tags.includes("BASIC TOOLS") ? "bg-[#ffcccc]" :bgColor}`}
+>
           <div className="relative">
             {data.Title}
             {data.PARSED_MANUAL_TAGS.ACCESS === "Institutional Access" ? (

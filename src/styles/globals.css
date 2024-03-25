@@ -5,3 +5,7 @@
 body {
   zoom: 60%;
 }
+
+body::-webkit-scrollbar {
+  display: none;
+}

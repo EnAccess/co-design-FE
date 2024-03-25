@@ -1,20 +1,6 @@
 import React from "react";
 import TitleCard from "../components/cards/TitleCard";
 import { titleEntries } from "../utils/titleEntries";
-import {
-  ParticipatoryByPracticeApproch,
-  ParticipatoryByTheoryApproch,
-  HumanDesignByPracticeApproach,
-  HumanDesignByTheoryApproach,
-  MultidiscilnaryByPracticeApproach,
-  MultidiscilnaryByTheoryApproach,
-  BehaviorByPractice,
-  BehaviorByTheory,
-  BasicTools,
-  VerticalArrows,
-  HorizontalArrows,
-  TechnicalApproach,
-} from "../components/toolscomponents";
 
 import {
   basicToolsEntries,
@@ -29,6 +15,20 @@ import {
   participatoryByTheoryEntries,
 } from "../utils";
 
+import {
+  BasicTools,
+  VerticalArrows,
+  HorizontalArrows,
+  TechnicalApproach,
+  MultidiscilnaryByPracticeApproach,
+  MultidiscilnaryByTheoryApproach,
+  ParticipatoryByPracticeApproch,
+  ParticipatoryByTheoryApproch,
+  BehaviorByPractice,
+  BehaviorByTheory,
+  HumanDesignByPracticeApproach,
+  HumanDesignByTheoryApproach,
+} from "../components/toolscomponents";
 
 const ToolsResources = () => {
   return (

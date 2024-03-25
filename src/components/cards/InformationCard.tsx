@@ -29,8 +29,8 @@ const InformationCard = ({ data }: any) => {
                   }
                   return {
                     targetId: newItem,
-                    targetAnchor: "right",
-                    sourceAnchor: "left",
+                    sourceAnchor: "top",
+                    targetAnchor: "middle",
                     style: {
                       strokeDasharray: "5,5",
                       strokeColor: "black",

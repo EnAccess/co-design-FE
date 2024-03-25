@@ -1,12 +1,12 @@
 import React, { useEffect, useState, useRef } from "react";
 import { ArcherContainer } from "react-archer";
 import InformationCard from "./cards/InformationCard";
-import { Entry } from "@/types/interfaces";
+import { Entries, Entry } from "@/types/interfaces";
 import { getRandomColor } from "@/utils/helpers";
-import Data from "./../../public/output.json";
+import Data from "../../public/output.json";
 
 function GroupedData() {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState<Entries>([]);
   const [positions, setPositions] = useState<any>({});
   const gridContainerRef = useRef<any>(null);
 
@@ -94,18 +94,14 @@ function GroupedData() {
   }, []);
 
   return (
-    <section className="mt-10">
-      <h3 className="text-gray-600 font-semibold text-center text-2xl">
-        Core concept of collaborative Design Process
-      </h3>
-
+    <div>
       <div
         ref={gridContainerRef}
         className="grid grid-cols-1 gap-5  p-20 w-full"
       >
         <ArcherContainer
           strokeDasharray="."
-          noCurves
+          noCurves-
           strokeColor={getRandomColor()}
         >
           <div className="grid grid-cols-2 gap-10">
@@ -127,16 +123,16 @@ function GroupedData() {
                       This outlines what needs to change and how.
                     </p>
                   </div>
-                  <div className="flex justify-around flex-wrap py-10">
+                  <div className="grid grid-cols-2 gap-10 py-10">
                     {data.map((data: Entry) => {
                       if (
                         data.PARSED_MANUAL_TAGS.THEME === themItem ||
                         data.PARSED_MANUAL_TAGS.THEME?.includes(themItem)
                       ) {
                         return (
-                          <div key={data.Key} className="w-52 m-2 z-10">
-                            <InformationCard data={data} />
-                          </div>
+                          // <div key={data.Key} className="w-52 m-2 z-10">
+                          <InformationCard key={data.Key} data={data} />
+                          // </div>
                         );
                       }
                     })}
@@ -147,7 +143,7 @@ function GroupedData() {
           </div>
         </ArcherContainer>
       </div>
-    </section>
+    </div>
   );
 }
 

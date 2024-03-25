@@ -21,11 +21,16 @@ const InformationCard = ({ data }: any) => {
           data.Extra
             ? [
                 ...data.PARSED_RELATES_TO.map((item: any) => {
+                  let newItem;
+                  if (item.split(" ").length > 1) {
+                    newItem = item.split(" ")[1];
+                  } else {
+                    newItem = item;
+                  }
                   return {
-                    targetId: item,
+                    targetId: newItem,
                     targetAnchor: "right",
                     sourceAnchor: "left",
-                    label: "Arrow 1",
                     style: {
                       strokeDasharray: "5,5",
                       strokeColor: "black",
@@ -48,7 +53,7 @@ const InformationCard = ({ data }: any) => {
             ) : (
               ""
             )}
-            <div className="absolute hidden group-hover:block bg-white border p-4 mt-2- z-10">
+            <div className="absolute hidden group-hover:block bg-white border p-4 mt-2- z-30">
               <p>Extra: {data.Extra}</p>
               <p>{data.Manual_Tags}</p>
             </div>

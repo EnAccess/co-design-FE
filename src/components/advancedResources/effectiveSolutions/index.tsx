@@ -5,17 +5,13 @@ import Card from "../Card";
 
 const EffectiveSolutions = () => {
   const capacityBuildingAndSharing = Data.filter((entry) =>
-    entry.PARSED_MANUAL_TAGS["CASE STUDY THEME"]?.includes(
-      "Capacity Building & Sharing"
-    )
+    entry.PARSED_MANUAL_TAGS.THEME?.includes("Capacity Building & Sharing")
   ) as Entries;
   const partnerships = Data.filter((entry) =>
-    entry.PARSED_MANUAL_TAGS["CASE STUDY THEME"]?.includes("Partnerships")
+    entry.PARSED_MANUAL_TAGS.THEME?.includes("Partnerships")
   ) as Entries;
   const gender = Data.filter((entry) =>
-    entry.PARSED_MANUAL_TAGS["CASE STUDY THEME"]?.includes(
-      "Gender, Disability, & Inclusion"
-    )
+    entry.PARSED_MANUAL_TAGS.THEME?.includes("Gender, Disability, & Inclusion")
   ) as Entries;
 
   return (

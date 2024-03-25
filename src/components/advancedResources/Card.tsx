@@ -35,7 +35,7 @@ const Card = ({ Entries, title }: Props) => {
           <div className="flex justify-center flex-wrap gap-2">
             <div className="flex justify-around flex-wrap py-10">
               {Entries.map((data: Entry) => (
-                <div key={data.Key} className="w-52 m-2 z-10">
+                <div key={data.Key} className="w-52 m-2">
                   <InformationCard data={data} />
                 </div>
               ))}

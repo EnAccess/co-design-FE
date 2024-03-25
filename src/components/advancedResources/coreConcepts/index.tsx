@@ -5,14 +5,12 @@ import Card from "../Card";
 
 const CoreConcepts = () => {
   const systemsApproachesToEnergyAccess = Data.filter((entry) =>
-    entry.PARSED_MANUAL_TAGS["CASE STUDY THEME"]?.includes(
+    entry.PARSED_MANUAL_TAGS.THEME?.includes(
       "Systems Approaches to Energy Access"
     )
   ) as Entries;
   const scaleAndReplicability = Data.filter((entry) =>
-    entry.PARSED_MANUAL_TAGS["SUPPORTING TOOLKIT"]?.includes(
-      "Scale & Replicability"
-    )
+    entry.PARSED_MANUAL_TAGS.THEME?.includes("Scale & Replicability")
   ) as Entries;
   const localisation = Data.filter((entry) =>
     entry.PARSED_MANUAL_TAGS.THEME?.includes("Localisation")

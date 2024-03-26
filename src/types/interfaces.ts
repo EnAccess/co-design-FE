@@ -18,4 +18,4 @@ export interface Entry {
   PARSED_RELATES_TO?: string[];
 }
 
-export type Entries = Entry[];
+export type Entries = Entry[] ;

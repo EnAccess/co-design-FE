@@ -33,7 +33,7 @@ const InformationCard = ({ data }: any) => {
                     targetAnchor: "top",
                     style: {
                       strokeDasharray: "5,5",
-                      strokeColor: "black",
+                      strokeColor: "rgba(0, 0, 0, 0.4)",
                     },
                   };
                 }),

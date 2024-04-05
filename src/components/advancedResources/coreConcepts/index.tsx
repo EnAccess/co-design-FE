@@ -42,6 +42,7 @@ const CoreConcepts = () => {
       </div>
       <div className="flex justify-center">
         <Flow />
+        <Flow />
         {/* <ReactDiagram /> */}
       </div>
     </>

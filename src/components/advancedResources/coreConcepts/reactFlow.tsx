@@ -58,9 +58,9 @@ const initialEdges = [
   { id: "1-3", source: "2", target: "4" },
   { id: "1-4", source: "2", target: "5" },
   { id: "1-5", source: "3", target: "5" },
-  { id: "1-6", source: "1", target: "3" },
-  { id: "1-7", source: "1", target: "5" },
-  { id: "1-8", source: "1", target: "6" },
+  { id: "1-6", source: "1", target: "4" },
+  { id: "1-7", source: "5", target: "4" },
+  { id: "1-8", source: "6", target: "4" },
   { id: "1-9", source: "1", target: "4" },
 ];
 
@@ -99,7 +99,7 @@ const initialNodes = [
 
 const Flow = () => {
   const [nodes, setNodes] = useState(initialNodes);
-  const [edges, setEdges] = useState(initialEdges);
+  const [edges, setEdges] = useState<any[]>(initialEdges);
 
   useEffect(() => {
     const containerWidth = 800; // Width of the container

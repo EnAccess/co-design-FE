@@ -71,3 +71,70 @@ export const getRandomColor = () => {
 
   return hexColor;
 };
+
+// export const generateRandomPosition = () => ({
+//   x: Math.random() * 800,
+//   y: Math.random() * 600,
+// });
+
+// const generateInitialPositions = (
+//   numItems: any,
+//   containerWidth: any,
+//   containerHeight: any
+// ) => {
+//   const positions = [];
+//   const horizontalSpacing = 350; // Adjust horizontal spacing between nodes
+//   const verticalSpacing = 200; // Adjust vertical spacing between nodes
+
+//   const maxItemsPerRow = Math.floor(containerWidth / horizontalSpacing);
+//   const numRows = Math.ceil(numItems / maxItemsPerRow);
+
+//   let index = 0;
+//   for (let row = 0; row < numRows; row++) {
+//     const y = (row + 1) * (containerHeight / (numRows + 1));
+//     const itemsInRow = Math.min(numItems - index, maxItemsPerRow);
+//     const rowWidth = itemsInRow * horizontalSpacing;
+//     const startX = (containerWidth - rowWidth) / 2;
+
+//     for (let col = 0; col < itemsInRow; col++) {
+//       const x = startX + col * horizontalSpacing;
+//       positions.push({ x, y });
+//       index++;
+//     }
+//   }
+
+//   return positions;
+// };
+
+export const generateInitialPositions = (
+  numItems: any,
+  containerWidth: any,
+  containerHeight: any
+) => {
+  const positions = [];
+  const horizontalSpacing = 150;
+  const verticalSpacing = 200;
+
+  const maxItemsPerRow = Math.floor(containerWidth / horizontalSpacing);
+  const numRows = Math.ceil(numItems / maxItemsPerRow);
+  const maxItemsLastRow =
+    numItems % maxItemsPerRow === 0
+      ? maxItemsPerRow
+      : numItems % maxItemsPerRow;
+
+  let index = 0;
+  for (let row = 0; row < numRows; row++) {
+    const y = (row + 1) * verticalSpacing;
+    const itemsInRow = row === numRows - 1 ? maxItemsLastRow : maxItemsPerRow;
+    const rowWidth = itemsInRow * horizontalSpacing;
+    const startX = (containerWidth - rowWidth) / 2;
+
+    for (let col = 0; col < itemsInRow; col++) {
+      const x = startX + col * horizontalSpacing;
+      positions.push({ x, y });
+      index++;
+    }
+  }
+
+  return positions;
+};

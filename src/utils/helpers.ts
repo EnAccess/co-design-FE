@@ -112,7 +112,7 @@ export const generateInitialPositions = (
   containerHeight: any
 ) => {
   const positions = [];
-  const horizontalSpacing = 150;
+  const horizontalSpacing = 250;
   const verticalSpacing = 200;
 
   const maxItemsPerRow = Math.floor(containerWidth / horizontalSpacing);

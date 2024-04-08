@@ -1,5 +1,5 @@
 export const getAnchorPosition = (start: any, end: any) => {
-  console.log({ start, end });
+  // console.log({ start, end });
   if (!start && !end) {
     return;
   }
@@ -138,3 +138,37 @@ export const generateInitialPositions = (
 
   return positions;
 };
+// export const initialEdges = (systemsApproachesToEnergyAccess: any) =>
+//   systemsApproachesToEnergyAccess.flatMap((element: any, index: any) => {
+//     if (!element.Extra || element.Extra === null) return [];
+
+//     let targetIds = [];
+//     const match = element.Extra.match(/^RELATES_TO: (.+)$/);
+//     if (match) {
+//       targetIds = match[1].split(" | ");
+//     } else {
+//       targetIds.push(element.Extra);
+//     }
+
+//     return targetIds.map((targetId: any, i: any) => ({
+//       id: `${element.Key}${index}${i}`,
+//       source: element.Key,
+//       target: targetId.startsWith("RELATES_TO: ")
+//         ? targetId.substring(12)
+//         : targetId,
+//       markerEnd: { type: "arrow" },
+//       type: "straight",
+//     }));
+//   });
+
+export const generateNode = (label: any) => ({
+  id: label.Key,
+  data: label,
+  position: { x: 0, y: 0 },
+  draggable: false,
+  type: "coDesign",
+});
+
+export function initialNodes(systemsApproachesToEnergyAccess: any) {
+  return systemsApproachesToEnergyAccess.map((card: any) => generateNode(card));
+}

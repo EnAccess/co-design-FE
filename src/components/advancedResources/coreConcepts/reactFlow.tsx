@@ -12,13 +12,20 @@ import ReactFlow, {
   Handle,
   Position,
 } from "reactflow";
+// import { InformationCard } from "@/components/cards/InformationCard";
 import "reactflow/dist/style.css";
-import { generateInitialPositions } from "../../../utils/helpers";
+import {
+  generateInitialPositions,
+  generateNode,
+  // initialEdges,
+  // initialNodes,
+} from "../../../utils/helpers";
 import Data from "../../../../public/output.json";
 import { Entries } from "@/types/interfaces";
-import Star from "@/components/icons/Star";
-import classNames from "classnames";
+import { CustomNode } from "./customNode";
+import { color } from "framer-motion";
 
+// import { InformationCard } from "@/components/cards/InformationCard";
 const systemsApproachesToEnergyAccess = Data.filter((entry) =>
   entry.PARSED_MANUAL_TAGS?.THEME?.includes(
     "Systems Approaches to Energy Access"
@@ -26,7 +33,7 @@ const systemsApproachesToEnergyAccess = Data.filter((entry) =>
 ) as Entries;
 
 const initialEdges = systemsApproachesToEnergyAccess.flatMap(
-  (element, index) => {
+  (element: any, index: any) => {
     if (!element.Extra || element.Extra === null) return [];
 
     let targetIds = [];
@@ -37,65 +44,23 @@ const initialEdges = systemsApproachesToEnergyAccess.flatMap(
       targetIds.push(element.Extra);
     }
 
-    return targetIds.map((targetId, i) => ({
+    return targetIds.map((targetId: any, i: any) => ({
       id: `${element.Key}${index}${i}`,
       source: element.Key,
       target: targetId.startsWith("RELATES_TO: ")
         ? targetId.substring(12)
         : targetId,
       markerEnd: { type: "arrow" },
+      type: "straight",
+      style: { color: "#000000" },
     }));
   }
 );
-const generateNode = (label: any) => ({
-  id: label.Key,
-  data: label,
-  position: { x: 0, y: 0 },
-  draggable: false,
-  type: "coDesign",
-});
 
-function CustomNode({ data, id }: any) {
-  id = data.Key;
-  const level = Array.isArray(data.PARSED_MANUAL_TAGS?.CO_DESIGN_LEVEL)
-    ? data.PARSED_MANUAL_TAGS?.CO_DESIGN_LEVEL[0]
-    : data.PARSED_MANUAL_TAGS?.CO_DESIGN_LEVEL;
-  const bgColor: any = classNames({
-    "bg-level-primary-0 border-level-secondary-0": level == 0,
-    "bg-level-primary-1 border-level-secondary-1": level == 1,
-    "bg-level-primary-2 border-level-secondary-2": level == 2,
-    "bg-level-primary-3 border-level-secondary-3": level == 3,
-  });
-  return (
-    <div className="group cursor-pointer">
-      <Handle type="target" position={Position.Top} id={id} />
+const initialNodes = systemsApproachesToEnergyAccess.map((card: any) =>
+  generateNode(card)
+);
 
-      <div
-        className={`py-4 px-2 text-sm w-52 rounded-md border-solid border-2 hover:border-4 box-content hover:relative hover:border-purple-500 ${bgColor}`}
-      >
-        <div className="relative">
-          {data.Title}
-          {data.PARSED_MANUAL_TAGS?.ACCESS === "Institutional Access" ? (
-            <div className="absolute -bottom-5 -right-5">
-              <Star />
-            </div>
-          ) : (
-            ""
-          )}
-          <div className="absolute hidden group-hover:block bg-white border p-4 mt-2 z-80">
-            <p>Extra: {data.Extra}</p>
-            <p>{data.Manual_Tags}</p>
-          </div>
-        </div>
-      </div>
-      <Handle type="source" position={Position.Bottom} id={id} />
-    </div>
-  );
-}
-
-const initialNodes = systemsApproachesToEnergyAccess.map((card) => {
-  return generateNode(card);
-});
 const Flow = () => {
   const [nodes, setNodes] = useState<any[]>(initialNodes);
   const [edges, setEdges] = useState<any[]>(initialEdges);

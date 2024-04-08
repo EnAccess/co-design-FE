@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import ReactFlow, {
   Background,
   Connection,
@@ -9,6 +9,9 @@ import ReactFlow, {
   addEdge,
   applyEdgeChanges,
   applyNodeChanges,
+  useReactFlow,
+  Handle,
+  Position,
 } from "reactflow";
 import "reactflow/dist/style.css";
 
@@ -48,58 +51,64 @@ const generateInitialPositions = (
   return positions;
 };
 
-const initialEdges = [
-  {
-    id: "1-2",
-    source: "1",
-    target: "2",
-    markerEnd: { type: "arrow" },
-  },
-  { id: "1-3", source: "2", target: "4" },
-  { id: "1-4", source: "2", target: "5" },
-  { id: "1-5", source: "3", target: "5" },
-  { id: "1-6", source: "1", target: "4" },
-  { id: "1-7", source: "5", target: "4" },
-  { id: "1-8", source: "6", target: "4" },
-  { id: "1-9", source: "1", target: "4" },
+const generateNode = (id: string, label: string) => ({
+  id,
+  data: { label },
+  position: { x: 0, y: 0 },
+  draggable: false,
+  type: "coDesign",
+});
+
+const cards = [
+  "Hello",
+  "World",
+  "karera",
+  "olivier",
+  "Nkuru nziza karera",
+  "susu",
+  "Green",
+  "John Doe",
+  "Marketing",
 ];
 
-const initialNodes = [
-  {
-    id: "1",
-    data: { label: "Hello" },
-    position: { x: 0, y: 0 },
-  },
-  {
-    id: "2",
-    data: { label: "World" },
-    position: { x: 0, y: 0 },
-  },
-  {
-    id: "3",
-    data: { label: "karera" },
-    position: { x: 0, y: 0 },
-  },
-  {
-    id: "4",
-    data: { label: "olivier" },
-    position: { x: 0, y: 0 },
-  },
-  {
-    id: "5",
-    data: { label: "Nkuru nziza karera" },
-    position: { x: 0, y: 0 },
-  },
-  {
-    id: "6",
-    data: { label: "susu" },
-    position: { x: 0, y: 0 },
-  },
-];
+const initialNodes = cards.map((card, index) =>
+  generateNode((index + 1).toString(), card)
+);
+
+const generateEdge = (source: string, target: string) => ({
+  id: `${source}-${target}`,
+  source,
+  target,
+  markerEnd: { type: "arrow", color: "#000" },
+});
+
+const initialEdges = [
+  { source: "2", target: "4" },
+  { source: "2", target: "5" },
+  { source: "3", target: "5" },
+  { source: "1", target: "3" },
+  { source: "1", target: "5" },
+  { source: "1", target: "6" },
+  { source: "1", target: "4" },
+].map(({ source, target }) => generateEdge(source, target));
+
+function CustomNode({ data, id }: any) {
+  return (
+    <>
+      <Handle type="target" position={Position.Top} id={id} />
+      <div className="flex min-w-32 items-center h-9 justify-center rounded-lg border-2 border-black hover:border-purple-500 bg-level-primary-3 border-level-secondary-3 font-semibold text-xs place-contetext-center cursor-pointer">
+        <label htmlFor="text">{data.label}</label>
+      </div>
+      <Handle type="source" position={Position.Bottom} id={id} />
+    </>
+  );
+}
 
 const Flow = () => {
   const [nodes, setNodes] = useState(initialNodes);
-  const [edges, setEdges] = useState<any[]>(initialEdges);
+  const [edges, setEdges] = useState(initialEdges);
+
+  const nodeTypes = useMemo(() => ({ coDesign: CustomNode }), []);
 
   useEffect(() => {
     const containerWidth = 800; // Width of the container
@@ -133,19 +142,25 @@ const Flow = () => {
       setEdges((eds) => addEdge(connection, eds)),
     [setEdges]
   );
-
   return (
-    <div style={{ height: "50rem", width: "100%" }}>
+    <div style={{ height: "50rem", width: "100%", position: "relative" }}>
       <ReactFlow
         nodes={nodes}
+        nodeTypes={nodeTypes}
         edges={edges}
         onNodesChange={onNodesChange}
         onEdgesChange={onEdgesChange}
         onConnect={onConnect}
-        fitView
+        zoomOnPinch={false}
+        zoomOnDoubleClick={false}
+        panOnScroll={false}
+        panOnDrag={false}
+        zoomOnScroll={false}
+        draggable={false}
+        preventScrolling={false}
+        onInit={(instance) => setTimeout(() => instance.fitView(), 100)}
       >
-        <Background />
-        <Controls />
+        {/* <Background /> */}
       </ReactFlow>
     </div>
   );

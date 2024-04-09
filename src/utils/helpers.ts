@@ -182,8 +182,9 @@ export const generateEdge = (
   type: "straight",
   interactionWidth: 3,
   animated: true,
-  style: { color: "#fff" },
+  style: { color: "red" },
   labelStyle: { color: "#fff" },
+  marker: { color: "#000", border: "5" },
 });
 
 export function initialNodes(systemsApproachesToEnergyAccess: any) {

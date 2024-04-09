@@ -2,6 +2,7 @@ import { Handle, Position } from "reactflow";
 import "reactflow/dist/style.css";
 import Star from "@/components/icons/Star";
 import classNames from "classnames";
+import { getColorByAccess } from "@/utils/Helper";
 
 export function CustomNode({ data, id }: any) {
   id = data.Key;
@@ -14,6 +15,8 @@ export function CustomNode({ data, id }: any) {
     "bg-level-primary-2 border-level-secondary-2": level == 2,
     "bg-level-primary-3 border-level-secondary-3": level == 3,
   });
+  const dataAccess = data.PARSED_MANUAL_TAGS.ACCESS;
+  const starColor = getColorByAccess(dataAccess);
   return (
     <div className="group cursor-pointer">
       <Handle type="source" position={Position.Bottom} id={id} />
@@ -24,9 +27,11 @@ export function CustomNode({ data, id }: any) {
       >
         <div className="relative">
           {data.Title}
-          {data.PARSED_MANUAL_TAGS?.ACCESS === "Institutional Access" ? (
+          {dataAccess === "Institutional Access" ||
+          dataAccess === "Paid Service" ||
+          dataAccess === "Open Source" ? (
             <div className="absolute -bottom-5 -right-5">
-              <Star />
+              <Star color={starColor} />
             </div>
           ) : (
             ""

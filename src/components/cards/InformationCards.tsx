@@ -1,64 +1,46 @@
+import {
+  generateEdge,
+  generateInitialPositions,
+  generateNode,
+} from "@/utils/helpers";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import ReactFlow, {
   Background,
   Connection,
-  Controls,
   EdgeChange,
   Edge,
   NodeChange,
   addEdge,
   applyEdgeChanges,
   applyNodeChanges,
-  Handle,
-  Position,
 } from "reactflow";
-// import { InformationCard } from "@/components/cards/InformationCard";
 import "reactflow/dist/style.css";
-import {
-  generateEdge,
-  generateInitialPositions,
-  generateNode,
-  // initialEdges,
-  // initialNodes,
-} from "../../../utils/helpers";
-import Data from "../../../../public/output.json";
-import { Entries } from "@/types/interfaces";
-import { color } from "framer-motion";
-import { CustomNode } from "@/components/header/customNode";
+import { CustomNode } from "../header/customNode";
 
-// import { InformationCard } from "@/components/cards/InformationCard";
-const systemsApproachesToEnergyAccess = Data.filter((entry) =>
-  entry.PARSED_MANUAL_TAGS?.THEME?.includes(
-    "Systems Approaches to Energy Access"
-  )
-) as Entries;
+const InformationCards = ({ Data }: any) => {
+  const initialEdges = Data.flatMap((element: any, index: any) => {
+    if (!element.Extra || element.Extra === null) return [];
 
-const initialEdges = Data.flatMap((element: any, index: any) => {
-  if (!element.Extra || element.Extra === null) return [];
+    let targetIds = [];
+    const match = element.Extra.match(/^RELATES_TO: (.+)$/);
+    if (match) {
+      targetIds = match[1].split(" | ");
+    } else {
+      targetIds.push(element.Extra);
+    }
 
-  let targetIds = [];
-  const match = element.Extra.match(/^RELATES_TO: (.+)$/);
-  if (match) {
-    targetIds = match[1].split(" | ");
-  } else {
-    targetIds.push(element.Extra);
-  }
+    return targetIds.map((targetId: any, subIndex: any) =>
+      generateEdge(
+        element.Key,
+        targetId.startsWith("RELATES_TO: ") ? targetId.substring(12) : targetId,
+        index,
+        subIndex
+      )
+    );
+  });
 
-  return targetIds.map((targetId: any, subIndex: any) =>
-    generateEdge(
-      element.Key,
-      targetId.startsWith("RELATES_TO: ") ? targetId.substring(12) : targetId,
-      index,
-      subIndex
-    )
-  );
-});
+  const initialNodes = Data.map((card: any) => generateNode(card));
 
-const initialNodes = systemsApproachesToEnergyAccess.map((card: any) =>
-  generateNode(card)
-);
-
-const Flow = () => {
   const [nodes, setNodes] = useState<any[]>(initialNodes);
   const [edges, setEdges] = useState<any[]>(initialEdges);
 
@@ -129,10 +111,9 @@ const Flow = () => {
           color="#fff"
           style={{ backgroundColor: "rgb(243 244 246)" }}
         />
-        {/* <Controls  /> */}
       </ReactFlow>
     </div>
   );
 };
 
-export default Flow;
+export default InformationCards;

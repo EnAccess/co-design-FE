@@ -12,6 +12,9 @@ const config: Config = {
         custom: "3500px",
       },
       colors: {
+        black: {
+          900: "#333333",
+        },
         level: {
           primary: {
             0: "#dae8fc",

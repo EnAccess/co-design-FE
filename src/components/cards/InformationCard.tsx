@@ -2,6 +2,7 @@ import classNames from "classnames";
 import React from "react";
 import { ArcherElement } from "react-archer";
 import Star from "../icons/Star";
+import { getColorByAccess } from "../../utils/Helper";
 
 const InformationCard = ({ data }: any) => {
   const level = Array.isArray(data.PARSED_MANUAL_TAGS.CO_DESIGN_LEVEL)
@@ -13,6 +14,9 @@ const InformationCard = ({ data }: any) => {
     "bg-level-primary-2 border-level-secondary-2": level == 2,
     "bg-level-primary-3 border-level-secondary-3": level == 3,
   });
+  const dataAccess = data.PARSED_MANUAL_TAGS.ACCESS;
+  const starColor = getColorByAccess(dataAccess);
+
   return (
     <div key={data.Key} id={data.Key} className="group cursor-pointer">
       <ArcherElement
@@ -46,9 +50,11 @@ const InformationCard = ({ data }: any) => {
         >
           <div className="relative">
             {data.Title}
-            {data.PARSED_MANUAL_TAGS.ACCESS === "Institutional Access" ? (
+            {dataAccess === "Institutional Access" ||
+            dataAccess === "Paid Service" ||
+            dataAccess === "Open Source" ? (
               <div className="absolute -bottom-5 -right-5">
-                <Star />
+                <Star color={starColor} />
               </div>
             ) : (
               ""

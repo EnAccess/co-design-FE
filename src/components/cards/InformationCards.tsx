@@ -89,6 +89,7 @@ const InformationCards = ({ Data }: any) => {
         position: "relative",
         zIndex: 20,
       }}
+      className="flex justify-center"
     >
       <ReactFlow
         nodes={nodes}

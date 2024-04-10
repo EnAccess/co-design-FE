@@ -195,9 +195,14 @@ export function initialNodes(systemsApproachesToEnergyAccess: any) {
 
 export const filterAdvancedResourcesDataByThemes = (Data: any, themes: any) => {
   return Object.keys(themes).reduce((acc: any, theme) => {
-    acc[theme] = Data.filter((entry: any) =>
+    const filteredEntries = Data.filter((entry: any) =>
       entry.PARSED_MANUAL_TAGS.THEME?.includes(theme)
     ) as Entries;
+    acc[theme] = {
+      title: themes[theme].title,
+      description: themes[theme].description,
+      entries: filteredEntries,
+    };
     return acc;
   }, {});
 };

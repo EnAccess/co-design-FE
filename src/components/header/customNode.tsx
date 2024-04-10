@@ -23,7 +23,7 @@ export function CustomNode({ data, id }: any) {
       <Handle type="target" position={Position.Top} id={id} />
 
       <div
-        className={`py-4 px-2 text-sm w-52 rounded-md border-solid border-2 hover:border-4 box-content hover:relative hover:border-purple-500 ${bgColor}`}
+        className={`py-4 px-2 text-xs w-52 rounded-md border-solid border-2 hover:border-4 box-content hover:relative hover:border-purple-500 ${bgColor}`}
       >
         <div className="relative">
           {data.Title}

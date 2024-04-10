@@ -40,10 +40,8 @@ const CoreConcepts = () => {
           <Card Entries={decolonisation} title="Decolonisation" />
         </div>
       </div>
-      <div className="flex justify-center">
+      <div>
         <Flow />
-        <Flow />
-        {/* <ReactDiagram /> */}
       </div>
     </>
   );

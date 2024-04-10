@@ -18,7 +18,8 @@ import "reactflow/dist/style.css";
 import { CustomNode } from "../header/customNode";
 
 const InformationCards = ({ Data }: any) => {
-  const initialEdges = Data.flatMap((element: any, index: any) => {
+  console.log("karara", Data);
+  const initialEdges = Data?.flatMap((element: any, index: any) => {
     if (!element.Extra || element.Extra === null) return [];
 
     let targetIds = [];
@@ -39,7 +40,7 @@ const InformationCards = ({ Data }: any) => {
     );
   });
 
-  const initialNodes = Data.map((card: any) => generateNode(card));
+  const initialNodes = Data?.map((card: any) => generateNode(card));
 
   const [nodes, setNodes] = useState<any[]>(initialNodes);
   const [edges, setEdges] = useState<any[]>(initialEdges);
@@ -84,8 +85,8 @@ const InformationCards = ({ Data }: any) => {
   return (
     <div
       style={{
-        height: "100rem",
-        width: "100%",
+        height: "50rem",
+        width: "50rem",
         position: "relative",
         zIndex: 20,
       }}

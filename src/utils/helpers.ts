@@ -204,6 +204,7 @@ export const filterAdvancedResourcesDataByThemes = (Data: any, themes: any) => {
       entries: filteredEntries,
       colSpan: themes[theme].colSpan,
       rowSpan: themes[theme].rowSpan,
+      heightMultiplier: themes[theme].heightMultiplier,
     };
     return acc;
   }, {});

@@ -17,7 +17,7 @@ import ReactFlow, {
 import "reactflow/dist/style.css";
 import { CustomNode } from "../customNode";
 
-const InformationCards = ({ Data }: any) => {
+const InformationCards = ({ Data, heightMultiplier }: any) => {
   const initialEdges = Data?.flatMap((element: any, index: any) => {
     if (!element.Extra || element.Extra === null) return [];
 
@@ -38,7 +38,7 @@ const InformationCards = ({ Data }: any) => {
       )
     );
   });
-
+  console.log("heightMultiplier", heightMultiplier);
   const initialNodes = Data?.map((card: any) => generateNode(card));
 
   const [nodes, setNodes] = useState<any[]>(initialNodes);
@@ -84,10 +84,14 @@ const InformationCards = ({ Data }: any) => {
   return (
     <div
       style={{
-        height: "50rem",
+        height: `${
+          heightMultiplier !== undefined ? heightMultiplier * 40 : 50
+        }rem`,
         width: "100%",
         position: "relative",
         zIndex: 20,
+        margin: 0,
+        padding: 0,
       }}
       className="flex justify-center"
     >

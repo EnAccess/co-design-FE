@@ -8,6 +8,7 @@ export const advancedResourcesData = [
           "Engaging with entire systems approaches requires humanitarian practitioners to challenge and rethink how to interact with humanitarian systems that surround them. This outlines what needs to change and how.",
         colSpan: 6,
         rowSpan: 3,
+        heightMultiplier: 2,
       },
       "Scale & Replicability": {
         title: "Scale & Replicability",
@@ -65,14 +66,14 @@ export const advancedResourcesData = [
         title: "AI/ML",
         description: `AI can be leveraged to create content to amplify local voices, navigating complex funding mazes, and minimising legal and administration costs that slow action - but it cannot replace human interaction or trusting partnerships.
 `,
-        colSpan: 2,
+        colSpan: 3,
         rowSpan: 3,
       },
       "Humanitarian Principles?": {
         title: "Humanitarian Principles?",
         description: `Grounded through the core <a style="color: blue; text-decoration: underline;" target="_blank" href="https://emergency.unhcr.org/protection/protection-principles/humanitarian-principles"> Humanitarian Principles</a>, this theme looks to understand and explore the humanitarian principles, within the context of “do no harm” and “ethics” based approaches to working with vulnerable groups in order to ultimately connect to the wider topic of energy justice (and just transitions).
 `,
-        colSpan: 5,
+        colSpan: 4,
         rowSpan: 3,
       },
       Policy: {

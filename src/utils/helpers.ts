@@ -202,6 +202,8 @@ export const filterAdvancedResourcesDataByThemes = (Data: any, themes: any) => {
       title: themes[theme].title,
       description: themes[theme].description,
       entries: filteredEntries,
+      colSpan: themes[theme].colSpan,
+      rowSpan: themes[theme].rowSpan,
     };
     return acc;
   }, {});

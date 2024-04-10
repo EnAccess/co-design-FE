@@ -74,40 +74,6 @@ export const getRandomColor = () => {
   return hexColor;
 };
 
-// export const generateRandomPosition = () => ({
-//   x: Math.random() * 800,
-//   y: Math.random() * 600,
-// });
-
-// const generateInitialPositions = (
-//   numItems: any,
-//   containerWidth: any,
-//   containerHeight: any
-// ) => {
-//   const positions = [];
-//   const horizontalSpacing = 350; // Adjust horizontal spacing between nodes
-//   const verticalSpacing = 200; // Adjust vertical spacing between nodes
-
-//   const maxItemsPerRow = Math.floor(containerWidth / horizontalSpacing);
-//   const numRows = Math.ceil(numItems / maxItemsPerRow);
-
-//   let index = 0;
-//   for (let row = 0; row < numRows; row++) {
-//     const y = (row + 1) * (containerHeight / (numRows + 1));
-//     const itemsInRow = Math.min(numItems - index, maxItemsPerRow);
-//     const rowWidth = itemsInRow * horizontalSpacing;
-//     const startX = (containerWidth - rowWidth) / 2;
-
-//     for (let col = 0; col < itemsInRow; col++) {
-//       const x = startX + col * horizontalSpacing;
-//       positions.push({ x, y });
-//       index++;
-//     }
-//   }
-
-//   return positions;
-// };
-
 export const generateInitialPositions = (
   numItems: any,
   containerWidth: any,
@@ -140,28 +106,6 @@ export const generateInitialPositions = (
 
   return positions;
 };
-export const initialEdges = (systemsApproachesToEnergyAccess: any) =>
-  systemsApproachesToEnergyAccess.flatMap((element: any, index: any) => {
-    if (!element.Extra || element.Extra === null) return [];
-
-    let targetIds = [];
-    const match = element.Extra.match(/^RELATES_TO: (.+)$/);
-    if (match) {
-      targetIds = match[1].split(" | ");
-    } else {
-      targetIds.push(element.Extra);
-    }
-
-    return targetIds.map((targetId: any, i: any) => ({
-      id: `${element.Key}${index}${i}`,
-      source: element.Key,
-      target: targetId.startsWith("RELATES_TO: ")
-        ? targetId.substring(12)
-        : targetId,
-      markerEnd: { type: "arrow" },
-      type: "straight",
-    }));
-  });
 
 export const generateNode = (label: any) => ({
   id: label.Key,
@@ -182,9 +126,10 @@ export const generateEdge = (
   target,
   markerEnd: { type: "arrow", color: "#000" },
   type: "straight",
+  color: "red",
   interactionWidth: 3,
   animated: true,
-  style: { color: "red" },
+  style: { stroke: "#4e5157", strokeWidth: 2 },
   labelStyle: { color: "#fff" },
   marker: { color: "#000", border: "5" },
 });

@@ -38,7 +38,7 @@ const InformationCards = ({ Data, heightMultiplier }: any) => {
       )
     );
   });
-  console.log("heightMultiplier", heightMultiplier);
+
   const initialNodes = Data?.map((card: any) => generateNode(card));
 
   const [nodes, setNodes] = useState<any[]>(initialNodes);
@@ -51,8 +51,8 @@ const InformationCards = ({ Data, heightMultiplier }: any) => {
     []
   );
   useEffect(() => {
-    const containerWidth = 800; // Width of the container
-    const containerHeight = 600; // Height of the container
+    const containerWidth = 800;
+    const containerHeight = 600;
     const positions = generateInitialPositions(
       initialNodes.length,
       containerWidth,

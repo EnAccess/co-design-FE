@@ -4,25 +4,26 @@ import { Entries } from "../../../types/interfaces";
 import Card from "../Card";
 
 const GoodDesign = () => {
-  const artificialInelligence = Data.filter((entry) =>
-    entry.PARSED_MANUAL_TAGS.THEME?.includes("AI/ML")
-  ) as Entries;
-  const humanitarianPrinciples = Data.filter((entry) =>
-    entry.PARSED_MANUAL_TAGS.THEME?.includes("Humanitarian Principles?")
-  ) as Entries;
-  const policy = Data.filter((entry) =>
-    entry.PARSED_MANUAL_TAGS.THEME?.includes("Policy")
-  ) as Entries;
-
+  const themes = {
+    "AI/ML": "AI/ML",
+    "Humanitarian Principles?": "Humanitarian Principles?",
+    Policy: "Policy",
+  };
+  const filteredData = Object.keys(themes).reduce((acc: any, theme: any) => {
+    acc[theme] = Data.filter((entry) =>
+      entry.PARSED_MANUAL_TAGS.THEME?.includes(theme)
+    ) as Entries;
+    return acc;
+  }, {});
   return (
     <div className="p-4 flex gap-4 text-sm">
-      <Card
-        Entries={artificialInelligence}
-        title="Artificial Intelligence &
-Machine Learning"
-      />
-      <Card Entries={humanitarianPrinciples} title="Humanitarian Principles?" />
-      <Card Entries={policy} title="Policy" />
+      {Object.entries(themes).map(([theme, key]) => (
+        <Card
+          key={`${theme}-${key}`}
+          Entries={filteredData[theme]}
+          title={theme}
+        />
+      ))}
     </div>
   );
 };

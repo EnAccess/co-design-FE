@@ -1,9 +1,9 @@
 import React from "react";
-
 interface Props {
   title: string;
   description: string;
 }
+
 const HeaderCArd = ({ title, description }: Props) => {
   return (
     <div className="bg-yellow-200 flex justify-center px-5 py-5 w-4/5">

@@ -15,10 +15,9 @@ import ReactFlow, {
   applyNodeChanges,
 } from "reactflow";
 import "reactflow/dist/style.css";
-import { CustomNode } from "../header/customNode";
+import { CustomNode } from "../customNode";
 
 const InformationCards = ({ Data }: any) => {
-  console.log("karara", Data);
   const initialEdges = Data?.flatMap((element: any, index: any) => {
     if (!element.Extra || element.Extra === null) return [];
 
@@ -86,7 +85,7 @@ const InformationCards = ({ Data }: any) => {
     <div
       style={{
         height: "50rem",
-        width: "50rem",
+        width: "100%",
         position: "relative",
         zIndex: 20,
       }}

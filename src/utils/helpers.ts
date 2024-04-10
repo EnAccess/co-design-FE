@@ -1,3 +1,5 @@
+import { Entries } from "@/types/interfaces";
+
 export const getAnchorPosition = (start: any, end: any) => {
   // console.log({ start, end });
   if (!start && !end) {
@@ -190,3 +192,12 @@ export const generateEdge = (
 export function initialNodes(systemsApproachesToEnergyAccess: any) {
   return systemsApproachesToEnergyAccess.map((card: any) => generateNode(card));
 }
+
+export const filterAdvancedResourcesDataByThemes = (Data: any, themes: any) => {
+  return Object.keys(themes).reduce((acc: any, theme) => {
+    acc[theme] = Data.filter((entry: any) =>
+      entry.PARSED_MANUAL_TAGS.THEME?.includes(theme)
+    ) as Entries;
+    return acc;
+  }, {});
+};

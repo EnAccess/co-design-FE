@@ -1,3 +1,5 @@
+import { Entries } from "@/types/interfaces";
+
 export const getAnchorPosition = (start: any, end: any) => {
   // console.log({ start, end });
   if (!start && !end) {
@@ -180,9 +182,10 @@ export const generateEdge = (
   target,
   markerEnd: { type: "arrow", color: "#000" },
   type: "straight",
+  color: "red",
   interactionWidth: 3,
   animated: true,
-  style: { color: "red" },
+  style: { stroke: "#4e5157", strokeWidth: 2 },
   labelStyle: { color: "#fff" },
   marker: { color: "#000", border: "5" },
 });
@@ -190,3 +193,20 @@ export const generateEdge = (
 export function initialNodes(systemsApproachesToEnergyAccess: any) {
   return systemsApproachesToEnergyAccess.map((card: any) => generateNode(card));
 }
+
+export const filterResourcesDataByThemes = (Data: any, themes: any) => {
+  return Object.keys(themes).reduce((acc: any, theme) => {
+    const filteredEntries = Data.filter((entry: any) =>
+      entry.PARSED_MANUAL_TAGS.THEME?.includes(theme)
+    ) as Entries;
+    acc[theme] = {
+      title: themes[theme].title,
+      description: themes[theme].description,
+      entries: filteredEntries,
+      colSpan: themes[theme].colSpan,
+      rowSpan: themes[theme].rowSpan,
+      heightMultiplier: themes[theme].heightMultiplier,
+    };
+    return acc;
+  }, {});
+};

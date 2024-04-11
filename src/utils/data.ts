@@ -8,7 +8,7 @@ export const resourcesData = [
           "Engaging with entire systems approaches requires humanitarian practitioners to challenge and rethink how to interact with humanitarian systems that surround them. This outlines what needs to change and how.",
         colSpan: 6,
         rowSpan: 3,
-        heightMultiplier: 2,
+        blockHeight: 2,
       },
       "Scale & Replicability": {
         title: "Scale & Replicability",

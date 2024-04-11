@@ -1,0 +1,23 @@
+import Block from "../Block";
+const AdvancedResourcesSection = ({ themes, filteredData }: any) => {
+  return (
+    <div className="p-4 grid grid-cols-12 justify-center gap-3 text-sm">
+      {Object.entries(themes).map(([theme, key]) => {
+        const items = filteredData[theme];
+        return (
+          <Block
+            key={`${theme}-${key}`}
+            title={items.title}
+            description={items.description}
+            entries={items.entries}
+            colSpan={items.colSpan}
+            rowSpan={items.rowSpan}
+            blockHeight={items.blockHeight}
+          />
+        );
+      })}
+    </div>
+  );
+};
+
+export default AdvancedResourcesSection;

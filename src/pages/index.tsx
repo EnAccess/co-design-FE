@@ -1,6 +1,6 @@
 import React from "react";
 import Data from "../../public/output.json";
-import AdvancedResourcesCard from "@/components/advancedResources/AdvancedResourcesCard";
+import AdvancedResourcesSection from "@/components/advancedResources/AdvancedResourcesSection";
 import { filterResourcesDataByThemes } from "@/utils/helpers";
 import { resourcesData } from "@/utils/data";
 
@@ -13,7 +13,7 @@ const AdvanceedResources = () => {
             {data.title}
           </h3>
           <div className="flex justify-center w-full">
-            <AdvancedResourcesCard
+            <AdvancedResourcesSection
               themes={data.themes}
               filteredData={filterResourcesDataByThemes(Data, data.themes)}
             />

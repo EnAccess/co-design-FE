@@ -15,9 +15,9 @@ import ReactFlow, {
   applyNodeChanges,
 } from "reactflow";
 import "reactflow/dist/style.css";
-import { CustomNode } from "../customNode";
+import { NodeCard } from "../NodeCard";
 
-const InformationCards = ({ Data, heightMultiplier }: any) => {
+const CardCanvas = ({ Data, blockHeight }: any) => {
   const initialEdges = Data?.flatMap((element: any, index: any) => {
     if (!element.Extra || element.Extra === null) return [];
 
@@ -46,7 +46,7 @@ const InformationCards = ({ Data, heightMultiplier }: any) => {
 
   const nodeTypes = useMemo(
     () => ({
-      coDesign: CustomNode,
+      coDesign: NodeCard,
     }),
     []
   );
@@ -84,9 +84,7 @@ const InformationCards = ({ Data, heightMultiplier }: any) => {
   return (
     <div
       style={{
-        height: `${
-          heightMultiplier !== undefined ? heightMultiplier * 40 : 50
-        }rem`,
+        height: `${blockHeight !== undefined ? blockHeight * 40 : 50}rem`,
         width: "100%",
         position: "relative",
         zIndex: 20,
@@ -121,4 +119,4 @@ const InformationCards = ({ Data, heightMultiplier }: any) => {
   );
 };
 
-export default InformationCards;
+export default CardCanvas;

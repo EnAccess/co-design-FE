@@ -149,7 +149,7 @@ export const filterResourcesDataByThemes = (Data: any, themes: any) => {
       entries: filteredEntries,
       colSpan: themes[theme].colSpan,
       rowSpan: themes[theme].rowSpan,
-      heightMultiplier: themes[theme].heightMultiplier,
+      blockHeight: themes[theme].blockHeight,
     };
     return acc;
   }, {});

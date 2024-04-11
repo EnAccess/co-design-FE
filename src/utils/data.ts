@@ -63,7 +63,7 @@ export const resourcesData = [
     title: "Criteria for Good Design",
     themes: {
       "AI/ML": {
-        title: "AI/ML",
+        title: "Artificial Intelligence & Machine Learning",
         description: `AI can be leveraged to create content to amplify local voices, navigating complex funding mazes, and minimising legal and administration costs that slow action - but it cannot replace human interaction or trusting partnerships.
 `,
         colSpan: 3,

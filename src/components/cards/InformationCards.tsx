@@ -1,5 +1,8 @@
-
-import { generateEdge, generateNode, generateInitialPositions } from "@/utils/helper";
+import {
+  generateEdge,
+  generateNode,
+  generateInitialPositions,
+} from "@/utils/helper";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import ReactFlow, {
   Background,
@@ -12,7 +15,7 @@ import ReactFlow, {
   applyNodeChanges,
 } from "reactflow";
 import "reactflow/dist/style.css";
-import { CustomNode } from "./CustomNode";
+import { NodeCard } from "./NodeCard";
 
 const InformationCards = ({ Data }: any) => {
   const initialEdges = Data.flatMap((element: any, index: any) => {
@@ -43,7 +46,7 @@ const InformationCards = ({ Data }: any) => {
 
   const nodeTypes = useMemo(
     () => ({
-      coDesign: CustomNode,
+      coDesign: NodeCard,
     }),
     []
   );

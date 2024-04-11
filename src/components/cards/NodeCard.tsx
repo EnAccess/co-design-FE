@@ -3,7 +3,7 @@ import "reactflow/dist/style.css";
 import Star from "@/components/icons/Star";
 import classNames from "classnames";
 
-export function CustomNode({ data, id }: any) {
+export function NodeCard({ data, id }: any) {
   id = data.Key;
   const level = Array.isArray(data.PARSED_MANUAL_TAGS?.CO_DESIGN_LEVEL)
     ? data.PARSED_MANUAL_TAGS?.CO_DESIGN_LEVEL[0]

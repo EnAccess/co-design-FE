@@ -6,7 +6,7 @@ interface Props {
   Entries: any;
 }
 
-const ResoucesCard = ({ Entries }: Props) => {
+const Card = ({ Entries }: Props) => {
   const { title, description, colSpan, rowSpan, entries } = Entries;
   return (
     <div className={`col-span-${colSpan} row-span-${rowSpan}`}>
@@ -22,4 +22,4 @@ const ResoucesCard = ({ Entries }: Props) => {
   );
 };
 
-export default ResoucesCard;
+export default Card;

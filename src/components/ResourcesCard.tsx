@@ -1,12 +1,12 @@
 import React from "react";
-import InformationCards from "../cards/InformationCards";
-import HeaderCArd from "../cards/HeaderCArd";
+import InformationCards from "./cards/InformationCards";
+import HeaderCArd from "./cards/HeaderCArd";
 
 interface Props {
   Entries: any;
 }
 
-const Card = ({ Entries }: Props) => {
+const ResourcesCard = ({ Entries }: Props) => {
   const { title, description, entries, colSpan, rowSpan, heightMultiplier } =
     Entries;
   return (
@@ -21,4 +21,4 @@ const Card = ({ Entries }: Props) => {
   );
 };
 
-export default Card;
+export default ResourcesCard;

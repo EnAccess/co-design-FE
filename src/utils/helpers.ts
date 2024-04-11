@@ -138,7 +138,7 @@ export function initialNodes(systemsApproachesToEnergyAccess: any) {
   return systemsApproachesToEnergyAccess.map((card: any) => generateNode(card));
 }
 
-export const filterAdvancedResourcesDataByThemes = (Data: any, themes: any) => {
+export const filterResourcesDataByThemes = (Data: any, themes: any) => {
   return Object.keys(themes).reduce((acc: any, theme) => {
     const filteredEntries = Data.filter((entry: any) =>
       entry.PARSED_MANUAL_TAGS.THEME?.includes(theme)

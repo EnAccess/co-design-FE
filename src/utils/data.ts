@@ -1,4 +1,4 @@
-export const advancedResourcesData = [
+export const resourcesData = [
   {
     title: "Core concept of collaborative Design Process",
     themes: {

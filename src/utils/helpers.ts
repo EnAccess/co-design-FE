@@ -144,7 +144,6 @@ export const filterResourcesDataByThemes = (Data: any, themes: any) => {
       entry.PARSED_MANUAL_TAGS.THEME?.includes(theme)
     ) as Entries;
     acc[theme] = {
-      title: themes[theme].title,
       description: themes[theme].description,
       entries: filteredEntries,
       colSpan: themes[theme].colSpan,

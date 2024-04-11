@@ -7,7 +7,7 @@ const AdvancedResourcesSection = ({ themes, filteredData }: any) => {
         return (
           <Block
             key={`${theme}-${key}`}
-            title={items.title}
+            title={theme}
             description={items.description}
             entries={items.entries}
             colSpan={items.colSpan}

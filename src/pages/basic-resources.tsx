@@ -2,7 +2,7 @@ import React from "react";
 import Data from "../../public/output.json";
 import { filterResourcesDataByThemes } from "../utils/helpers";
 import { resourcesData } from "../utils/data";
-import BasicResourcesSection from "../components/section/BasicResourceSection";
+import BasicResourcesSection from "../components/section/BasicResources";
 
 const BasicResources = () => {
   return (

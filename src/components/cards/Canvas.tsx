@@ -1,8 +1,8 @@
 import {
   generateEdge,
-  generateNode,
   generateInitialPositions,
-} from "@/utils/helper";
+  generateNode,
+} from "../../utils/helpers";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import ReactFlow, {
   Background,
@@ -15,10 +15,10 @@ import ReactFlow, {
   applyNodeChanges,
 } from "reactflow";
 import "reactflow/dist/style.css";
-import { NodeCard } from "./NodeCard";
+import { NodeCard } from "./Node";
 
-const InformationCards = ({ Data }: any) => {
-  const initialEdges = Data.flatMap((element: any, index: any) => {
+const CardCanvas = ({ Data, blockHeight, basicResources }: any) => {
+  const initialEdges = Data?.flatMap((element: any, index: any) => {
     if (!element.Extra || element.Extra === null) return [];
 
     let targetIds = [];
@@ -38,8 +38,14 @@ const InformationCards = ({ Data }: any) => {
       )
     );
   });
-
-  const initialNodes = Data.map((card: any) => generateNode(card));
+  let initialNodes = [];
+  if (basicResources) {
+    initialNodes = Data?.filter((element: any) =>
+      basicResources.includes(element.Key)
+    )?.map((card: any) => generateNode(card));
+  } else {
+    initialNodes = Data?.map((card: any) => generateNode(card));
+  }
 
   const [nodes, setNodes] = useState<any[]>(initialNodes);
   const [edges, setEdges] = useState<any[]>(initialEdges);
@@ -51,8 +57,8 @@ const InformationCards = ({ Data }: any) => {
     []
   );
   useEffect(() => {
-    const containerWidth = 800; // Width of the container
-    const containerHeight = 600; // Height of the container
+    const containerWidth = 800;
+    const containerHeight = 600;
     const positions = generateInitialPositions(
       initialNodes.length,
       containerWidth,
@@ -84,11 +90,14 @@ const InformationCards = ({ Data }: any) => {
   return (
     <div
       style={{
-        height: "30rem",
+        height: `${blockHeight !== undefined ? blockHeight * 40 : 40}rem`,
         width: "100%",
         position: "relative",
         zIndex: 20,
+        margin: 0,
+        padding: 0,
       }}
+      className="flex justify-center"
     >
       <ReactFlow
         nodes={nodes}
@@ -116,4 +125,4 @@ const InformationCards = ({ Data }: any) => {
   );
 };
 
-export default InformationCards;
+export default CardCanvas;

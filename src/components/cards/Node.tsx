@@ -2,6 +2,7 @@ import { Handle, Position } from "reactflow";
 import "reactflow/dist/style.css";
 import Star from "@/components/icons/Star";
 import classNames from "classnames";
+import { getColorByAccess } from "@/utils/Helper";
 
 export function NodeCard({ data, id }: any) {
   id = data.Key;
@@ -14,19 +15,23 @@ export function NodeCard({ data, id }: any) {
     "bg-level-primary-2 border-level-secondary-2": level == 2,
     "bg-level-primary-3 border-level-secondary-3": level == 3,
   });
+  const dataAccess = data.PARSED_MANUAL_TAGS.ACCESS;
+  const starColor = getColorByAccess(dataAccess);
   return (
     <div className="group cursor-pointer">
       <Handle type="source" position={Position.Bottom} id={id} />
       <Handle type="target" position={Position.Top} id={id} />
 
       <div
-        className={`py-4 px-2 text-sm w-52 rounded-md border-solid border-2 hover:border-4 box-content hover:relative hover:border-purple-500 ${bgColor}`}
+        className={`py-4 px-2 text-xs w-52 rounded-md border-solid border-2 hover:border-4 box-content hover:relative hover:border-purple-500 ${bgColor}`}
       >
         <div className="relative">
           {data.Title}
-          {data.PARSED_MANUAL_TAGS?.ACCESS === "Institutional Access" ? (
+          {dataAccess === "Institutional Access" ||
+          dataAccess === "Paid Service" ||
+          dataAccess === "Open Source" ? (
             <div className="absolute -bottom-5 -right-5">
-              <Star />
+              <Star color={starColor} />
             </div>
           ) : (
             ""
@@ -40,5 +45,3 @@ export function NodeCard({ data, id }: any) {
     </div>
   );
 }
-
-

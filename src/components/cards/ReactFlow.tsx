@@ -21,7 +21,7 @@ import {
 } from "../../../utils/helpers";
 import Data from "../../../../public/output.json";
 import { Entries } from "@/types/interfaces";
-import { CustomNode } from "./NodeCard";
+import { CustomNode } from "./Node";
 import { color } from "framer-motion";
 
 const systemsApproachesToEnergyAccess = Data.filter((entry) =>

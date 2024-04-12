@@ -3,7 +3,9 @@ export interface ParsedManualTags {
   CO_DESIGN_LEVEL?: string;
   ["USEFUL FOR"]?: string[];
   ["PROJECT STEP"]?: string;
-  THEME?: string;
+  ["CASE STUDY THEME"]?: string[] | string;
+  ["SUPPORTING TOOLKIT"]?: string[] | string;
+  THEME?: string[] | string;
   ACCESS?: string;
   TOOLS?: string;
 }

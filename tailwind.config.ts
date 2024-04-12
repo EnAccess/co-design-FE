@@ -19,7 +19,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      maxWidth: {
+        custom: "3500px",
+      },
       colors: {
+        black: {
+          900: "#333333",
+        },
         level: {
           primary: {
             0: "#dae8fc",

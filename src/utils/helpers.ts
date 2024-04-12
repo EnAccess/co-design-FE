@@ -149,6 +149,7 @@ export const filterResourcesDataByThemes = (Data: any, themes: any) => {
       colSpan: themes[theme].colSpan,
       rowSpan: themes[theme].rowSpan,
       blockHeight: themes[theme].blockHeight,
+      basicResources: themes[theme].basicResources,
     };
     return acc;
   }, {});

@@ -9,6 +9,7 @@ interface Props {
   entries: Entries;
   colSpan: number;
   rowSpan: number;
+  basicResources: string[];
   blockHeight: number;
 }
 
@@ -18,6 +19,7 @@ const Block = ({
   entries,
   colSpan,
   rowSpan,
+  basicResources,
   blockHeight,
 }: Props) => {
   return (
@@ -26,7 +28,11 @@ const Block = ({
     >
       <Header title={title} description={description} />
       <div className="m-auto">
-        <CardCanvas Data={entries} blockHeight={blockHeight} />
+        <CardCanvas
+          Data={entries}
+          blockHeight={blockHeight}
+          basicResources={basicResources}
+        />
       </div>
     </div>
   );

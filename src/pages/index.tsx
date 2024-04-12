@@ -1,6 +1,6 @@
 import React from "react";
 import Data from "../../public/output.json";
-import AdvancedResourcesSection from "@/components/advancedResources/AdvancedResourcesSection";
+import AdvancedResourcesSection from "@/components/sections/AdvancedResources";
 import { filterResourcesDataByThemes } from "@/utils/helpers";
 import { resourcesData } from "@/utils/data";
 

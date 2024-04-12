@@ -1,5 +1,5 @@
 import React from "react";
-import CardCanvas from "./cards/CardCanvas";
+import CardCanvas from "./cards/Canvas";
 import Header from "./cards/Header";
 import { Entries } from "@/types/interfaces";
 

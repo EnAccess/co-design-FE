@@ -15,7 +15,7 @@ import ReactFlow, {
   applyNodeChanges,
 } from "reactflow";
 import "reactflow/dist/style.css";
-import { NodeCard } from "../NodeCard";
+import { NodeCard } from "./Node";
 
 const CardCanvas = ({ Data, blockHeight }: any) => {
   const initialEdges = Data.flatMap((element: any, index: any) => {

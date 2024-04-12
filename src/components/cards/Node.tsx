@@ -19,14 +19,18 @@ export function NodeCard({ data, id }: any) {
   const starColor = getColorByAccess(dataAccess);
   return (
     <div className="group cursor-pointer">
-      <Handle type="source" position={Position.Bottom} id={id} />
-      <Handle type="target" position={Position.Top} id={id} />
+      {false && (
+        <>
+          <Handle type="source" position={Position.Bottom} id={id} />
+          <Handle type="target" position={Position.Top} id={id} />
+        </>
+      )}
 
       <div
         className={`py-4 px-2 text-xs w-52 rounded-md border-solid border-2 hover:border-4 box-content hover:relative hover:border-purple-500 ${bgColor}`}
       >
-        <div className="relative">
-          {data.Title}
+        <div className="relative ">
+          <p className="z-10">{data.Title}</p>
           {dataAccess === "Institutional Access" ||
           dataAccess === "Paid Service" ||
           dataAccess === "Open Source" ? (
@@ -36,7 +40,7 @@ export function NodeCard({ data, id }: any) {
           ) : (
             ""
           )}
-          <div className="absolute hidden group-hover:block bg-white border p-4 mt-2 z-80">
+          <div className="absolute hidden group-hover:block bg-white border p-4 mt-2 z-20">
             <p>Extra: {data.Extra}</p>
             <p>{data.Manual_Tags}</p>
           </div>

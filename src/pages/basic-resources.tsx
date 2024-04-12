@@ -2,7 +2,7 @@ import React from "react";
 import Data from "../../public/output.json";
 import { filterResourcesDataByThemes } from "../utils/helpers";
 import { resourcesData } from "../utils/data";
-import BasicResourcesSection from "../components/section/BasicResources";
+import ResourcesSection from "../components/section/Resources";
 
 const BasicResources = () => {
   return (
@@ -13,7 +13,7 @@ const BasicResources = () => {
             {data.title}
           </h3>
           <div className="flex justify-center w-full">
-            <BasicResourcesSection
+            <ResourcesSection
               themes={data.themes}
               filteredData={filterResourcesDataByThemes(Data, data.themes)}
             />

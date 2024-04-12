@@ -1,5 +1,5 @@
 import Block from "../Block";
-const BasicResourcesSection = ({ themes, filteredData }: any) => {
+const ResourcesSection = ({ themes, filteredData }: any) => {
   return (
     <div className="p-4 grid grid-cols-12 justify-center gap-3 text-sm">
       {Object.entries(themes).map(([theme, key]) => {
@@ -21,4 +21,4 @@ const BasicResourcesSection = ({ themes, filteredData }: any) => {
   );
 };
 
-export default BasicResourcesSection;
+export default ResourcesSection;

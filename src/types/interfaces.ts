@@ -20,3 +20,9 @@ export interface Entry {
 }
 
 export type Entries = Entry[];
+
+export interface LevelEntries {
+  level1: Entries;
+  level2: Entries;
+  level3: Entries;
+}

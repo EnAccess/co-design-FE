@@ -1,9 +1,15 @@
 import React from "react";
 import Data from "../../public/output.json";
-import { Entries } from "../types/interfaces";
-import HightlightCaseStudyDetails from "../components/casestudyandcoretools/HightlightCaseStudyDetails";
+import { Entries, LevelEntries } from "../types/interfaces";
+import HightlightCaseStudyDetails from "../components/HightlightCaseStudyDetails";
 import { categorizeByCoDesignLevel } from "../utils/helpers";
 import CaseStudyAndCoreToolsKitsSection from "../components/sections/CaseStudyAndCoreToolsKits";
+import HeaderCard from "@/components/cards/Header";
+
+interface SectionContainer {
+  title: string;
+  categorizedEntries: LevelEntries;
+}
 
 const entriesWithCoreToolkit = Data.filter(
   (entry) => entry.PARSED_MANUAL_TAGS.CORE_TOOLKIT
@@ -19,28 +25,35 @@ const categorizedCoreToolkitEntries = categorizeByCoDesignLevel(
 const categorizedCaseStudyEntries =
   categorizeByCoDesignLevel(entriesWithCaseStudy);
 
+const SectionContainer = ({ title, categorizedEntries }: SectionContainer) => {
+  return (
+    <div className="border-gray-300 border-4 border-dashed bg-gray-100">
+      <HeaderCard title={title} isToolsBlock={true} />
+      <CaseStudyAndCoreToolsKitsSection
+        categorizedEntries={categorizedEntries}
+        isToolsBlock={true}
+      />
+    </div>
+  );
+};
+
 const CaseStudiesAndCoreTools = () => {
   return (
     <div className="p-4 flex flex-col gap-4 text-sm">
       <div className="flex justify-between items-center gap-2 flex-wrap">
-        <div className="border-gray-300 border-4 border-dashed bg-gray-100">
-          <h1 className="m-2 text-lg font-semibold">CORE Toolkits</h1>
-          <CaseStudyAndCoreToolsKitsSection
-            categorizedEntries={categorizedCoreToolkitEntries}
-          />
-        </div>
-
+        <SectionContainer
+          title="CORE Toolkits"
+          categorizedEntries={categorizedCoreToolkitEntries}
+        />
         <div className="px-4 p-4">
           <HightlightCaseStudyDetails />
         </div>
       </div>
       <div>
-        <div className="border-gray-300 border-4 border-dashed bg-gray-100">
-          <h1 className="m-2 text-lg font-semibold">Case Studies</h1>
-          <CaseStudyAndCoreToolsKitsSection
-            categorizedEntries={categorizedCaseStudyEntries}
-          />
-        </div>
+        <SectionContainer
+          title="Case Studies"
+          categorizedEntries={categorizedCaseStudyEntries}
+        />
       </div>
     </div>
   );

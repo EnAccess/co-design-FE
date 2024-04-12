@@ -1,5 +1,5 @@
 import React from "react";
-import ArrowDown from "../icons/ArrowDown";
+import ArrowDown from "./icons/ArrowDown";
 import { caseStudy } from "@/utils/helpers";
 
 const HightlightCaseStudyDetails = () => {

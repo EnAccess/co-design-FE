@@ -4,7 +4,7 @@ import Star from "@/components/icons/Star";
 import classNames from "classnames";
 import { getColorByAccess } from "@/utils/helpers";
 
-export function NodeCard({ data, id }: any) {
+export function NodeCard({ data, id, isToolsBlock = false }: any) {
   id = data.Key;
   const level = Array.isArray(data.PARSED_MANUAL_TAGS?.CO_DESIGN_LEVEL)
     ? data.PARSED_MANUAL_TAGS?.CO_DESIGN_LEVEL[0]
@@ -19,7 +19,7 @@ export function NodeCard({ data, id }: any) {
   const starColor = getColorByAccess(dataAccess);
   return (
     <div className="group cursor-pointer">
-      {false && (
+      {isToolsBlock === false && (
         <>
           <Handle type="source" position={Position.Bottom} id={id} />
           <Handle type="target" position={Position.Top} id={id} />

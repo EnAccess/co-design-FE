@@ -17,15 +17,10 @@ export function NodeCard({ data, id, isToolsBlock = false }: any) {
   });
   const dataAccess = data.PARSED_MANUAL_TAGS.ACCESS;
   const starColor = getColorByAccess(dataAccess);
+  const summary = data.Notes?.replace(/<[^>]*>?/gm, '');
   return (
     <div className="group cursor-pointer">
-      {isToolsBlock === false && (
-        <>
-          <Handle type="source" position={Position.Bottom} id={id} />
-          <Handle type="target" position={Position.Top} id={id} />
-        </>
-      )}
-
+      <Handle type="target" position={Position.Top} id={id} />
       <div
         className={`py-4 px-2 text-xs w-52 rounded-md border-solid border-2 hover:border-4 box-content hover:relative hover:border-purple-500 ${bgColor}`}
       >
@@ -41,11 +36,14 @@ export function NodeCard({ data, id, isToolsBlock = false }: any) {
             ""
           )}
           <div className="absolute hidden group-hover:block bg-white border p-4 mt-2 z-20">
-            <p>Extra: {data.Extra}</p>
-            <p>{data.Manual_Tags}</p>
+            <p><strong>Author</strong>: {data.Author}</p>
+           {summary && (<div><strong>Summary</strong>: {summary}</div>)}
+            <p><strong>Title</strong>: {data.Title}</p>
+            <p><strong>Tags</strong>: {data.Manual_Tags}</p>
           </div>
         </div>
       </div>
+      <Handle type="source" position={Position.Bottom} id={id} />
     </div>
   );
 }

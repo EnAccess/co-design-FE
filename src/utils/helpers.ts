@@ -44,7 +44,6 @@ export function getColorByAccess(accessType: string) {
 
 
 export const getAnchorPosition = (start: any, end: any) => {
-  // console.log({ start, end });
   if (!start && !end) {
     return;
   }
@@ -116,70 +115,6 @@ export const getRandomColor = () => {
 
   return hexColor;
 };
-
-export const generateInitialPositions = (
-  numItems: any,
-  containerWidth: any,
-  containerHeight: any
-) => {
-  const positions = [];
-  const horizontalSpacing = 250;
-  const verticalSpacing = 200;
-
-  const maxItemsPerRow = Math.floor(containerWidth / horizontalSpacing);
-  const numRows = Math.ceil(numItems / maxItemsPerRow);
-  const maxItemsLastRow =
-    numItems % maxItemsPerRow === 0
-      ? maxItemsPerRow
-      : numItems % maxItemsPerRow;
-
-  let index = 0;
-  for (let row = 0; row < numRows; row++) {
-    const y = (row + 1) * verticalSpacing;
-    const itemsInRow = row === numRows - 1 ? maxItemsLastRow : maxItemsPerRow;
-    const rowWidth = itemsInRow * horizontalSpacing;
-    const startX = (containerWidth - rowWidth) / 2;
-
-    for (let col = 0; col < itemsInRow; col++) {
-      const x = startX + col * horizontalSpacing;
-      positions.push({ x, y });
-      index++;
-    }
-  }
-
-  return positions;
-};
-
-export const generateNode = (label: any) => ({
-  id: label.Key,
-  data: label,
-  position: { x: 0, y: 0 },
-  draggable: false,
-  type: "coDesign",
-});
-
-export const generateEdge = (
-  source: string,
-  target: string,
-  index: number,
-  subIndex: number
-) => ({
-  id: `${source}-${target}-${index}-${subIndex}`,
-  source,
-  target,
-  markerEnd: { type: "arrow", color: "#000" },
-  type: "straight",
-  color: "red",
-  interactionWidth: 3,
-  animated: true,
-  style: { stroke: "#4e5157", strokeWidth: 2 },
-  labelStyle: { color: "#fff" },
-  marker: { color: "#000", border: "5" },
-});
-
-export function initialNodes(systemsApproachesToEnergyAccess: any) {
-  return systemsApproachesToEnergyAccess.map((card: any) => generateNode(card));
-}
 
 export const filterResourcesDataByThemes = (Data: any, themes: any) => {
   return Object.keys(themes).reduce((acc: any, theme) => {

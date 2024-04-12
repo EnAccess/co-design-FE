@@ -84,7 +84,7 @@ const CardCanvas = ({ data, blockHeight }: any) => {
   return (
     <div
       style={{
-        height: `${blockHeight !== undefined ? blockHeight * 40 : 50}rem`,
+        height: `${blockHeight !== undefined ? blockHeight * 40 : 40}rem`,
         width: "100%",
         position: "relative",
         zIndex: 20,

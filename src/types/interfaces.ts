@@ -3,8 +3,9 @@ export interface ParsedManualTags {
   CO_DESIGN_LEVEL?: string;
   ["USEFUL FOR"]?: string[];
   ["PROJECT STEP"]?: string;
-  ["CASE STUDY THEME"]?: string[];
-  THEME?: string;
+  ["CASE STUDY THEME"]?: string[] | string;
+  ["SUPPORTING TOOLKIT"]?: string[] | string;
+  THEME?: string[] | string;
   ACCESS?: string;
   TOOLS?: string;
 }
@@ -12,6 +13,9 @@ export interface ParsedManualTags {
 export interface Entry {
   Key: string;
   Title: string;
+  Author: string;
+  Notes: string;
+  Url: string;
   Extra: string | null;
   Manual_Tags: string;
   PARSED_MANUAL_TAGS: ParsedManualTags;
@@ -19,3 +23,20 @@ export interface Entry {
 }
 
 export type Entries = Entry[];
+
+export interface LevelEntries {
+  level1: Entries;
+  level2: Entries;
+  level3: Entries;
+}
+
+export interface Block {
+  title: string;
+  description?: string;
+  entries: Entries;
+}
+
+export interface Group {
+  title?: string;
+  blocks: Block[];
+}

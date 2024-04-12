@@ -1,12 +1,14 @@
-import React from "react";
-import GroupedData from "@/components/GroupedData";
+import Group from "@/components/Group";
+import resources from '@/data/resources/advanced-resources';
 
-const AdvanceedResources = () => {
+const AdvancedResources = () => {
   return (
-    <div>
-      <GroupedData />
-    </div>
+    <section className="mt-10">
+      {resources.map((data, index) => (
+        <Group key={`advanced-resources-${data.title}-${index}`} data={data} />
+      ))}
+    </section>
   );
 };
 
-export default AdvanceedResources;
+export default AdvancedResources;

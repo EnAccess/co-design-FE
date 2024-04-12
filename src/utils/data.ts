@@ -76,3 +76,8 @@ export const resourcesData = [
     },
   },
 ];
+
+export const caseStudy = {
+  Level: ["Household", "Community", "Policy/Systemic", "Productivity Use"],
+  Technology: ["Coding", "Lighting", "Hummanitarian Inflastructure"],
+};

@@ -42,10 +42,6 @@ export function getColorByAccess(accessType: string) {
   }
 }
 
-export const caseStudy = {
-  Level: ["Household", "Community", "Policy/Systemic", "Productivity Use"],
-  Technology: ["Coding", "Lighting", "Hummanitarian Inflastructure"],
-};
 
 export const getAnchorPosition = (start: any, end: any) => {
   // console.log({ start, end });

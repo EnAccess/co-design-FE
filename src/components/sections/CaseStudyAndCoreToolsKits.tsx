@@ -8,7 +8,7 @@ interface Props {
 
 const renderNodeCards = (entries: Entries, isToolsBlock: Boolean) => {
   return entries.map((data: Entry) => (
-    <div key={data.Key} className="w-72">
+    <div key={data.Key} className="w-64 flex">
       <NodeCard data={data} isToolsBlock={isToolsBlock} />
     </div>
   ));

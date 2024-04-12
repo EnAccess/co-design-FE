@@ -26,7 +26,7 @@ const Block = ({
     >
       <Header title={title} description={description} />
       <div className="m-auto">
-        <CardCanvas Data={entries} blockHeight={blockHeight} />
+        <CardCanvas data={entries} blockHeight={blockHeight} />
       </div>
     </div>
   );

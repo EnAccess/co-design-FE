@@ -1,8 +1,8 @@
 import { Handle, Position } from "reactflow";
 import "reactflow/dist/style.css";
-import Star from "@/components/icons/Star";
 import classNames from "classnames";
-import { getColorByAccess } from "@/utils/Helper";
+import { getColorByAccess } from "../../utils/helpers";
+import Star from "../icons/Star";
 
 export function NodeCard({ data, id }: any) {
   id = data.Key;

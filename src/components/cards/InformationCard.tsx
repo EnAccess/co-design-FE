@@ -2,7 +2,7 @@ import classNames from "classnames";
 import React from "react";
 import { ArcherElement } from "react-archer";
 import Star from "../icons/Star";
-import { getColorByAccess } from "../../utils/Helper";
+import { getColorByAccess } from "../../utils/helpers";
 
 const InformationCard = ({ data }: any) => {
   const level = Array.isArray(data.PARSED_MANUAL_TAGS.CO_DESIGN_LEVEL)

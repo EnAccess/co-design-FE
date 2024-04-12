@@ -18,7 +18,7 @@ import "reactflow/dist/style.css";
 import { NodeCard } from "../NodeCard";
 
 const CardCanvas = ({ Data, blockHeight }: any) => {
-  const initialEdges = Data?.flatMap((element: any, index: any) => {
+  const initialEdges = Data.flatMap((element: any, index: any) => {
     if (!element.Extra || element.Extra === null) return [];
 
     let targetIds = [];
@@ -39,7 +39,7 @@ const CardCanvas = ({ Data, blockHeight }: any) => {
     );
   });
 
-  const initialNodes = Data?.map((card: any) => generateNode(card));
+  const initialNodes = Data.map((card: any) => generateNode(card));
 
   const [nodes, setNodes] = useState<any[]>(initialNodes);
   const [edges, setEdges] = useState<any[]>(initialEdges);

@@ -4,7 +4,7 @@ import CoreTools from "../components/casestudyandcoretools/CoreTools";
 import CaseStudy from "../components/casestudyandcoretools/CaseStudy";
 import { Entries } from "../types/interfaces";
 import HightlightCaseStudyDetails from "../components/casestudyandcoretools/HightlightCaseStudyDetails";
-import { categorizeByCoDesignLevel } from "../utils/Helper";
+import { categorizeByCoDesignLevel } from "../utils/helpers";
 
 const CaseStudiesAndCoreTools = () => {
   const entriesWithCoreToolkit = Data.filter(

@@ -10,27 +10,37 @@ interface Props {
   title: string;
   description?: string;
   entries: Entries;
-  singleBlock?: boolean;
+  caseStudy?: boolean;
 }
-const Block = ({
-  title,
-  description,
-  entries,
-}: Props) => {
+const Block = ({ title, description, entries, caseStudy }: Props) => {
   const colSpan = useMemo(() => {
-    if (entries?.length >= 24) return 8
-    if (entries?.length >= 18) return 7
-    return entries?.length > MAX_COL_SPAN ? MAX_COL_SPAN : MIN_COL_SPAN
-  }, [entries])
-  const rowSpan = useMemo(() => Math.ceil(entries?.length / colSpan), [entries, colSpan])
-  const blockHeight = useMemo(() => Math.ceil(rowSpan / MAX_COL_SPAN), [rowSpan])
+    if (entries?.length >= 24) return 8;
+    if (entries?.length >= 18) return 7;
+    return entries?.length > MAX_COL_SPAN ? MAX_COL_SPAN : MIN_COL_SPAN;
+  }, [entries]);
+  const rowSpan = useMemo(
+    () => Math.ceil(entries?.length / colSpan),
+    [entries, colSpan]
+  );
+  const blockHeight = useMemo(
+    () => Math.ceil(rowSpan / MAX_COL_SPAN),
+    [rowSpan]
+  );
   return (
     <div
       className={`col-span-${colSpan} row-span-${rowSpan} p-8 bg-gray-100 border-2 border-dashed border-gray-400 `}
     >
-      <Header title={title} description={description} />
+      <Header
+        title={title}
+        description={description}
+        isCaseStudyBlock={caseStudy}
+      />
       <div className="m-auto">
-        <CardCanvas data={entries} blockHeight={blockHeight} columns={colSpan} />
+        <CardCanvas
+          data={entries}
+          blockHeight={blockHeight}
+          columns={colSpan}
+        />
       </div>
     </div>
   );

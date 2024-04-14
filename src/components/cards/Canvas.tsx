@@ -4,19 +4,24 @@ import ReactFlow from "reactflow";
 import "reactflow/dist/style.css";
 import { NodeCard } from "./Node";
 
-const CONTAINER_HEIGHT = 600;
-const CONTAINER_WIDTH = 800;
+const CONTAINER_HEIGHT = 800;
+const CONTAINER_WIDTH = 1000;
+const SINGLE_BLOCK_WIDTH = 3000;
 
 const NodeTypes = {
   coDesign: NodeCard,
 };
 
-const CardCanvas = ({ data, blockHeight }: any) => {
-  const initialEdges = useMemo(()=> parseEdges(data), [data])
-  const initialNodes = useMemo(()=> parseNodes(data, {
-    width: CONTAINER_WIDTH,
-    height: CONTAINER_HEIGHT,
-  }), [data]);
+const CardCanvas = ({ data, blockHeight, columns }: any) => {
+  const initialEdges = useMemo(() => parseEdges(data), [data]);
+  const initialNodes = useMemo(
+    () =>
+      parseNodes(data, {
+        width: columns > 5 ? SINGLE_BLOCK_WIDTH : CONTAINER_WIDTH,
+        height: CONTAINER_HEIGHT,
+      }),
+    [data]
+  );
 
   const [nodes, setNodes] = useState<any[]>(initialNodes);
   const [edges, setEdges] = useState<any[]>(initialEdges);
@@ -25,9 +30,9 @@ const CardCanvas = ({ data, blockHeight }: any) => {
     <div
       style={{
         height: `${blockHeight * 20}rem`,
-        width: "100%",
+        width: "auto",
         position: "relative",
-        zIndex: 20,
+        zIndex: 10,
         margin: 0,
         padding: 0,
       }}
@@ -46,8 +51,7 @@ const CardCanvas = ({ data, blockHeight }: any) => {
         draggable={false}
         preventScrolling={false}
         onInit={(instance) => setTimeout(() => instance.fitView(), 100)}
-      >
-      </ReactFlow>
+      ></ReactFlow>
     </div>
   );
 };

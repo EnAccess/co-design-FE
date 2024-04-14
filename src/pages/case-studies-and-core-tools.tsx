@@ -1,12 +1,18 @@
 import Group from "@/components/Group";
-import groups from '@/data/case-studies';
+import groups from "@/data/case-studies";
 
-const BasicResources = () => {
-  return <section className="mt-10">
-    {groups?.map((data, index) => (
-      <Group key={`advanced-resources-${data.title}-${index}`} data={data} />
-    ))}
-  </section>
+const caseStudiesAndCoreTools = () => {
+  return (
+    <section className="py-10">
+      {groups?.map((data, index) => (
+        <Group
+          key={`case-studies-and-core-tools-${data.title}-${index}`}
+          data={data}
+          caseStudy={true}
+        />
+      ))}
+    </section>
+  );
 };
 
-export default BasicResources;
+export default caseStudiesAndCoreTools;

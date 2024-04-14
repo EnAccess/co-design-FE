@@ -1,12 +1,12 @@
 import React from "react";
 interface Props {
-  isToolsBlock?: boolean;
+  isCaseStudyBlock?: boolean;
   title: string;
   description?: string;
 }
 
-const HeaderCard = ({ isToolsBlock, title, description }: Props) => {
-  if (isToolsBlock === true)
+const HeaderCard = ({ isCaseStudyBlock, title, description }: Props) => {
+  if (isCaseStudyBlock === true)
     return <h1 className="m-2 text-lg font-semibold">{title}</h1>;
   return (
     <div className="bg-yellow-200 flex justify-center px-5 py-5 w-4/5">

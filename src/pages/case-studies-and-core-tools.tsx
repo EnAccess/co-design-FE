@@ -1,7 +1,12 @@
-import React from "react";
+import Group from "@/components/Group";
+import groups from '@/data/case-studies';
 
-const CaseStudiesAndCoreTools = () => {
-  return <div>CaseStudiesAndCoreTools</div>;
+const BasicResources = () => {
+  return <section className="mt-10">
+    {groups?.map((data, index) => (
+      <Group key={`advanced-resources-${data.title}-${index}`} data={data} />
+    ))}
+  </section>
 };
 
-export default CaseStudiesAndCoreTools;
+export default BasicResources;

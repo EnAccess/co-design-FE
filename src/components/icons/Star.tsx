@@ -1,12 +1,12 @@
 import React from "react";
 
-const Star = () => {
+const Star = ({ color }: { color: string }) => {
   return (
     <svg
       width="50px"
       height="50px"
       viewBox="0 0 24 24"
-      fill="#fde047"
+      fill={color}
       xmlns="http://www.w3.org/2000/svg"
     >
       <path

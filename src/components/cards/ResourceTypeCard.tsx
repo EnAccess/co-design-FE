@@ -8,7 +8,7 @@ const ResourceTypeCard = ({ text, link }: { text: string; link: string }) => {
   return (
     <Link
       href={link}
-      className={`flex items-stretch justify-center rounded-lg border-2 border-black bg-[#b3b3b3] font-semibold text-xs place-contetext-center cursor-pointer ${
+      className={`flex items-stretch justify-center rounded-lg  border-2 border-gray-500 bg-[#b3b3b3] font-semibold text-xs place-contetext-center cursor-pointer ${
         pathname === link ? "bg-black text-white" : ""
       }`}
     >

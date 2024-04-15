@@ -49,7 +49,7 @@ export function getColorByAccess(accessType: string) {
     case "Open Source":
       return "#33FF33"; // green
     case "Paid Service":
-      return "#FF0000"; // Red
+      return "#FF3333"; // Red
     default:
       return "transparent";
   }

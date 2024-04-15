@@ -3,7 +3,6 @@ import Block from "../components/Block";
 import { filteredApproaches,filteredBasicTools } from "../data/basicTools/tools-resources";
 
 const ToolsResources = () => {
-  console.log('object',filteredBasicTools)
   return (
     <section className="mt-10 flex gap-5 px-8">
       <div className ="w-1/2 h-1/2">

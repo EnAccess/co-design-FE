@@ -1,32 +1,21 @@
 import React from "react";
 import Block from "../components/Block";
-import { filteredApproaches,filteredBasicTools } from "../data/basicTools/tools-resources";
+import tools from "../data/basic-tools";
 
 const ToolsResources = () => {
   return (
-    <section className="mt-10 flex gap-5 px-8">
-      <div className ="w-1/2 h-1/2">
-      {filteredBasicTools.map((data: any, i: any) => 
-            <Block
-              key={`${data.title}-${i}`}
-              title={data.title}
-              description={data.description}
-              entries={data.entries}
-            />
-         )}
-      </div>
-      <div className="flex flex-wrap gap-4 w-1/2 justify-end float-end">
-        {filteredApproaches.map((data: any, i: any) => {
-          return (
-            <Block
-              key={`${data.title}-${i}`}
-              title={data.title}
-              description={data.description}
-              entries={data.Entries}
-            />
-          );
-        })}
-      </div>
+    <section className="mt-10 flex gap-y-8 px-8 flex-wrap">
+      {tools.map((data: any, i: any) =>
+        <div key={`${data.title}-${i}`} className="w-1/2 px-4 h-1/2">
+          <Block
+            title={data.title}
+            description={data.description}
+            entries={data.entries}
+          />
+        </div>
+      )}
+
+
     </section>
   );
 };

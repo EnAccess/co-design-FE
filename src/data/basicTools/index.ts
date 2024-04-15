@@ -14,27 +14,35 @@ export const approaches = Array.from(new Set(rawApproaches)).map(
     );
     return {
       title: approach,
-      description: data?.description || null,
-      entries,
-    };
-  }
-);
-
-const rawBasicTools = output
-  .map((data) => data?.PARSED_MANUAL_TAGS?.["BASIC TOOLS"])
-  .flat()
-
-export const basicTools = Array.from(new Set(rawBasicTools)).map(
-  (tools: any) => {
-    const data = toolsData[tools];
-    const entries = output.filter((entry) =>
-      entry?.PARSED_MANUAL_TAGS["BASIC TOOLS"]?.includes(tools)
-    );
-
-    return {
-      title: tools,
       description: data?.description,
       entries,
     };
   }
 );
+
+
+const rawBasicTools = (data: any) => {
+  const tool = Object.keys(data).find((currentKey) => currentKey === "BASIC TOOLS");
+  if (tool) {
+     return {
+       title: tool,
+       description: data[tool].description,
+     };
+  }
+ };
+
+ export function basicTools() {
+   const data = rawBasicTools(toolsData);
+  const entries = output.filter(
+    (entry) =>
+      entry?.PARSED_MANUAL_TAGS && "BASIC TOOLS" in entry.PARSED_MANUAL_TAGS
+  );
+
+  return [
+    {
+      title: data?.title,
+      description: data?.description,
+      entries,
+    },
+  ];
+};

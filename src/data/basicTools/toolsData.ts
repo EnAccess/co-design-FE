@@ -1,5 +1,5 @@
 export const toolsData: any = {
-  "Basic Tools": {
+  "BASIC TOOLS": {
     description:
       "This box contains an overview of the basic tools needed to conduct effective co-design processes",
   },

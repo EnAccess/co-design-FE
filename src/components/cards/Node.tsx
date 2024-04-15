@@ -6,7 +6,6 @@ import Link from "next/link";
 
 export function NodeCard({ data }: any) {
   const bgColor = getBgColorClassName(data);
-  console.log(bgColor)
   const dataAccess = data?.PARSED_MANUAL_TAGS?.ACCESS?.[0];
   const starColor = getColorByAccess(dataAccess);
   const summary = data.Notes?.replace(/<[^>]*>?/gm, "");

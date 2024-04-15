@@ -31,11 +31,11 @@ export const categorizeByCoDesignLevel = (entries: Entries) => {
 };
 
 export const getBgColorClassName = (data: any) => {
-  const level = Number(Array.isArray(data.PARSED_MANUAL_TAGS?.CO_DESIGN_LEVEL)
-  ? data.PARSED_MANUAL_TAGS?.CO_DESIGN_LEVEL[0]
-  : data.PARSED_MANUAL_TAGS?.CO_DESIGN_LEVEL)
-
-    console.log("level", level)
+  const level = Number(
+    Array.isArray(data.PARSED_MANUAL_TAGS?.CO_DESIGN_LEVEL)
+      ? data.PARSED_MANUAL_TAGS?.CO_DESIGN_LEVEL[0]
+      : data.PARSED_MANUAL_TAGS?.CO_DESIGN_LEVEL
+  );
 
   switch (level) {
     case 0:
@@ -47,7 +47,9 @@ export const getBgColorClassName = (data: any) => {
     case 3:
       return classNames("bg-level-primary-3 border-level-secondary-3");
     default:
-      return classNames("bg-level-primary-default border-level-secondary-default");
+      return classNames(
+        "bg-level-primary-default border-level-secondary-default"
+      );
   }
 };
 

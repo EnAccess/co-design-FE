@@ -32,8 +32,8 @@ const CardCanvas = ({ data, blockHeight, columns }: any) => {
         height: `${blockHeight * 20}rem`,
         width: "auto",
         position: "relative",
-        zIndex: 10,
-        margin: 0,
+        zIndex: 20,
+        marginTop: 10,
         padding: 0,
       }}
       className="flex justify-center"

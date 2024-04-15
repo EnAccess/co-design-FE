@@ -24,7 +24,7 @@ export function NodeCard({ data }: any) {
               <Star color={starColor} />
             </div>
           )}
-          <div className="absolute hidden group-hover:block bg-white border p-4 mt-2 z-50">
+          <div className="absolute hidden group-hover:block bg-white border p-4 mt-2 z-20">
             <p>
               <strong>Author</strong>: {data.Author}
             </p>

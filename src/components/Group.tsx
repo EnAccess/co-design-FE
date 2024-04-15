@@ -1,4 +1,4 @@
-import { Group } from "@/types/interfaces";
+import { Group } from "../types/interfaces";
 import Block from "./Block";
 
 const AdvancedResources = ({

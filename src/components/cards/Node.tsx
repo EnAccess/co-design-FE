@@ -1,11 +1,12 @@
 import { Handle, Position } from "reactflow";
 import "reactflow/dist/style.css";
 import Star from "@/components/icons/Star";
-import { getBgColor, getColorByAccess } from "@/utils/helpers";
+import { getBgColorClassName, getColorByAccess } from "@/utils/helpers";
 import Link from "next/link";
 
 export function NodeCard({ data }: any) {
-  const bgColor = getBgColor(data);
+  const bgColor = getBgColorClassName(data);
+  console.log(bgColor)
   const dataAccess = data?.PARSED_MANUAL_TAGS?.ACCESS?.[0];
   const starColor = getColorByAccess(dataAccess);
   const summary = data.Notes?.replace(/<[^>]*>?/gm, "");

@@ -30,16 +30,25 @@ export const categorizeByCoDesignLevel = (entries: Entries) => {
   );
 };
 
-export const getBgColor = (data: any) => {
-  const level = Array.isArray(data.PARSED_MANUAL_TAGS?.CO_DESIGN_LEVEL)
-    ? data.PARSED_MANUAL_TAGS?.CO_DESIGN_LEVEL[0]
-    : data.PARSED_MANUAL_TAGS?.CO_DESIGN_LEVEL;
-  return classNames({
-    "bg-level-primary-0 border-level-secondary-0": level == 0,
-    "bg-level-primary-1 border-level-secondary-1": level == 1,
-    "bg-level-primary-2 border-level-secondary-2": level == 2,
-    "bg-level-primary-3 border-level-secondary-3": level == 3,
-  });
+export const getBgColorClassName = (data: any) => {
+  const level = Number(Array.isArray(data.PARSED_MANUAL_TAGS?.CO_DESIGN_LEVEL)
+  ? data.PARSED_MANUAL_TAGS?.CO_DESIGN_LEVEL[0]
+  : data.PARSED_MANUAL_TAGS?.CO_DESIGN_LEVEL)
+
+    console.log("level", level)
+
+  switch (level) {
+    case 0:
+      return classNames("bg-level-primary-0 border-level-secondary-0");
+    case 1:
+      return classNames("bg-level-primary-1 border-level-secondary-1");
+    case 2:
+      return classNames("bg-level-primary-2 border-level-secondary-2");
+    case 3:
+      return classNames("bg-level-primary-3 border-level-secondary-3");
+    default:
+      return classNames("bg-level-primary-default border-level-secondary-default");
+  }
 };
 
 export function getColorByAccess(accessType: string) {
@@ -49,7 +58,7 @@ export function getColorByAccess(accessType: string) {
     case "Open Source":
       return "#33FF33"; // green
     case "Paid Service":
-      return "#33FF33"; // Red
+      return "#FF3333"; // Red
     default:
       return "transparent";
   }

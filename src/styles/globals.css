@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   display: none;
-}
+} */
 
 body {
   zoom: 60%;

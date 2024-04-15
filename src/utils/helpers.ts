@@ -1,4 +1,5 @@
 import { Entries, Entry } from "@/types/interfaces";
+import classNames from "classnames";
 
 interface Accumulator {
   level1: Entries;
@@ -29,6 +30,18 @@ export const categorizeByCoDesignLevel = (entries: Entries) => {
   );
 };
 
+export const getBgColor = (data: any) => {
+  const level = Array.isArray(data.PARSED_MANUAL_TAGS?.CO_DESIGN_LEVEL)
+    ? data.PARSED_MANUAL_TAGS?.CO_DESIGN_LEVEL[0]
+    : data.PARSED_MANUAL_TAGS?.CO_DESIGN_LEVEL;
+  return classNames({
+    "bg-level-primary-0 border-level-secondary-0": level == 0,
+    "bg-level-primary-1 border-level-secondary-1": level == 1,
+    "bg-level-primary-2 border-level-secondary-2": level == 2,
+    "bg-level-primary-3 border-level-secondary-3": level == 3,
+  });
+};
+
 export function getColorByAccess(accessType: string) {
   switch (accessType) {
     case "Institutional Access":
@@ -41,7 +54,6 @@ export function getColorByAccess(accessType: string) {
       return "transparent";
   }
 }
-
 
 export const getAnchorPosition = (start: any, end: any) => {
   if (!start && !end) {

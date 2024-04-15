@@ -6,16 +6,23 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "server": "npx serve@latest out",
     "lint": "next lint"
   },
   "dependencies": {
     "classnames": "^2.5.1",
+    "csvtojson": "^2.0.10",
+    "gsap": "^3.12.5",
+    "lodash.groupby": "^4.6.0",
     "next": "14.1.0",
+    "next-seo": "^6.5.0",
     "react": "^18",
+    "react-archer": "^4.3.0",
     "react-dom": "^18",
-    "react-xarrows": "^2.0.2"
+    "reactflow": "^11.11.0"
   },
   "devDependencies": {
+    "@types/lodash.groupby": "^4.6.9",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

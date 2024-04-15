@@ -16,7 +16,7 @@ const caseStudiesAndCoreTools = () => {
         <Group
           key={`case-studies-and-core-tools-${data.title}-${index}`}
           data={data}
-          caseStudy={true}
+          minifiedHeader
         />
       ))}
     </section>

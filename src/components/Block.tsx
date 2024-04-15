@@ -10,9 +10,9 @@ interface Props {
   title: string;
   description?: string;
   entries: Entries;
-  caseStudy?: boolean;
+  minifiedHeader?: boolean;
 }
-const Block = ({ title, description, entries, caseStudy }: Props) => {
+const Block = ({ title, description, entries, minifiedHeader }: Props) => {
   const colSpan = useMemo(() => {
     if (entries?.length >= 24) return 8;
     if (entries?.length >= 18) return 7;
@@ -33,7 +33,7 @@ const Block = ({ title, description, entries, caseStudy }: Props) => {
       <Header
         title={title}
         description={description}
-        isCaseStudyBlock={caseStudy}
+        minified={minifiedHeader}
       />
       <div className="m-auto">
         <CardCanvas

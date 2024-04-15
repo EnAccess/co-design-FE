@@ -3,10 +3,10 @@ import Block from "./Block";
 
 const AdvancedResources = ({
   data,
-  caseStudy,
+  minifiedHeader
 }: {
   data: Group;
-  caseStudy?: boolean;
+  minifiedHeader?: boolean;
 }) => {
   return (
     <>
@@ -24,7 +24,7 @@ const AdvancedResources = ({
                 title={block.title}
                 description={block.description}
                 entries={block.entries}
-                caseStudy={caseStudy}
+                minifiedHeader={minifiedHeader}
               />
             );
           })}

@@ -1,22 +1,14 @@
 export default function Line() {
   return (
     <svg
-      width="80px"
-      height="80px"
-      viewBox="0 0 24 24"
+      width="125"
+      height="80"
+      viewBox="0 0 125 80"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g id="Interface / Line_L">
-        <path
-          id="Vector"
-          d="M12 19V5"
-          stroke="#dc2626"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </g>
+      <ellipse cx="64" cy="14.5" rx="8" ry="7.5" fill="#DC2626" />
+      <rect x="60" y="18" width="8" height="51" fill="#DC2626" />
     </svg>
   );
 }

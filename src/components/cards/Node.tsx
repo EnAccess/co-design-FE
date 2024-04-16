@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Handle, Position } from "reactflow";
 import "reactflow/dist/style.css";
 import Star from "@/components/icons/Star";
@@ -8,29 +8,32 @@ import { useAppContext } from "@/contex";
 
 export function NodeCard({ data }: any) {
   const [highlighted, setHighlighted] = useState(false);
-  const { level } = useAppContext();
+  const { entryKeys } = useAppContext();
   const bgColor = getBgColorClassName(data);
   const dataAccess = data?.PARSED_MANUAL_TAGS?.ACCESS?.[0];
   const starColor = getColorByAccess(dataAccess);
   const summary = data.Notes?.replace(/<[^>]*>?/gm, "");
+  const timerRef = useRef<number | null>(null);
 
   useEffect(() => {
-    if (level.includes(data.Key)) {
+    if (entryKeys.includes(data.Key)) {
       setHighlighted(true);
-      const timer = setTimeout(() => {
+      if (timerRef.current !== null) {
+        clearTimeout(timerRef.current);
+      }
+      timerRef.current = window.setTimeout(() => {
         setHighlighted(false);
-      }, 3000);
-
-      return () => clearTimeout(timer);
+      }, 2000);
     }
-  }, [data.Key, level]);
+  }, [data.Key, entryKeys]);
+
   return (
     <div className="group cursor-pointer">
       <Handle type="target" position={Position.Top} id={data.Key} />
       <Link href={data?.Url} target="_blank">
         <div
-          className={`py-4 px-2 text-xs w-52 rounded-md border-solid border-2 hover:border-4 box-content hover:relative transition-colors duration-2000 ${
-            highlighted && "border-4 border-blue-400"
+          className={`py-4 px-2 text-xs w-52 rounded-md border-solid border-2 hover:border-4 box-content hover:relative transition-colors duration-1000 ${
+            highlighted && "border-4 border-[#80CEF2]"
           }
           }hover:border-purple-500 ${bgColor}`}
         >

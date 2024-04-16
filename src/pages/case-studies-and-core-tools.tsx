@@ -7,19 +7,18 @@ import { useAppContext } from "@/contex";
 import Group from "@/components/Group";
 
 const caseStudiesAndCoreTools = () => {
+  const [hightlightedElement, setHightlightedElement] = useState<string>("");
   const { setEntryKeys } = useAppContext();
 
-  const [hightlightedElement, setHightlightedElement] = useState<string>("");
   const entryKeysArray = useMemo(
     () => getEntryKeys(hightlightedElement),
     [hightlightedElement]
   );
 
   useEffect(() => {
-    if (hightlightedElement) {
-      setEntryKeys(entryKeysArray);
-    }
-  }, [hightlightedElement]);
+    setEntryKeys(entryKeysArray);
+    setHightlightedElement("");
+  }, [entryKeysArray]);
   return (
     <section className="py-10 relative">
       <div className="absolute right-0 px-10 z-40">

@@ -3,7 +3,7 @@ import ArrowDown from "./icons/ArrowDown";
 import { Hightlights } from "@/data/case-studies";
 
 interface Props {
-  setElement: (element: string) => void;
+  setHightlightedElement: (element: string) => void;
 }
 
 const HightlightsBotton = (
@@ -24,9 +24,9 @@ const HightlightsBotton = (
   </div>
 );
 
-const HightlightCaseStudyDetails = ({ setElement }: Props) => {
+const HightlightCaseStudyDetails = ({ setHightlightedElement }: Props) => {
   const getCaseStudyDetails = (element: string) => {
-    setElement(element);
+    setHightlightedElement(element);
   };
   return (
     <>

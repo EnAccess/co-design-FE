@@ -1,37 +1,31 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 
 import HightlightCaseStudyDetails from "@/components/HightlightCaseStudyDetails";
-import { groups } from "@/data/case-studies";
-import { useEffect, useState } from "react";
+import { getEntryKeys, groups } from "@/data/case-studies";
+import { useEffect, useState, useMemo } from "react";
 import { useAppContext } from "@/contex";
 import Group from "@/components/Group";
 
 const caseStudiesAndCoreTools = () => {
-  const [element, setElement] = useState<string>("");
-  const { setLevel } = useAppContext();
-  const keyArray = groups.flatMap((group) =>
-    group.blocks.flatMap((block) =>
-      block.entries
-        .filter(
-          (entry) =>
-            entry?.PARSED_MANUAL_TAGS?.["CASE STUDY LEVEL"]?.includes(
-              element
-            ) ||
-            entry?.PARSED_MANUAL_TAGS?.["CASE STUDY TECH"]?.includes(element)
-        )
-        .map((entry) => entry.Key)
-    )
+  const { setEntryKeys } = useAppContext();
+
+  const [hightlightedElement, setHightlightedElement] = useState<string>("");
+  const entryKeysArray = useMemo(
+    () => getEntryKeys(hightlightedElement),
+    [hightlightedElement]
   );
+
   useEffect(() => {
-    if (element) {
-      setLevel(keyArray);
+    if (hightlightedElement) {
+      setEntryKeys(entryKeysArray);
     }
-  }, [element]);
-  console.log("element", keyArray);
+  }, [hightlightedElement]);
   return (
     <section className="py-10 relative">
       <div className="absolute right-0 px-10 z-40">
-        <HightlightCaseStudyDetails setElement={setElement} />
+        <HightlightCaseStudyDetails
+          setHightlightedElement={setHightlightedElement}
+        />
       </div>
       {groups?.map((data, index) => {
         return (

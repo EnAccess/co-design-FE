@@ -1,21 +1,15 @@
-import {
-  Dispatch,
-  SetStateAction,
-  createContext,
-  useContext,
-  useState,
-} from "react";
+import { createContext, useContext, useState } from "react";
 
 export type ContextType = {
-  level: string[];
-  setLevel: any;
+  entryKeys: string[];
+  setEntryKeys: any;
 };
 const AppContext = createContext<ContextType | undefined>(undefined);
 
 export function ContextProvider({ children }: { children: React.ReactNode }) {
-  const [level, setLevel] = useState([]);
+  const [entryKeys, setEntryKeys] = useState([]);
   return (
-    <AppContext.Provider value={{ level, setLevel }}>
+    <AppContext.Provider value={{ entryKeys, setEntryKeys }}>
       {children}
     </AppContext.Provider>
   );

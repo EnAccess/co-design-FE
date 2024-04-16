@@ -1,21 +1,21 @@
 import React from "react";
 import ArrowDown from "./icons/ArrowDown";
-import { Hightlights } from "@/data/case-studies";
+import { Highlights } from "@/data/case-studies";
 
 interface Props {
-  setHightlightedElement: (element: string) => void;
+  setHighlightedElement: (element: string) => void;
 }
 
-const HightlightsBotton = (
+const HighlightsBottons = (
   entries: string[],
   style: string,
-  getCaseStudyDetails: (element: string) => void
+  setHighlightedElement: (element: string) => void
 ) => (
   <div className="flex flex-col gap-2 p-4 h-72 overflow-y-auto">
     {entries.map((element, index) => (
       <button
         key={index}
-        onClick={() => getCaseStudyDetails(element)}
+        onClick={() => setHighlightedElement(element)}
         className={`border border-gray-500 p-4 rounded-lg ${style}`}
       >
         {element}
@@ -24,13 +24,10 @@ const HightlightsBotton = (
   </div>
 );
 
-const HightlightCaseStudyDetails = ({ setHightlightedElement }: Props) => {
-  const getCaseStudyDetails = (element: string) => {
-    setHightlightedElement(element);
-  };
+const HighlightCaseStudyDetails = ({ setHighlightedElement }: Props) => {
   return (
     <>
-      {Hightlights.map((data, index) => (
+      {Highlights.map((data, index) => (
         <div key={index} className="flex items-center flex-col">
           <ArrowDown />
           <h1 className="text-center text-gray-500 text-xl font-bold mb-3 ">
@@ -44,10 +41,10 @@ const HightlightCaseStudyDetails = ({ setHightlightedElement }: Props) => {
                     <h1 className="text-center text-gray-500 text-xl font-bold mb-3">
                       {block.title}
                     </h1>
-                    {HightlightsBotton(
+                    {HighlightsBottons(
                       block.entries,
                       block.style,
-                      getCaseStudyDetails
+                      setHighlightedElement
                     )}
                   </div>
                 </div>
@@ -60,4 +57,4 @@ const HightlightCaseStudyDetails = ({ setHightlightedElement }: Props) => {
   );
 };
 
-export default HightlightCaseStudyDetails;
+export default HighlightCaseStudyDetails;

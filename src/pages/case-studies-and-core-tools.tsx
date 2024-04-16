@@ -1,29 +1,29 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 
-import HightlightCaseStudyDetails from "@/components/HightlightCaseStudyDetails";
 import { getEntryKeys, groups } from "@/data/case-studies";
 import { useEffect, useState, useMemo } from "react";
 import { useAppContext } from "@/contex";
 import Group from "@/components/Group";
+import HighlightCaseStudyDetails from "@/components/HightlightCaseStudyDetails";
 
 const caseStudiesAndCoreTools = () => {
-  const [hightlightedElement, setHightlightedElement] = useState<string>("");
+  const [highlightedElement, setHighlightedElement] = useState<string>("");
   const { setEntryKeys } = useAppContext();
 
   const entryKeysArray = useMemo(
-    () => getEntryKeys(hightlightedElement),
-    [hightlightedElement]
+    () => getEntryKeys(highlightedElement),
+    [highlightedElement]
   );
 
   useEffect(() => {
     setEntryKeys(entryKeysArray);
-    setHightlightedElement("");
+    setHighlightedElement("");
   }, [entryKeysArray]);
   return (
     <section className="py-10 relative">
       <div className="absolute right-0 px-10 z-40">
-        <HightlightCaseStudyDetails
-          setHightlightedElement={setHightlightedElement}
+        <HighlightCaseStudyDetails
+          setHighlightedElement={setHighlightedElement}
         />
       </div>
       {groups?.map((data, index) => {

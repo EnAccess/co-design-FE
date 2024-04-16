@@ -1,34 +1,4 @@
-import { Entries, Entry } from "@/types/interfaces";
 import classNames from "classnames";
-
-interface Accumulator {
-  level1: Entries;
-  level2: Entries;
-  level3: Entries;
-}
-
-export const categorizeByCoDesignLevel = (entries: Entries) => {
-  return entries.reduce(
-    (acc: Accumulator, entry: Entry) => {
-      const coDesignLevel = entry.PARSED_MANUAL_TAGS.CO_DESIGN_LEVEL;
-      switch (coDesignLevel) {
-        case "1":
-          acc.level1.unshift(entry);
-          break;
-        case "2":
-          acc.level2.unshift(entry);
-          break;
-        case "3":
-          acc.level3.unshift(entry);
-          break;
-        default:
-          console.error(`Unknown CO_DESIGN_LEVEL: ${coDesignLevel}`);
-      }
-      return acc;
-    },
-    { level1: [], level2: [], level3: [] }
-  );
-};
 
 export const getBgColorClassName = (data: any) => {
   const level = Number(
@@ -137,20 +107,4 @@ export const getRandomColor = () => {
   var hexColor = "#" + hexR + hexG + hexB;
 
   return hexColor;
-};
-
-export const filterResourcesDataByThemes = (Data: any, themes: any) => {
-  return Object.keys(themes).reduce((acc: any, theme) => {
-    const filteredEntries = Data.filter((entry: any) =>
-      entry.PARSED_MANUAL_TAGS.THEME?.includes(theme)
-    ) as Entries;
-    acc[theme] = {
-      description: themes[theme].description,
-      entries: filteredEntries,
-      colSpan: themes[theme].colSpan,
-      rowSpan: themes[theme].rowSpan,
-      blockHeight: themes[theme].blockHeight,
-    };
-    return acc;
-  }, {});
 };

@@ -1,25 +1,43 @@
+import { useState, useEffect } from "react";
 import { Handle, Position } from "reactflow";
 import "reactflow/dist/style.css";
 import Star from "@/components/icons/Star";
 import { getBgColorClassName, getColorByAccess } from "@/utils/helpers";
 import Link from "next/link";
+import { useAppContext } from "@/contex";
 
 export function NodeCard({ data }: any) {
+  const [highlighted, setHighlighted] = useState(false);
+  const { level } = useAppContext();
   const bgColor = getBgColorClassName(data);
   const dataAccess = data?.PARSED_MANUAL_TAGS?.ACCESS?.[0];
   const starColor = getColorByAccess(dataAccess);
   const summary = data.Notes?.replace(/<[^>]*>?/gm, "");
 
+  useEffect(() => {
+    if (level.includes(data.Key)) {
+      setHighlighted(true);
+      const timer = setTimeout(() => {
+        setHighlighted(false);
+      }, 3000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [data.Key, level]);
   return (
     <div className="group cursor-pointer">
       <Handle type="target" position={Position.Top} id={data.Key} />
       <Link href={data?.Url} target="_blank">
         <div
-          className={`py-4 px-2 text-xs w-52 rounded-md border-solid border-2 hover:border-4 box-content hover:relative hover:border-purple-500 ${bgColor}`}
+          className={`py-4 px-2 text-xs w-52 rounded-md border-solid border-2 hover:border-4 box-content hover:relative transition-colors duration-2000 ${
+            highlighted && "border-4 border-blue-400"
+          }
+          }hover:border-purple-500 ${bgColor}`}
         >
           <div className="relative">
             <p className="z-10">{data.Title}</p>
             <p className="z-10">{data.Author}</p>
+
             {(dataAccess === "Institutional Access" ||
               dataAccess === "Paid Service" ||
               dataAccess === "Open Source") && (
@@ -51,4 +69,3 @@ export function NodeCard({ data }: any) {
     </div>
   );
 }
-13579;

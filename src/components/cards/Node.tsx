@@ -33,7 +33,7 @@ export function NodeCard({ data }: any) {
       <Link href={data?.Url} target="_blank">
         <div
           className={`py-4 px-2 text-xs w-52 rounded-md border-solid border-2 hover:border-4 box-content hover:relative transition-colors duration-1000 ${
-            highlighted && "border-blue-400 border-4"
+            highlighted && "border-4 border-[#80CEF2]"
           }
           }hover:border-purple-500 ${bgColor}`}
         >

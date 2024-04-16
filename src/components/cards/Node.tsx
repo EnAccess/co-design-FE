@@ -1,10 +1,10 @@
 import { useState, useEffect, useRef } from "react";
 import { Handle, Position } from "reactflow";
 import "reactflow/dist/style.css";
-import Star from "@/components/icons/Star";
-import { getBgColorClassName, getColorByAccess } from "@/utils/helpers";
+import Star from "../../components/icons/Star";
+import { getBgColorClassName, getColorByAccess } from "../../utils/helpers";
 import Link from "next/link";
-import { useAppContext } from "@/contex";
+import { useAppContext } from "../../contex";
 
 export function NodeCard({ data }: any) {
   const [highlighted, setHighlighted] = useState(false);

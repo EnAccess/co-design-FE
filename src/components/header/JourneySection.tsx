@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "../cards/StepCard";
-import ForwardArrow from "../icons/ForwardArrow";
+import { uniqueFilteredData } from "@/data/co-design/filtered-data";
 
 const JourneySection = () => {
   return (
@@ -10,18 +10,11 @@ const JourneySection = () => {
       </p>
       <div className="h-full flex items-center -my-8">
         <div className="">
-          <div className="flex justify-center items-center my-2">
-            <Card text="Design" />
-            <ForwardArrow />
-            <Card text="Stakeholder Mapping" />
-            <ForwardArrow />
-            <Card text="Needs Assessment" />
-            <ForwardArrow />
-            <Card text="Implementation" />
-            <ForwardArrow />
-            <Card text="M&E" />
+          <div className="flex gap-3 items-center my-2">
+            {uniqueFilteredData.map((data, index) => (
+              <Card key={index} text={data} />
+            ))}
           </div>
-
           <div className="m-2 p-3 bg-gray-400 text-white flex rounded-lg justify-around text-xl  items-center">
             <p className="text-md font-semibold">Early Concept</p>
             <p className="text-md font-semibold">{"->"}</p>

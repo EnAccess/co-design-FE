@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "../cards/StepCard";
-import { uniqueFilteredData } from "../../data/design-journey/filtered-data";
 import ForwardArrow from "../icons/ForwardArrow";
+import { data, filteredStepData } from "../../data/design-step/step-data";
 
 const JourneySection = () => {
   return (
@@ -12,19 +12,23 @@ const JourneySection = () => {
       <div className="h-full flex items-center -my-8">
         <div>
           <div className={"flex gap-1 items-center my-2"}>
-            {uniqueFilteredData.map((data, index) => (
+            {filteredStepData.map((data, index) => (
               <>
                 <Card key={index} text={data} />
-                {index < uniqueFilteredData.length - 1 && <ForwardArrow />}
+                {index < filteredStepData.length - 1 && <ForwardArrow />}
               </>
             ))}
           </div>
           <div className="m-2 p-3 bg-gray-400 text-white flex rounded-lg justify-around text-xl  items-center">
-            <p className="text-md font-semibold">Early Concept</p>
-            <p className="text-md font-semibold">{"->"}</p>
-            <p className="text-md font-semibold">Software Development</p>
-            <p className="text-md font-semibold">{"->"}</p>
-            <p className="text-md font-semibold">Action and testing</p>
+            {data.map((item, index) => (
+              <>
+                <p className="text-md font-semibold " key={index}>
+                  {item.description}
+                </p>
+                {index < data.length - 1 ? '->' : null}
+
+              </>
+            ))}
           </div>
         </div>
       </div>

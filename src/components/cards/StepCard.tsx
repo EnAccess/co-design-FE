@@ -1,17 +1,15 @@
-import { getEntryKeys } from "../../utils/helpers";
-import React, { useEffect, useMemo, useState } from "react";
-import { useAppContext } from "../../contex";
-
+import { useAppContext } from "@/context/app";
+import { useEffect, useState } from "react";
 
 const StepCard = ({ text }: { text: string }) => {
-  const [step, setStep] = useState<string>('');
-  const { setEntryKeys } = useAppContext();
-  const getEntryKeysArray = useMemo(() => getEntryKeys(step), [step]);
+
+  const { setHighlightedNodes } = useAppContext();
+  const [step, setStep] = useState<string>("");
 
   useEffect(() => {
-    setEntryKeys(getEntryKeysArray);
-    setStep('')
-  }, [getEntryKeysArray]);
+    setHighlightedNodes({ attribute: "Step", value: step });
+  })
+
   return (
     <button
       onClick={() => setStep(text)}

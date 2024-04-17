@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import output from '../../public/data.json';
+
 export const getBgColorClassName = (data: any) => {
   const level = Number(
     Array.isArray(data.PARSED_MANUAL_TAGS?.CO_DESIGN_LEVEL)
@@ -36,15 +36,14 @@ export function getColorByAccess(accessType: string) {
   }
 }
 
-export const getEntryKeys = (highlightedTag: any) => {
-  const hasHighlightedElements = (entry: any) =>
-    entry?.PARSED_MANUAL_TAGS?.["CASE STUDY LEVEL"]?.includes(highlightedTag) ||
-    entry?.PARSED_MANUAL_TAGS?.["CASE STUDY TECH"]?.includes(highlightedTag) ||
-    entry?.PARSED_MANUAL_TAGS?.["PROJECT STEP"]?.includes(highlightedTag);
-
-  return output.filter(hasHighlightedElements).map((entry) => entry.Key);
+export const checkHighlightedNodes = (
+  entry: any,
+  attribute: any,
+  value: any
+) => {
+  const attributeValues = entry?.PARSED_MANUAL_TAGS?.[attribute];
+  return Array.isArray(attributeValues) && attributeValues.includes(value);
 };
-
 
 export const getAnchorPosition = (start: any, end: any) => {
   if (!start && !end) {

@@ -1,15 +1,15 @@
 import { createContext, useContext, useState } from "react";
 
 export type ContextType = {
-  entryKeys: string[];
-  setEntryKeys: any;
+  highlightedKeys: string[];
+  setHighlightedKeys: any;
 };
 const AppContext = createContext<ContextType | undefined>(undefined);
 
 export function ContextProvider({ children }: { children: React.ReactNode }) {
-  const [entryKeys, setEntryKeys] = useState([]);
+  const [highlightedKeys, setHighlightedKeys] = useState([]);
   return (
-    <AppContext.Provider value={{ entryKeys, setEntryKeys }}>
+    <AppContext.Provider value={{ highlightedKeys, setHighlightedKeys }}>
       {children}
     </AppContext.Provider>
   );

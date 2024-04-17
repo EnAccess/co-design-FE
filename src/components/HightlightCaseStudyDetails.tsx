@@ -1,10 +1,8 @@
-import React from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import ArrowDown from "./icons/ArrowDown";
-import { Highlights } from "@/data/case-studies";
-
-interface Props {
-  setHighlightedElement: (element: string) => void;
-}
+import Highlights from "@/data/case-studies/highlight";
+import { getEntryKeys } from "@/utils/helpers";
+import { useAppContext } from "@/context";
 
 const HighlightsBottons = (
   entries: string[],
@@ -24,7 +22,19 @@ const HighlightsBottons = (
   </div>
 );
 
-const HighlightCaseStudyDetails = ({ setHighlightedElement }: Props) => {
+const HighlightCaseStudyDetails = () => {
+  const [highlightedElement, setHighlightedElement] = useState<string>("");
+  const { setHighlightedKeys } = useAppContext();
+
+  const entryKeysArray = useMemo(
+    () => getEntryKeys(highlightedElement),
+    [highlightedElement]
+  );
+
+  useEffect(() => {
+    setHighlightedKeys(entryKeysArray);
+    setHighlightedElement("");
+  }, [entryKeysArray]);
   return (
     <>
       {Highlights.map((data, index) => (

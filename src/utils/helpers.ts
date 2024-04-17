@@ -1,4 +1,5 @@
 import classNames from "classnames";
+import output from "../../public/data.json";
 
 export const getBgColorClassName = (data: any) => {
   const level = Number(
@@ -35,6 +36,15 @@ export function getColorByAccess(accessType: string) {
       return "transparent";
   }
 }
+
+export const getEntryKeys = (highlightedTag: any) => {
+  const hasHighlightedElements = (entry: any) =>
+    entry?.PARSED_MANUAL_TAGS?.["CASE STUDY LEVEL"]?.includes(highlightedTag) ||
+    entry?.PARSED_MANUAL_TAGS?.["CASE STUDY TECH"]?.includes(highlightedTag) ||
+    entry?.PARSED_MANUAL_TAGS?.["PROJECT STEP"]?.includes(highlightedTag);
+
+  return output.filter(hasHighlightedElements).map((entry) => entry.Key);
+};
 
 export const getAnchorPosition = (start: any, end: any) => {
   if (!start && !end) {

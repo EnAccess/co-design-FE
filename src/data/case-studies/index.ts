@@ -31,34 +31,4 @@ const groups: Group[] = [
   },
 ] as unknown as Group[];
 
-const getEntryKeys = (highlightedElement: any) =>
-  output
-    .filter(
-      (entry) =>
-        entry?.PARSED_MANUAL_TAGS?.["CASE STUDY LEVEL"]?.includes(
-          highlightedElement
-        ) ||
-        entry?.PARSED_MANUAL_TAGS?.["CASE STUDY TECH"]?.includes(
-          highlightedElement
-        )
-    )
-    .map((entry) => entry.Key);
-
-const Highlights = [
-  {
-    title: "Highlight Case Study Details",
-    blocks: [
-      {
-        title: "Case Study Implementation Level",
-        style: "bg-black-900 text-white",
-        entries: levels,
-      },
-      {
-        title: "Case Study Technology",
-        style: "bg-white text-black",
-        entries: technologies,
-      },
-    ],
-  },
-];
-export { getEntryKeys, groups, Highlights };
+export default groups;

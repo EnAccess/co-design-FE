@@ -1,10 +1,4 @@
-import React, {
-  Dispatch,
-  SetStateAction,
-  useEffect,
-  useMemo,
-  useState,
-} from "react";
+import React, { useEffect, useState } from "react";
 import ArrowDown from "./icons/ArrowDown";
 import Highlights from "@/data/case-studies/highlight";
 import { useAppContext } from "@/context/app";

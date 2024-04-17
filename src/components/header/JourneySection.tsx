@@ -1,11 +1,11 @@
 import React from "react";
 import Card from "../cards/StepCard";
-import { uniqueFilteredData } from "@/data/co-design/filtered-data";
+import { uniqueFilteredData } from "../../data/design-journey/filtered-data";
 import ForwardArrow from "../icons/ForwardArrow";
 
 const JourneySection = () => {
   return (
-    <div className="">
+    <div>
       <p className="text-center text-gray-500 text-xl font-bold mb-3 ">
         Select Step in The Co-design Journey
       </p>

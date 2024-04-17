@@ -1,19 +1,27 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, {
+  Dispatch,
+  SetStateAction,
+  useEffect,
+  useMemo,
+  useState,
+} from "react";
 import ArrowDown from "./icons/ArrowDown";
 import Highlights from "@/data/case-studies/highlight";
-import { getEntryKeys } from "@/utils/helpers";
-import { useAppContext } from "@/context";
+import { useAppContext } from "@/context/app";
 
 const HighlightsBottons = (
   entries: string[],
   style: string,
-  setHighlightedElement: (element: string) => void
+  attribute: string,
+  setHighlightedElement: any
 ) => (
   <div className="flex flex-col gap-2 p-4 h-72 overflow-y-auto">
     {entries.map((element, index) => (
       <button
         key={index}
-        onClick={() => setHighlightedElement(element)}
+        onClick={() =>
+          setHighlightedElement({ attribute: attribute, value: element })
+        }
         className={`border border-gray-500 p-4 rounded-lg ${style}`}
       >
         {element}
@@ -23,18 +31,13 @@ const HighlightsBottons = (
 );
 
 const HighlightCaseStudyDetails = () => {
-  const [highlightedElement, setHighlightedElement] = useState<string>("");
-  const { setHighlightedKeys } = useAppContext();
-
-  const entryKeysArray = useMemo(
-    () => getEntryKeys(highlightedElement),
-    [highlightedElement]
-  );
+  const [highlightedElement, setHighlightedElement] = useState(null);
+  const { setHighlightedNodes } = useAppContext();
 
   useEffect(() => {
-    setHighlightedKeys(entryKeysArray);
-    setHighlightedElement("");
-  }, [entryKeysArray]);
+    if (highlightedElement) setHighlightedNodes(highlightedElement);
+    setHighlightedElement(null);
+  }, [highlightedElement]);
   return (
     <>
       {Highlights.map((data, index) => (
@@ -54,6 +57,7 @@ const HighlightCaseStudyDetails = () => {
                     {HighlightsBottons(
                       block.entries,
                       block.style,
+                      block.attribute,
                       setHighlightedElement
                     )}
                   </div>

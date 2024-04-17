@@ -1,31 +1,16 @@
-import { useState, useEffect, useRef } from "react";
 import { Handle, Position } from "reactflow";
 import "reactflow/dist/style.css";
 import Star from "@/components/icons/Star";
 import { getBgColorClassName, getColorByAccess } from "@/utils/helpers";
 import Link from "next/link";
-import { useAppContext } from "@/context";
+import { useHighlight } from "@/hook/useHighlight";
 
 export function NodeCard({ data }: any) {
-  const [highlighted, setHighlighted] = useState(false);
-  const { highlightedKeys } = useAppContext();
+  const highlighted = useHighlight(data);
   const bgColor = getBgColorClassName(data);
   const dataAccess = data?.PARSED_MANUAL_TAGS?.ACCESS?.[0];
   const starColor = getColorByAccess(dataAccess);
   const summary = data.Notes?.replace(/<[^>]*>?/gm, "");
-  const timerRef = useRef<number | null>(null);
-
-  useEffect(() => {
-    if (highlightedKeys.includes(data.Key)) {
-      setHighlighted(true);
-      if (timerRef.current !== null) {
-        clearTimeout(timerRef.current);
-      }
-      timerRef.current = window.setTimeout(() => {
-        setHighlighted(false);
-      }, 2000);
-    }
-  }, [data.Key, highlightedKeys]);
 
   return (
     <div className="group cursor-pointer">

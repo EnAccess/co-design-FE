@@ -1,6 +1,6 @@
 import React from "react";
 import ArrowDown from "./icons/ArrowDown";
-import { Hightlights } from "@/data/case-studies";
+import { Hightlights } from "../data/case-studies";
 
 interface Props {
   setHightlightedElement: (element: string) => void;

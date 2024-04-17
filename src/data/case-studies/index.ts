@@ -1,4 +1,4 @@
-import { Group } from "@/types/interfaces";
+import { Group } from "../../types/interfaces";
 import output from "../../../public/data.json";
 import { technologies } from "./technologies";
 import { levels } from "./levels";
@@ -31,19 +31,6 @@ const groups: Group[] = [
   },
 ] as unknown as Group[];
 
-const getEntryKeys = (hightlightedElement: any) =>
-  output
-    .filter(
-      (entry) =>
-        entry?.PARSED_MANUAL_TAGS?.["CASE STUDY LEVEL"]?.includes(
-          hightlightedElement
-        ) ||
-        entry?.PARSED_MANUAL_TAGS?.["CASE STUDY TECH"]?.includes(
-          hightlightedElement
-        )
-    )
-    .map((entry) => entry.Key);
-
 const Hightlights = [
   {
     title: "Hightlight Case Study Details",
@@ -61,4 +48,4 @@ const Hightlights = [
     ],
   },
 ];
-export { getEntryKeys, groups, Hightlights };
+export { groups, Hightlights };

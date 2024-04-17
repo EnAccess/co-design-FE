@@ -1,10 +1,11 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 
-import HightlightCaseStudyDetails from "@/components/HightlightCaseStudyDetails";
-import { getEntryKeys, groups } from "@/data/case-studies";
+import HightlightCaseStudyDetails from "../components/HightlightCaseStudyDetails";
+import {  groups } from "../data/case-studies";
 import { useEffect, useState, useMemo } from "react";
-import { useAppContext } from "@/contex";
-import Group from "@/components/Group";
+import { useAppContext } from "../contex";
+import Group from "../components/Group";
+import { getEntryKeys } from "../utils/helpers";
 
 const caseStudiesAndCoreTools = () => {
   const { setEntryKeys } = useAppContext();

@@ -6,7 +6,7 @@ const LevelCard = ({
   title,
   description,
 }: {
-  level: number;
+  level: string | number;
   title: string;
   description: string;
 }) => {
@@ -17,12 +17,14 @@ const LevelCard = ({
     "bg-level-primary-3 border-level-secondary-3": level == 3,
   });
   return (
-    <button
-      className={`${bgColor} rounded-lg border w-44 flex flex-col items-center justify-center h-16 cursor-pointer`}
-    >
-      <p className="text-center text-base font-semibold">{title}</p>
-      <p className="text-center text-xs font-medium">{description}</p>
-    </button>
+    <div className="flex justify-center">
+      <button
+        className={`${bgColor} rounded-lg border w-44 flex flex-col items-center justify-center h-16 cursor-pointer`}
+      >
+        <p className="text-center text-base font-semibold">{title}</p>
+        <p className="text-center text-xs font-medium">{description}</p>
+      </button>
+    </div>
   );
 };
 

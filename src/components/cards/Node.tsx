@@ -17,9 +17,9 @@ export function NodeCard({ data }: any) {
       <Handle type="target" position={Position.Top} id={data.Key} />
       <Link href={data?.Url} target="_blank">
         <div
-          className={`py-4 px-2 text-xs w-52 rounded-md border-solid border-2 hover:border-4 box-content hover:relative transition-colors duration-1000hover:border-purple-500 ${bgColor} ${
-            highlighted && "border-4 border-[#7dcff5]"
-          }`}
+          className={`py-4 px-2 text-xs w-52 rounded-md border-solid border-2 hover:border-4 box-content hover:relative transition-colors duration-1000 ${
+            highlighted && "border-sky-300 border-4"
+          } hover:border-purple-500 ${bgColor}`}
         >
           <div className="relative">
             <p className="z-10">{data.Title}</p>

@@ -43,6 +43,7 @@ const config: Config = {
     "border-level-secondary-3",
     "border-level-secondary-default",
     "bg-black-900",
+    "sky-300",
   ],
   theme: {
     extend: {

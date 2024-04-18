@@ -1,6 +1,7 @@
 export const hasTag = (entry: any, name: any, value: any) => {
   const attributeValues = entry?.PARSED_MANUAL_TAGS?.[name];
-  return Array.isArray(attributeValues) && attributeValues.includes(value);
+  if (Array.isArray(attributeValues)) return attributeValues.includes(value);
+  return attributeValues === value;
 };
 
 export const getButtonsStyle = (type: string) => {

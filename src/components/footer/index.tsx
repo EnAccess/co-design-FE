@@ -5,8 +5,8 @@ import { getColorByAccess } from "../../utils/helpers";
 
 const Footer = () => {
   return (
-    <footer className="text-center my-4 p-4 px-8 text-base font-bold float-end border-2 border-gray-600 mr-14 mb-4">
-      <h2 className="py-5">All Resources are Open Access: unless indicated:</h2>
+    <footer className="text-center my-4 p-4 px-8 text-base font-bold float-end border-2 border-gray-600 mr-14">
+      <h2 className="mb-4">All Resources are Open Access: unless indicated:</h2>
       {uniqueDataSources.map((source, index) => {
         const color = getColorByAccess(source);
         return (

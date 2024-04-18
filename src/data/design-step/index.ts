@@ -6,7 +6,7 @@ const stepData = output
   .flat()
   .filter((data) => data !== null);
 
-export const filteredStepData = [...new Set(stepData)];
+export const filteredStepData = Array.from(new Set(stepData));
 
 export const data = Object.values(steps).map((step) => {
   return {

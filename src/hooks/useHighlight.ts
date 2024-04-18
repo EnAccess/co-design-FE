@@ -1,4 +1,4 @@
-import { useAppContext } from "@/context/app";
+import { useAppContext } from "@/context/provider";
 import { Entry } from "@/types/interfaces";
 import { hasTag } from "@/utils/helpers";
 import { useCallback, useEffect, useRef, useState } from "react";

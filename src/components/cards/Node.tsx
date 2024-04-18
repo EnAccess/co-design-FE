@@ -3,7 +3,7 @@ import "reactflow/dist/style.css";
 import Star from "@/components/icons/Star";
 import { getBgColorClassName, getColorByAccess } from "@/utils/helpers";
 import Link from "next/link";
-import { useHighlight } from "@/hook/useHighlight";
+import { useHighlight } from "@/hooks/useHighlight";
 
 export function NodeCard({ data }: any) {
   const highlighted = useHighlight(data);

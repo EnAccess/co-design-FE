@@ -26,10 +26,10 @@ const HighlightsBottons = (
 
 const HighlightCaseStudyDetails = () => {
   const [highlightedElement, setHighlightedElement] = useState(null);
-  const { setHighlightedNodes } = useAppContext();
+  const { setHighlightedTag } = useAppContext();
 
   useEffect(() => {
-    if (highlightedElement) setHighlightedNodes(highlightedElement);
+    if (highlightedElement) setHighlightedTag(highlightedElement);
     setHighlightedElement(null);
   }, [highlightedElement]);
   return (

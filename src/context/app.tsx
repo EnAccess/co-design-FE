@@ -1,19 +1,19 @@
 import { createContext, useContext, useState } from "react";
 
-interface Node {
-  attribute: string;
+interface Tags {
+  name: string;
   value: string | number;
 }
 export type ContextType = {
-  highlightedNodes: any;
-  setHighlightedNodes: any;
+  highlightedTag: any;
+  setHighlightedTag: any;
 };
 const AppContext = createContext<ContextType | undefined>(undefined);
 
 export function ContextProvider({ children }: { children: React.ReactNode }) {
-  const [highlightedNodes, setHighlightedNodes] = useState(null);
+  const [highlightedTag, setHighlightedTag] = useState<Tags | null>(null);
   return (
-    <AppContext.Provider value={{ highlightedNodes, setHighlightedNodes }}>
+    <AppContext.Provider value={{ highlightedTag, setHighlightedTag }}>
       {children}
     </AppContext.Provider>
   );

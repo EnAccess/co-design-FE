@@ -2,10 +2,11 @@ import React, { useEffect, useState } from "react";
 import ArrowDown from "./icons/ArrowDown";
 import Highlights from "@/data/case-studies/highlight";
 import { useAppContext } from "@/context/app";
+import { getButtonClass } from "@/utils/helpers";
 
 const HighlightsBottons = (
   entries: string[],
-  style: string,
+  type: string,
   attribute: string,
   setHighlightedElement: any
 ) => (
@@ -14,9 +15,11 @@ const HighlightsBottons = (
       <button
         key={index}
         onClick={() =>
-          setHighlightedElement({ attribute: attribute, value: element })
+          setHighlightedElement({ name: attribute, value: element })
         }
-        className={`border border-gray-500 p-4 rounded-lg ${style}`}
+        className={`border border-gray-500 p-4 rounded-lg ${getButtonClass(
+          type
+        )}`}
       >
         {element}
       </button>
@@ -27,9 +30,9 @@ const HighlightsBottons = (
 const HighlightCaseStudyDetails = () => {
   const [highlightedElement, setHighlightedElement] = useState(null);
   const { setHighlightedTag } = useAppContext();
-
   useEffect(() => {
-    if (highlightedElement) setHighlightedTag(highlightedElement);
+    if (!highlightedElement) return;
+    setHighlightedTag(highlightedElement);
     setHighlightedElement(null);
   }, [highlightedElement]);
   return (
@@ -50,7 +53,7 @@ const HighlightCaseStudyDetails = () => {
                     </h1>
                     {HighlightsBottons(
                       block.entries,
-                      block.style,
+                      block.type,
                       block.attribute,
                       setHighlightedElement
                     )}

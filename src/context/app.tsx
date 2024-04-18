@@ -1,17 +1,23 @@
-import { createContext, useContext, useState } from "react";
+import {
+  Dispatch,
+  SetStateAction,
+  createContext,
+  useContext,
+  useState,
+} from "react";
 
-interface Tags {
+interface Tag {
   name: string;
   value: string | number;
 }
 export type ContextType = {
-  highlightedTag: any;
-  setHighlightedTag: any;
+  highlightedTag: Tag | null;
+  setHighlightedTag: Dispatch<SetStateAction<Tag | null>>;
 };
 const AppContext = createContext<ContextType | undefined>(undefined);
 
 export function ContextProvider({ children }: { children: React.ReactNode }) {
-  const [highlightedTag, setHighlightedTag] = useState<Tags | null>(null);
+  const [highlightedTag, setHighlightedTag] = useState<Tag | null>(null);
   return (
     <AppContext.Provider value={{ highlightedTag, setHighlightedTag }}>
       {children}

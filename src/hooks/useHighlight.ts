@@ -1,6 +1,6 @@
 import { useAppContext } from "@/context/app";
 import { Entry } from "@/types/interfaces";
-import { checkHighlightedNodes } from "@/utils/helpers";
+import { hasTag } from "@/utils/helpers";
 import { useCallback, useEffect, useRef, useState } from "react";
 
 export const useHighlight = (entry: Entry) => {
@@ -11,13 +11,11 @@ export const useHighlight = (entry: Entry) => {
 
   const onHighlight = useCallback(() => {
     if (!highlightedTag) return;
-    const isHighlightedNode = checkHighlightedNodes(
-      entry,
-      highlightedTag.attribute,
-      highlightedTag.value
-    );
-    if (!isHighlightedNode) return;
+    const isTag = hasTag(entry, highlightedTag.name, highlightedTag.value);
+
+    if (!isTag) return;
     setHighlighted(true);
+
     if (timerRef.current !== null) {
       clearTimeout(timerRef.current);
     }

@@ -37,15 +37,21 @@ export function getColorByAccess(accessType: string) {
   }
 }
 
-export const checkHighlightedNodes = (
-  entry: any,
-  attribute: any,
-  value: any
-) => {
-  const attributeValues = entry?.PARSED_MANUAL_TAGS?.[attribute];
+export const hasTag = (entry: any, name: any, value: any) => {
+  const attributeValues = entry?.PARSED_MANUAL_TAGS?.[name];
   return Array.isArray(attributeValues) && attributeValues.includes(value);
 };
 
+export const getButtonClass = (type: string) => {
+  switch (type) {
+    case "main":
+      return "bg-black-900 text-white";
+    case "default":
+      return "bg-white text-black";
+    default:
+      return "";
+  }
+};
 export const getAnchorPosition = (start: any, end: any) => {
   if (!start && !end) {
     return;

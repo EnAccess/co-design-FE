@@ -11,7 +11,6 @@ export function NodeCard({ data }: any) {
   const dataAccess = data?.PARSED_MANUAL_TAGS?.ACCESS?.[0];
   const starColor = getColorByAccess(dataAccess);
   const summary = data.Notes?.replace(/<[^>]*>?/gm, "");
-
   return (
     <div className="group cursor-pointer">
       <Handle type="target" position={Position.Top} id={data.Key} />
@@ -24,7 +23,6 @@ export function NodeCard({ data }: any) {
           <div className="relative">
             <p className="z-10">{data.Title}</p>
             <p className="z-10">{data.Author}</p>
-
             {(dataAccess === "Institutional Access" ||
               dataAccess === "Paid Service" ||
               dataAccess === "Open Source") && (

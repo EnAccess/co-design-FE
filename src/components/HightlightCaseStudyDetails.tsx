@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import ArrowDown from "./icons/ArrowDown";
 import Highlights from "@/data/case-studies/highlight";
 import { useAppContext } from "@/context/app";
-import { getButtonClass } from "@/utils/helpers";
+import { getButtonsStyle } from "@/utils/helpers";
 
-const HighlightsBottons = (
+const buttons = (
   entries: string[],
   type: string,
   attribute: string,
@@ -17,7 +17,7 @@ const HighlightsBottons = (
         onClick={() =>
           setHighlightedElement({ name: attribute, value: element })
         }
-        className={`border border-gray-500 p-4 rounded-lg ${getButtonClass(
+        className={`border border-gray-500 p-4 rounded-lg ${getButtonsStyle(
           type
         )}`}
       >
@@ -53,7 +53,7 @@ const HighlightCaseStudyDetails = () => {
                     <h1 className="text-center text-gray-500 text-xl font-bold mb-3">
                       {block.title}
                     </h1>
-                    {HighlightsBottons(
+                    {buttons(
                       block.entries,
                       block.type,
                       block.attribute,

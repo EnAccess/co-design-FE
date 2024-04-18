@@ -3,7 +3,7 @@ export const hasTag = (entry: any, name: any, value: any) => {
   return Array.isArray(attributeValues) && attributeValues.includes(value);
 };
 
-export const getButtonClass = (type: string) => {
+export const getButtonsStyle = (type: string) => {
   switch (type) {
     case "main":
       return "bg-black-900 text-white";

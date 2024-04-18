@@ -4,7 +4,7 @@ import { hasTag } from "@/utils/helpers";
 import { useCallback, useEffect, useRef, useState } from "react";
 
 export const useHighlight = (entry: Entry) => {
-  const [highlighted, setHighlighted] = useState(false);
+  const [highlighted, setHighlighted] = useState<boolean>(false);
 
   const timerRef = useRef<number | null>(null);
   const { highlightedTag } = useAppContext();

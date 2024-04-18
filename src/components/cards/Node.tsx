@@ -1,7 +1,7 @@
 import { Handle, Position } from "reactflow";
 import "reactflow/dist/style.css";
 import Star from "@/components/icons/Star";
-import { getBgColorClassName, getColorByAccess } from "@/utils/helpers";
+import { getBgColorClassName, getColorByAccess } from "@/utils/nodes";
 import Link from "next/link";
 import { useHighlight } from "@/hooks/useHighlight";
 

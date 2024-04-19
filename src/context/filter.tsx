@@ -10,16 +10,16 @@ interface Tag {
   name: string;
   value: string | number;
 }
-export type ContextType = {
-  tag: Tag[] | null;
-  setTag: Dispatch<SetStateAction<Tag[] | null>>;
+export type FilterContextType = {
+  tags: Tag | null;
+  setTag: Dispatch<SetStateAction<Tag | null>>;
 };
-const FilterContext = createContext<ContextType | undefined>(undefined);
+const FilterContext = createContext<FilterContextType | undefined>(undefined);
 
 export function FilterProvider({ children }: { children: React.ReactNode }) {
-  const [tag, setTag] = useState<Tag[] | null>(null);
+  const [tags, setTag] = useState<Tag | null>(null);
   return (
-    <FilterContext.Provider value={{ tag, setTag }}>
+    <FilterContext.Provider value={{ tags, setTag }}>
       {children}
     </FilterContext.Provider>
   );

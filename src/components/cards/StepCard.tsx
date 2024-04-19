@@ -1,13 +1,13 @@
-import { useAppContext } from "../../context/app";
+import { useAppContext } from "../../context/provider";
 import { useEffect, useState } from "react";
 
 const StepCard = ({ text }: { text: string }) => {
 
-  const { setHighlightedNodes } = useAppContext();
+  const { setHighlightedTag } = useAppContext();
   const [step, setStep] = useState<string>("");
 
   useEffect(() => {
-    setHighlightedNodes({ attribute: "PROJECT STEP", value: step });
+    setHighlightedTag({ name: "PROJECT STEP", value: step });
   },[step])
 
   return (

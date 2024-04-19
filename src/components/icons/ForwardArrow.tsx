@@ -1,7 +1,7 @@
-const ForwardArrow = () => {
+const ForwardArrow = ({ color = "#000000" }: any) => {
   return (
     <svg
-      fill="#000000"
+      fill={color}
       width="30px"
       height="30px"
       viewBox="0 0 24 24"

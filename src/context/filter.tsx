@@ -1,25 +1,28 @@
-import {
-  Dispatch,
-  SetStateAction,
-  createContext,
-  useContext,
-  useState,
-} from "react";
+import { createContext, useCallback, useContext, useState } from "react";
 
-interface Tag {
-  name: string;
-  value: string | number;
-}
 export type FilterContextType = {
-  tags: Tag | null;
-  setTag: Dispatch<SetStateAction<Tag | null>>;
+  field: string;
+  value: string | number;
+  setTag: (field: string, value: string | number) => void;
 };
 const FilterContext = createContext<FilterContextType | undefined>(undefined);
 
 export function FilterProvider({ children }: { children: React.ReactNode }) {
-  const [tags, setTag] = useState<Tag | null>(null);
+  //  const[tag,setTag]=useState(null)
+  const [field, setField] = useState<string>("");
+  const [value, setValue] = useState<string | number>("");
+
+  const setTag = useCallback(
+    (field: string, value: string | number) => {
+      setField(field);
+      setValue(value);
+    },
+    [field, value]
+  );
+
+  console.log("first", field, value);
   return (
-    <FilterContext.Provider value={{ tags, setTag }}>
+    <FilterContext.Provider value={{ field, value, setTag }}>
       {children}
     </FilterContext.Provider>
   );

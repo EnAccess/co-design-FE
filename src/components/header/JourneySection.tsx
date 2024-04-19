@@ -29,11 +29,11 @@ const JourneySection = () => {
 
           <div className="m-2 p-3 bg-gray-400 text-white flex rounded-lg justify-around text-xl  items-center">
             {steps.map((step, index) => (
-              <div key={index}>
-                <p className="text-md font-semibold">
-                  {step.description}
-                </p>
-                {index < steps.length - 1 ? "->" : null}
+              <div key={index} className="flex gap-4 items-center">
+                <p className="text-md font-semibold">{step.description}</p>
+                {index < steps.length - 1 ? (
+                  <ForwardArrow color="#ffffff" />
+                ) : null}
               </div>
             ))}
           </div>

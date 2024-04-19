@@ -1,7 +1,7 @@
 import React from "react";
 import Line from "../icons/Line";
 import LevelCard from "../cards/Level";
-import practiceLevels from "@/data/navigation";
+import practiceLevels from "@/data/practice";
 
 const length = practiceLevels.length;
 const PracticeSection = ({ title }: { title: string }) => {
@@ -80,3 +80,6 @@ const PracticeSection = ({ title }: { title: string }) => {
 };
 
 export default PracticeSection;
+function useSelectedContext(): { setTag: any } {
+  throw new Error("Function not implemented.");
+}

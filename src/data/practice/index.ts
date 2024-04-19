@@ -1,7 +1,7 @@
 import { levels } from "./levels";
-import { practice } from "./navigationData";
+import { levelsData } from "./levels-data";
 
-const practiceLevels = practice.map((level, index) => ({
+const practiceLevels = levelsData.map((level, index) => ({
   ...level,
   level: levels[index],
 }));

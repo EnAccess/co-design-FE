@@ -9,24 +9,26 @@ interface Props {
   description: string;
 }
 const LevelCard = ({ level, title, attribute, description }: Props) => {
-  const [selectedLevel, setSelectedLevel] = useState<
-    { name: string; value: string } | any
+  const [selectedTag, setSelectedTag] = useState<
+    { field: string; value: string } | any
   >(null);
-  const { tag, setTag } = useFilterContext();
+  const { setTag: setFilterTag } = useFilterContext();
   useEffect(() => {
-    if (!selectedLevel) return;
-    setTag((prev: any) => {
-      if (!prev || !Array.isArray(prev)) {
-        prev = [];
-      }
-      const hasTag = prev.some((tag: any) => tag.value === selectedLevel.value);
-      return hasTag
-        ? prev.filter((tag: any) => tag.value !== selectedLevel.value)
-        : [...prev, selectedLevel];
-    });
+    if (!selectedTag) return;
+    setFilterTag(selectedTag.field, selectedTag.value); // Pass name and value to setFilterTag
 
-    setSelectedLevel(null);
-  }, [selectedLevel]);
+    // setTag((prev: any) => {
+    //   if (!prev || !Array.isArray(prev)) {
+    //     prev = [];
+    //   }
+    //   const hasTag = prev.some((tag: any) => tag.value === selectedTag.value);
+    //   return hasTag
+    //     ? prev.filter((tag: any) => tag.value !== selectedTag.value)
+    //     : [...prev, selectedTag];
+    // });
+
+    setSelectedTag(null);
+  }, [selectedTag]);
 
   const bgColor = classNames({
     "bg-level-primary-0 border-level-secondary-0": level == "0",
@@ -37,9 +39,9 @@ const LevelCard = ({ level, title, attribute, description }: Props) => {
   return (
     <div className="flex justify-center">
       <button
-        onClick={() => setSelectedLevel({ name: attribute, value: level })}
+        onClick={() => setSelectedTag({ field: attribute, value: level })}
         className={`${
-          // selectedLevels.includes(level)
+          // selectedTags.includes(level)
           true ? "bg-white border-2 border-black-900" : bgColor
         } rounded-lg border w-44 flex flex-col items-center justify-center h-16 cursor-pointer`}
       >

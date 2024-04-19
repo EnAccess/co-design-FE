@@ -1,4 +1,4 @@
-export const practice = [
+export const levelsData = [
   {
     title: "Level 0",
     attribute: "CO_DESIGN_LEVEL",

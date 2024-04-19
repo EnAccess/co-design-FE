@@ -5,13 +5,16 @@ import type { AppProps } from "next/app";
 import { DefaultSeo } from "next-seo";
 import SEO from "../../next-seo.config";
 import { HighlightProvider } from "../context/highlight";
+import { FilterProvider } from "@/context/filter";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <HighlightProvider>
-      <DefaultSeo {...SEO} />
-      <Header />
-      <Component {...pageProps} />
-    </HighlightProvider>
+    <FilterProvider>
+      <HighlightProvider>
+        <DefaultSeo {...SEO} />
+        <Header />
+        <Component {...pageProps} />
+      </HighlightProvider>
+    </FilterProvider>
   );
 }

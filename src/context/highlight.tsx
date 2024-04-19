@@ -1,26 +1,26 @@
-import {
-  createContext,
-  useCallback,
-  useContext,
-  useState
-} from "react";
+import { createContext, useCallback, useContext, useState } from "react";
 
 export type HighlightContextType = {
   field: string;
   value: string | number;
   setTag: (field: string, value: string | number) => void;
 };
-const HighlightContext = createContext<HighlightContextType | undefined>(undefined);
+const HighlightContext = createContext<HighlightContextType | undefined>(
+  undefined
+);
 
 export function HighlightProvider({ children }: { children: React.ReactNode }) {
   const [field, setField] = useState<string>("");
   const [value, setValue] = useState<string | number>("");
 
-  const setTag = useCallback((field: string, value: string | number) => {
-    setField(field);
-    setValue(value);
-  }, [field, value]);
-
+  const setTag = useCallback(
+    (field: string, value: string | number) => {
+      setField(field);
+      setValue(value);
+    },
+    [field, value]
+  );
+  console.log("first", field, value);
 
   return (
     <HighlightContext.Provider value={{ field, value, setTag }}>
@@ -32,7 +32,9 @@ export function HighlightProvider({ children }: { children: React.ReactNode }) {
 export function useHighlightContext() {
   const context = useContext(HighlightContext);
   if (context === undefined) {
-    throw new Error("useHighlightContext must be used within an ContextProvider");
+    throw new Error(
+      "useHighlightContext must be used within an ContextProvider"
+    );
   }
   return context;
 }

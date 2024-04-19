@@ -1,4 +1,4 @@
-import { useAppContext } from "@/context/provider";
+import { useHighlightContext } from "@/context/highlight";
 import { Entry } from "@/types/interfaces";
 import { hasTag } from "@/utils/helpers";
 import { useCallback, useEffect, useRef, useState } from "react";
@@ -7,11 +7,11 @@ export const useHighlight = (entry: Entry) => {
   const [highlighted, setHighlighted] = useState<boolean>(false);
 
   const timerRef = useRef<number | null>(null);
-  const { highlightedTag } = useAppContext();
+  const { field, value } = useHighlightContext();
 
   const onHighlight = useCallback(() => {
-    if (!highlightedTag) return;
-    const isTag = hasTag(entry, highlightedTag.name, highlightedTag.value);
+    if (!field) return;
+    const isTag = hasTag(entry, field, value);
 
     if (!isTag) return;
     setHighlighted(true);
@@ -22,11 +22,11 @@ export const useHighlight = (entry: Entry) => {
     timerRef.current = window.setTimeout(() => {
       setHighlighted(false);
     }, 2000);
-  }, [highlightedTag]);
+  }, [field, value]);
 
   useEffect(() => {
     onHighlight();
-  }, [highlightedTag]);
+  }, [onHighlight]);
 
   return highlighted;
 };

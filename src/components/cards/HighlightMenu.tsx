@@ -1,21 +1,23 @@
 import React, { useEffect, useState } from "react";
-import ArrowDown from "./icons/ArrowDown";
+import ArrowDown from "../icons/ArrowDown";
 import Highlights from "@/data/case-studies/highlight";
-import { useAppContext } from "@/context/provider";
+import { useHighlightContext } from "@/context/highlight";
 import { getButtonsStyle } from "@/utils/helpers";
 
-const buttons = (
-  entries: string[],
-  type: string,
-  attribute: string,
-  setHighlightedElement: any
+const OptionsWrapper = (
+  { entries, type, attribute, onClick }: {
+    entries: string[],
+    type: string,
+    attribute: string,
+    onClick: (element: { name: string; value: string | number }) => void
+  }
 ) => (
   <div className="flex flex-col gap-2 p-4 h-72 overflow-y-auto">
     {entries.map((element, index) => (
       <button
         key={index}
         onClick={() =>
-          setHighlightedElement({ name: attribute, value: element })
+          onClick({ name: attribute, value: element })
         }
         className={`border border-gray-500 p-4 rounded-lg ${getButtonsStyle(
           type
@@ -27,16 +29,9 @@ const buttons = (
   </div>
 );
 
-const HighlightCaseStudyDetails = () => {
-  const [highlightedElement, setHighlightedElement] = useState<
-    { name: string; value: string | number } | any
-  >(null);
-  const { setHighlightedTag } = useAppContext();
-  useEffect(() => {
-    if (!highlightedElement) return;
-    setHighlightedTag(highlightedElement);
-    setHighlightedElement(null);
-  }, [highlightedElement]);
+const HighlightMenuCard = () => {
+  const { setTag: setHighlightedTag } = useHighlightContext();
+
   return (
     <>
       {Highlights.map((data, index) => (
@@ -53,12 +48,7 @@ const HighlightCaseStudyDetails = () => {
                     <h1 className="text-center text-gray-500 text-xl font-bold mb-3">
                       {block.title}
                     </h1>
-                    {buttons(
-                      block.entries,
-                      block.type,
-                      block.attribute,
-                      setHighlightedElement
-                    )}
+                    {<OptionsWrapper entries={block.entries} type={block.type} attribute={block.attribute} onClick={({ name, value }) => setHighlightedTag(name, value)} />}
                   </div>
                 </div>
               ))}
@@ -70,4 +60,4 @@ const HighlightCaseStudyDetails = () => {
   );
 };
 
-export default HighlightCaseStudyDetails;
+export default HighlightMenuCard;

@@ -1,10 +1,8 @@
 import {
-  Dispatch,
-  SetStateAction,
   createContext,
   useCallback,
   useContext,
-  useState,
+  useState
 } from "react";
 
 export type HighlightContextType = {

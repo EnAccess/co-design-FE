@@ -23,6 +23,7 @@ const PracticeSection = ({ title }: { title: string }) => {
                           level={level.level}
                           title={level.title}
                           description={level.description}
+                          attribute={level.attribute}
                         />
                       </div>
 
@@ -63,6 +64,7 @@ const PracticeSection = ({ title }: { title: string }) => {
                           level={level.level}
                           title={level.title}
                           description={level.description}
+                          attribute={level.attribute}
                         />
                       </div>
                     </div>

@@ -3,7 +3,7 @@ import { useMemo, useState } from "react";
 import ReactFlow from "reactflow";
 import "reactflow/dist/style.css";
 import { NodeCard } from "./Node";
-import { useSelectedEntries } from "@/hooks/useSelectedEntries";
+import { useSelectedEntries } from "@/hooks/useFilter";
 
 const CONTAINER_HEIGHT = 800;
 const CONTAINER_WIDTH = 1000;

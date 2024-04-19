@@ -1,27 +1,31 @@
-import { useAppContext } from "@/context/provider";
+import { useFilterContext } from "@/context/filter";
 import classNames from "classnames";
 import React, { useEffect, useState } from "react";
 
 interface Props {
   level: string;
   title: string;
+  attribute: string;
   description: string;
 }
-const LevelCard = ({ level, title, description }: Props) => {
-  const [selectedLevel, setSelectedLevel] = useState<string>("");
-  const { selectedLevels, setSelectedLevels } = useAppContext();
+const LevelCard = ({ level, title, attribute, description }: Props) => {
+  const [selectedLevel, setSelectedLevel] = useState<
+    { name: string; value: string } | any
+  >(null);
+  const { tag, setTag } = useFilterContext();
   useEffect(() => {
     if (!selectedLevel) return;
-    setSelectedLevels((prev: string[]) => {
+    setTag((prev: any) => {
       if (!prev || !Array.isArray(prev)) {
         prev = [];
       }
-      const hasLevel = prev.includes(selectedLevel);
-      return hasLevel
-        ? prev.filter((level: string) => level !== selectedLevel)
+      const hasTag = prev.some((tag: any) => tag.value === selectedLevel.value);
+      return hasTag
+        ? prev.filter((tag: any) => tag.value !== selectedLevel.value)
         : [...prev, selectedLevel];
     });
-    setSelectedLevel("");
+
+    setSelectedLevel(null);
   }, [selectedLevel]);
 
   const bgColor = classNames({
@@ -33,11 +37,10 @@ const LevelCard = ({ level, title, description }: Props) => {
   return (
     <div className="flex justify-center">
       <button
-        onClick={() => setSelectedLevel(level)}
+        onClick={() => setSelectedLevel({ name: attribute, value: level })}
         className={`${
-          selectedLevels.includes(level)
-            ? "bg-white border-2 border-black-900"
-            : bgColor
+          // selectedLevels.includes(level)
+          true ? "bg-white border-2 border-black-900" : bgColor
         } rounded-lg border w-44 flex flex-col items-center justify-center h-16 cursor-pointer`}
       >
         <p className="text-center text-base font-semibold">{title}</p>

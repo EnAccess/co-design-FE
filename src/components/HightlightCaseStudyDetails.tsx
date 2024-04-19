@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ArrowDown from "./icons/ArrowDown";
 import Highlights from "@/data/case-studies/highlight";
-import { useAppContext } from "@/context/provider";
+import { useHightlightContext } from "@/context/highlight";
 import { getButtonsStyle } from "@/utils/helpers";
 
 const buttons = (
@@ -31,10 +31,10 @@ const HighlightCaseStudyDetails = () => {
   const [highlightedElement, setHighlightedElement] = useState<
     { name: string; value: string | number } | any
   >(null);
-  const { setHighlightedTag } = useAppContext();
+  const { setTag } = useHightlightContext();
   useEffect(() => {
     if (!highlightedElement) return;
-    setHighlightedTag(highlightedElement);
+    setTag(highlightedElement);
     setHighlightedElement(null);
   }, [highlightedElement]);
   return (

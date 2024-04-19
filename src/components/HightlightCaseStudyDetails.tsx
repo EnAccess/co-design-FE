@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import ArrowDown from "./icons/ArrowDown";
 import Highlights from "@/data/case-studies/highlight";
-import { useAppContext } from "@/context/app";
+import { useAppContext } from "@/context/provider";
+import { getButtonsStyle } from "@/utils/helpers";
 
-const HighlightsBottons = (
+const buttons = (
   entries: string[],
-  style: string,
+  type: string,
   attribute: string,
   setHighlightedElement: any
 ) => (
@@ -14,9 +15,11 @@ const HighlightsBottons = (
       <button
         key={index}
         onClick={() =>
-          setHighlightedElement({ attribute: attribute, value: element })
+          setHighlightedElement({ name: attribute, value: element })
         }
-        className={`border border-gray-500 p-4 rounded-lg ${style}`}
+        className={`border border-gray-500 p-4 rounded-lg ${getButtonsStyle(
+          type
+        )}`}
       >
         {element}
       </button>
@@ -25,11 +28,13 @@ const HighlightsBottons = (
 );
 
 const HighlightCaseStudyDetails = () => {
-  const [highlightedElement, setHighlightedElement] = useState(null);
-  const { setHighlightedNodes } = useAppContext();
-
+  const [highlightedElement, setHighlightedElement] = useState<
+    { name: string; value: string | number } | any
+  >(null);
+  const { setHighlightedTag } = useAppContext();
   useEffect(() => {
-    if (highlightedElement) setHighlightedNodes(highlightedElement);
+    if (!highlightedElement) return;
+    setHighlightedTag(highlightedElement);
     setHighlightedElement(null);
   }, [highlightedElement]);
   return (
@@ -48,9 +53,9 @@ const HighlightCaseStudyDetails = () => {
                     <h1 className="text-center text-gray-500 text-xl font-bold mb-3">
                       {block.title}
                     </h1>
-                    {HighlightsBottons(
+                    {buttons(
                       block.entries,
-                      block.style,
+                      block.type,
                       block.attribute,
                       setHighlightedElement
                     )}

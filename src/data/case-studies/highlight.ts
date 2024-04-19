@@ -7,13 +7,13 @@ const Highlights = [
     blocks: [
       {
         title: "Case Study Implementation Level",
-        style: "bg-black-900 text-white",
+        type: "main",
         attribute: "CASE STUDY LEVEL",
         entries: levels,
       },
       {
         title: "Case Study Technology",
-        style: "bg-white text-black",
+        type: "default",
         attribute: "CASE STUDY TECH",
         entries: technologies,
       },

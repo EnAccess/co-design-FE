@@ -4,7 +4,7 @@ import "reactflow/dist/style.css";
 import type { AppProps } from "next/app";
 import { DefaultSeo } from "next-seo";
 import SEO from "../../next-seo.config";
-import { ContextProvider } from "../context/app";
+import { ContextProvider } from "../context/provider";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (

@@ -5,7 +5,6 @@ import practiceLevels from "@/data/navigation";
 
 const length = practiceLevels.length;
 const PracticeSection = ({ title }: { title: string }) => {
-  console.log("first", practiceLevels);
   return (
     <div className="w-1/3">
       <p className="text-center text-gray-500 text-xl font-bold mb-3">

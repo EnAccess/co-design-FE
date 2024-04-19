@@ -3,6 +3,7 @@ import { useMemo, useState } from "react";
 import ReactFlow from "reactflow";
 import "reactflow/dist/style.css";
 import { NodeCard } from "./Node";
+import { useSelectedEntries } from "@/hooks/useSelectedEntries";
 
 const CONTAINER_HEIGHT = 800;
 const CONTAINER_WIDTH = 1000;
@@ -13,14 +14,20 @@ const NodeTypes = {
 };
 
 const CardCanvas = ({ data, blockHeight, columns }: any) => {
-  const initialEdges = useMemo(() => parseEdges(data), [data]);
+  const selectedEntries = useSelectedEntries(data);
+  // console.log("dataaaaaaaaaaaaaaaa", selectedEntries);
+  const initialEdges = useMemo(
+    () => parseEdges(selectedEntries),
+    [selectedEntries]
+  );
+  console.log("nnnnnnnnnnnnnnnnnnnnnnnnnnn", initialEdges);
   const initialNodes = useMemo(
     () =>
-      parseNodes(data, {
+      parseNodes(selectedEntries, {
         width: columns > 5 ? SINGLE_BLOCK_WIDTH : CONTAINER_WIDTH,
         height: CONTAINER_HEIGHT,
       }),
-    [data]
+    [selectedEntries]
   );
 
   const [nodes, setNodes] = useState<any[]>(initialNodes);

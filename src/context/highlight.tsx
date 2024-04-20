@@ -20,7 +20,6 @@ export function HighlightProvider({ children }: { children: React.ReactNode }) {
     },
     [field, value]
   );
-  console.log("first", field, value);
 
   return (
     <HighlightContext.Provider value={{ field, value, setTag }}>

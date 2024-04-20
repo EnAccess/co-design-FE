@@ -29,7 +29,6 @@ export function FilterProvider({ children }: { children: React.ReactNode }) {
     },
     [field, value]
   );
-  console.log("first", selected);
 
   return (
     <FilterContext.Provider value={{ field, value, setTag, selected }}>

@@ -4,21 +4,22 @@ import Highlights from "@/data/case-studies/highlight";
 import { useHighlightContext } from "@/context/highlight";
 import { getButtonsStyle } from "@/utils/helpers";
 
-const OptionsWrapper = (
-  { entries, type, attribute, onClick }: {
-    entries: string[],
-    type: string,
-    attribute: string,
-    onClick: (element: { name: string; value: string | number }) => void
-  }
-) => (
+const OptionsWrapper = ({
+  entries,
+  type,
+  attribute,
+  onClick,
+}: {
+  entries: string[];
+  type: string;
+  attribute: string;
+  onClick: (element: { field: string; value: string | number }) => void;
+}) => (
   <div className="flex flex-col gap-2 p-4 h-72 overflow-y-auto">
     {entries.map((element, index) => (
       <button
         key={index}
-        onClick={() =>
-          onClick({ name: attribute, value: element })
-        }
+        onClick={() => onClick({ field: attribute, value: element })}
         className={`border border-gray-500 p-4 rounded-lg ${getButtonsStyle(
           type
         )}`}
@@ -48,7 +49,16 @@ const HighlightMenuCard = () => {
                     <h1 className="text-center text-gray-500 text-xl font-bold mb-3">
                       {block.title}
                     </h1>
-                    {<OptionsWrapper entries={block.entries} type={block.type} attribute={block.attribute} onClick={({ name, value }) => setHighlightedTag(name, value)} />}
+                    {
+                      <OptionsWrapper
+                        entries={block.entries}
+                        type={block.type}
+                        attribute={block.attribute}
+                        onClick={({ field, value }) =>
+                          setHighlightedTag(field, value)
+                        }
+                      />
+                    }
                   </div>
                 </div>
               ))}

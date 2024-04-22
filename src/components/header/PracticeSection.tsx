@@ -6,7 +6,7 @@ import practiceLevels from "@/data/practice";
 const length = practiceLevels.length;
 const PracticeSection = ({ title }: { title: string }) => {
   return (
-    <div className="w-1/3">
+    <div className="w-1/3 h-[28rem]">
       <p className="text-center text-gray-500 text-xl font-bold mb-3">
         {title}
       </p>
@@ -15,10 +15,10 @@ const PracticeSection = ({ title }: { title: string }) => {
           <div className="flex relative">
             {practiceLevels.map((level, index) => (
               <React.Fragment key={index}>
-                <div className="flex flex-col items-center">
+                <div className="flex  flex-col items-center">
                   {index % 2 === 0 ? (
                     <div className="w-52">
-                      <div className="h-32 flex justify-center items-end">
+                      <div className="h-36 flex justify-center items-end">
                         <LevelCard
                           level={level.level}
                           title={level.title}
@@ -39,15 +39,18 @@ const PracticeSection = ({ title }: { title: string }) => {
                         </div>
                       </div>
 
-                      <p className="text-center text-xs h-32 leading-tight">
+                      <p className="text-center px-1 text-xs h-36 leading-tight">
                         {level.text}
                       </p>
                     </div>
                   ) : (
                     <div className="w-52">
-                      <p className="text-center text-xs h-32 leading-tight">
-                        {level.text}
-                      </p>
+                      <div className="h-36 flex justify-center items-end">
+                        <p className="text-center px-1 text-xs leading-tight">
+                          {level.text}
+                        </p>
+                      </div>
+
                       <div className="relative">
                         <div className="flex justify-center w-52">
                           <Line />
@@ -59,7 +62,7 @@ const PracticeSection = ({ title }: { title: string }) => {
                           )}
                         </div>
                       </div>
-                      <div className=" h-32">
+                      <div className=" h-36">
                         <LevelCard
                           level={level.level}
                           title={level.title}
@@ -80,6 +83,3 @@ const PracticeSection = ({ title }: { title: string }) => {
 };
 
 export default PracticeSection;
-function useSelectedContext(): { setTag: any } {
-  throw new Error("Function not implemented.");
-}

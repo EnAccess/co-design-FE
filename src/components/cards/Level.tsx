@@ -1,6 +1,5 @@
 import { useFilterContext } from "@/context/filter";
 import classNames from "classnames";
-import React, { useEffect, useState } from "react";
 
 interface Props {
   level: string;
@@ -9,15 +8,7 @@ interface Props {
   description: string;
 }
 const LevelCard = ({ level, title, attribute, description }: Props) => {
-  const [selectedTag, setSelectedTag] = useState<
-    { field: string; value: string } | any
-  >(null);
-  const { setTag: setFilterTag, selected } = useFilterContext();
-  useEffect(() => {
-    if (!selectedTag) return;
-    setFilterTag(selectedTag.field, selectedTag.value);
-    setSelectedTag(null);
-  }, [selectedTag]);
+  const { setTag: setFilteredTag, selected } = useFilterContext();
 
   const bgColor = classNames({
     "bg-level-primary-0 border-level-secondary-0": level == "0",
@@ -29,7 +20,7 @@ const LevelCard = ({ level, title, attribute, description }: Props) => {
   return (
     <div className="flex justify-center">
       <button
-        onClick={() => setSelectedTag({ field: attribute, value: level })}
+        onClick={() => setFilteredTag(attribute, level)}
         className={`${
           isSelected ? "bg-white border-2 border-black-900" : bgColor
         } rounded-lg border w-44 flex flex-col items-center justify-center h-16 cursor-pointer`}

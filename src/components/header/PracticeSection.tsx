@@ -1,83 +1,80 @@
 import React from "react";
 import Line from "../icons/Line";
-import LevelCard from "../cards/LevelCard";
+import LevelCard from "../cards/Level";
+import practiceLevels from "@/data/practice";
 
+const length = practiceLevels.length;
 const PracticeSection = ({ title }: { title: string }) => {
   return (
-    <div className="w-1/3">
+    <div className="w-1/3 h-[28rem]">
       <p className="text-center text-gray-500 text-xl font-bold mb-3">
         {title}
       </p>
       <div className="h-full flex items-center justify-center">
         <div className="h-[20rem] -mt-4">
-          <div className="flex justify-center items-end w-fit gap-x-4">
-            <LevelCard
-              level={0}
-              title="Level 0"
-              description="Contextually Disconnected Design"
-            />
-            <p className="text-center text-xs max-w-52 leading-tight">
-              The minimum co-design method where community members or
-              individuals are consulted as customers on their needs, aspirations
-              and desires, including working within the existing socio-cultural,
-              environmental, and financial systems of focus communities. Often
-              involves designing for or on behalf of communities
-            </p>
-            <LevelCard
-              level={2}
-              title="Level 2"
-              description="Current Best Practice"
-            />
+          <div className="flex relative">
+            {practiceLevels.map((level, index) => (
+              <React.Fragment key={index}>
+                <div className="flex  flex-col items-center">
+                  {index % 2 === 0 ? (
+                    <div className="w-52">
+                      <div className="h-36 flex justify-center items-end">
+                        <LevelCard
+                          level={level.level}
+                          title={level.title}
+                          description={level.description}
+                          attribute={level.attribute}
+                        />
+                      </div>
 
-            <p className="text-center text-xs max-w-52 leading-tight">
-              Engaging in transformational knowledge exchanges that are led by
-              affected and at risk individuals and communities in order to
-              dismantle existing power structures that constrain co-design
-              processes
-            </p>
-          </div>
+                      <div className="relative">
+                        <div className="flex justify-center w-52 rotate-180">
+                          <Line />
+                        </div>
+                        <div className="flex items-center self-start absolute w-6/6 top-[45%]">
+                          <div className="h-[10px] w-52 bg-[#dc2626] absolute"></div>
+                          {index === length - 1 && (
+                            <div className="left-52 absolute w-0 h-0 border-y-[15px] border-l-[30px] border-y-transparent border-l-[#dc2626] "></div>
+                          )}
+                        </div>
+                      </div>
 
-          <div className="grid grid-cols-4 relative">
-            <div className="flex justify-center rotate-180">
-              <Line />
-            </div>
-            <div className="flex justify-center ">
-              <Line />
-            </div>
-            <div className="flex justify-center  rotate-180">
-              <Line />
-            </div>
-            <div className="flex justify-center ">
-              <Line />
-            </div>
-            <div className="flex items-center border-4 absolute w-full top-[45%]">
-              <div className="h-[10px] w-full bg-[#dc2626] absolute"></div>
-              <div className="-right-4 absolute w-0 h-0 border-y-[15px] border-l-[30px] border-y-transparent border-l-[#dc2626] "></div>
-            </div>
-          </div>
-          <div className="flex justify-between items-start w-fit- gap-x-4-">
-            <p className="text-center text-xs max-w-52 leading-tight">
-              These methods result in design without a current contextual
-              understanding of the community, designing systems that reinforce
-              cultural tropes and knowledge hierarchies, or in short design, for
-              a theoretically imagined community.
-            </p>
-            <LevelCard
-              level={1}
-              title="Level 1"
-              description="Basic Principle"
-            />
-            <p className="text-center text-xs max-w-52 leading-tight">
-              Level 2 is where the methods of co-design work towards
-              inclusivity, understand FDPs as agents of change through
-              mobilising local resources and existing community-based structures
-              to support HE projects
-            </p>
-            <LevelCard
-              level={3}
-              title="Level 3"
-              description="Fighting the System"
-            />
+                      <p className="text-center px-1 text-xs h-36 leading-tight">
+                        {level.text}
+                      </p>
+                    </div>
+                  ) : (
+                    <div className="w-52">
+                      <div className="h-36 flex justify-center items-end">
+                        <p className="text-center px-1 text-xs leading-tight">
+                          {level.text}
+                        </p>
+                      </div>
+
+                      <div className="relative">
+                        <div className="flex justify-center w-52">
+                          <Line />
+                        </div>
+                        <div className="flex items-center -pl-52 absolute w-full top-[45%]">
+                          <div className="h-[10px] w-52 bg-[#dc2626] absolute"></div>
+                          {index === length - 1 && (
+                            <div className="-right-4 absolute w-0 h-0 border-y-[15px] border-l-[30px] border-y-transparent border-l-[#dc2626] "></div>
+                          )}
+                        </div>
+                      </div>
+                      <div className=" h-36">
+                        <LevelCard
+                          level={level.level}
+                          title={level.title}
+                          description={level.description}
+                          attribute={level.attribute}
+                        />
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </React.Fragment>
+            ))}
           </div>
         </div>
       </div>

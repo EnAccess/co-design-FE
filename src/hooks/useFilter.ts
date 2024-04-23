@@ -2,19 +2,18 @@ import { useFilterContext } from "@/context/filter";
 import { Entries } from "@/types/interfaces";
 import { useCallback, useEffect, useState } from "react";
 
-export const useSelectedEntries = (entries: Entries) => {
-  const [selectedEntries, setSelectedEntries] = useState<Entries>(entries);
-  const { selected } = useFilterContext();
+export const useFilter = (entries: Entries) => {
+  const [filteredEntries, setFilteredEntries] = useState<Entries>(entries);
+  const { filterValues } = useFilterContext();
 
   const onSelect = useCallback(() => {
-    if (!selected || selected.length === 0) {
-      setSelectedEntries(entries);
+    if (!filterValues || filterValues.length === 0) {
+      setFilteredEntries(entries);
       return;
     }
-
-    setSelectedEntries(
+    setFilteredEntries(
       entries.filter((entry) =>
-        selected.every((select: any) => {
+        filterValues.every((select: any) => {
           const parsedManualTags = entry?.PARSED_MANUAL_TAGS as any;
           const coDesignLevel = parsedManualTags?.[select.field];
           if (Array.isArray(coDesignLevel))
@@ -23,11 +22,11 @@ export const useSelectedEntries = (entries: Entries) => {
         })
       )
     );
-  }, [selected, entries]);
+  }, [filterValues, entries]);
 
   useEffect(() => {
     onSelect();
-  }, [selected]);
+  }, [filterValues]);
 
-  return selectedEntries;
+  return filteredEntries;
 };

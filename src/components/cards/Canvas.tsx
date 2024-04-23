@@ -1,10 +1,8 @@
-"use client";
 import { parseEdges, parseNodes } from "@/utils/canvas";
-import { useEffect, useState } from "react";
+import { useMemo, useState } from "react";
 import ReactFlow from "reactflow";
 import "reactflow/dist/style.css";
 import { NodeCard } from "./Node";
-import { useSelectedEntries } from "@/hooks/useFilter";
 
 const CONTAINER_HEIGHT = 800;
 const CONTAINER_WIDTH = 1000;
@@ -15,18 +13,18 @@ const NodeTypes = {
 };
 
 const CardCanvas = ({ data, blockHeight, columns }: any) => {
-  const selectedEntries = useSelectedEntries(data);
-  const [nodes, setNodes] = useState<any[]>([]);
-  const [edges, setEdges] = useState<any[]>([]);
-  useEffect(() => {
-    setNodes(
-      parseNodes(selectedEntries, {
+  const initialEdges = useMemo(() => parseEdges(data), [data]);
+  const initialNodes = useMemo(
+    () =>
+      parseNodes(data, {
         width: columns > 5 ? SINGLE_BLOCK_WIDTH : CONTAINER_WIDTH,
         height: CONTAINER_HEIGHT,
-      })
-    );
-    setEdges(parseEdges(selectedEntries));
-  }, [selectedEntries, columns]);
+      }),
+    [data]
+  );
+
+  const [nodes, setNodes] = useState<any[]>(initialNodes);
+  const [edges, setEdges] = useState<any[]>(initialEdges);
 
   return (
     <div

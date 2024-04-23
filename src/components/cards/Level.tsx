@@ -8,7 +8,7 @@ interface Props {
   description: string;
 }
 const LevelCard = ({ level, title, attribute, description }: Props) => {
-  const { setTag: setFilteredTag, selected } = useFilterContext();
+  const { addFilter: addFilteredTag, filterValues } = useFilterContext();
 
   const bgColor = classNames({
     "bg-level-primary-0 border-level-secondary-0": level == "0",
@@ -16,13 +16,14 @@ const LevelCard = ({ level, title, attribute, description }: Props) => {
     "bg-level-primary-2 border-level-secondary-2": level == "2",
     "bg-level-primary-3 border-level-secondary-3": level == "3",
   });
-  const isSelected = selected.some((item: any) => item.value === level);
+  const isFiltered =
+    filterValues && filterValues.some((item: any) => item.value === level);
   return (
     <div className="flex justify-center">
       <button
-        onClick={() => setFilteredTag(attribute, level)}
+        onClick={() => addFilteredTag(attribute, level)}
         className={`${
-          isSelected ? "bg-white border-2 border-black-900" : bgColor
+          isFiltered ? "bg-white border-2 border-black-900" : bgColor
         } rounded-lg border w-44 flex flex-col items-center justify-center h-16 cursor-pointer`}
       >
         <p className="text-center text-base font-semibold">{title}</p>

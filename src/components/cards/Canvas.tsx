@@ -13,8 +13,8 @@ const NodeTypes = {
 };
 
 const CardCanvas = ({ data, blockHeight, columns }: any) => {
-  const initialEdges = useMemo(() => parseEdges(data), [data]);
-  const initialNodes = useMemo(
+  const edges = useMemo(() => parseEdges(data), [data]);
+  const nodes = useMemo(
     () =>
       parseNodes(data, {
         width: columns > 5 ? SINGLE_BLOCK_WIDTH : CONTAINER_WIDTH,
@@ -22,13 +22,6 @@ const CardCanvas = ({ data, blockHeight, columns }: any) => {
       }),
     [data]
   );
-  const [nodes, setNodes] = useState<any[]>(initialNodes);
-  const [edges, setEdges] = useState<any[]>(initialEdges);
-
-  useEffect(() => {
-    setNodes(initialNodes);
-    setEdges(initialEdges);
-  }, [data, initialNodes, initialEdges]);
 
   return (
     <div

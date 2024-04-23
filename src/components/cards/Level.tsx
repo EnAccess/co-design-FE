@@ -1,4 +1,5 @@
 import { useFilterContext } from "@/context/filter";
+import { getBgColorClassName } from "@/utils/nodes";
 import classNames from "classnames";
 
 interface Props {
@@ -9,15 +10,10 @@ interface Props {
 }
 const LevelCard = ({ level, title, attribute, description }: Props) => {
   const { addFilter: addFilteredTag, filterValues } = useFilterContext();
-
-  const bgColor = classNames({
-    "bg-level-primary-0 border-level-secondary-0": level == "0",
-    "bg-level-primary-1 border-level-secondary-1": level == "1",
-    "bg-level-primary-2 border-level-secondary-2": level == "2",
-    "bg-level-primary-3 border-level-secondary-3": level == "3",
-  });
+  const bgColor = getBgColorClassName(level);
   const isFiltered =
     filterValues && filterValues.some((item: any) => item.value === level);
+
   return (
     <div className="flex justify-center">
       <button

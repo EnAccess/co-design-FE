@@ -1,5 +1,5 @@
 import { parseEdges, parseNodes } from "@/utils/canvas";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import ReactFlow from "reactflow";
 import "reactflow/dist/style.css";
 import { NodeCard } from "./Node";
@@ -22,9 +22,13 @@ const CardCanvas = ({ data, blockHeight, columns }: any) => {
       }),
     [data]
   );
-
   const [nodes, setNodes] = useState<any[]>(initialNodes);
   const [edges, setEdges] = useState<any[]>(initialEdges);
+
+  useEffect(() => {
+    setNodes(initialNodes);
+    setEdges(initialEdges);
+  }, [data, initialNodes, initialEdges]);
 
   return (
     <div

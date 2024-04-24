@@ -1,5 +1,5 @@
 import React from "react";
-import Star from "../icons/Star";
+import Star from "../../components/icons/Star";
 import { getColorByAccess } from "../../utils/helpers";
 import { filteredResources } from "./data-resources";
 

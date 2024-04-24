@@ -1,18 +1,18 @@
 import { createContext, useCallback, useContext, useState } from "react";
 
-type FilterValues = {
+type FilterValue = {
   field: string;
   value: string | number;
 };
 export type FilterContextType = {
   addFilter: (field: string, value: string | number) => void;
-  filterValues: FilterValues[] | null;
+  filterValues: FilterValue[] | null;
 };
 
 const FilterContext = createContext<FilterContextType | undefined>(undefined);
 
 export function FilterProvider({ children }: { children: React.ReactNode }) {
-  const [filterValues, setFilterValues] = useState<FilterValues[] | null>(null);
+  const [filterValues, setFilterValues] = useState<FilterValue[] | null>(null);
 
   const addFilter = useCallback(
     (field: string, value: string | number) => {

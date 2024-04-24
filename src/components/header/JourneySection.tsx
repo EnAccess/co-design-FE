@@ -7,7 +7,7 @@ import { filteredJourneyData, steps } from "../../data/design-journey";
 const JourneySection = () => {
   const { setTag: setHighlightedTag } = useHighlightContext();
   return (
-    <div className="h-32rem">
+    <div className="h-[32rem]">
       <p className="text-center text-gray-500 text-xl font-bold mb-3 ">
         Select Step in The Co-design Journey
       </p>

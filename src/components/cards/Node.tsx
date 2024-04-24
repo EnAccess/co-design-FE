@@ -1,3 +1,4 @@
+import { useMemo } from "react";
 import { Handle, Position } from "reactflow";
 import "reactflow/dist/style.css";
 import Star from "@/components/icons/Star";
@@ -7,26 +8,30 @@ import { useHighlight } from "@/hooks/useHighlight";
 
 export function NodeCard({ data }: any) {
   const highlighted = useHighlight(data);
-  const level = getLevel(data);
-  const bgColor = getBgColorClassName(level);
-  const dataAccess = data?.PARSED_MANUAL_TAGS?.ACCESS?.[0];
-  const starColor = getColorByAccess(dataAccess);
-  const summary = data.Notes?.replace(/<[^>]*>?/gm, "");
+
+  const { className, access, starColor, summary } = useMemo(() => {
+    const level = getLevel(data);
+    const bgColor = getBgColorClassName(level);
+    const access = data?.PARSED_MANUAL_TAGS?.ACCESS?.[0];
+    const starColor = getColorByAccess(access);
+    const summary = data.Notes?.replace(/<[^>]*>?/gm, "");
+    const className = `py-4 px-2 text-xs w-52 rounded-md border-solid border-2 hover:border-4 box-content hover:relative transition-colors duration-1000 ${
+      highlighted && "border-sky-300 border-4"
+    } hover:border-purple-500 ${bgColor}`;
+    return { access, starColor, summary, className };
+  }, [data, highlighted]);
+
   return (
     <div className="group cursor-pointer">
       <Handle type="target" position={Position.Top} id={data.Key} />
       <Link href={data?.Url} target="_blank">
-        <div
-          className={`py-4 px-2 text-xs w-52 rounded-md border-solid border-2 hover:border-4 box-content hover:relative transition-colors duration-1000 ${
-            highlighted && "border-sky-300 border-4"
-          } hover:border-purple-500 ${bgColor}`}
-        >
+        <div className={className}>
           <div className="relative">
             <p className="z-10">{data.Title}</p>
             <p className="z-10">{data.Author}</p>
-            {(dataAccess === "Institutional Access" ||
-              dataAccess === "Paid Service" ||
-              dataAccess === "Open Source") && (
+            {(access === "Institutional Access" ||
+              access === "Paid Service" ||
+              access === "Open Source") && (
               <div className="absolute -bottom-9 -right-7">
                 <Star color={starColor} />
               </div>

@@ -1,13 +1,13 @@
-import output from "../../../public/data.json";
 import { stepData } from "./step-data";
 
-const journeyData = output
-  .map((data) => data?.PARSED_MANUAL_TAGS?.["PROJECT STEP"])
-  .flat()
-  .sort()
-  .filter((data) => data !== null);
+export const journeyData = [
+  "Design",
+  "Stakeholder Mapping",
+  "Needs Assessment",
+  "Implementation",
+  "M&E",
+];
 
-export const filteredJourneyData = Array.from(new Set(journeyData));
 
 export const steps = Object.values(stepData).map((step) => {
   return {

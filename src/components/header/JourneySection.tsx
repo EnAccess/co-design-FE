@@ -2,7 +2,7 @@ import React from "react";
 import StepCard from "../cards/Step";
 import ForwardArrow from "../icons/ForwardArrow";
 import { useHighlightContext } from "@/context/highlight";
-import { filteredJourneyData, steps } from "../../data/design-journey";
+import {  journeyData, steps } from "../../data/design-journey";
 
 const JourneySection = () => {
   const { setTag: setHighlightedTag } = useHighlightContext();
@@ -14,20 +14,20 @@ const JourneySection = () => {
       <div className="h-full flex items-center -my-8">
         <div>
           <div className="flex justify-center my-2">
-            {filteredJourneyData.map((journey, index) => (
-              <div key={index} className="flex items-center gap-2">
+            {journeyData.map((journey, index) => (
+              <div key={index} className="flex items-center gap-1">
                 <StepCard
                   text={journey}
                   onClick={() => {
                     setHighlightedTag("PROJECT STEP", journey);
                   }}
                 />
-                {index !== filteredJourneyData.length - 1 && <ForwardArrow />}
+                {index !== journeyData.length - 1 && <ForwardArrow />}
               </div>
             ))}
           </div>
 
-          <div className="m-2 p-3 bg-gray-400 text-white flex rounded-lg justify-around text-xl hover:border-1 border-red-400 items-center">
+          <div className="m-2 p-3 bg-[#A0A0A0] text-white flex rounded-lg justify-around text-xl items-center">
             {steps.map((step, index) => (
               <div key={index} className="flex gap-4 items-center">
                 <p className="text-md font-semibold">{step.description}</p>

@@ -1,4 +1,4 @@
-import output from "../../../public/data.json";
+import output from "../../public/data.json";
 
 const dataResources = output
   .map((entry) => entry?.PARSED_MANUAL_TAGS?.ACCESS)

@@ -4,7 +4,7 @@ import "reactflow/dist/style.css";
 import type { AppProps } from "next/app";
 import { DefaultSeo } from "next-seo";
 import SEO from "../../next-seo.config";
-import Footer from "../data/footer";
+import Footer from "../components/Footer";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (

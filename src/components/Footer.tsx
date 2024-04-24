@@ -1,7 +1,7 @@
 import React from "react";
-import Star from "../../components/icons/Star";
-import { getColorByAccess } from "../../utils/helpers";
-import { filteredResources } from "./data-resources";
+import Star from "./icons/Star";
+import { getColorByAccess } from "../utils/helpers";
+import { filteredResources } from "../data/data-resources";
 
 const Footer = () => {
   return (

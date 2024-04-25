@@ -1,5 +1,5 @@
 import { levels } from "./levels";
-import { levelsData } from "./levels-data";
+import { levelsData } from "../levels-data";
 
 const practiceLevels = levelsData.map((level, index) => ({
   ...level,

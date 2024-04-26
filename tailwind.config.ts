@@ -42,6 +42,8 @@ const config: Config = {
     "border-level-secondary-2",
     "border-level-secondary-3",
     "border-level-secondary-default",
+    "bg-black-900",
+    "sky-300",
   ],
   theme: {
     extend: {
@@ -58,14 +60,14 @@ const config: Config = {
             1: "#d5e8d4",
             2: "#ffe6cc",
             3: "#e1d5e7",
-            default: '#ffffff'
+            default: "#ffffff",
           },
           secondary: {
             0: "#6c8ebf",
             1: "#82b366",
             2: "#d79b00",
             3: "#9673a6",
-            default: '#000000'
+            default: "#000000",
           },
         },
       },

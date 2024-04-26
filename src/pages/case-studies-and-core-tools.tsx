@@ -1,24 +1,22 @@
-import Group from "@/components/Group";
 import groups from "@/data/case-studies";
-import HightlightCaseStudyDetails from "@/components/HightlightCaseStudyDetails";
-import { levels } from "@/data/case-studies/levels";
-import { technologies } from "@/data/case-studies/technologies";
+import Group from "@/components/Group";
+import HighlightMenuCard from "@/components/cards/HighlightMenu";
+
 const caseStudiesAndCoreTools = () => {
   return (
     <section className="py-10 relative">
       <div className="absolute right-0 px-10 z-40">
-        <HightlightCaseStudyDetails
-          technologies={technologies}
-          levels={levels}
-        />
+        <HighlightMenuCard />
       </div>
-      {groups?.map((data, index) => (
-        <Group
-          key={`case-studies-and-core-tools-${data.title}-${index}`}
-          data={data}
-          minifiedHeader
-        />
-      ))}
+      {groups?.map((data, index) => {
+        return (
+          <Group
+            key={`case-studies-and-core-tools-${data.title}-${index}`}
+            data={data}
+            minifiedHeader
+          />
+        );
+      })}
     </section>
   );
 };

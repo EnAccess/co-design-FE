@@ -2,6 +2,7 @@ import React, { useMemo } from "react";
 import CardCanvas from "./cards/Canvas";
 import Header from "./cards/Header";
 import { Entries } from "@/types/interfaces";
+import { useFilter } from "@/hooks/useFilter";
 
 const MAX_COL_SPAN = 3;
 const MIN_COL_SPAN = 2;
@@ -26,6 +27,7 @@ const Block = ({ title, description, entries, minifiedHeader }: Props) => {
     () => Math.ceil(rowSpan / MAX_COL_SPAN),
     [rowSpan]
   );
+  const filteredEntries = useFilter(entries);
   return (
     <div
       className={`col-span-${colSpan} row-span-${rowSpan} p-8 bg-gray-100 border-2 border-dashed border-gray-400 `}
@@ -37,7 +39,7 @@ const Block = ({ title, description, entries, minifiedHeader }: Props) => {
       />
       <div className="m-auto">
         <CardCanvas
-          data={entries}
+          data={filteredEntries}
           blockHeight={blockHeight}
           columns={colSpan}
         />

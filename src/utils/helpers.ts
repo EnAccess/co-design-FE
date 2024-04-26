@@ -1,69 +1,19 @@
-import { Entries, Entry } from "@/types/interfaces";
-import classNames from "classnames";
-
-interface Accumulator {
-  level1: Entries;
-  level2: Entries;
-  level3: Entries;
-}
-
-export const categorizeByCoDesignLevel = (entries: Entries) => {
-  return entries.reduce(
-    (acc: Accumulator, entry: Entry) => {
-      const coDesignLevel = entry.PARSED_MANUAL_TAGS.CO_DESIGN_LEVEL;
-      switch (coDesignLevel) {
-        case "1":
-          acc.level1.unshift(entry);
-          break;
-        case "2":
-          acc.level2.unshift(entry);
-          break;
-        case "3":
-          acc.level3.unshift(entry);
-          break;
-        default:
-          console.error(`Unknown CO_DESIGN_LEVEL: ${coDesignLevel}`);
-      }
-      return acc;
-    },
-    { level1: [], level2: [], level3: [] }
-  );
+export const hasTag = (entry: any, name: any, value: any) => {
+  const attributeValues = entry?.PARSED_MANUAL_TAGS?.[name];
+  if (Array.isArray(attributeValues)) return attributeValues.includes(value);
+  return attributeValues === value;
 };
 
-export const getBgColorClassName = (data: any) => {
-  const level = Number(Array.isArray(data.PARSED_MANUAL_TAGS?.CO_DESIGN_LEVEL)
-  ? data.PARSED_MANUAL_TAGS?.CO_DESIGN_LEVEL[0]
-  : data.PARSED_MANUAL_TAGS?.CO_DESIGN_LEVEL)
-
-    console.log("level", level)
-
-  switch (level) {
-    case 0:
-      return classNames("bg-level-primary-0 border-level-secondary-0");
-    case 1:
-      return classNames("bg-level-primary-1 border-level-secondary-1");
-    case 2:
-      return classNames("bg-level-primary-2 border-level-secondary-2");
-    case 3:
-      return classNames("bg-level-primary-3 border-level-secondary-3");
+export const getButtonsStyle = (type: string) => {
+  switch (type) {
+    case "main":
+      return "bg-black-900 text-white";
+    case "default":
+      return "bg-white text-black";
     default:
-      return classNames("bg-level-primary-default border-level-secondary-default");
+      return "";
   }
 };
-
-export function getColorByAccess(accessType: string) {
-  switch (accessType) {
-    case "Institutional Access":
-      return "#FFFF33"; // Yellow
-    case "Open Source":
-      return "#33FF33"; // green
-    case "Paid Service":
-      return "#FF3333"; // Red
-    default:
-      return "transparent";
-  }
-}
-
 export const getAnchorPosition = (start: any, end: any) => {
   if (!start && !end) {
     return;
@@ -135,20 +85,4 @@ export const getRandomColor = () => {
   var hexColor = "#" + hexR + hexG + hexB;
 
   return hexColor;
-};
-
-export const filterResourcesDataByThemes = (Data: any, themes: any) => {
-  return Object.keys(themes).reduce((acc: any, theme) => {
-    const filteredEntries = Data.filter((entry: any) =>
-      entry.PARSED_MANUAL_TAGS.THEME?.includes(theme)
-    ) as Entries;
-    acc[theme] = {
-      description: themes[theme].description,
-      entries: filteredEntries,
-      colSpan: themes[theme].colSpan,
-      rowSpan: themes[theme].rowSpan,
-      blockHeight: themes[theme].blockHeight,
-    };
-    return acc;
-  }, {});
 };

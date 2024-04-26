@@ -5,6 +5,8 @@ export interface ParsedManualTags {
   ["PROJECT STEP"]?: string;
   ["CASE STUDY THEME"]?: string[] | string;
   ["SUPPORTING TOOLKIT"]?: string[] | string;
+  ["CASE STUDY LEVEL"]?: string[] | string;
+  ["CASE STUDY TECH"]?: string[] | string;
   THEME?: string[] | string;
   ACCESS?: string;
   TOOLS?: string;

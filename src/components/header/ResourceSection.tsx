@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import ResourceTypeCard from "../cards/ResourceTypeCard";
+import ResourceTypeCard from "../cards/ResourceType";
 import { NavLink } from "../../types/interfaces";
 interface Props {
   navData: NavLink[];

@@ -4,15 +4,19 @@ import "reactflow/dist/style.css";
 import type { AppProps } from "next/app";
 import { DefaultSeo } from "next-seo";
 import SEO from "../../next-seo.config";
-import Footer from "../components/Footer";
+import { HighlightProvider } from "../context/highlight";
+import { FilterProvider } from "@/context/filter";
+import Footer from "@/components/Footer";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <>
-      <DefaultSeo {...SEO} />
-      <Header />
-      <Component {...pageProps} />
-      <Footer />
-    </>
+    <FilterProvider>
+      <HighlightProvider>
+        <DefaultSeo {...SEO} />
+        <Header />
+        <Component {...pageProps} />
+        <Footer />
+      </HighlightProvider>
+    </FilterProvider>
   );
 }

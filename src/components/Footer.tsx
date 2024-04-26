@@ -9,7 +9,6 @@ const Footer = () => {
       <h2 className="mb-4">All Resources are Open Access: unless indicated:</h2>
       {filteredResources.map((data, index) => {
         const color = getColorByAccess(data);
-        console.log('datas',data)
         return (
           <div
             key={index}

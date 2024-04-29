@@ -7,7 +7,7 @@ export const useHighlight = (entry: Entry) => {
   const [highlighted, setHighlighted] = useState<boolean>(false);
 
   const timerRef = useRef<number | null>(null);
-  const { field, value } = useHighlightContext();
+  const { field, value, setField, setValue } = useHighlightContext();
 
   const onHighlight = useCallback(() => {
     if (!field) return;
@@ -22,6 +22,8 @@ export const useHighlight = (entry: Entry) => {
     timerRef.current = window.setTimeout(() => {
       setHighlighted(false);
     }, 2000);
+    setField("");
+    setValue("");
   }, [field, value]);
 
   useEffect(() => {

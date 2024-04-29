@@ -1,9 +1,18 @@
-import { createContext, useCallback, useContext, useState } from "react";
+import {
+  Dispatch,
+  SetStateAction,
+  createContext,
+  useCallback,
+  useContext,
+  useState,
+} from "react";
 
 export type HighlightContextType = {
   field: string;
   value: string | number;
   setTag: (field: string, value: string | number) => void;
+  setField: Dispatch<SetStateAction<string>>;
+  setValue: Dispatch<SetStateAction<string | number>>;
 };
 const HighlightContext = createContext<HighlightContextType | undefined>(
   undefined
@@ -22,7 +31,9 @@ export function HighlightProvider({ children }: { children: React.ReactNode }) {
   );
 
   return (
-    <HighlightContext.Provider value={{ field, value, setTag }}>
+    <HighlightContext.Provider
+      value={{ field, value, setTag, setField, setValue }}
+    >
       {children}
     </HighlightContext.Provider>
   );

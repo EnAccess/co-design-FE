@@ -48,7 +48,10 @@ const config: Config = {
   theme: {
     extend: {
       maxWidth: {
-        custom: "3500px",
+        maxWidth: "3400px",
+      },
+      minWidth: {
+        minWidth: "2600px",
       },
       colors: {
         black: {

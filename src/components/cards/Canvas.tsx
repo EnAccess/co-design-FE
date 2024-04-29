@@ -1,5 +1,5 @@
 import { parseEdges, parseNodes } from "@/utils/canvas";
-import { useEffect, useMemo, useState } from "react";
+import { useMemo } from "react";
 import ReactFlow from "reactflow";
 import "reactflow/dist/style.css";
 import { NodeCard } from "./Node";

@@ -6,9 +6,7 @@ import { getBgColorClassName, getColorByAccess, getLevel } from "@/utils/nodes";
 import Link from "next/link";
 import { useHighlight } from "@/hooks/useHighlight";
 
-export function NodeCard(props: any) {
-  const { data, sourcePosition, targetPosition, selected } = props;
-  console.log(props);
+export function NodeCard({ data, sourcePosition, targetPosition, selected }: any) {
   const highlighted = useHighlight(data);
 
   const { className, access, starColor, summary } = useMemo(() => {

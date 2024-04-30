@@ -1,6 +1,6 @@
 import { parseEdges, parseNodes } from "@/utils/canvas";
-import { useMemo } from "react";
-import ReactFlow from "reactflow";
+import { useCallback, useEffect, useMemo, useState } from "react";
+import ReactFlow, { useEdgesState, useNodesState } from "reactflow";
 import "reactflow/dist/style.css";
 import { NodeCard } from "./Node";
 
@@ -13,15 +13,22 @@ const NodeTypes = {
 };
 
 const CardCanvas = ({ data, blockHeight, columns }: any) => {
-  const edges = useMemo(() => parseEdges(data), [data]);
-  const nodes = useMemo(
-    () =>
+  const [nodes, setNodes, onNodesChange] = useNodesState([]);
+  const [edges, setEdges, onEdgesChange] = useEdgesState([]);
+
+  const updateData = useCallback(() => {
+    setEdges(parseEdges(data));
+    setNodes(
       parseNodes(data, {
         width: columns > 5 ? SINGLE_BLOCK_WIDTH : CONTAINER_WIDTH,
         height: CONTAINER_HEIGHT,
-      }),
-    [data]
-  );
+      })
+    );
+  }, [data, columns]);
+
+  useEffect(() => {
+    updateData();
+  }, [updateData]);
 
   return (
     <div
@@ -47,6 +54,8 @@ const CardCanvas = ({ data, blockHeight, columns }: any) => {
         zoomOnScroll={false}
         draggable={false}
         preventScrolling={false}
+        onNodesChange={onNodesChange}
+        onEdgesChange={onEdgesChange}
         onInit={(instance) => setTimeout(() => instance.fitView(), 100)}
       ></ReactFlow>
     </div>

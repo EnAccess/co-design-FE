@@ -6,7 +6,9 @@ import { getBgColorClassName, getColorByAccess, getLevel } from "@/utils/nodes";
 import Link from "next/link";
 import { useHighlight } from "@/hooks/useHighlight";
 
-export function NodeCard({ data }: any) {
+export function NodeCard(props: any) {
+  const { data, sourcePosition, targetPosition, selected } = props;
+  console.log(props);
   const highlighted = useHighlight(data);
 
   const { className, access, starColor, summary } = useMemo(() => {
@@ -21,11 +23,15 @@ export function NodeCard({ data }: any) {
     return { access, starColor, summary, className };
   }, [data, highlighted]);
 
+  const onClick = () => {
+    if(!selected || !data?.Url) return;
+    window?.open(data?.Url, '_blank')?.focus();
+  }
+
   return (
     <div className="group cursor-pointer">
-      <Handle type="target" position={Position.Top} id={data.Key} />
-      <Link href={data?.Url} target="_blank">
-        <div className={className}>
+      <Handle type="target" position={targetPosition} id={data.Key} />
+        <div onClick={onClick} className={className}>
           <div className="relative">
             <p className="z-10">{data.Title}</p>
             <p className="z-10">{data.Author}</p>
@@ -54,9 +60,7 @@ export function NodeCard({ data }: any) {
             </div>
           </div>
         </div>
-      </Link>
-
-      <Handle type="source" position={Position.Bottom} id={data.Key} />
+      <Handle type="source" position={sourcePosition} id={data.Key} />
     </div>
   );
 }

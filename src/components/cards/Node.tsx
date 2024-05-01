@@ -22,9 +22,9 @@ export function NodeCard({ data }: any) {
   }, [data, highlighted]);
 
   return (
-    <div className="group cursor-pointer">
+    <div className="group cursor-pointer m-3">
       <Handle type="target" position={Position.Top} id={data.Key} />
-      <Link href={data?.Url} target="_blank">
+      <Link href={data?.Url || ""} target="_blank">
         <div className={className}>
           <div className="relative">
             <p className="z-10">{data.Title}</p>

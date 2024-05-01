@@ -1,8 +1,9 @@
 import React, { useMemo } from "react";
-import CardCanvas from "./cards/Canvas";
+// import CardCanvas from "./cards/Canvas";
 import Header from "./cards/Header";
 import { Entries } from "@/types/interfaces";
 import { useFilter } from "@/hooks/useFilter";
+import { NodeCard } from "./cards/Node";
 
 const MAX_COL_SPAN = 3;
 const MIN_COL_SPAN = 2;
@@ -28,6 +29,7 @@ const Block = ({ title, description, entries, minifiedHeader }: Props) => {
     [rowSpan]
   );
   const filteredEntries = useFilter(entries);
+
   return (
     <div
       className={`col-span-${colSpan} row-span-${rowSpan} p-8 bg-gray-100 border-2 border-dashed border-gray-400 `}
@@ -37,12 +39,10 @@ const Block = ({ title, description, entries, minifiedHeader }: Props) => {
         description={description}
         minified={minifiedHeader}
       />
-      <div className="m-auto">
-        <CardCanvas
-          data={filteredEntries}
-          blockHeight={blockHeight}
-          columns={colSpan}
-        />
+      <div className="flex flex-wrap gap-2 justify-center items-center">
+        {filteredEntries.map((data) => (
+          <NodeCard key={data.Key} data={data} />
+        ))}
       </div>
     </div>
   );

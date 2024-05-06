@@ -3,7 +3,7 @@ import Block from "./Block";
 
 const AdvancedResources = ({
   data,
-  minifiedHeader
+  minifiedHeader,
 }: {
   data: Group;
   minifiedHeader?: boolean;

@@ -23,7 +23,7 @@ export function NodeCard({ data }: any) {
 
   return (
     <div className="group cursor-pointer m-3">
-      {/* <Handle type="target" position={Position.Top} id={data.Key} /> */}
+      <Handle type="target" position={Position.Top} id={data.Key} />
       <Link href={data?.Url || ""} target="_blank">
         <div className={className}>
           <div className="relative">
@@ -56,7 +56,7 @@ export function NodeCard({ data }: any) {
         </div>
       </Link>
 
-      {/* <Handle type="source" position={Position.Bottom} id={data.Key} /> */}
+      <Handle type="source" position={Position.Bottom} id={data.Key} />
     </div>
   );
 }

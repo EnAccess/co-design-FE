@@ -39,7 +39,7 @@ const Block = ({ title, description, entries, minifiedHeader }: Props) => {
         description={description}
         minified={minifiedHeader}
       />
-      <div className="flex flex-wrap gap-2 justify-center items-center">
+      <div className="flex flex-wrap gap-4 py-6 justify-center items-center">
         {filteredEntries.map((data) => (
           <NodeCard key={data.Key} data={data} />
         ))}

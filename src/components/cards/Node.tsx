@@ -6,7 +6,12 @@ import { getBgColorClassName, getColorByAccess, getLevel } from "@/utils/nodes";
 import Link from "next/link";
 import { useHighlight } from "@/hooks/useHighlight";
 
-export function NodeCard({ data }: any) {
+export function NodeCard({
+  data,
+  sourcePosition,
+  targetPosition,
+  selected,
+}: any) {
   const highlighted = useHighlight(data);
 
   const { className, access, starColor, summary } = useMemo(() => {
@@ -21,42 +26,44 @@ export function NodeCard({ data }: any) {
     return { access, starColor, summary, className };
   }, [data, highlighted]);
 
+  const onClick = () => {
+    if (!selected || !data?.Url) return;
+    window?.open(data?.Url, "_blank")?.focus();
+  };
+
   return (
-    <div className="group cursor-pointer m-3">
-      <Handle type="target" position={Position.Top} id={data.Key} />
-      <Link href={data?.Url || ""} target="_blank">
-        <div className={className}>
-          <div className="relative">
-            <p className="z-10">{data.Title}</p>
-            <p className="z-10">{data.Author}</p>
-            {(access === "Institutional Access" ||
-              access === "Paid Service" ||
-              access === "Open Source") && (
-              <div className="absolute -bottom-9 -right-7">
-                <Star color={starColor} />
+    <div className="group cursor-pointer p-2">
+      <Handle type="target" position={targetPosition} id={data.Key} />
+      <div onClick={onClick} className={className}>
+        <div className="relative">
+          <p className="z-10">{data.Title}</p>
+          <p className="z-10">{data.Author}</p>
+          {(access === "Institutional Access" ||
+            access === "Paid Service" ||
+            access === "Open Source") && (
+            <div className="absolute -bottom-9 -right-7">
+              <Star color={starColor} />
+            </div>
+          )}
+          <div className="absolute hidden group-hover:block bg-white border p-4 mt-2 z-20">
+            <p>
+              <strong>Author</strong>: {data.Author}
+            </p>
+            {summary && (
+              <div>
+                <strong>Summary</strong>: {summary}
               </div>
             )}
-            <div className="absolute hidden group-hover:block bg-white border p-4 mt-2 z-20">
-              <p>
-                <strong>Author</strong>: {data.Author}
-              </p>
-              {summary && (
-                <div>
-                  <strong>Summary</strong>: {summary}
-                </div>
-              )}
-              <p>
-                <strong>Title</strong>: {data.Title}
-              </p>
-              <p>
-                <strong>Tags</strong>: {data.Manual_Tags}
-              </p>
-            </div>
+            <p>
+              <strong>Title</strong>: {data.Title}
+            </p>
+            <p>
+              <strong>Tags</strong>: {data.Manual_Tags}
+            </p>
           </div>
         </div>
-      </Link>
-
-      <Handle type="source" position={Position.Bottom} id={data.Key} />
+      </div>
+      <Handle type="source" position={sourcePosition} id={data.Key} />
     </div>
   );
 }

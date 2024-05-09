@@ -1,5 +1,5 @@
 import React, { useMemo } from "react";
-// import CardCanvas from "./cards/Canvas";
+import CardCanvas from "./cards/Canvas";
 import Header from "./cards/Header";
 import { Entries } from "@/types/interfaces";
 import { useFilter } from "@/hooks/useFilter";
@@ -39,11 +39,18 @@ const Block = ({ title, description, entries, minifiedHeader }: Props) => {
         description={description}
         minified={minifiedHeader}
       />
-      <div className="flex flex-wrap gap-4 py-6 justify-center items-center">
+      <div className="m-auto">
+        <CardCanvas
+          data={filteredEntries}
+          blockHeight={blockHeight}
+          columns={colSpan}
+        />
+      </div>
+      {/* <div className="flex flex-wrap gap-4 py-6 justify-center items-center">
         {filteredEntries.map((data) => (
           <NodeCard key={data.Key} data={data} />
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

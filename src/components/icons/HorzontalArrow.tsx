@@ -17,13 +17,13 @@ const HorzontalArrow = () => {
           height="39.3979"
           fill="#FFFF33"
           stroke="black"
-          stroke-width="2"
+          strokeWidth="2"
         />
         <path
           d="M474.319 10.2393L533.746 54.81L476.503 100.469L474.319 10.2393Z"
           fill="#FFFF33"
           stroke="black"
-          stroke-width="2"
+          strokeWidth="2"
         />
         <rect x="2" y="36" width="486" height="38" fill="#FFFF33" />
       </svg>

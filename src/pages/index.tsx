@@ -40,7 +40,7 @@ const AdvancedResources = () => {
 
   return (
     // <div className="h-[250rem] w-full relative mt-2.5 p-0 overflow-auto flex justify-center">
-    // <ReactFlow
+    <ReactFlow
     //   nodes={nodes}
     //   edges={edges}
     //   nodeTypes={NodeTypes}
@@ -54,13 +54,16 @@ const AdvancedResources = () => {
     //   draggable={false}
     //   preventScrolling={false}
     //   onConnect={onConnect}
-    // >
-    <section className="py-10">
-      {resources.map((data, index) => (
-        <Group key={`advanced-resources-${data.title}-${index}`} data={data} />
-      ))}
-    </section>
-    // </ReactFlow>
+    >
+      <section className="py-10">
+        {resources.map((data, index) => (
+          <Group
+            key={`advanced-resources-${data.title}-${index}`}
+            data={data}
+          />
+        ))}
+      </section>
+    </ReactFlow>
     // </div>
   );
 };

@@ -5,6 +5,10 @@ import "reactflow/dist/style.css";
 import { NodeCard } from "./Node";
 // import entries from "../../../public/data.json";
 import { themes } from "@/data/resources/themes";
+import Block from "../Block";
+import Group from "@/data/resources/advanced-resources";
+import Header from "./Header";
+import classNames from "classnames";
 
 const CONTAINER_HEIGHT = 800;
 const CONTAINER_WIDTH = 2800;
@@ -13,7 +17,12 @@ const SINGLE_BLOCK_WIDTH = 3000;
 const NodeTypes = {
   coDesign: NodeCard,
 };
-
+const BlockTypes = {
+  coDesign: Block,
+};
+const GroupTypes = {
+  coDesign: Group,
+};
 const entries = themes.map((theme) => theme.entries).flat();
 const CardCanvas = ({ blockHeight = 6, columns = 3 }: any) => {
   const [nodes, setNodes, onNodesChange] = useNodesState([]);
@@ -29,6 +38,48 @@ const CardCanvas = ({ blockHeight = 6, columns = 3 }: any) => {
     );
   }, [entries, columns]);
 
+  const entr = [
+    ...nodes,
+    {
+      id: "2a",
+      data: {
+        label: <Header title="karera" description="karera" />,
+      },
+      position: { x: 10, y: 50 },
+      style: {
+        backgroundColor: "rgba(255, 0, 0, 0.2)",
+        width: 980,
+        height: CONTAINER_HEIGHT,
+      },
+    },
+    {
+      id: "2b",
+      data: {
+        label: <Header title="karera" description="karera" minified={false} />,
+      },
+      position: { x: 1020, y: 50 },
+      style: {
+        backgroundColor: "#f3f4f6",
+        borderStyle: "dashed",
+        borderColor: "#cbd5e0",
+        borderWidth: "4px",
+        width: 980,
+        height: CONTAINER_HEIGHT,
+      },
+    },
+    {
+      id: "2c",
+      data: {
+        label: <Header title="karera" description="karera" />,
+      },
+      position: { x: 2050, y: 50 },
+      style: {
+        backgroundColor: "rgba(255, 0, 0, 0.2)",
+        width: 980,
+        height: CONTAINER_HEIGHT,
+      },
+    },
+  ];
   useEffect(() => {
     updateData();
   }, [updateData]);
@@ -46,8 +97,8 @@ const CardCanvas = ({ blockHeight = 6, columns = 3 }: any) => {
       className="flex justify-center"
     >
       <ReactFlow
-        nodes={nodes}
-        nodeTypes={NodeTypes}
+        nodes={entr}
+        nodeTypes={{ ...NodeTypes }}
         edges={edges}
         zoomOnPinch={false}
         zoomOnDoubleClick={false}

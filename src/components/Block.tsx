@@ -14,7 +14,8 @@ interface Props {
   entries: Entries;
   minifiedHeader?: boolean;
 }
-const Block = ({ title, description, entries, minifiedHeader }: Props) => {
+const Block = ({ data }: any) => {
+  const { title, description, entries, minifiedHeader } = data;
   const colSpan = useMemo(() => {
     if (entries?.length >= 24) return 8;
     if (entries?.length >= 18) return 7;

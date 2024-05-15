@@ -1,6 +1,6 @@
 import React from "react";
 import resources from "@/data/resources/basic-resources";
-import Group from "@/components/Group";
+import Group from "@/components/cards/Group";
 
 const BasicResources = () => {
   return (

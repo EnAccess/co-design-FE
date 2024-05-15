@@ -1,5 +1,5 @@
 import React from "react";
-import Block from "../components/Block";
+import Block from "../components/cards/Block";
 import tools from "../data/basic-tools";
 
 const ToolsResources = () => {

@@ -1,12 +1,11 @@
-import Group from "@/components/Group";
+import Canvas from "@/components/Canvas";
+import Group from "@/components/cards/Group";
 import resources from "@/data/resources/advanced-resources";
 
 const AdvancedResources = () => {
   return (
     <section className="py-10">
-      {resources.map((data, index) => (
-        <Group key={`advanced-resources-${data.title}-${index}`} data={data} />
-      ))}
+      <Canvas data={resources} blockHeight={10} />
     </section>
   );
 };

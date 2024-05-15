@@ -1,5 +1,5 @@
 import groups from "@/data/case-studies";
-import Group from "@/components/Group";
+import Group from "@/components/cards/Group";
 import HighlightMenuCard from "@/components/cards/HighlightMenu";
 
 const caseStudiesAndCoreTools = () => {

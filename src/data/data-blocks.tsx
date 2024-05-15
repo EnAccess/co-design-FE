@@ -130,7 +130,7 @@ function createNodeBlocks(themeData: any) {
     nodeBlocks.push({ id, data: { label }, position, style });
 
     x += columnWidth;
-    if (x >= 2250) {
+    if (x >= 2251) {
       x = 10;
       y += rowHeight;
     }

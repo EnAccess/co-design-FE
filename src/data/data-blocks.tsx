@@ -108,7 +108,6 @@ function generateId(length: any) {
 }
 function createNodeBlocks(themeData: any) {
   const nodeBlocks: any = [];
-
   let x = 10;
   let y = 50;
   const columnWidth = 1120;
@@ -118,7 +117,7 @@ function createNodeBlocks(themeData: any) {
     const label = (
       <Header title={key} description={value.description} minified={false} />
     );
-    const position = { x: 1130, y: 50 };
+    const position = { x, y };
     const style = {
       backgroundColor: "#f3f4f6",
       borderStyle: "dashed",

@@ -15,17 +15,13 @@ interface Props {
 }
 const BlockCard = ({ data, children }: any) => {
   return (
-    <div
-      className={` `}
-    >
+    <div>
       <Header
         title={data.label}
         description={data.description}
-      // minified={minifiedHeader}
+        // minified={minifiedHeader}
       />
-      <div className="m-auto">
-        {children}
-      </div>
+      <div className="m-auto">{children}</div>
     </div>
   );
 };

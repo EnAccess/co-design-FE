@@ -1,6 +1,11 @@
-import { parseBlocks, parseEdges, parseGroups, parseNodes } from "@/utils/canvas";
+import {
+  parseBlocks,
+  parseEdges,
+  parseGroups,
+  parseNodes,
+} from "@/utils/canvas";
 import { useCallback, useEffect, useMemo, useState } from "react";
-import ReactFlow, { useEdgesState, useNodesState } from "reactflow";
+import ReactFlow, { Background, useEdgesState, useNodesState } from "reactflow";
 import "reactflow/dist/style.css";
 import { NodeCard } from "./cards/Node";
 import { group } from "console";
@@ -22,8 +27,8 @@ const Canvas = ({ data, blockHeight }: any) => {
   const [edges, setEdges, onEdgesChange] = useEdgesState([]);
 
   const getWindowSize = () => {
-    if (typeof window === 'undefined') return { width: 1000, height: 800 }
-    return { width: window.innerWidth, height: window.innerHeight }
+    if (typeof window === "undefined") return { width: 1000, height: 800 };
+    return { width: window.innerWidth, height: window.innerHeight };
   };
 
   const { initialEdges, initialNodes } = useMemo(() => {
@@ -35,10 +40,8 @@ const Canvas = ({ data, blockHeight }: any) => {
     return {
       initialEdges: output.edges,
       initialNodes: output.nodes,
-    }
-
+    };
   }, [data]);
-
 
   const updateData = useCallback(() => {
     // setEdges(parseEdges(data));
@@ -48,7 +51,7 @@ const Canvas = ({ data, blockHeight }: any) => {
     //     height: CONTAINER_HEIGHT,
     //   })
     // );
-    setEdges(initialEdges)
+    setEdges(initialEdges);
     setNodes(initialNodes);
   }, [initialEdges, initialNodes]);
 
@@ -59,7 +62,7 @@ const Canvas = ({ data, blockHeight }: any) => {
   return (
     <div
       style={{
-        height: `${blockHeight * 20}rem`,
+        height: `${blockHeight * 40}rem`,
         width: "auto",
         position: "relative",
         zIndex: 20,
@@ -72,7 +75,6 @@ const Canvas = ({ data, blockHeight }: any) => {
         nodes={nodes}
         nodeTypes={NodeTypes}
         edges={edges}
-        fitView
         zoomOnPinch={false}
         zoomOnDoubleClick={false}
         panOnScroll={false}
@@ -82,7 +84,6 @@ const Canvas = ({ data, blockHeight }: any) => {
         preventScrolling={false}
         onNodesChange={onNodesChange}
         onEdgesChange={onEdgesChange}
-        onInit={(instance) => setTimeout(() => instance.fitView(), 100)}
       ></ReactFlow>
     </div>
   );

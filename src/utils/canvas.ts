@@ -4,7 +4,7 @@ export const generateNode = (label: any) => ({
   position: { x: 0, y: 0 },
   draggable: false,
   type: "coDesign",
-  // parentId: "2c",
+  // parentId: "c70b0ee2-f85d-438e-9378-e53fcf66c4f7",
 });
 
 export const generateEdge = (

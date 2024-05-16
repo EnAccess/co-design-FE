@@ -20,7 +20,7 @@ const NodeTypes = {
 };
 
 const entries = themes.map((theme) => theme.entries).flat();
-const CardCanvas = ({ blockHeight = 6, columns = 3 }: any) => {
+const CardCanvas = ({ blockHeight = 12, columns = 3 }: any) => {
   const [nodes, setNodes, onNodesChange] = useNodesState([]);
   const [edges, setEdges, onEdgesChange] = useEdgesState([]);
 
@@ -33,7 +33,7 @@ const CardCanvas = ({ blockHeight = 6, columns = 3 }: any) => {
       })
     );
   }, [entries, columns]);
-
+  console.log(nodeBlocks);
   const entr = [...nodes, ...nodeBlocks];
   useEffect(() => {
     updateData();
@@ -47,7 +47,7 @@ const CardCanvas = ({ blockHeight = 6, columns = 3 }: any) => {
         height: `${blockHeight * 20}rem`,
         width: "100%",
         position: "relative",
-        zIndex: 20,
+        // zIndex: 20,
         marginTop: 10,
         padding: 0,
       }}

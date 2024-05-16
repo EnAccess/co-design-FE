@@ -1,4 +1,5 @@
 import Header from "@/components/cards/Header";
+import { v4 as uuidv4 } from "uuid";
 import themeData from "./resources/themes/theme-data";
 const CONTAINER_HEIGHT = 800;
 const CONTAINER_WIDTH = 2800;
@@ -113,9 +114,14 @@ function createNodeBlocks(themeData: any) {
   const columnWidth = 1120;
   const rowHeight = 850;
   Object.entries(themeData).forEach(([key, value]: any) => {
-    const id = generateId(2);
+    const id = uuidv4();
     const label = (
-      <Header title={key} description={value.description} minified={false} />
+      <Header
+        key={Math.floor(Math.random() * 10)}
+        title={key}
+        description={value.description}
+        minified={false}
+      />
     );
     const position = { x, y };
     const style = {
@@ -126,6 +132,7 @@ function createNodeBlocks(themeData: any) {
       width: SINGLE_BLOCK_WIDTH / 3,
       height: CONTAINER_HEIGHT,
     };
+    // const type = "group";
 
     nodeBlocks.push({ id, data: { label }, position, style });
 

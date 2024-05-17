@@ -31,13 +31,14 @@ export const generateGroup = (name: any, position: any, height: any) => ({
   style: {
     backgroundColor: "ffffff",
     width: "100%",
-    height: height - 50,
+    height: height,
     border: "none",
   },
   type: "group",
 });
 
 const groupPositions = (i: any, length: any) => {
+  console.log(length);
   const baseRowHeight = 2400;
   let rowHeight = baseRowHeight;
   if (length > 3) {

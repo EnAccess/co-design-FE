@@ -44,13 +44,6 @@ const Canvas = ({ data, blockHeight }: any) => {
   }, [data]);
 
   const updateData = useCallback(() => {
-    // setEdges(parseEdges(data));
-    // setNodes(
-    //   parseNodes(data, {
-    //     width: columns > 5 ? SINGLE_BLOCK_WIDTH : CONTAINER_WIDTH,
-    //     height: CONTAINER_HEIGHT,
-    //   })
-    // );
     setEdges(initialEdges);
     setNodes(initialNodes);
   }, [initialEdges, initialNodes]);

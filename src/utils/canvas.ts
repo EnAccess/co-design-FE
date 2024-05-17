@@ -9,15 +9,14 @@ export const generateBlock = (
   id: uuid(),
   data: { label: name, description },
   position: { x: 0, y: 0 },
-  // className: "border-2 border-dashed border-red-400 pt-10",
   draggable: false,
   type: "block",
   style: {
-    width: 1080,
+    width: 1060,
     height: 1000,
     // backgroundColor: "#f3f4f6",
     borderStyle: "dashed",
-    borderColor: "#cbd5e0",
+    borderColor: "#C8C8C8",
     borderWidth: "4px",
     padding: "10px",
   },
@@ -83,14 +82,14 @@ export const parseBlockData = (data: Block, groupId: string, position: any) => {
 };
 
 const blockPositions = (i: any) => {
-  let x = 10;
+  let x = 80;
   let y = 200;
-  const columnWidth = 1120;
+  const columnWidth = 1080;
   const rowHeight = 1200;
   for (let j = 0; j < i; j++) {
     x += columnWidth;
     if (x >= 2251) {
-      x = 10;
+      x = 80;
       y += rowHeight - 180;
     }
   }

@@ -1,6 +1,7 @@
 import groups from "@/data/case-studies";
 import Group from "@/components/cards/Group";
 import HighlightMenuCard from "@/components/cards/HighlightMenu";
+import Canvas from "@/components/Canvas";
 
 const caseStudiesAndCoreTools = () => {
   return (
@@ -8,15 +9,8 @@ const caseStudiesAndCoreTools = () => {
       <div className="absolute right-0 px-10 z-40">
         <HighlightMenuCard />
       </div>
-      {groups?.map((data, index) => {
-        return (
-          <Group
-            key={`case-studies-and-core-tools-${data.title}-${index}`}
-            data={data}
-            minifiedHeader
-          />
-        );
-      })}
+
+      <Canvas data={groups} blockHeight={10} />
     </section>
   );
 };

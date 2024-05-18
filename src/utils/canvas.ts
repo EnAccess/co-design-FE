@@ -37,14 +37,18 @@ export const generateGroup = (name: any, position: any, height: any) => ({
   type: "group",
 });
 
-const groupPositions = (i: any, length: any) => {
-  console.log(length);
-  const baseRowHeight = 2400;
-  let rowHeight = baseRowHeight;
+let baseRowHeightGroup = 1200;
+let increaseGroupHeight = 0;
+const incrementGroupHeight = (value: any) => {
+  increaseGroupHeight = increaseGroupHeight + value;
+};
+const groupPositions = (length: any) => {
+  let rowHeight = baseRowHeightGroup;
   if (length > 3) {
-    rowHeight *= 2;
+    rowHeight *= Math.ceil(length / 3);
   }
-  const y = 1 + (i % 3) * rowHeight;
+  const y = increaseGroupHeight;
+  incrementGroupHeight(rowHeight);
   return [{ x: 1, y }, rowHeight];
 };
 
@@ -55,9 +59,9 @@ export const parseGroups = (
   const nodes: any[] = [];
   const edges: any[] = [];
 
-  groups.forEach((group, i) => {
+  groups.forEach((group) => {
     const blockCount = group.blocks.length;
-    const [position, height] = groupPositions(i, blockCount);
+    const [position, height] = groupPositions(blockCount);
     const groupNode = generateGroup(group.title, position, height);
     const blocks = parseBlocks(group.blocks, groupNode.id, container);
     nodes.push(groupNode, ...blocks.nodes);

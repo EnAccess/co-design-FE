@@ -6,16 +6,22 @@ import { toolsData } from "./tools-data";
 const toolData = toolsData["BASIC TOOLS"];
 
 const entries = output.filter(
-  (entry) => entry?.PARSED_MANUAL_TAGS && "BASIC TOOLS" in entry.PARSED_MANUAL_TAGS
+  (entry) =>
+    entry?.PARSED_MANUAL_TAGS && "BASIC TOOLS" in entry.PARSED_MANUAL_TAGS
 ) as unknown as Entry[];
 
-const groups: Block[] = [
+const groups: Group[] = [
   {
-    title: "Basic Tools",
-    description: toolData?.description,
-    entries,
+    title: "",
+    blocks: [
+      {
+        title: "Basic Tools",
+        description: toolData?.description,
+        entries,
+      },
+      ...approaches,
+    ],
   },
-  ...approaches,
-];
+] as unknown as Group[];
 
 export default groups;

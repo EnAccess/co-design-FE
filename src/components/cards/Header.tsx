@@ -1,4 +1,6 @@
+import { usePathname } from "next/navigation";
 import React from "react";
+
 interface Props {
   minified?: boolean;
   title: string;
@@ -6,7 +8,8 @@ interface Props {
 }
 
 const HeaderCard = ({ minified, title, description }: Props) => {
-  if (minified)
+  const pathName = usePathname();
+  if (pathName === "/case-studies-and-core-tools")
     return <h1 className="m-2 text-lg font-semibold">{title}</h1>;
 
   return (

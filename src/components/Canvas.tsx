@@ -1,20 +1,10 @@
-import {
-  parseBlocks,
-  parseEdges,
-  parseGroups,
-  parseNodes,
-} from "@/utils/canvas";
-import { useCallback, useEffect, useMemo, useState } from "react";
-import ReactFlow, { Background, useEdgesState, useNodesState } from "reactflow";
+import { parseGroups } from "@/utils/canvas";
+import { useCallback, useEffect, useMemo } from "react";
+import ReactFlow, { useEdgesState, useNodesState } from "reactflow";
 import "reactflow/dist/style.css";
 import { NodeCard } from "./cards/Node";
-import { group } from "console";
 import BlockCard from "./cards/Block";
 import GroupCard from "./cards/Group";
-
-const CONTAINER_HEIGHT = 800;
-const CONTAINER_WIDTH = 1000;
-const SINGLE_BLOCK_WIDTH = 3000;
 
 const NodeTypes = {
   coDesign: NodeCard,
@@ -55,7 +45,7 @@ const Canvas = ({ data, blockHeight }: any) => {
   return (
     <div
       style={{
-        height: `${blockHeight * 40}rem`,
+        height: `${blockHeight * 32}rem`,
         width: "auto",
         position: "relative",
         zIndex: 20,

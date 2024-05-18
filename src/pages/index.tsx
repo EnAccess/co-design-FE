@@ -1,5 +1,4 @@
 import Canvas from "@/components/Canvas";
-import Group from "@/components/cards/Group";
 import resources from "@/data/resources/advanced-resources";
 
 const AdvancedResources = () => {

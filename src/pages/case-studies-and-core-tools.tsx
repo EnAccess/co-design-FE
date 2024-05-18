@@ -1,5 +1,4 @@
 import groups from "@/data/case-studies";
-import Group from "@/components/cards/Group";
 import HighlightMenuCard from "@/components/cards/HighlightMenu";
 import Canvas from "@/components/Canvas";
 

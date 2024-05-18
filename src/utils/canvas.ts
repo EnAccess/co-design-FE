@@ -49,7 +49,6 @@ const groupPositions = (i: any, length: any) => {
   }
   const y = increaseGroupHeight;
   incrementGroupHeight(rowHeight);
-  console.log(y);
   return [{ x: 1, y }, rowHeight];
 };
 
@@ -149,36 +148,6 @@ export const generateEdge = (
   labelStyle: { color: "#4e5157" },
   marker: { color: "#000", border: "5" },
 });
-
-// export const generateInitialPositions = (
-//   numItems: any,
-//   containerWidth: any,
-//   containerHeight: any,
-//   horizontalSpacing = 250,
-//   verticalSpacing = 200,
-//   minY = 0
-// ) => {
-//   const positions = [];
-
-//   const maxItemsPerRow = Math.floor(containerWidth / horizontalSpacing);
-//   const numRows = Math.ceil(numItems / maxItemsPerRow);
-
-//   let index = 0;
-//   for (let row = 0; row < numRows; row++) {
-//     const y = (row + 1) * verticalSpacing + minY;
-//     const itemsInRow = Math.min(numItems - index, maxItemsPerRow);
-//     const rowWidth = itemsInRow * horizontalSpacing;
-//     const startX = (containerWidth - rowWidth) / 2;
-
-//     for (let col = 0; col < itemsInRow; col++) {
-//       const x = startX + col * horizontalSpacing;
-//       positions.push({ x, y });
-//       index++;
-//     }
-//   }
-
-//   return positions;
-// };
 
 export const generateInitialPositions = (
   numItems: any,

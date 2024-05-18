@@ -5,6 +5,7 @@ import "reactflow/dist/style.css";
 import { NodeCard } from "./cards/Node";
 import BlockCard from "./cards/Block";
 import GroupCard from "./cards/Group";
+import { useFilter } from "@/hooks/useFilter";
 
 const NodeTypes = {
   coDesign: NodeCard,
@@ -32,11 +33,11 @@ const Canvas = ({ data, blockHeight }: any) => {
       initialNodes: output.nodes,
     };
   }, [data]);
-
+  const filteredNodes = useFilter(initialNodes);
   const updateData = useCallback(() => {
     setEdges(initialEdges);
-    setNodes(initialNodes);
-  }, [initialEdges, initialNodes]);
+    setNodes(filteredNodes);
+  }, [initialEdges, filteredNodes]);
 
   useEffect(() => {
     updateData();

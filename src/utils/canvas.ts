@@ -12,8 +12,11 @@ export const generateBlock = (
   draggable: false,
   type: "block",
   style: {
-    width: 1060,
-    height: 1000,
+    width:
+      groupIndex == "1" && currentPath === "/case-studies-and-core-tools"
+        ? 3100
+        : 1060,
+    height: currentPath === "/case-studies-and-core-tools" ? 800 : 1000,
     borderStyle: "dashed",
     borderColor: "#C8C8C8",
     borderWidth: "4px",
@@ -38,10 +41,13 @@ export const generateGroup = (name: any, position: any, height: any) => ({
 
 let baseRowHeightGroup = 1200;
 let increaseGroupHeight = 0;
+let currentPath = "";
+let groupIndex = "";
 const incrementGroupHeight = (value: any) => {
   increaseGroupHeight = increaseGroupHeight + value;
 };
 const groupPositions = (i: any, length: any) => {
+  groupIndex = i;
   if (i === 0) baseRowHeightGroup = 1200;
   let rowHeight = baseRowHeightGroup;
   if (length > 3) {
@@ -54,12 +60,13 @@ const groupPositions = (i: any, length: any) => {
 
 export const parseGroups = (
   groups: Group[],
-  container: { width: number; height: number }
+  container: { width: number; height: number },
+  pathName: string
 ) => {
   increaseGroupHeight = 0;
   const nodes: any[] = [];
   const edges: any[] = [];
-
+  currentPath = pathName;
   groups.forEach((group, i) => {
     const blockCount = group.blocks.length;
     const [position, height] = groupPositions(i, blockCount);

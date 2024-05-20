@@ -6,6 +6,7 @@ import { NodeCard } from "./cards/Node";
 import BlockCard from "./cards/Block";
 import GroupCard from "./cards/Group";
 import { useFilter } from "@/hooks/useFilter";
+import { usePathname } from "next/navigation";
 
 const NodeTypes = {
   coDesign: NodeCard,
@@ -14,6 +15,8 @@ const NodeTypes = {
 };
 
 const Canvas = ({ data, blockHeight }: any) => {
+  const pathName = usePathname();
+
   const [nodes, setNodes, onNodesChange] = useNodesState([]);
   const [edges, setEdges, onEdgesChange] = useEdgesState([]);
 
@@ -24,10 +27,14 @@ const Canvas = ({ data, blockHeight }: any) => {
 
   const { initialEdges, initialNodes } = useMemo(() => {
     const { width, height } = getWindowSize();
-    const output = parseGroups(data, {
-      width,
-      height,
-    });
+    const output = parseGroups(
+      data,
+      {
+        width,
+        height,
+      },
+      pathName
+    );
     return {
       initialEdges: output.edges,
       initialNodes: output.nodes,

@@ -7,10 +7,10 @@ interface Props {
   description?: string;
 }
 
-const HeaderCard = ({ minified, title, description }: Props) => {
+const HeaderCard = ({ title, description }: Props) => {
   const pathName = usePathname();
   if (pathName === "/case-studies-and-core-tools")
-    return <h1 className="m-2 text-lg font-semibold">{title}</h1>;
+    return <h1 className="m-6 text-lg font-semibold">{title}</h1>;
 
   return (
     <div className="bg-yellow-200 flex justify-between gap-4 px-5 py-5 w-4/5">

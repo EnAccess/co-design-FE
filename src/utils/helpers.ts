@@ -1,3 +1,5 @@
+import { getLevel } from "./nodes";
+
 export const hasTag = (entry: any, name: any, value: any) => {
   const attributeValues = entry?.PARSED_MANUAL_TAGS?.[name];
   if (Array.isArray(attributeValues)) return attributeValues.includes(value);
@@ -85,4 +87,8 @@ export const getRandomColor = () => {
   var hexColor = "#" + hexR + hexG + hexB;
 
   return hexColor;
+};
+
+export const sortByLevel = (arr: any[]) => {
+  return arr.sort((a, b) => Number(getLevel(b)) - Number(getLevel(a)));
 };

@@ -1,5 +1,9 @@
 import { Block, Group } from "@/types/interfaces";
+import classNames from "classnames";
+import { rgba } from "polished";
 import { v4 as uuid } from "uuid";
+import { getLevel } from "./nodes";
+import { sortByLevel } from "./helpers";
 
 export const generateBlock = (
   parentId: string,
@@ -19,8 +23,10 @@ export const generateBlock = (
     height: currentPath === "/case-studies-and-core-tools" ? 800 : 1000,
     borderStyle: "dashed",
     borderColor: "#C8C8C8",
+    background: rgba("#000", 0.025),
     borderWidth: "4px",
     padding: "10px",
+    classNames: "bg-gray-900",
   },
   parentId,
 });
@@ -84,7 +90,7 @@ export const parseBlockData = (data: Block, groupId: string, position: any) => {
     ...generateBlock(groupId, data.title, data.description),
     position,
   };
-  const nodes = parseNodes(data.entries, {
+  const nodes = parseNodes(sortByLevel(data.entries), {
     width: blockNode.style.width,
     height: blockNode.style.height,
   }).map((node) => ({

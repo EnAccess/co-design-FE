@@ -9,7 +9,7 @@ const caseStudiesAndCoreTools = () => {
         <HighlightMenuCard />
       </div>
 
-      <Canvas data={groups} blockHeight={10} />
+      <Canvas data={groups} blockHeight={5} />
     </section>
   );
 };

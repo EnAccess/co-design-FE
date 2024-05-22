@@ -1,15 +1,26 @@
-import output from "../../../../public/data.json";
 import themeData from "./theme-data";
+const url = `${process.env.DEVELOPMENT_URL}/api/get-output-json`;
+export async function getStaticProps() {
+  const res = await fetch(url);
+  const output = await res.json();
+  const rawthemes = output
+    .map((data: any) => data?.PARSED_MANUAL_TAGS?.THEME)
+    .flat()
+    .filter((theme: any) => theme) as string[];
 
-const rawthemes = output.map((data) => data?.PARSED_MANUAL_TAGS?.THEME).flat().filter((theme) => theme) as string[]
-
-export const themes = Array.from(new Set(rawthemes)).map((theme: string) => {
-    const data = themeData[theme.toUpperCase()];
-    const entries = output.filter((entry) => entry?.PARSED_MANUAL_TAGS?.THEME?.includes(theme));
-    return {
+  const themes = Array.from(new Set(rawthemes))
+    .map((theme) => {
+      const data = themeData[theme.toUpperCase()];
+      const entries = output.filter((entry: any) =>
+        entry?.PARSED_MANUAL_TAGS?.THEME?.includes(theme)
+      );
+      return {
         title: theme,
         description: data?.description || null,
         group: data?.group || "NO GROUP",
         entries,
-    }
-}).sort((a, b) => b.entries.length - a.entries.length);
+      };
+    })
+    .sort((a, b) => b.entries.length - a.entries.length);
+  return themes;
+}

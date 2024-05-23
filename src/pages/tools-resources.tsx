@@ -2,7 +2,7 @@ import React from "react";
 import Block from "../components/Block";
 import { getGroup } from "@/data/basic-tools";
 
-const ToolsResources = ({ tools }: any) => {
+const ToolsResource = ({ tools }: any) => {
   return (
     <section className="mt-10 flex gap-y-8 px-8 flex-wrap">
       {tools?.map((data: any, i: any) => (
@@ -18,7 +18,7 @@ const ToolsResources = ({ tools }: any) => {
   );
 };
 
-export default ToolsResources;
+export default ToolsResource;
 
 export async function getStaticProps() {
   const tools = await getGroup();

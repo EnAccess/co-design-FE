@@ -2,7 +2,7 @@ import { Block } from "@/types/interfaces";
 import { toolsData } from "./tools-data";
 import { generateDataJson } from "@/utils/generate-output-json";
 
-export async function getTools() {
+export async function getTool() {
   const output = await generateDataJson();
   const rawApproaches = output
     .map((data: any) => data?.PARSED_MANUAL_TAGS?.TOOLS)

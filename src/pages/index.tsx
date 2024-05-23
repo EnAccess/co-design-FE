@@ -1,9 +1,9 @@
 import Group from "@/components/Group";
-import Resources from "../data/resources/advanced-resources";
+import advancedResources from "../data/resources/advanced-resources";
 
 export async function getStaticProps() {
   try {
-    const resources = await Resources();
+    const resources = await advancedResources();
 
     return {
       props: {

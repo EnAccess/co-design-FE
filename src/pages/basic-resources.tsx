@@ -1,10 +1,10 @@
 import React from "react";
-import Resources from "@/data/resources/basic-resources";
+import basicResources from "@/data/resources/basic-resources";
 import Group from "@/components/Group";
 
 export async function getStaticProps() {
   try {
-    const resources = await Resources();
+    const resources = await basicResources();
 
     return {
       props: {

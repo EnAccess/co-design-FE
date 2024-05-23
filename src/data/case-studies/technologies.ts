@@ -1,8 +1,11 @@
-import output from "../../../public/data.json";
+import { generateDataJson } from "@/utils/generate-output-json";
 
-const rawTechnlogies = output
-  .map((data) => data?.PARSED_MANUAL_TAGS["CASE STUDY TECH"])
-  .flat()
-  .filter((theme) => theme) as string[];
+export async function getTechnlogies() {
+  const output = await generateDataJson();
+  const rawTechnlogies = output
+    .map((data: any) => data?.PARSED_MANUAL_TAGS["CASE STUDY TECH"])
+    .flat()
+    .filter((theme: any) => theme) as string[];
 
-export const technologies = Array.from(new Set(rawTechnlogies));
+  return Array.from(new Set(rawTechnlogies));
+}

@@ -1,5 +1,11 @@
-import output from "../../../public/data.json";
+import { generateDataJson } from "@/utils/generate-output-json";
 
-const rawLevels = output.map((data) => data?.PARSED_MANUAL_TAGS['CASE STUDY LEVEL']).flat().filter((theme) => theme) as string[]
+export async function getLevels() {
+  const output = await generateDataJson();
+  const rawLevels = output
+    .map((data: any) => data?.PARSED_MANUAL_TAGS["CASE STUDY LEVEL"])
+    .flat()
+    .filter((theme: any) => theme) as string[];
 
-export const levels = Array.from(new Set(rawLevels));
+  return Array.from(new Set(rawLevels));
+}

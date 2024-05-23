@@ -2,10 +2,7 @@ import React from "react";
 import basicResources from "@/data/resources/basic-resources";
 import Group from "@/components/Group";
 
-const BasicResources = ({ resources, error }: any) => {
-  if (error) {
-    return <div>Error: {error}</div>;
-  }
+const BasicResources = ({ resources }: any) => {
   return (
     <section className="py-10">
       {resources.map((data: any, index: any) => (

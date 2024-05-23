@@ -1,12 +1,9 @@
 import React from "react";
 import Line from "../icons/Line";
 import LevelCard from "../cards/Level";
-import { getPracticeLevel } from "@/data/practice";
-
-const PracticeSection = ({ practiceLevels }: any) => {
-  console.log(practiceLevels);
-  const length = 6;
-  const title = "karera";
+import practiceLevels from "@/data/practice";
+const length = practiceLevels.length;
+const PracticeSection = ({ title }: { title: string }) => {
   return (
     <div className="w-1/3 h-[28rem]">
       <p className="text-center text-gray-500 text-xl font-bold mb-3">
@@ -15,7 +12,7 @@ const PracticeSection = ({ practiceLevels }: any) => {
       <div className="h-full flex items-center justify-center">
         <div className="h-[20rem] -mt-4">
           <div className="flex relative">
-            {practiceLevels?.map((level: any, index: any) => (
+            {practiceLevels.map((level: any, index: any) => (
               <React.Fragment key={index}>
                 <div className="flex  flex-col items-center">
                   {index % 2 === 0 ? (
@@ -86,11 +83,4 @@ const PracticeSection = ({ practiceLevels }: any) => {
 
 export default PracticeSection;
 
-export function getStaticProps() {
-  const practiceLevels = getPracticeLevel();
-  return {
-    props: {
-      practiceLevels,
-    },
-  };
-}
+

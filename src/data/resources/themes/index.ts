@@ -1,8 +1,8 @@
+import { generateDataJson } from "@/utils/generate-output-json";
 import themeData from "./theme-data";
-const url = `${process.env.DEVELOPMENT_URL}/api/get-output-json`;
+
 export async function getThemes() {
-  const res = await fetch(url);
-  const output = await res.json();
+  const output = await generateDataJson();
   const rawthemes = output
     .map((data: any) => data?.PARSED_MANUAL_TAGS?.THEME)
     .flat()

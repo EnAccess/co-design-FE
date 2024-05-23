@@ -1,9 +1,12 @@
-import { levels } from "./levels";
+import { getLevels } from "./levels";
 import { levelsData } from "../levels-data";
 
-const practiceLevels = levelsData.map((level, index) => ({
-  ...level,
-  level: levels[index],
-}));
-
-export default practiceLevels;
+export const getPracticeLevel = () => {
+  return levelsData.map(async (level, index) => {
+    const levels = await getLevels();
+    return {
+      ...level,
+      level: levels[index],
+    };
+  });
+};

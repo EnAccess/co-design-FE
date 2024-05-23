@@ -82,3 +82,5 @@ const PracticeSection = ({ title }: { title: string }) => {
 };
 
 export default PracticeSection;
+
+

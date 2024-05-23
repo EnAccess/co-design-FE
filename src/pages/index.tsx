@@ -1,31 +1,7 @@
 import Group from "@/components/Group";
 import advancedResources from "../data/resources/advanced-resources";
 
-export async function getStaticProps() {
-  try {
-    const resources = await advancedResources();
-
-    return {
-      props: {
-        resources,
-      },
-      revalidate: 100,
-    };
-  } catch (error) {
-    console.error("Fetch error:", error);
-    return {
-      props: {
-        resources: [],
-        error: "Failed to fetch groups",
-      },
-    };
-  }
-}
-
-const AdvancedResources = ({ resources, error }: any) => {
-  if (error) {
-    return <div>Error: {error}</div>;
-  }
+const AdvancedResources = ({ resources }: any) => {
   return (
     <section className="py-10">
       {resources.map((data: any, index: any) => (
@@ -36,3 +12,12 @@ const AdvancedResources = ({ resources, error }: any) => {
 };
 
 export default AdvancedResources;
+
+export async function getStaticProps() {
+  const resources = await advancedResources();
+  return {
+    props: {
+      resources,
+    },
+  };
+}

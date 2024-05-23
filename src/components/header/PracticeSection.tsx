@@ -1,10 +1,13 @@
 import React from "react";
 import Line from "../icons/Line";
 import LevelCard from "../cards/Level";
-import practiceLevels from "@/data/practice";
+import { getPracticeLevel } from "@/data/practice";
 
-const length = practiceLevels.length;
-const PracticeSection = ({ title }: { title: string }) => {
+const PracticeSection = async ({ title }: any) => {
+  const practiceLevels = await getPracticeLevel().then((res) => res);
+  console.log("lareara", practiceLevels);
+  const length = practiceLevels.length;
+
   return (
     <div className="w-1/3 h-[28rem]">
       <p className="text-center text-gray-500 text-xl font-bold mb-3">
@@ -13,7 +16,7 @@ const PracticeSection = ({ title }: { title: string }) => {
       <div className="h-full flex items-center justify-center">
         <div className="h-[20rem] -mt-4">
           <div className="flex relative">
-            {practiceLevels.map((level, index) => (
+            {practiceLevels?.map((level: any, index: any) => (
               <React.Fragment key={index}>
                 <div className="flex  flex-col items-center">
                   {index % 2 === 0 ? (

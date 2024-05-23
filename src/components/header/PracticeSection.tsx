@@ -15,7 +15,7 @@ const PracticeSection = ({ practiceLevels }: any) => {
       <div className="h-full flex items-center justify-center">
         <div className="h-[20rem] -mt-4">
           <div className="flex relative">
-            {practiceLevels.map((level: any, index: any) => (
+            {practiceLevels?.map((level: any, index: any) => (
               <React.Fragment key={index}>
                 <div className="flex  flex-col items-center">
                   {index % 2 === 0 ? (

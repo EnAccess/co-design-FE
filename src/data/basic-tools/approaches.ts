@@ -1,21 +1,26 @@
 import { Block } from "@/types/interfaces";
-import output from "../../../public/data.json";
 import { toolsData } from "./tools-data";
+import { generateDataJson } from "@/utils/generate-output-json";
 
-const rawApproaches = output
-  .map((data) => data?.PARSED_MANUAL_TAGS?.TOOLS)
-  .flat()
-  .filter((approach) => approach) as string[];
+export async function getTools() {
+  const output = await generateDataJson();
+  const rawApproaches = output
+    .map((data: any) => data?.PARSED_MANUAL_TAGS?.TOOLS)
+    .flat()
+    .filter((approach: any ) => approach) as string[];
 
-export const approaches = Array.from(new Set(rawApproaches)).map(
+  const approaches = Array.from(new Set(rawApproaches)).map(
     (approach: string) => {
-        const data = toolsData[approach.toUpperCase()];
-        const entries = output.filter((entry) => entry?.PARSED_MANUAL_TAGS?.TOOLS?.includes(approach)
-        );
-        return {
-            title: approach,
-            description: data?.description,
-            entries,
-        };
+      const data = toolsData[approach.toUpperCase()];
+      const entries = output.filter((entry:any) =>
+        entry?.PARSED_MANUAL_TAGS?.TOOLS?.includes(approach)
+      );
+      return {
+        title: approach,
+        description: data?.description,
+        entries,
+      };
     }
-) as unknown as Block[];
+  ) as Block[];
+    return approaches;
+}

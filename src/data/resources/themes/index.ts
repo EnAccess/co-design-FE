@@ -1,6 +1,6 @@
 import themeData from "./theme-data";
 const url = `${process.env.DEVELOPMENT_URL}/api/get-output-json`;
-export async function getStaticProps() {
+export async function getThemes() {
   const res = await fetch(url);
   const output = await res.json();
   const rawthemes = output

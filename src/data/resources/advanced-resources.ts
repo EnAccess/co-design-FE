@@ -1,9 +1,9 @@
-import { getStaticProps as getThemesStaticProps } from "./themes";
+import { getThemes } from "./themes";
 import groupBy from "lodash.groupby";
 import { Group } from "../../types/interfaces";
 
-async function fetchGroups() {
-  const themes = await getThemesStaticProps();
+async function getGroups() {
+  const themes = await getThemes();
 
   const rawGroups = groupBy(themes, "group");
   const groups: Group[] = Object.keys(rawGroups)
@@ -18,4 +18,4 @@ async function fetchGroups() {
   return groups;
 }
 
-export default fetchGroups;
+export default getGroups;

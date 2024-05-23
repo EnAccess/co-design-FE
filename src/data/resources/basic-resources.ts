@@ -1,10 +1,10 @@
 import { Group } from "../../types/interfaces";
-import { getStaticProps as getThemesStaticProps } from "./themes";
+import { getThemes } from "./themes";
 
 import groupBy from "lodash.groupby";
 
-async function fetchGroups() {
-  const themes = await getThemesStaticProps();
+async function getGroups() {
+  const themes = await getThemes();
 
   const filteredThemes = themes
     .map((theme) => {
@@ -29,4 +29,4 @@ async function fetchGroups() {
     .sort((a, b) => a.title.localeCompare(b.title)) as unknown as Group[];
   return groups;
 }
-export default fetchGroups;
+export default getGroups;

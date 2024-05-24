@@ -1,12 +1,13 @@
 import React from "react";
 import Star from "./icons/Star";
 import { getColorByAccess } from "@/utils/nodes";
-const footerData = ["Open Source", "Institutional Access", "Paid Service"];
+import { acessData } from "@/data/accessData";
+
 const Footer = () => {
   return (
     <footer className="flex flex-col items-center my-4 p-4 px-8 text-base font-bold float-end border-2 border-gray-600 mr-14">
       <h2 className="mb-4">All Resources are Open Access: unless indicated:</h2>
-      {footerData.map((data, index) => {
+      {acessData.map((data, index) => {
         const color = getColorByAccess(data);
         return (
           <div

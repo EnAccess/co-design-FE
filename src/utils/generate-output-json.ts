@@ -31,20 +31,18 @@ function parseTags(tags: any) {
 }
 
 function cleanObject(obj: any): any {
-  if (Array.isArray(obj)) {
+  if (obj === null || obj === undefined) return obj;
+
+  if (Array.isArray(obj))
     return obj.map(cleanObject).filter((v) => v !== undefined && v !== null);
-  } else if (obj !== null && typeof obj === "object") {
+
+  if (typeof obj === "object") {
     return Object.entries(obj).reduce((acc: any, [key, value]) => {
-      if (value === undefined) {
-        acc[key] = null;
-      } else if (value !== null && typeof value === "object") {
-        acc[key] = cleanObject(value);
-      } else {
-        acc[key] = value;
-      }
+      value === undefined ? (acc[key] = null) : (acc[key] = cleanObject(value));
       return acc;
     }, {});
   }
+
   return obj;
 }
 

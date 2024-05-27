@@ -2,7 +2,9 @@ import React from "react";
 import Line from "../icons/Line";
 import LevelCard from "../cards/Level";
 import practiceLevels from "@/data/practice";
+
 const length = practiceLevels.length;
+
 const PracticeSection = ({ title }: { title: string }) => {
   return (
     <div className="w-1/3 h-[28rem]">
@@ -82,5 +84,3 @@ const PracticeSection = ({ title }: { title: string }) => {
 };
 
 export default PracticeSection;
-
-

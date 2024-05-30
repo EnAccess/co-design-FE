@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "co-design-toolkit-datalayer"
+version = "0.1.0"
+description = ""
+authors = ["EnAccess <info@enaccess.org>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pyzotero = "^1.5.19"
+
+[tool.poetry.scripts]
+datalayer_sync = 'datalayer.__main__:sync'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,8 +1,6 @@
 const csvFilePath = "./public/data.csv";
 import csv from "csvtojson";
 import groupBy from "lodash.groupby";
-import fs from "fs";
-import relations from "../../public/output.json";
 
 function removeEmptyFields(obj: any) {
   return Object.fromEntries(Object.entries(obj).filter(([_, v]) => v));
@@ -46,18 +44,25 @@ function cleanObject(obj: any): any {
   return obj;
 }
 
-export async function generateDataJson() {
-  // load relationships from json
-  const relatedData = new Map();
-  relations.forEach((item: any) => {
-    relatedData.set(item["Key"], item);
-  });
+function parseExtraField(row: any) {
+  const extraField = row.Extra;
+  if (extraField) {
+    const strippedValue = extraField.replace("RELATES_TO: ", "");
+    const parsedRelatesTo = strippedValue
+      .split("|")
+      .map((item: any) => item.trim());
+    row.PARSED_RELATES_TO = parsedRelatesTo;
+  } else {
+    row.PARSED_RELATES_TO = [];
+  }
+}
 
+export async function generateDataJson() {
   const jsonArray = await csv().fromFile(csvFilePath);
   const output = jsonArray.map((item: any) => {
     const manualTags = parseTags(item["Manual Tags"] || "");
     const autoTags = parseTags(item["Automatic Tags"] || "");
-    const relations = relatedData.get(item["Key"])?.PARSED_RELATES_TO || [];
+    parseExtraField(item);
     const level = manualTags["CO-DESIGN LEVEL"] || [];
     delete manualTags["CO-DESIGN LEVEL"];
 
@@ -71,7 +76,6 @@ export async function generateDataJson() {
       ...removeEmptyFields(item),
       PARSED_MANUAL_TAGS: removeEmptyFields(manualTags),
       PARSED_AUTOMATIC_TAGS: removeEmptyFields(autoTags),
-      PARSED_RELATES_TO: relations,
     });
   });
 

@@ -1,5 +1,5 @@
 import { getLevels } from "./levels";
-import { getTechnlogies } from "./technologies";
+import { getTechnologies } from "./technologies";
 
 export async function getHighlights() {
   const Highlights = [
@@ -16,7 +16,7 @@ export async function getHighlights() {
           title: "Case Study Technology",
           type: "default",
           attribute: "CASE STUDY TECH",
-          entries: await getTechnlogies(),
+          entries: await getTechnologies(),
         },
       ],
     },

@@ -54,8 +54,8 @@ function parseZotero() {
     });
 }
 
-const output = parseZotero();
+const zoteroData = parseZotero();
 
-export default output;
+export default zoteroData;
 
 

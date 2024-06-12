@@ -1,7 +1,5 @@
 import { Group } from "@/types/interfaces";
-import output from "../../../public/data.json";
-import { technologies } from "./technologies";
-import { levels } from "./levels";
+import output from "@/data/zotero";
 
 const caseStudies = output.filter(
   (data) => data?.PARSED_MANUAL_TAGS["CASE STUDY GROUP"]

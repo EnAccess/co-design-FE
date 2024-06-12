@@ -1,10 +1,9 @@
-import { useMemo } from "react";
-import { Handle, Position } from "reactflow";
-import "reactflow/dist/style.css";
 import Star from "@/components/icons/Star";
-import { getBgColorClassName, getColorByAccess, getLevel } from "@/utils/nodes";
-import Link from "next/link";
 import { useHighlight } from "@/hooks/useHighlight";
+import { getBgColorClassName, getColorByAccess, getLevel } from "@/utils/nodes";
+import { useMemo } from "react";
+import { Handle } from "reactflow";
+import "reactflow/dist/style.css";
 
 export function NodeCard({ data, sourcePosition, targetPosition, selected }: any) {
   const highlighted = useHighlight(data);
@@ -22,17 +21,17 @@ export function NodeCard({ data, sourcePosition, targetPosition, selected }: any
   }, [data, highlighted]);
 
   const onClick = () => {
-    if(!selected || !data?.Url) return;
-    window?.open(data?.Url, '_blank')?.focus();
+    if(!selected || !data?.url) return;
+    window?.open(data?.url, '_blank')?.focus();
   }
 
   return (
     <div className="group cursor-pointer">
-      <Handle type="target" position={targetPosition} id={data.Key} />
+      <Handle type="target" position={targetPosition} id={data.key} />
         <div onClick={onClick} className={className}>
           <div className="relative">
-            <p className="z-10">{data.Title}</p>
-            <p className="z-10">{data.Author}</p>
+            <p className="z-10">{data.title}</p>
+            <p className="z-10">{data.authors}</p>
             {(access === "Institutional Access" ||
               access === "Paid Service" ||
               access === "Open Source") && (
@@ -42,7 +41,7 @@ export function NodeCard({ data, sourcePosition, targetPosition, selected }: any
             )}
             <div className="absolute hidden group-hover:block bg-white border p-4 mt-2 z-20">
               <p>
-                <strong>Author</strong>: {data.Author}
+                <strong>Author(s)</strong>: {data.authors}
               </p>
               {summary && (
                 <div>
@@ -50,15 +49,15 @@ export function NodeCard({ data, sourcePosition, targetPosition, selected }: any
                 </div>
               )}
               <p>
-                <strong>Title</strong>: {data.Title}
+                <strong>Title</strong>: {data.title}
               </p>
               <p>
-                <strong>Tags</strong>: {data.Manual_Tags}
+                <strong>Tags</strong>: {data.tags}
               </p>
             </div>
           </div>
         </div>
-      <Handle type="source" position={sourcePosition} id={data.Key} />
+      <Handle type="source" position={sourcePosition} id={data.key} />
     </div>
   );
 }

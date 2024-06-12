@@ -1,6 +1,6 @@
 export interface ParsedManualTags {
   CORE_TOOLKIT?: boolean;
-  CO_DESIGN_LEVEL?: string;
+  ["CO-DESIGN LEVEL"]?: string;
   ["USEFUL FOR"]?: string[];
   ["PROJECT STEP"]?: string;
   ["CASE STUDY THEME"]?: string[] | string;
@@ -13,13 +13,13 @@ export interface ParsedManualTags {
 }
 
 export interface Entry {
-  Key: string;
-  Title: string;
-  Author: string;
-  Notes: string;
-  Url: string;
-  Extra: string | null;
-  Manual_Tags: string;
+  key: string;
+  title: string;
+  authors: string;
+  notes: string;
+  url: string;
+  extra: string | null;
+  tags: string;
   PARSED_MANUAL_TAGS: ParsedManualTags;
   PARSED_RELATES_TO?: string[];
 }

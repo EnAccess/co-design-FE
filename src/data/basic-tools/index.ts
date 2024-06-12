@@ -1,5 +1,5 @@
-import { Block, Entry, Group } from "@/types/interfaces";
-import output from "../../../public/data.json";
+import output from "@/data/zotero";
+import { Block, Entry } from "@/types/interfaces";
 import { approaches } from "./approaches";
 import { toolsData } from "./tools-data";
 

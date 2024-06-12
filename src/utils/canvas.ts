@@ -1,5 +1,5 @@
 export const generateNode = (label: any) => ({
-  id: label.Key,
+  id: label.key,
   data: label,
   position: { x: 0, y: 0 },
   draggable: false,
@@ -64,7 +64,7 @@ export const parseEdges = (data: any[]) =>
     let targetIds = element.PARSED_RELATES_TO;
 
     return targetIds.map((targetId: any, subIndex: any) =>
-      generateEdge(element.Key, targetId, index, subIndex)
+      generateEdge(element.key, targetId, index, subIndex)
     );
   });
 

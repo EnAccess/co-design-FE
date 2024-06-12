@@ -1,4 +1,4 @@
-import output from "../../../public/data.json";
+import output from "@/data/zotero";
 
 const rawTechnlogies = output
   .map((data) => data?.PARSED_MANUAL_TAGS["CASE STUDY TECH"])

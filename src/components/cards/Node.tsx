@@ -1,12 +1,16 @@
-import { useMemo } from "react";
-import { Handle, Position } from "reactflow";
-import "reactflow/dist/style.css";
 import Star from "@/components/icons/Star";
-import { getBgColorClassName, getColorByAccess, getLevel } from "@/utils/nodes";
-import Link from "next/link";
 import { useHighlight } from "@/hooks/useHighlight";
+import { getBgColorClassName, getColorByAccess, getLevel } from "@/utils/nodes";
+import { useMemo } from "react";
+import { Handle } from "reactflow";
+import "reactflow/dist/style.css";
 
-export function NodeCard({ data, sourcePosition, targetPosition, selected }: any) {
+export function NodeCard({
+  data,
+  sourcePosition,
+  targetPosition,
+  selected,
+}: any) {
   const highlighted = useHighlight(data);
 
   const { className, access, starColor, summary } = useMemo(() => {
@@ -22,43 +26,47 @@ export function NodeCard({ data, sourcePosition, targetPosition, selected }: any
   }, [data, highlighted]);
 
   const onClick = () => {
-    if(!selected || !data?.Url) return;
-    window?.open(data?.Url, '_blank')?.focus();
-  }
+    if (!selected || !data?.url) return;
+    window?.open(data?.url, "_blank")?.focus();
+  };
 
   return (
     <div className="group cursor-pointer">
-      <Handle type="target" position={targetPosition} id={data.Key} />
-        <div onClick={onClick} className={className}>
-          <div className="relative">
-            <p className="z-10">{data.Title}</p>
-            <p className="z-10">{data.Author}</p>
-            {(access === "Institutional Access" ||
-              access === "Paid Service" ||
-              access === "Open Source") && (
-              <div className="absolute -bottom-9 -right-7">
-                <Star color={starColor} />
+      <Handle type="target" position={targetPosition} id={data.key} />
+      <div onClick={onClick} className={className}>
+        <div className="relative">
+          {data.title && <p className="z-10">{data.title}</p>}
+          {data.authors && <p className="z-10">{data.authors}</p>}
+          {(access === "Institutional Access" ||
+            access === "Paid Service" ||
+            access === "Open Source") && (
+            <div className="absolute -bottom-9 -right-7">
+              <Star color={starColor} />
+            </div>
+          )}
+          <div className="absolute hidden group-hover:block bg-white border p-4 mt-2 z-20">
+            {data.authors && (
+              <p>
+                <strong>Author(s)</strong>: {data.authors}
+              </p>
+            )}
+            {summary && (
+              <div>
+                <strong>Summary</strong>: {summary}
               </div>
             )}
-            <div className="absolute hidden group-hover:block bg-white border p-4 mt-2 z-20">
+            {data.title && (
               <p>
-                <strong>Author</strong>: {data.Author}
+                <strong>Title</strong>: {data.title}
               </p>
-              {summary && (
-                <div>
-                  <strong>Summary</strong>: {summary}
-                </div>
-              )}
-              <p>
-                <strong>Title</strong>: {data.Title}
-              </p>
-              <p>
-                <strong>Tags</strong>: {data.Manual_Tags}
-              </p>
-            </div>
+            )}
+            <p>
+              <strong>Tags</strong>: {data.tags}
+            </p>
           </div>
         </div>
-      <Handle type="source" position={sourcePosition} id={data.Key} />
+      </div>
+      <Handle type="source" position={sourcePosition} id={data.key} />
     </div>
   );
 }

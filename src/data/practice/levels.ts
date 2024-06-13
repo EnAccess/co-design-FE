@@ -1,7 +1,7 @@
-import output from "../../../public/data.json";
+import output from "@/data/zotero";
 
 const rawLevels = output
-  .map((data) => data?.PARSED_MANUAL_TAGS["CO_DESIGN_LEVEL"])
+  .map((data) => data?.PARSED_MANUAL_TAGS["CO-DESIGN LEVEL"])
   .flat()
   .filter((theme) => theme)
   .sort() as string[];

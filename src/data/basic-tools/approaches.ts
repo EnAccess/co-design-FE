@@ -1,5 +1,5 @@
 import { Block } from "@/types/interfaces";
-import output from "../../../public/data.json";
+import output from "@/data/zotero";
 import { toolsData } from "./tools-data";
 
 const rawApproaches = output

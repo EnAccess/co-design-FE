@@ -30,6 +30,13 @@ const CardCanvas = ({ data, blockHeight, columns }: any) => {
     updateData();
   }, [updateData]);
 
+  const fitViewConfig = useMemo(() => {
+    return {
+      maxZoom: 1,
+      padding: 0.2,
+    };
+  }, []);
+
   return (
     <div
       style={{
@@ -47,6 +54,7 @@ const CardCanvas = ({ data, blockHeight, columns }: any) => {
         nodeTypes={NodeTypes}
         edges={edges}
         fitView
+        fitViewOptions={fitViewConfig}
         zoomOnPinch={false}
         zoomOnDoubleClick={false}
         panOnScroll={false}
@@ -56,10 +64,7 @@ const CardCanvas = ({ data, blockHeight, columns }: any) => {
         preventScrolling={false}
         onNodesChange={onNodesChange}
         onEdgesChange={onEdgesChange}
-        onInit={(instance) => setTimeout(() => instance.fitView({
-          maxZoom: 1,
-          padding: 0.2,
-        }), 100)}
+        onInit={(instance) => setTimeout(() => instance.fitView(fitViewConfig), 100)}
       ></ReactFlow>
     </div>
   );

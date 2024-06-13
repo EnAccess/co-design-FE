@@ -20,7 +20,7 @@ const CardCanvas = ({ data, blockHeight, columns }: any) => {
     setEdges(parseEdges(data));
     setNodes(
       parseNodes(data, {
-        width: columns > 5 ? SINGLE_BLOCK_WIDTH : CONTAINER_WIDTH,
+        width: columns > 3 ? SINGLE_BLOCK_WIDTH : CONTAINER_WIDTH,
         height: CONTAINER_HEIGHT,
       })
     );
@@ -56,7 +56,10 @@ const CardCanvas = ({ data, blockHeight, columns }: any) => {
         preventScrolling={false}
         onNodesChange={onNodesChange}
         onEdgesChange={onEdgesChange}
-        onInit={(instance) => setTimeout(() => instance.fitView(), 100)}
+        onInit={(instance) => setTimeout(() => instance.fitView({
+          maxZoom: 1,
+          padding: 0.2,
+        }), 100)}
       ></ReactFlow>
     </div>
   );

@@ -5,7 +5,7 @@ const caseStudies = output.filter(
   (data) => data?.PARSED_MANUAL_TAGS["CASE STUDY GROUP"]
 );
 const toolKits = output.filter(
-  (data) => data?.PARSED_MANUAL_TAGS["CORE_TOOLKIT"]
+  (data) => data?.PARSED_MANUAL_TAGS["CORE TOOLKIT"]
 );
 
 const groups: Group[] = [

@@ -6,7 +6,7 @@
 - [Built With](#built-with)
 - [Get Started](#getting-started)
 - [Prerequisites](#prerequisites)
-- [Deployed Link](#deployed-link)
+- [Link](#link)
 - [Contributing](#contributing)
 
 

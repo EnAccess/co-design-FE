@@ -2,14 +2,14 @@
 
 ## Table of Content
 
-- **Introduction**
-- **Get Started**
-- **Prerequesites**
-- **Deployment**
+- [Introduction](#introduction)
+- [Get Started](#getting-started)
+- [Prerequisites](#prerequisites)
+- [Deployment](#deployment)
 
 
 ## Introduction
-The Co-Design project is designed to provide users with a seamless and intuitive navigation experience across various pages. 
+The Co-Design project is designed to provide users with a seamless and intuitive navigation experience across various pages.
 
 ## Getting Started
 To get started with the Co-Design project, you can follow the steps below to clone the repository, install dependencies, and run the development server.
@@ -39,8 +39,3 @@ Open your browser and navigate to [http://localhost:3000](http://localhost:3000)
 
 ## Deployment
 To see the Co-Design project's deployed version, visit the link: [https://enaccess.github.io/co-design-FE].
-
-
-
-
-

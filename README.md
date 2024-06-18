@@ -16,9 +16,9 @@ The Co-Design project is designed to provide users with a seamless and intuitive
 ## Built with
 The Co-Design project was built using the following technologies:
 
-* [![Next][Next.js]][https://nextjs.org/docs]
-* [![React][React.js]][https://react.dev/]
-* [![ReactFlow][https://reactflow.dev/]]
+* [Next.js](https://nextjs.org/docs)
+* [React.js](https://react.dev/)
+* [ReactFlow](https://reactflow.dev/)
 
 
 ## Getting Started
@@ -69,7 +69,7 @@ npm run dev
 
 Open your browser and navigate to [http://localhost:3000](http://localhost:3000) to see the application running.
 
-## Deployed Link
+## Link
 To see the Co-Design project's deployed version, visit the link: [https://enaccess.github.io/co-design-FE].
 
 ## Contributing

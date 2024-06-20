@@ -11,19 +11,16 @@
 
 
 ## Introduction
-The Co-Design project is designed to provide users with a seamless and intuitive navigation experience across various pages.
+The Co-Design project is a collaboration tool for data visualization which is designed to provide users with a seamless and intuitive navigation experience across various pages.
 
 ## Built with
 The Co-Design project was built using the following technologies:
 
 * ![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript)&nbsp;
 * ![Next.js](https://img.shields.io/badge/-Nextjs-05122A?style=flat&logo=next.js)
-* <img src="https://worksolutions.ru/uploads/large_99999999999999999_1_2a116db3f4.png" alt="ReactFlow" width="20" height="15"> **React Flow**
+* <img src="https://worksolutions.ru/uploads/large_99999999999999999_1_2a116db3f4.png" alt="ReactFlow" width="15" height="13"> **React Flow**
 * ![TypeScript](https://img.shields.io/badge/-TypeScript-05122A?style=flat&logo=typescript)&nbsp;
 * ![Tailwind](https://img.shields.io/badge/-Tailwind-05122A?style=flat&logo=tailwindcss)&nbsp;
-
-
-
 
 
 ## Getting Started
@@ -32,6 +29,7 @@ To get started with the Co-Design project, you can follow the steps below to clo
 ## Prerequisites
 
 Before you begin, ensure you have the following installed on your machine:
+
 1. Node.js (version >= 14) and npm: You can download the installer from the official [Node.js website](https://nodejs.org/). The installer will include both Node.js and npm.
 
 **For macOS:**

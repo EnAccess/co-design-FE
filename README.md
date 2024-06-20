@@ -1,40 +1,89 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Co-Design Project
+
+## Table of Content
+
+- [Introduction](#introduction)
+- [Built With](#built-with)
+- [Get Started](#getting-started)
+- [Prerequisites](#prerequisites)
+- [Link](#link)
+- [Contributing](#contributing)
+
+
+## Introduction
+The Co-Design project is a collaboration tool for data visualization which is designed to provide users with a seamless and intuitive navigation experience across various pages.
+
+## Built with
+The Co-Design project was built using the following technologies:
+
+* ![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript)&nbsp;
+* ![Next.js](https://img.shields.io/badge/-Nextjs-05122A?style=flat&logo=next.js)
+* <img src="https://worksolutions.ru/uploads/large_99999999999999999_1_2a116db3f4.png" alt="ReactFlow" width="15" height="13"> **React Flow**
+* ![TypeScript](https://img.shields.io/badge/-TypeScript-05122A?style=flat&logo=typescript)&nbsp;
+* ![Tailwind](https://img.shields.io/badge/-Tailwind-05122A?style=flat&logo=tailwindcss)&nbsp;
+
 
 ## Getting Started
+To get started with the Co-Design project, you can follow the steps below to clone the repository, install npm packages, and run the development server.
 
-First, run the development server:
+## Prerequisites
 
+Before you begin, ensure you have the following installed on your machine:
+
+1. Node.js (version >= 14) and npm: You can download the installer from the official [Node.js website](https://nodejs.org/). The installer will include both Node.js and npm.
+
+**For macOS:**
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+brew install node
+```
+**For Ubuntu:**
+```bash
+sudo apt update
+sudo apt install nodejs npm
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. git : Git can be installed from the official [Git website.](https://git-scm.com/)
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+**For macOS:**
+```bash
+brew install git
+```
+**For Ubuntu**
+```bash
+sudo apt update
+sudo apt install git
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Once you have Node.js, npm, and Git installed, you can proceed with cloning the repository and setting up the project.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Clone the repository: 
+```bash
+git clone https://github.com/EnAccess/co-design-FE
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Install NPM packages
+```bash
+npm install
+```
+Then,run the development server
+```bash
+npm run dev
+```
 
-## Learn More
+Open your browser and navigate to [http://localhost:3000](http://localhost:3000) to see the application running.
 
-To learn more about Next.js, take a look at the following resources:
+## Link
+To see the Co-Design project's deployed version, visit the link: [https://enaccess.github.io/co-design-FE].
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Any contributions you make are **greatly appreciated**.
 
-## Deploy on Vercel
+If you have a suggestion, please fork the repo and create a pull request. 
+Don't forget to give the project a star!
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b ft/suggested-feature`)
+3. Commit your Changes (`git commit -m 'Add some suggested feature'`)
+4. Push to the Branch (`git push origin ft/suggested-feature`)
+5. Open a Pull Request

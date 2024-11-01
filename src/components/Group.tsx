@@ -18,12 +18,10 @@ const AdvancedResources = ({
           className={`p-4 grid grid-cols-8 grid-flow-col justify-center gap-3 text-sm w-full`}
         >
           {data.blocks.map((block, i) => {
-            // Sort entries based on "CO-DESIGN LEVEL"
             const sortedEntries = block.entries.sort((b, a) => {
               const levelA = a.PARSED_MANUAL_TAGS["CO-DESIGN LEVEL"] || "";
               const levelB = b.PARSED_MANUAL_TAGS["CO-DESIGN LEVEL"] || "";
 
-              // Assuming "CO-DESIGN LEVEL" is alphanumeric, adjust comparison logic accordingly
               if (levelA < levelB) return -1;
               if (levelA > levelB) return 1;
               return 0;
@@ -34,7 +32,7 @@ const AdvancedResources = ({
                 <Block
                   title={block.title}
                   description={block.description}
-                  entries={sortedEntries} // Use sorted entries here
+                  entries={sortedEntries} 
                   minifiedHeader={minifiedHeader}
                 />
               </div>

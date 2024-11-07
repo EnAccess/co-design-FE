@@ -1,21 +1,23 @@
-import { Group } from "../types/interfaces";
+import { Group as NodeGroup } from "../types/interfaces";
 import Block from "./Block";
 
-const AdvancedResources = ({
+const Group = ({
   data,
-  minifiedHeader
+  minifiedHeader,
+  maxColumns,
 }: {
-  data: Group;
+  data: NodeGroup;
   minifiedHeader?: boolean;
+  maxColumns?: number;
 }) => {
   return (
     <>
-      <h3 className="text-gray-600 font-semibold text-center text-2xl my-10">
+      <h3 className="text-neutral-500 font-semibold text-center text-5xl mt-20 mb-12">
         {data.title != "NO GROUP" && data.title}
       </h3>
       <div className="flex w-full">
         <div
-          className={`p-4 grid grid-cols-8 grid-flow-col justify-center gap-3 text-sm w-full`}
+          className={`p-4 grid grid-cols-10 grid-flow-dense place-content-center justify-items-center gap-3 text-sm w-full`}
         >
           {data.blocks.map((block, i) => {
             return (
@@ -25,6 +27,7 @@ const AdvancedResources = ({
                 description={block.description}
                 entries={block.entries}
                 minifiedHeader={minifiedHeader}
+                maxColumns={maxColumns}
               />
             );
           })}
@@ -34,4 +37,4 @@ const AdvancedResources = ({
   );
 };
 
-export default AdvancedResources;
+export default Group;

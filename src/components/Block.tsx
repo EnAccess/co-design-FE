@@ -1,10 +1,11 @@
-import React, { useMemo } from "react";
+import { useFilter } from "@/hooks/useFilter";
+import { Entries } from "@/types/interfaces";
+import { calculateRowAndColNumber } from "@/utils/canvas";
+import { useMemo } from "react";
 import CardCanvas from "./cards/Canvas";
 import Header from "./cards/Header";
-import { Entries } from "@/types/interfaces";
-import { useFilter } from "@/hooks/useFilter";
 
-const MAX_COL_SPAN = 3;
+const MAX_COL_SPAN = 4;
 const MIN_COL_SPAN = 2;
 
 interface Props {
@@ -12,25 +13,31 @@ interface Props {
   description?: string;
   entries: Entries;
   minifiedHeader?: boolean;
+  maxColumns?: number;
 }
-const Block = ({ title, description, entries, minifiedHeader }: Props) => {
-  const colSpan = useMemo(() => {
-    if (entries?.length >= 24) return 8;
-    if (entries?.length >= 18) return 7;
-    return entries?.length > MAX_COL_SPAN ? MAX_COL_SPAN : MIN_COL_SPAN;
-  }, [entries]);
-  const rowSpan = useMemo(
-    () => Math.ceil(entries?.length / colSpan),
-    [entries, colSpan]
+const Block = ({ title, description, entries, minifiedHeader, maxColumns }: Props) => {
+
+  const { rows, columns } = useMemo(
+    () => calculateRowAndColNumber(entries, maxColumns || MAX_COL_SPAN),
+    [entries]
   );
+  const colSpan = useMemo(() => {
+    if (columns < MIN_COL_SPAN) return MIN_COL_SPAN;
+    return columns
+  }, [entries]);
+
+  const rowSpan = useMemo(() => {
+    return rows + 1
+  }, [rows]);
+
   const blockHeight = useMemo(
-    () => Math.ceil(rowSpan / MAX_COL_SPAN),
-    [rowSpan]
+    () => rowSpan,
+    [rows]
   );
   const filteredEntries = useFilter(entries);
   return (
     <div
-      className={`col-span-${colSpan} row-span-${rowSpan} p-8 bg-gray-100 border-2 border-dashed border-gray-400 `}
+      className={`col-span-${colSpan} row-span-${rowSpan} mx-auto p-8 bg-gray-100 border-2 border-dashed border-gray-400 `}
     >
       <Header
         title={title}
@@ -41,7 +48,7 @@ const Block = ({ title, description, entries, minifiedHeader }: Props) => {
         <CardCanvas
           data={filteredEntries}
           blockHeight={blockHeight}
-          columns={colSpan}
+          columns={columns}
         />
       </div>
     </div>

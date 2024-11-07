@@ -15,9 +15,8 @@ const Group = ({
       <h3 className="text-neutral-500 font-semibold text-center text-5xl mt-20 mb-12">
         {data.title != "NO GROUP" && data.title}
       </h3>
-      <div className="flex w-full">
-        <div
-          className={`p-4 grid grid-cols-10 grid-flow-dense place-content-center justify-items-center gap-3 text-sm w-full`}
+      <div
+          className={`p-4 grid grid-cols-10 grid-flow-row-dense gap-3 text-sm w-full`}
         >
           {data.blocks.map((block, i) => {
             return (
@@ -32,7 +31,6 @@ const Group = ({
             );
           })}
         </div>
-      </div>
     </>
   );
 };

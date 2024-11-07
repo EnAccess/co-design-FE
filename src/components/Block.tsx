@@ -21,23 +21,19 @@ const Block = ({ title, description, entries, minifiedHeader, maxColumns }: Prop
     () => calculateRowAndColNumber(entries, maxColumns || MAX_COL_SPAN),
     [entries]
   );
+
   const colSpan = useMemo(() => {
     if (columns < MIN_COL_SPAN) return MIN_COL_SPAN;
     return columns
-  }, [entries]);
+  }, [entries, columns]);
 
-  const rowSpan = useMemo(() => {
-    return rows + 1
-  }, [rows]);
+  const rowSpan = rows + 1;
 
-  const blockHeight = useMemo(
-    () => rowSpan,
-    [rows]
-  );
   const filteredEntries = useFilter(entries);
+
   return (
     <div
-      className={`col-span-${colSpan} row-span-${rowSpan} mx-auto p-8 bg-gray-100 border-2 border-dashed border-gray-400 `}
+      className={`col-span-${colSpan} row-span-${rowSpan} p-8 bg-gray-100 border-2 border-dashed border-gray-400 `}
     >
       <Header
         title={title}
@@ -47,7 +43,7 @@ const Block = ({ title, description, entries, minifiedHeader, maxColumns }: Prop
       <div className="m-auto">
         <CardCanvas
           data={filteredEntries}
-          blockHeight={blockHeight}
+          blockHeight={rowSpan}
           columns={columns}
         />
       </div>

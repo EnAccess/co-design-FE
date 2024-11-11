@@ -15,7 +15,6 @@ export function getColorByAccess(accessType: string) {
 
 export const getLevel = (data: any) => {
   const coDesignLevel = data.PARSED_MANUAL_TAGS?.["CO-DESIGN LEVEL"];
-  console.log("lebveellllss", coDesignLevel)
   if (Array.isArray(coDesignLevel)) return coDesignLevel[0];
   return coDesignLevel;
 };

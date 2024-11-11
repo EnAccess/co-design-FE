@@ -10,7 +10,7 @@ const AdvancedResources = ({
 }) => {
   return (
     <>
-      <h3 className="text-gray-600 font-semibold text-center text-2xl my-10">
+      <h3 className="text-gray-600 font-bold text-center text-5xl my-10">
         {data.title !== "NO GROUP" && data.title}
       </h3>
       <div className="flex w-full">

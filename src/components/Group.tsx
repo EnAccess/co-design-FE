@@ -1,34 +1,43 @@
-import { Group as NodeGroup } from "../types/interfaces";
+import { Group } from "../types/interfaces";
 import Block from "./Block";
 
-const Group = ({
+const AdvancedResources = ({
   data,
   minifiedHeader,
-  maxColumns,
 }: {
-  data: NodeGroup;
+  data: Group;
   minifiedHeader?: boolean;
-  maxColumns?: number;
 }) => {
   return (
     <>
-      <h3 className="text-neutral-500 font-semibold text-center text-5xl mt-20 mb-12">
-        {data.title != "NO GROUP" && data.title}
+      <h3 className="text-gray-600 font-bold text-center text-5xl my-10">
+        {data.title !== "NO GROUP" && data.title}
       </h3>
       <div className="flex w-full">
         <div
-          className={`p-4 grid grid-cols-10 grid-flow-dense place-content-center justify-items-center gap-3 text-sm w-full`}
+          className={`p-4 grid grid-cols-8 grid-flow-col justify-center gap-3 text-sm w-full`}
         >
           {data.blocks.map((block, i) => {
+            // Sort entries based on "CO-DESIGN LEVEL"
+            const sortedEntries = block.entries.sort((b, a) => {
+              const levelA = a.PARSED_MANUAL_TAGS["CO-DESIGN LEVEL"] || "";
+              const levelB = b.PARSED_MANUAL_TAGS["CO-DESIGN LEVEL"] || "";
+
+              // Assuming "CO-DESIGN LEVEL" is alphanumeric, adjust comparison logic accordingly
+              if (levelA < levelB) return -1;
+              if (levelA > levelB) return 1;
+              return 0;
+            });
+
             return (
-              <Block
-                key={`${data.title}-${block.title}-${i}`}
-                title={block.title}
-                description={block.description}
-                entries={block.entries}
-                minifiedHeader={minifiedHeader}
-                maxColumns={maxColumns}
-              />
+              <div key={`${data.title}-${block.title}-${i}`}>
+                <Block
+                  title={block.title}
+                  description={block.description}
+                  entries={sortedEntries} // Use sorted entries here
+                  minifiedHeader={minifiedHeader}
+                />
+              </div>
             );
           })}
         </div>
@@ -37,4 +46,4 @@ const Group = ({
   );
 };
 
-export default Group;
+export default AdvancedResources;

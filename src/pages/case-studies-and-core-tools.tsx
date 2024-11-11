@@ -9,7 +9,6 @@ const caseStudiesAndCoreTools = () => {
         <HighlightMenuCard />
       </div>
       {groups?.map((data, index) => {
-        console.log("tesss")
         return (
           <Group
             key={`case-studies-and-core-tools-${data.title}-${index}`}

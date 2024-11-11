@@ -9,6 +9,6 @@ const groups: Group[] = Object.keys(rawGroups).map((group) => {
         title: group,
         blocks: rawGroups[group]
     };
-}).sort((a, b) => a.title.localeCompare(b.title)) as unknown as Group[];
+}) as unknown as Group[];
 
 export default groups;

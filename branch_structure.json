@@ -1,0 +1,33 @@
+{
+  "default_branch": "main",
+  "branches": [
+    "49-advanced-resources",
+    "fix/adavanced-resources",
+    "fix/arrows-crossing",
+    "fix/bold-headings",
+    "fix/structuring-basic-resources",
+    "fix/tools-resources",
+    "main",
+    "origin"
+  ],
+  "parent": {
+    "49-advanced-resources": "main",
+    "fix/adavanced-resources": "main",
+    "fix/arrows-crossing": "main",
+    "fix/bold-headings": "main",
+    "fix/structuring-basic-resources": "main",
+    "fix/tools-resources": "main",
+    "main": null,
+    "origin": "main"
+  },
+  "order": [
+    "main",
+    "49-advanced-resources",
+    "fix/adavanced-resources",
+    "fix/arrows-crossing",
+    "fix/bold-headings",
+    "fix/structuring-basic-resources",
+    "fix/tools-resources",
+    "origin"
+  ]
+}

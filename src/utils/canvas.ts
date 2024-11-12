@@ -1,3 +1,7 @@
+import { CANVAS_CONTAINER_WIDTH, CANVAS_HORIZONTAL_SPACING, CANVAS_VERTICAL_SPACING } from "@/constants";
+import { Entry } from "@/types/interfaces";
+import groupBy from "lodash.groupby";
+
 export const generateNode = (label: any) => ({
   id: label.key,
   data: label,
@@ -29,26 +33,27 @@ export const generateEdge = (
 });
 
 export const generateInitialPositions = (
-  numItems: any,
-  containerWidth: any,
-  containerHeight: any
+  numItems: number,
+  maxColumns = 4,
+  lastY: number = 0,
 ) => {
   const positions = [];
-  const horizontalSpacing = 250;
-  const verticalSpacing = 200;
 
-  const maxItemsPerRow = Math.floor(containerWidth / horizontalSpacing);
+
+  const initialRow = lastY ? Math.floor(lastY / CANVAS_VERTICAL_SPACING) : 0;
+
+  const maxItemsPerRow = maxColumns;
   const numRows = Math.ceil(numItems / maxItemsPerRow);
 
   let index = 0;
   for (let row = 0; row < numRows; row++) {
-    const y = (row + 1) * verticalSpacing;
+    const y = (initialRow + row + 1) * CANVAS_VERTICAL_SPACING;
     const itemsInRow = Math.min(numItems - index, maxItemsPerRow);
-    const rowWidth = itemsInRow * horizontalSpacing;
-    const startX = (containerWidth - rowWidth) / 2;
+    const rowWidth = itemsInRow * CANVAS_HORIZONTAL_SPACING;
+    const startX = (CANVAS_CONTAINER_WIDTH - rowWidth) / 2;
 
     for (let col = 0; col < itemsInRow; col++) {
-      const x = startX + col * horizontalSpacing;
+      const x = startX + col * CANVAS_HORIZONTAL_SPACING;
       positions.push({ x, y });
       index++;
     }
@@ -70,19 +75,42 @@ export const parseEdges = (data: any[]) =>
 
 export const parseNodes = (
   data: any[],
-  container: {
-    width: number;
-    height: number;
-  }
+  maxColumns = 4
 ) => {
-  const nodes = data.map((card: any) => generateNode(card));
-  const positions = generateInitialPositions(
-    nodes.length,
-    container.width,
-    container.height
-  );
-  return nodes.map((node, index) => ({
-    ...node,
-    position: positions[index],
-  }));
+  const groupLevels = groupBy(data, "coDesignLevel");
+
+  const list: any[] = [];
+
+  let lastY = 0;
+
+  Object.keys(groupLevels).sort((a: string | number, b: string | number) => Number(b) - Number(a)).forEach((key) => {
+    const group = groupLevels[key];
+    const positions = generateInitialPositions(
+      group.length,
+      maxColumns,
+      lastY,
+    );
+    const nodes = group.map((card: any) => generateNode(card)).map((node, index) => ({
+      ...node,
+      position: positions[index],
+    }));
+    list.push(...nodes);
+    lastY = positions[positions.length - 1]?.y || 0;
+  });
+
+  return list;
 };
+
+export const calculateRowAndColNumber = (entries: Entry[], maxColumns = 4) =>{
+  const nodes = parseNodes(entries, maxColumns);
+
+  const positions = nodes.map((node) => node.position);
+  const rows = Object.keys(groupBy(positions, "y")).length;
+  const columns = Object.keys(groupBy(positions, "x")).length;
+
+  return {
+    rows,
+    columns: Math.min(columns, maxColumns),
+  }
+}
+

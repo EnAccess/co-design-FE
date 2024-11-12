@@ -1,21 +1,22 @@
-import { Group } from "../types/interfaces";
+import { Group as NodeGroup } from "../types/interfaces";
 import Block from "./Block";
 
-const AdvancedResources = ({
+const Group = ({
   data,
   minifiedHeader,
+  maxColumns,
 }: {
-  data: Group;
+  data: NodeGroup;
   minifiedHeader?: boolean;
+  maxColumns?: number;
 }) => {
   return (
     <>
-      <h3 className="text-gray-600 font-semibold text-center text-2xl my-10">
-        {data.title !== "NO GROUP" && data.title}
+      <h3 className="text-neutral-500 font-semibold text-center text-5xl mt-20 mb-12">
+        {data.title != "NO GROUP" && data.title}
       </h3>
-      <div className="flex w-full">
-        <div
-          className={`p-4 grid grid-cols-8 grid-flow-col justify-center gap-3 text-sm w-full`}
+      <div
+          className={`p-4 grid grid-cols-10 grid-flow-row-dense gap-3 text-sm w-full`}
         >
           {data.blocks.map((block, i) => {
             // Sort entries based on "CO-DESIGN LEVEL"
@@ -30,24 +31,19 @@ const AdvancedResources = ({
             });
 
             return (
-              <div key={`${data.title}-${block.title}-${i}`}>
-                <Block
-                  title={block.title}
-                  description={block.description}
-                  entries={sortedEntries} // Use sorted entries here
-                  minifiedHeader={minifiedHeader}
-                />
-              </div>
+              <Block
+                key={`${data.title}-${block.title}-${i}`}
+                title={block.title}
+                description={block.description}
+                entries={block.entries}
+                minifiedHeader={minifiedHeader}
+                maxColumns={maxColumns}
+              />
             );
           })}
         </div>
-      </div>
     </>
   );
 };
 
-export default AdvancedResources;
-
-
-
-
+export default Group;

@@ -1,3 +1,5 @@
+import { Entry } from "@/types/interfaces";
+
 export const hasTag = (entry: any, name: any, value: any) => {
   const attributeValues = entry?.PARSED_MANUAL_TAGS?.[name];
   if (Array.isArray(attributeValues)) return attributeValues.includes(value);
@@ -86,3 +88,6 @@ export const getRandomColor = () => {
 
   return hexColor;
 };
+
+
+export const isBasicTool = (entry: any) => entry?.PARSED_MANUAL_TAGS && "BASIC TOOLS" in entry.PARSED_MANUAL_TAGS

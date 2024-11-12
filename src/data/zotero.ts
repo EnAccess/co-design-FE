@@ -1,5 +1,6 @@
 import groupBy from "lodash.groupby";
 import rawData from "../../public/zotero_data.json";
+import { getLevel } from "@/utils/nodes";
 
 function parseRelations(extra: string | null | undefined) {
   if (!extra?.includes("RELATES_TO:")) return [];
@@ -44,26 +45,32 @@ function parseAuthors(creators: any[]) {
 function parseZotero() {
   const output = rawData.map(({ data }) => data);
 
-  return output.map((entry: any) => {
+  return output.map((rawEntry: any) => {
+    const entry = {
+      key: rawEntry.key,
+      itemType: rawEntry.itemType,
+      title: rawEntry.title,
+      authors: parseAuthors(rawEntry.creators),
+      url: rawEntry.url,
+      websiteTitle: rawEntry.websiteTitle,
+      note: rawEntry.abstractNote,
+      language: rawEntry.language,
+      date: rawEntry.date,
+      dateAdded: rawEntry.dateAdded,
+      dateModified: rawEntry.dateModified,
+      accessDate: rawEntry.accessDate,
+      PARSED_MANUAL_TAGS: parseTags(rawEntry.tags),
+      PARSED_RELATES_TO: parseRelations(rawEntry.extra),
+      tags: rawEntry.tags.map((tag: any) => tag?.tag).join("; "),
+    }
     return {
-      key: entry.key,
-      itemType: entry.itemType,
-      title: entry.title,
-      authors: parseAuthors(entry.creators),
-      url: entry.url,
-      websiteTitle: entry.websiteTitle,
-      note: entry.abstractNote,
-      language: entry.language,
-      date: entry.date,
-      dateAdded: entry.dateAdded,
-      dateModified: entry.dateModified,
-      accessDate: entry.accessDate,
-      PARSED_MANUAL_TAGS: parseTags(entry.tags),
-      PARSED_RELATES_TO: parseRelations(entry.extra),
-      tags: entry.tags.map((tag: any) => tag?.tag).join("; "),
+      ...entry,
+      coDesignLevel: Number(getLevel(entry) || -1),
     };
-  });
+  }).sort((a, b) => b.coDesignLevel - a.coDesignLevel);
 }
+ 
+
 
 const zoteroData = parseZotero();
 

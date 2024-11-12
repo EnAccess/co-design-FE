@@ -15,6 +15,7 @@ const caseStudiesAndCoreTools = () => {
             key={`case-studies-and-core-tools-${data.title}-${index}`}
             data={data}
             minifiedHeader
+            maxColumns={10}
           />
         );
       })}

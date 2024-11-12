@@ -1,12 +1,10 @@
 import { parseEdges, parseNodes } from "@/utils/canvas";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo } from "react";
 import ReactFlow, { useEdgesState, useNodesState } from "reactflow";
 import "reactflow/dist/style.css";
 import { NodeCard } from "./Node";
 
-const CONTAINER_HEIGHT = 800;
-const CONTAINER_WIDTH = 1000;
-const SINGLE_BLOCK_WIDTH = 3000;
+
 
 const NodeTypes = {
   coDesign: NodeCard,
@@ -19,10 +17,7 @@ const CardCanvas = ({ data, blockHeight, columns }: any) => {
   const updateData = useCallback(() => {
     setEdges(parseEdges(data));
     setNodes(
-      parseNodes(data, {
-        width: columns > 3 ? SINGLE_BLOCK_WIDTH : CONTAINER_WIDTH,
-        height: CONTAINER_HEIGHT,
-      })
+      parseNodes(data, columns)
     );
   }, [data, columns]);
 
@@ -40,7 +35,7 @@ const CardCanvas = ({ data, blockHeight, columns }: any) => {
   return (
     <div
       style={{
-        height: `${blockHeight * 20}rem`,
+        height: `${blockHeight * 12.5}rem`,
         width: "auto",
         position: "relative",
         zIndex: 20,

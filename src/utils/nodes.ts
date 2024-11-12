@@ -1,4 +1,6 @@
+import { Entry } from "@/types/interfaces";
 import classNames from "classnames";
+import { isBasicTool } from "./helpers";
 
 export function getColorByAccess(accessType: string) {
   switch (accessType) {
@@ -34,4 +36,13 @@ export const getBgColorClassName = (level: any) => {
         "bg-level-primary-default border-level-secondary-default"
       );
   }
+};
+
+export const getNodeBgColorClassName = (entry: Entry) => {
+  console.log(entry)
+      
+  if(entry.isBasicTool) return classNames("bg-[#f8cecc] border-[#b85450]");
+
+  const level = getLevel(entry);
+  return getBgColorClassName(level);
 };

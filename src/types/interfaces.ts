@@ -22,7 +22,8 @@ export interface Entry {
   tags: string;
   PARSED_MANUAL_TAGS: ParsedManualTags;
   PARSED_RELATES_TO?: string[];
-  isBasicTool?: Boolean
+  isBasicTool?: Boolean;
+  hasDefaultBackground?: Boolean
 }
 
 export type Entries = Entry[];

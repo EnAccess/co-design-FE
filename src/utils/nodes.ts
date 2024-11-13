@@ -39,10 +39,9 @@ export const getBgColorClassName = (level: any) => {
 };
 
 export const getNodeBgColorClassName = (entry: Entry) => {
-  console.log(entry)
       
   if(entry.isBasicTool) return classNames("bg-[#f8cecc] border-[#b85450]");
-
-  const level = getLevel(entry);
+  
+  const level = !entry.hasDefaultBackground ? getLevel(entry) : '';
   return getBgColorClassName(level);
 };

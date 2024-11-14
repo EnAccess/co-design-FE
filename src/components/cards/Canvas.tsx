@@ -35,9 +35,8 @@ const CardCanvas = ({ data, blockHeight, columns }: any) => {
   return (
     <div
       style={{
-        height: `${blockHeight * 6}rem`,
-        maxHeight: `${blockHeight * 12.5}rem`,
-        
+        height: `${blockHeight * 15.5}rem`,
+        maxHeight: `${blockHeight * 15.5}rem`,
         width: "auto",
         position: "relative",
         zIndex: 20,

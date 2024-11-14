@@ -1,6 +1,9 @@
 import Star from "@/components/icons/Star";
 import { useHighlight } from "@/hooks/useHighlight";
-import { getBgColorClassName, getColorByAccess, getLevel, getNodeBgColorClassName } from "@/utils/nodes";
+import {
+  getColorByAccess,
+  getNodeBgColorClassName,
+} from "@/utils/nodes";
 import { useMemo } from "react";
 import { Handle } from "reactflow";
 import "reactflow/dist/style.css";
@@ -29,14 +32,11 @@ export function NodeCard({
     window?.open(data?.url, "_blank")?.focus();
   };
 
-
   return (
     <div className="group cursor-pointer">
       <Handle type="target" position={targetPosition} id={data.key} />
-      <div onClick={onClick} className={className}
-    >
+      <div onClick={onClick} className={className}>
         <div className="relative">
-
           {data.title && <p className="z-10">{data.title}</p>}
           {data.authors && <p className="z-10">{data.authors}</p>}
           {(access === "Institutional Access" ||
@@ -47,7 +47,6 @@ export function NodeCard({
             </div>
           )}
           <div className="absolute hidden group-hover:block bg-white border p-4 mt-2 z-20">
-
             {data.authors && (
               <p>
                 <strong>Author(s)</strong>: {data.authors}

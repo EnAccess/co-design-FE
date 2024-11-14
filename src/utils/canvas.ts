@@ -2,12 +2,13 @@ import { CANVAS_CONTAINER_WIDTH, CANVAS_HORIZONTAL_SPACING, CANVAS_VERTICAL_SPAC
 import { Entry } from "@/types/interfaces";
 import groupBy from "lodash.groupby";
 
-export const generateNode = (label: any) => ({
+export const generateNode = (label: any, zIndex: number = 1) => ({
   id: label.key,
   data: label,
   position: { x: 0, y: 0 },
   draggable: false,
   type: "coDesign",
+  zIndex
 });
 
 export const generateEdge = (
@@ -80,7 +81,7 @@ export const parseNodes = (
   const groupLevels = groupBy(data, "coDesignLevel");
 
   const list: any[] = [];
-
+  let zIndex = data.length
   let lastY = 0;
 
   Object.keys(groupLevels).sort((a: string | number, b: string | number) => Number(b) - Number(a)).forEach((key) => {
@@ -90,7 +91,7 @@ export const parseNodes = (
       maxColumns,
       lastY,
     );
-    const nodes = group.map((card: any) => generateNode(card)).map((node, index) => ({
+    const nodes = group.map((card: any) => generateNode(card, zIndex--)).map((node, index) => ({
       ...node,
       position: positions[index],
     }));

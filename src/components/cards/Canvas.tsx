@@ -40,10 +40,10 @@ const CardCanvas = ({ data, blockHeight, columns }: any) => {
         width: "auto",
         position: "relative",
         zIndex: 20,
-        marginTop: 10,
+        // marginTop: 10,
         padding: 0,
       }}
-      className="flex justify-center"
+      className="flex justify-center "
     >
 
       <ReactFlow

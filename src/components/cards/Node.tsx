@@ -34,7 +34,7 @@ export function NodeCard({
   };
 
   return (
-    <div className="group cursor-pointer">
+    <div className="group cursor-pointer flex w-full h-full">
       <Handle type="target" position={targetPosition} id={data.key} />
       <div onClick={onClick} className={className}>
         <div className="relative">

@@ -5,9 +5,10 @@ import {
   getNodeBgColorClassName,
 } from "@/utils/nodes";
 import { useMemo } from "react";
-import { Handle } from "reactflow";
-import "reactflow/dist/style.css";
+import { Handle } from "@xyflow/react";
 
+import '@xyflow/react/dist/style.css';
+ 
 export function NodeCard({
   data,
   sourcePosition,

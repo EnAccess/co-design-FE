@@ -93,7 +93,7 @@ export const parseNodes = (
     );
     const nodes = group.map((card: any) => generateNode(card, zIndex--)).map((node, index) => ({
       ...node,
-      position: positions[index],
+      // position: positions[index],
     }));
     list.push(...nodes);
     lastY = positions[positions.length - 1]?.y || 0;

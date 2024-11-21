@@ -1,6 +1,7 @@
 import { Header } from "../components/header";
 import "../styles/globals.css";
-import "reactflow/dist/style.css";
+import '@xyflow/react/dist/style.css';
+
 import type { AppProps } from "next/app";
 import { DefaultSeo } from "next-seo";
 import SEO from "../../next-seo.config";

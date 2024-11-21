@@ -2,8 +2,10 @@ import { useFilter } from "@/hooks/useFilter";
 import { Entries } from "@/types/interfaces";
 import { calculateRowAndColNumber } from "@/utils/canvas";
 import { useMemo } from "react";
-import CardCanvas from "./cards/Canvas";
+import dynamic from 'next/dynamic'
 import Header from "./cards/Header";
+
+const CardCanvas = dynamic(() => import('./cards/Canvas'), { ssr: false })
 
 const MAX_COL_SPAN = 4;
 const MIN_COL_SPAN = 2;

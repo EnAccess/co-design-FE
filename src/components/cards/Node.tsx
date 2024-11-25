@@ -5,9 +5,10 @@ import {
   getNodeBgColorClassName,
 } from "@/utils/nodes";
 import { useMemo } from "react";
-import { Handle } from "reactflow";
-import "reactflow/dist/style.css";
+import { Handle } from "@xyflow/react";
 
+import '@xyflow/react/dist/style.css';
+ 
 export function NodeCard({
   data,
   sourcePosition,
@@ -33,7 +34,7 @@ export function NodeCard({
   };
 
   return (
-    <div className="group cursor-pointer">
+    <div className="group cursor-pointer flex w-full h-full">
       <Handle type="target" position={targetPosition} id={data.key} />
       <div onClick={onClick} className={className}>
         <div className="relative">
